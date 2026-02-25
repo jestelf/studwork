@@ -1,0 +1,7 @@
+<beans>
+  <bean id="jetbrains.charisma.customfields.ui.CustomFieldsConfiguration_RootHtmlTemplateController" class="jetbrains.charisma.customfields.ui.CustomFieldsConfiguration_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

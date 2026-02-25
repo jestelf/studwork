@@ -1,0 +1,3 @@
+<beans>
+  <bean id="jetbrains.charisma.user.AfterLogin_DispatchAction" class="jetbrains.charisma.user.AfterLogin_DispatchAction"></bean>
+</beans>

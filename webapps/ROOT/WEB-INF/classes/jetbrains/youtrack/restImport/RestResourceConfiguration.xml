@@ -1,0 +1,3 @@
+<beans>
+  <bean id="jetbrains.youtrack.restImport.ImportResource" class="jetbrains.youtrack.restImport.ImportResource"></bean>
+</beans>

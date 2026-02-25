@@ -1,0 +1,313 @@
+<beans>
+  <bean id="jetbrains.mps.webr.userManagement.runtime.user.BaseUserMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.mps.webr.userManagement.runtime.user.BaseUserImpl"></bean>
+    </property>
+    <property name="type">
+      <value>BaseUser</value>
+    </property>
+    <property name="ownIndexes">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.IndexImpl">
+          <property name="fields">
+            <list>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>username</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>BaseUser</value>
+                </property>
+                <property name="property">
+                  <value>true</value>
+                </property>
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>email</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>fullName</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>jabberAccountName</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>password</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>passwordHashed_old</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>username</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>userpic</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.mps.webr.userManagement.runtime.user.BaseUser.userpic"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+    <property name="requiredProperties">
+      <list>
+        <value>password</value>
+        <value>username</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.userManagement.runtime.user.UserpicMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>true</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.mps.webr.userManagement.runtime.user.UserpicImpl"></bean>
+    </property>
+    <property name="type">
+      <value>Userpic</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>user</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.mps.webr.userManagement.runtime.user.Userpic.user"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.userManagement.runtime.user.FileUserpicMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>true</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.mps.webr.userManagement.runtime.user.FileUserpicImpl"></bean>
+    </property>
+    <property name="superType">
+      <value>Userpic</value>
+    </property>
+    <property name="type">
+      <value>FileUserpic</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>file</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>user</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.mps.webr.userManagement.runtime.user.FileUserpic.file"/>
+        <ref bean="jetbrains.mps.webr.userManagement.runtime.user.Userpic.user"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.userManagement.runtime.user.GravatarUserpicMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>true</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.mps.webr.userManagement.runtime.user.GravatarUserpicImpl"></bean>
+    </property>
+    <property name="superType">
+      <value>Userpic</value>
+    </property>
+    <property name="type">
+      <value>GravatarUserpic</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>user</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.mps.webr.userManagement.runtime.user.Userpic.user"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.userManagement.runtime.user.FileUserpic.file" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="FileUserpic.file-PersistentFile"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.teamsys.dnq.runtime.files.PersistentFileMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>file</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.userManagement.runtime.user.BaseUser.userpic" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="BaseUser.userpic-Userpic.user"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>ParentEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.mps.webr.userManagement.runtime.user.UserpicMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>userpic</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.userManagement.runtime.user.Userpic.user" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="BaseUser.userpic-Userpic.user"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>ChildEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.mps.webr.userManagement.runtime.user.BaseUserMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>user</value>
+    </property>
+  </bean>
+  <bean id="FileUserpic.file-PersistentFile" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="BaseUser.userpic-Userpic.user" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Aggregation</value>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,207 @@
+.bookmarklet {
+  font-family: arial, tahoma, verdana, sans-serif;
+  font-size: 12px;
+  font-size: 12px;
+  position: relative;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.bookmarklet .message {
+  left: 35%;
+}
+
+.bookmarklet .east {
+  width: 195px;
+  padding-left: 25px;
+  padding-top: 5px;
+}
+
+.bookmarklet .south {
+  padding: 3px 10px 10px;
+  border-top: 1px solid #d4d5d6;
+  text-align: center;
+}
+
+.bookmarklet .attach-wrapper {
+  
+}
+
+.bookmarklet .attach-wrapper h3 {
+  display: none;
+}
+
+.bookmarklet .attach-thumb {
+  display: none;
+}
+
+.bookmarklet .attach-info {
+  height: 30px;
+  width: 70px;
+}
+
+.bookmarklet .attach-name {
+  
+  
+}
+
+.bookmarklet .attach-name .light {
+  left: 55px;
+}
+
+.bookmarklet .attach-name a, .bookmarklet .attach-name a:hover {
+  text-decoration: none;
+}
+
+.bookmarklet .attach-controls {
+  position: static;
+  float: left;
+  margin-top: -2px;
+}
+
+.bookmarklet .attach-size, .bookmarklet .attach .pic {
+  display: none;
+}
+
+.bookmarklet .combobox, .bookmarklet .contentWrapper {
+  width: auto;
+  max-width: 195px;
+}
+
+.bookmarklet .jt-dialog .combobox, .bookmarklet .jt-dialog .contentWrapper {
+  width: 194px;
+}
+
+.bookmarklet .combobox.project-combobox {
+  width: 195px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bookmarklet .comboboxList {
+  font-size: 12px;
+  max-height: 105px;
+}
+
+.bookmarklet .reversal .contentWrapper .extraContent {
+  bottom: 111px;
+  border-top-width: 2px;
+}
+
+.bookmarklet .FV-combo {
+  right: 0;
+}
+
+.bookmarklet .combobox {
+  
+}
+
+.bookmarklet .combobox li {
+  font-size: 12px;
+  font-family: arial, tahoma, verdana, sans-serif;
+}
+
+.bookmarklet .properties {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 550px;
+}
+
+.bookmarklet .shader {
+  background-image: url("${getClasspathUri("smartui/img/bgTable-white.png")}");
+}
+
+.bookmarklet .attribute {
+  text-align: left;
+  border: 1px solid #d4d5d6;
+  margin-bottom: 3px;
+  padding: 0 1px!important;
+  background-color: white;
+}
+
+.bookmarklet fieldset {
+  background: none transparent;
+  border: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.bookmarklet .issueFields label {
+  min-width: 70px;
+  width: 70px;
+}
+
+.bm-header {
+  border-bottom: 1px solid #c2cfdd;
+  padding: 5px 5px 5px 10px;
+  background-color: #E9F3FD;
+  color: #5586bd;
+  
+  
+  
+}
+
+.bm-header a {
+  float: right;
+  margin-right: 8px;
+  text-decoration: underline;
+  color: #5586BD;
+}
+
+.bm-header a:hover {
+  text-decoration: none;
+}
+
+.bm-header .bm-close {
+  margin-right: 0;
+}
+
+/*Fixed in version combobox - added to make changes only in bookmarklet */
+.bm-description {
+  position: absolute;
+  right: 12px;
+  top: 60px;
+  width: 360px;
+  
+  
+}
+
+.bm-description .description {
+  width: 350px;
+  height: 66px;
+  overflow-y: auto;
+}
+
+.bm-description label {
+  margin: 0;
+}
+
+.project-combobox .comboboxList {
+  max-height: 90px;
+}
+
+.bookmarklet table.cf-tbl[align=center] {
+  text-align: left;
+  float: left;
+}
+

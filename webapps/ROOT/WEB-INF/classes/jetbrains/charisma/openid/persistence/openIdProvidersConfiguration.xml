@@ -1,0 +1,64 @@
+<beans>
+  <bean id="openIdProvidersContainer" class="jetbrains.charisma.openid.persistence.OpenIdProvidersContainer">
+    <property name="providers">
+      <list>
+        <bean class="jetbrains.charisma.openid.persistence.OpenIdProvider">
+          <property name="id">
+            <value>0</value>
+          </property>
+          <property name="v2">
+            <value>true</value>
+          </property>
+          <property name="iconClassPathUri">
+            <value>smartui/img/loginGoogle.png</value>
+          </property>
+          <property name="providerUri">
+            <value>https://www.google.com/accounts/o8/id</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.charisma.openid.persistence.OpenIdProvider">
+          <property name="id">
+            <value>1</value>
+          </property>
+          <property name="v2">
+            <value>true</value>
+          </property>
+          <property name="iconClassPathUri">
+            <value>smartui/img/loginYahoo.png</value>
+          </property>
+          <property name="providerUri">
+            <value>https://me.yahoo.com/</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.charisma.openid.persistence.OpenIdProvider">
+          <property name="id">
+            <value>2</value>
+          </property>
+          <property name="v2">
+            <value>false</value>
+          </property>
+          <property name="iconClassPathUri">
+            <value>smartui/img/loginAIM.png</value>
+          </property>
+          <property name="providerUri">
+            <value>http://openid.aol.com/screenname</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.charisma.openid.persistence.OpenIdProvider">
+          <property name="id">
+            <value>3</value>
+          </property>
+          <property name="v2">
+            <value>false</value>
+          </property>
+          <property name="iconClassPathUri">
+            <value>smartui/img/loginBlogger.png</value>
+          </property>
+          <property name="providerUri">
+            <value>http://blogname.blogspot.com/</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,1800 @@
+<beans>
+  <bean id="jetbrains.charisma.main.TakeScreenshot" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>TakeScreenshot</value>
+    </property>
+    <property name="description">
+      <value>take a screenshot</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>83</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.PasteFromClipboard" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>PasteFromClipboard</value>
+    </property>
+    <property name="description">
+      <value>attach an image from clipboard</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>86</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.AddFile" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>AddFile</value>
+    </property>
+    <property name="description">
+      <value>add a file</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>65</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.AddComment" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>AddComment</value>
+    </property>
+    <property name="description">
+      <value>add a comment to current issue</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>67</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.CancelEdit" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>CancelEdit</value>
+    </property>
+    <property name="description">
+      <value>cancel issue editing</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>27</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.SubmitIssueEdit" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>SubmitIssueEdit</value>
+    </property>
+    <property name="description">
+      <value>submit issue</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>13</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.Submit" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>Submit</value>
+    </property>
+    <property name="description">
+      <value>submit</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>13</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.Dismiss" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>Dismiss</value>
+    </property>
+    <property name="description">
+      <value>dismiss</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>27</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.CollapseIssue" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>CollapseIssue</value>
+    </property>
+    <property name="description">
+      <value>collapse issue</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>37</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.ExpandIssue" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>ExpandIssue</value>
+    </property>
+    <property name="description">
+      <value>expand issue</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>39</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.CommandDialog" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>CommandDialog</value>
+    </property>
+    <property name="description">
+      <value>open Command dialog box</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>74</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.EditIssue" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>EditIssue</value>
+    </property>
+    <property name="description">
+      <value>edit issue</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>113</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.GoToFirst" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>GoToFirst</value>
+    </property>
+    <property name="description">
+      <value>go to first issue in the list</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>36</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.GoToLast" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>GoToLast</value>
+    </property>
+    <property name="description">
+      <value>go to last issue in the list</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>35</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.NewIssue" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>NewIssue</value>
+    </property>
+    <property name="description">
+      <value>create a new issue</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value>MACINTOSH</value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>78</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value>OPERA</value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>45</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>45</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.IncreaseIssueVisibility" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>IncreaseIssueVisibility</value>
+    </property>
+    <property name="description">
+      <value>increase detail level</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value>FIREFOX</value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value>MACINTOSH</value>
+              <value>LINUX</value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>61</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value>FIREFOX</value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>107</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value>OPERA</value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>61</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>187</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.DecreaseIssueVisibility" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>DecreaseIssueVisibility</value>
+    </property>
+    <property name="description">
+      <value>decrease detail level</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value>FIREFOX</value>
+              <value>OPERA</value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>109</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>189</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.FirstPage" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>FirstPage</value>
+    </property>
+    <property name="description">
+      <value>first page</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>TRUE</value>
+              </property>
+              <property name="keyCode">
+                <value>37</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.NextPage" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>NextPage</value>
+    </property>
+    <property name="description">
+      <value>next page</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>39</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.PrevPage" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>PrevPage</value>
+    </property>
+    <property name="description">
+      <value>previous page</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>37</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.GoBack" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>GoBack</value>
+    </property>
+    <property name="description">
+      <value>go back to search</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>38</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.LastPage" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>LastPage</value>
+    </property>
+    <property name="description">
+      <value>last page</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>TRUE</value>
+              </property>
+              <property name="keyCode">
+                <value>39</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.ToggleSearchField" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>ToggleSearchField</value>
+    </property>
+    <property name="description">
+      <value>switch focus between search box and list of issues</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>27</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.SubmitSearchField" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>SubmitSearchField</value>
+    </property>
+    <property name="description">
+      <value>submit a search query</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>IGNORE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>13</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.MoveToProjects" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>MoveToProjects</value>
+    </property>
+    <property name="description">
+      <value>move from search box to the list of projects</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>TRUE</value>
+              </property>
+              <property name="keyCode">
+                <value>9</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.MoveToIssueListFromSearchField" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>MoveToIssueListFromSearchField</value>
+    </property>
+    <property name="description">
+      <value>move from search box to the list of issues</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>40</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.MoveToSearchFieldFromIssueList" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>MoveToSearchFieldFromIssueList</value>
+    </property>
+    <property name="description">
+      <value>move to search box from the list of issues when first issue is selected</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>38</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.ForceComplete" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>ForceComplete</value>
+    </property>
+    <property name="description">
+      <value>show suggestions for search fields</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>32</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.SelectIssue" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>SelectIssue</value>
+    </property>
+    <property name="description">
+      <value>select an issue</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>32</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.SelectIssueIdSummary" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>SelectIssueIdSummary</value>
+    </property>
+    <property name="description">
+      <value>select id, id and summary of an issue</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value>MACINTOSH</value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>TRUE</value>
+              </property>
+              <property name="shift">
+                <value>TRUE</value>
+              </property>
+              <property name="keyCode">
+                <value>67</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>TRUE</value>
+              </property>
+              <property name="keyCode">
+                <value>67</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.SwitchToCommentsTab" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>SwitchToCommentsTab</value>
+    </property>
+    <property name="description">
+      <value>switch to Comments tab</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>TRUE</value>
+              </property>
+              <property name="keyCode">
+                <value>67</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.SwitchToHistoryTab" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>SwitchToHistoryTab</value>
+    </property>
+    <property name="description">
+      <value>switch to History tab</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>TRUE</value>
+              </property>
+              <property name="keyCode">
+                <value>72</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.SwitchToLinksTab" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>SwitchToLinksTab</value>
+    </property>
+    <property name="description">
+      <value>switch to Links tab</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>TRUE</value>
+              </property>
+              <property name="keyCode">
+                <value>76</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.TogglePreview" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>TogglePreview</value>
+    </property>
+    <property name="description">
+      <value>toggle preview</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>TRUE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>80</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.SelectAll" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>SelectAll</value>
+    </property>
+    <property name="description">
+      <value>select all issues (when focus is on the list of issues)</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value>MACINTOSH</value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>TRUE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>65</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>65</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.main.SubmitErrorReport" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>SubmitErrorReport</value>
+    </property>
+    <property name="description">
+      <value>submit report about internal error</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>TRUE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>13</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+</beans>

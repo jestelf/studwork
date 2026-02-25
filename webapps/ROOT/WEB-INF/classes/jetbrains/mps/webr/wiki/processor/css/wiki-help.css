@@ -1,0 +1,136 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/dialog.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/dialog.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/dialog.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/panel.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/panel.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/panel.css").url}");
+</#if>
+.wikiTable {
+  border-collapse: collapse;
+  border-spacing: 0;
+  
+}
+
+.wikiTable td {
+  padding: 1em;
+  border: 1px dotted black;
+}
+
+a {
+  color: #084B96;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0066CC;
+  text-decoration: none;
+}
+
+.tryWikiPopupColors {
+  background-color: white;
+  border-color: #676e75;
+}
+
+.tryWikiPopupPanel {
+  margin: 0;
+  padding: 0 10px 0 10px;
+  height: 95%;
+  overflow: scroll;
+  border-width: 0px 5px 5px 5px;
+  border-style: solid;
+}
+
+.tryWikiPopupHeader {
+  margin-bottom: 0;
+  width: 100%;
+  background-color: #676e75;
+  color: white;
+}
+
+.tryWikiPopupHeader th {
+  border: none;
+  text-align: right;
+}
+
+.tryWikiPopupHeader th:first-child {
+  text-align: left;
+}
+
+.tryWikiTable {
+  border: none;
+  width: 100%;
+}
+
+.tryWikiTable td {
+  border: none;
+}
+
+.tryWikiTable textarea {
+  width: 100%;
+}
+
+/*new dialog-based style layout*/
+.tryWikiPopup {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: auto;
+  bottom: 3%;
+  right: 1%;
+  left: auto;
+  z-index: 3;
+  text-align: left;
+  width: 350px;
+  height: 395px;
+  background-color: #d4d5d6;
+  border: 1px solid #898989;
+  
+}
+
+.tryWikiPopup .jt-bl-south {
+  display: none;
+}
+
+.tryWikiPopup .jt-panel-title {
+  margin-bottom: 0;
+  cursor: text!important;
+}
+
+.wikiPopupClearTool {
+  color: white;
+  position: absolute;
+  top: 2px;
+  right: 12px;
+}
+
+.wikiPopupClearTool:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.tryWikiPopup .wikiPopupTextTool {
+  width: 329px;
+  height: 80px;
+  overflow-y: scroll;
+  border: 1px solid #d4d5d6;
+  background-color: white;
+}
+
+.tryWikiPopup .wikiPopupOutput {
+  height: 250px;
+  width: 325px;
+  padding: 2px;
+  margin-top: 5px;
+  overflow-y: scroll;
+  border: 1px solid #d4d5d6;
+  background-color: white;
+}
+

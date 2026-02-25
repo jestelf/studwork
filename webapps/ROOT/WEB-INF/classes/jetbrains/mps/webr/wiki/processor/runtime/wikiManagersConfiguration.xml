@@ -1,0 +1,14 @@
+<beans>
+  <bean id="wikiManager" class="jetbrains.mps.webr.wiki.processor.runtime.WikiManager"></bean>
+  <bean id="wikiLinksManager" class="jetbrains.mps.webr.wiki.processor.runtime.WikiLinksManager"></bean>
+  <bean id="extensionPoint_wikiManager_hightliters" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="wikiManager"/>
+    <property name="extensionPropertyName" value="hightliters"/>
+    <property name="extensionType" value="jetbrains.mps.wiki.runtime.higlighter.java.LanguageHighlighter"/>
+  </bean>
+  <bean id="extensionPoint_wikiLinksManager_linkHandlers" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="wikiLinksManager"/>
+    <property name="extensionPropertyName" value="linkHandlers"/>
+    <property name="extensionType" value="jetbrains.mps.webr.wiki.processor.runtime.WikiLinkHandler"/>
+  </bean>
+</beans>

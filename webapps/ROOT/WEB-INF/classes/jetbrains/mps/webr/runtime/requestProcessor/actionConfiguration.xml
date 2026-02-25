@@ -1,0 +1,27 @@
+<beans>
+  <bean id="actionFactoryContainer" class="jetbrains.mps.webr.runtime.templateComponent.ActionFactoryContainer"></bean>
+  <bean id="rootTemplateControllerContainer" class="jetbrains.mps.webr.runtime.templateComponent.RootTemplateControllerContainer"></bean>
+  <bean id="rssTemplateControllerContainer" class="jetbrains.mps.webr.runtime.templateComponent.RssTemplateControllerContainer"></bean>
+  <bean id="requestProcessorContainer" class="webr.framework.controller.requestProcessor.RequestProcessorContainer"></bean>
+  <bean id="fieldBindingManager" class="jetbrains.mps.webr.runtime.requestProcessor.FieldBindingManager"></bean>
+  <bean id="extensionPoint_actionFactoryContainer_actionFactories" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="actionFactoryContainer"/>
+    <property name="extensionPropertyName" value="actionFactories"/>
+    <property name="extensionType" value="jetbrains.mps.webr.runtime.templateComponent.ActionFactory"/>
+  </bean>
+  <bean id="extensionPoint_rootTemplateControllerContainer_rootTemplateControllers" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="rootTemplateControllerContainer"/>
+    <property name="extensionPropertyName" value="rootTemplateControllers"/>
+    <property name="extensionType" value="jetbrains.mps.webr.runtime.templateComponent.RootTemplateController"/>
+  </bean>
+  <bean id="extensionPoint_rssTemplateControllerContainer_rssTemplateControllers" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="rssTemplateControllerContainer"/>
+    <property name="extensionPropertyName" value="rssTemplateControllers"/>
+    <property name="extensionType" value="jetbrains.mps.webr.runtime.templateComponent.RssTemplateController"/>
+  </bean>
+  <bean id="extensionPoint_requestProcessorContainer_requestProcessors" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="requestProcessorContainer"/>
+    <property name="extensionPropertyName" value="requestProcessors"/>
+    <property name="extensionType" value="webr.framework.controller.requestProcessor.RequestProcessor"/>
+  </bean>
+</beans>

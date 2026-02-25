@@ -1,0 +1,5 @@
+<beans>
+  <bean id="jetbrains.charisma.main.RootGo_DispatchAction" class="jetbrains.charisma.main.RootGo_DispatchAction"></bean>
+  <bean id="jetbrains.charisma.main.Workspace_DispatchAction" class="jetbrains.charisma.main.Workspace_DispatchAction"></bean>
+  <bean id="jetbrains.charisma.main.Issue2_DispatchAction" class="jetbrains.charisma.main.Issue2_DispatchAction"></bean>
+</beans>

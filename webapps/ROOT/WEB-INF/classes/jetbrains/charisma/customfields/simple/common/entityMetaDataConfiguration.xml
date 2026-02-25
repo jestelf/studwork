@@ -1,0 +1,53 @@
+<beans>
+  <bean id="jetbrains.charisma.customfields.simple.common.SimpleProjectCustomFieldMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.customfields.simple.common.SimpleProjectCustomFieldImpl"></bean>
+    </property>
+    <property name="superType">
+      <value>ProjectCustomField</value>
+    </property>
+    <property name="type">
+      <value>SimpleProjectCustomField</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>nullValueText</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>project</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>prototype</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.persistence.customfields.ProjectCustomField.project"/>
+        <ref bean="jetbrains.charisma.persistence.customfields.ProjectCustomField.prototype"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+</beans>

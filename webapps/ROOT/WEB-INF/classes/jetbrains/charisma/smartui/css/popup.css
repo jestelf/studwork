@@ -1,0 +1,41 @@
+.popupComponent.issueContainer {
+  margin-top: -1px;
+  width: 40em;
+  text-align: left;
+  background-color: #ffffff;
+  border: solid 1px #676e75;
+}
+
+.popupComponent.issueContainer .properties {
+  margin-top: .8em;
+}
+
+.popupComponent.filterPopup {
+  background: url("${getClasspathUri("smartui/img/bgFilterPopup.gif")}") no-repeat 0 13px;
+  border: none;
+}
+
+.popupComponent.filterPopup .jt-panel-content {
+  margin-left: 9px;
+  padding-right: 1.5em;
+  background: #feffd9 url("${getClasspathUri("smartui/img/bgFilterPopupContent.gif")}") no-repeat 0 0;
+  border: solid 1px #084b96;
+  border-left: none;
+}
+
+.popupComponent.filterPopup a.delete, .hints .hideHints a {
+  margin: .4em 0 0 .5em;
+  padding: 0 .4em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1em;
+  background: url("${getClasspathUri("smartui/img/icoDeleteFiltrPopup.gif")}") no-repeat 0 0;
+}
+
+.popupComponent.filterPopup a.delete:hover, .hints .hideHints a:hover {
+  background-position: 0 -14px;
+}
+

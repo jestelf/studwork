@@ -1,0 +1,20 @@
+<beans>
+  <bean id="RestRequestProcessor" class="jetbrains.mps.webr.rpc.rest.runtime.RestRequestProcessor">
+    <property name="dependentRequestProcessors">
+      <map>
+        <entry>
+          <key>
+            <ref bean="ActionRequestProcessor"/>
+          </key>
+          <value>BEFORE</value>
+        </entry>
+        <entry>
+          <key>
+            <ref bean="FileUploadRequestProcessor"/>
+          </key>
+          <value>AFTER</value>
+        </entry>
+      </map>
+    </property>
+  </bean>
+</beans>

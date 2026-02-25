@@ -1,0 +1,721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>yesterday</title>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/__main.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/newIssue.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/editIssue.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/suggest.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/__actions.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/msg.css"/>
+      <!--<link type="text/css" media="screen" rel="stylesheet" href="css/singleUI.css"/>-->
+      <!--<link type="text/css" media="screen" rel="stylesheet" href="css/issueProperties.css"/>-->
+      <link type="text/css" media="screen" rel="stylesheet" href="css/combobox.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/__issueContainer.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/__subcontent.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/message.css"/>
+
+
+        <meta name="_meta_template_name" content="Issues"/>
+        <meta name="_meta_layout_name" content="SmartUI"/>
+
+      </head>
+      <body>
+
+      <div class="message error" style="display: inline;">
+          <a class="close" href="">close</a>
+          <ul>
+              <li>Value is required: summary</li>
+              <li>Value is required: project</li>
+          </ul>
+      </div>
+
+      <div class="message error small" style="display: inline;">
+          <a class="close" href="">close</a>
+          <ul>
+              <li>Loading...</li>
+          </ul>
+      </div>
+      
+        <div id="SmartUI_Layout_id0" class="container">
+
+        <div id="Issues_RootHtmlTemplate_id0" class="header search">
+        <!--------- new block Start -------->
+            <!--<ul class="account guest">-->
+                <!--<li><a href="">Info page</a></li>-->
+                <!--<li class="login"><a href="">Login</a> or <a href="">Sign up</a></li>-->
+                <!--<li class="user">Welcome, guest</li>-->
+            <!--</ul>-->
+            <ul class="account">
+                <li class="info"><a href="">Info page</a></li>
+                <li class=""><a href="">Tools</a>
+                    <ul class="dropMenu">
+                        <li><a href="">Take screenshot</a></li>
+                        <li><a href="">Get a bookmarklet</a></li>
+                    </ul>
+                </li>
+                <li class="login"><a href="">konstantin Solomatov</a>
+                    <ul class="dropMenu">
+                        <li><a href="">Settings</a></li>
+                        <li><a href="">Log out</a></li>
+                    </ul>
+                </li>
+                <li class="user">Welcome,</li>
+            </ul>
+        <!--------- new block End -------->
+            <a href="/charisma/issues" id="Header_HtmlTemplate_id0"><img src="img/logoSmall.gif" alt="Charisma" title="Charisma"/></a>
+            <div id="Header_HtmlTemplate_id5" class="search">
+                <div class="searchProjectSelector">
+                    <div id="Header_HtmlTemplate_id3" class="mainSearch">
+                        <!--<input type="text" value="Charisma"/>
+                        <ul style="display: none;">
+                            <li><a href="">All projects</a></li>
+                            <li class="activ"><a href="">Charisma</a></li>
+                            <li><a href="">MPS</a></li>
+                            <li><a href="">Project For UI Tests</a></li>
+                            <li><a href="">TeamCity</a></li>
+                            <li><a href="">dotTrace</a></li>
+                            <li><a href="">webr+dnq</a></li>
+                        </ul>-->
+                        <span class="combobox">
+                        <input id="id_l.I.h.filterProject" class="" valueid="23-1" value="dotTrace" name="-l.I.h.filterProject"/>
+                        <input type="hidden" name="l.I.h.filterProject" value="23-1"/>
+                        <a>.</a>
+                        <ul class="comboboxList" style="display: none;">
+                            <li class="empty">All Projects</li>
+                            <li class="Beelaxy">Beelaxy</li>
+                            <li class="dotTrace active">dotTrace</li>
+                        </ul>
+                        </span>
+                    </div>
+                </div>
+                <div class="searchContent">
+                    <div class="mainSearch">
+                        <a class="help" href="">.</a>
+                        <input class="button" type="submit" value="Search"/>
+                        <a class="arrowNavigation" href="">.</a>
+                        <div class="widthInput">
+                            <input id="searchFieldText" class="input-text" type="text" maxlength="255" value="tag Watched Issues" name="SmartUI.Issues.Header.searchField"/>
+                            <div class="navigationSearch">
+                                <ul class="suggest">
+                                    <li><a href="">tag Watched Issues</a></li>
+                                    <li><a href="">tag Watched Issues tag</a></li>
+                                    <li><a href="">tag Watched Issues</a></li>
+                                    <li><a href="">tag Watched Issues</a></li>
+                                    <li><a href="">tag Watched Issues</a></li>
+                                    <li><a href="">tag Watched Issues</a></li>
+                                    <li><a href="">tag Watched Issues</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="Header_HtmlTemplate_searchSuggestDiv0" class="suggest" style="display: none; left: 64px;">
+                            <ul id="SuggestPopup_HtmlTemplate_id0">
+                                <li id="optionLi_pronam" class="current">
+                                    <span class="option optionType2" title="nam"><span class="match">pro</span>nam</span>
+                                    <span class="description">user</span>
+                                </li>
+                                <li id="optionLi_proyal" class="">
+                                    <span class="option optionType2" title="yal"><span class="match">pro</span>yal</span>
+                                    <span class="description">user</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul id="underlinerDiv" class="underline" style="display: none;">
+                            <li class="type1" style="left: 15px; width: 24px;"><span>.</span></li>
+                            <li class="type2" style="left: 111px; width: 48px;">.</li>
+                            <li class="type3" style="left: 47px; width: 56px;">.</li>
+                        </ul>
+                        <div id="Header_HtmlTemplate_id1" class="searchStatus">
+                            Found 110 issues. Refine your search by selecting more categories. <a class="saveSearch" href="#">Save search</a><a class="help" href="">.</a>
+                        </div>
+                        <div id="Header_HtmlTemplate_id2" class="parserErrors"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Issues_RootHtmlTemplate_filters0" class="subcontent">
+
+        <div class="sidebarList active">
+            <div class="title"><a class="normal" href="">Tags<span class="light">(8)</span></a><a class="help">.</a></div>
+            <ul>
+                <li class=""><a href="">Pain points <span class="light">(10)</span></a><a class="ico arrow" href=""></a></li>
+                <li><a href="">Design <span class="light">(218)</span></a><a class="ico arrow" href=""></a></li>
+                <li><a href="">Serious usability problems <span class="light">(54)</span></a><a class="ico arrow" href=""></a></li>
+            </ul>
+        </div>
+
+
+<div id="Filters_HtmlTemplate_id0">
+<ul id="FiltersBlock_HtmlTemplate_filtersUl0" class="filtr">
+<li id="SubsystemLi" class="">
+<p>
+<a href="#">Subsystem <span class="filterCount">(3)</span></a>
+</p>
+<ul id="Filter_HtmlTemplate_id0">
+<li id="Filter_HtmlTemplate_id1">
+<input id="SubsystemallCheckbox" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterAllCheckbox" disabled="true"/>
+<label for="SubsystemallCheckbox">All</label>
+</li>
+<li id="Filter_HtmlTemplate_id2">
+<input id="10769435" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="10769435">
+<span class="filterName">Smart UI</span>
+<span id="countSpan10769435" class="filterCount">(3)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_1">
+<input id="19160201" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="19160201">
+<span class="filterName">Unknown</span>
+<span id="countSpan19160201" class="filterCount">(1)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_2">
+<input id="27777437" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="27777437">
+<span class="filterName">Unknown</span>
+<span id="countSpan27777437" class="filterCount">(2)</span>
+</label>
+</li>
+</ul>
+</li>
+<li id="UpdatedLi" class="">
+<p>
+<a href="#">Updated <span class="filterCount">(7)</span></a>
+</p>
+<ul id="Filter_HtmlTemplate_id0_1">
+<li id="Filter_HtmlTemplate_id1_1">
+<input id="UpdatedallCheckbox" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterAllCheckbox" disabled="true"/>
+<label for="UpdatedallCheckbox">All</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_3">
+<input id="1199718" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="1199718">
+<span class="filterName">Today</span>
+<span id="countSpan1199718" class="filterCountZero">(0)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_4">
+<input id="4543094" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="4543094">
+<span class="filterName">Yesterday</span>
+<span id="countSpan4543094" class="filterCount">(1)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_5">
+<input id="13896230" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="13896230">
+<span class="filterName">This week</span>
+<span id="countSpan13896230" class="filterCount">(1)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_6">
+<input id="24649169" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="24649169">
+<span class="filterName">Last week</span>
+<span id="countSpan24649169" class="filterCount">(3)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_7">
+<input id="3525794" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="3525794">
+<span class="filterName">This month</span>
+<span id="countSpan3525794" class="filterCount">(1)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_8">
+<input id="2377989" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="2377989">
+<span class="filterName">Last month</span>
+<span id="countSpan2377989" class="filterCount">(5)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_9">
+<input id="31814159" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="31814159">
+<span class="filterName">Older</span>
+<span id="countSpan31814159" class="filterCountZero">(0)</span>
+</label>
+</li>
+</ul>
+</li>
+<li id="Updated ByLi" class="">
+<p>
+<a href="#">Updated By <span class="filterCount">(2)</span></a>
+</p>
+<ul id="Filter_HtmlTemplate_id0_2">
+<li id="Filter_HtmlTemplate_id1_2">
+<input id="Updated ByallCheckbox" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterAllCheckbox" disabled="true"/>
+<label for="Updated ByallCheckbox">All</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_10">
+<input id="3097446" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="3097446">
+<span class="filterName">kot</span>
+<span id="countSpan3097446" class="filterCount">(2)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_11">
+<input id="1727803" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="1727803">
+<span class="filterName">yavadim</span>
+<span id="countSpan1727803" class="filterCount">(4)</span>
+</label>
+</li>
+</ul>
+</li>
+<li id="AssigneeLi" class="open">
+<p>
+<a href="#">Assignee <span class="filterCount">(1)</span></a>
+</p>
+<ul id="Filter_HtmlTemplate_id0_3">
+<li id="Filter_HtmlTemplate_id2_12">
+<label for="443074">
+<span class="filterName highlightedWord">kot</span>
+<span id="countSpan443074" class="filterCount">(6)</span>
+</label>
+</li>
+</ul>
+</li>
+<li id="ReporterLi" class="open">
+<p>
+<a href="#">Reporter <span class="filterCount">(3)</span></a>
+</p>
+<ul id="Filter_HtmlTemplate_id0_4">
+<li id="Filter_HtmlTemplate_id1_3">
+<input id="ReporterallCheckbox" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterAllCheckbox" disabled="true"/>
+<label for="ReporterallCheckbox">All</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_13">
+<input id="19980834" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="19980834">
+<span class="filterName">yamaxim</span>
+<span id="countSpan19980834" class="filterCount">(1)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_14">
+<input id="20958725" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="20958725">
+<span class="filterName">sashka</span>
+<span id="countSpan20958725" class="filterCount">(1)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_15">
+<input id="32422999" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="32422999">
+<span class="filterName">yavadim</span>
+<span id="countSpan32422999" class="filterCount">(4)</span>
+</label>
+</li>
+</ul>
+</li>
+<li id="StateLi" class="open">
+<p>
+<a href="#">State <span class="filterCount">(3)</span></a>
+</p>
+<ul id="Filter_HtmlTemplate_id0_5">
+<li id="Filter_HtmlTemplate_id1_4">
+<input id="StateallCheckbox" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterAllCheckbox" disabled="true"/>
+<label for="StateallCheckbox">All</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_16">
+<input id="28732818" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="28732818">
+<span class="filterName">Submitted</span>
+<span id="countSpan28732818" class="filterCount">(3)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_17">
+<input id="6866930" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="6866930">
+<span class="filterName">Open</span>
+<span id="countSpan6866930" class="filterCount">(2)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_18">
+<input id="31334324" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="31334324">
+<span class="filterName">Fixed</span>
+<span id="countSpan31334324" class="filterCount">(1)</span>
+</label>
+</li>
+</ul>
+</li>
+<li id="PriorityLi" class="open">
+<p>
+<a href="#">Priority <span class="filterCount">(1)</span></a>
+</p>
+<ul id="Filter_HtmlTemplate_id0_6">
+<li id="Filter_HtmlTemplate_id2_19">
+<label for="9406457">
+<span class="filterName highlightedWord">Normal</span>
+<span id="countSpan9406457" class="filterCount">(6)</span>
+</label>
+</li>
+</ul>
+</li>
+<li id="TypeLi" class="">
+<p>
+<a href="#">Type <span class="filterCount">(3)</span></a>
+</p>
+<ul id="Filter_HtmlTemplate_id0_7">
+<li id="Filter_HtmlTemplate_id1_5">
+<input id="TypeallCheckbox" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterAllCheckbox" disabled="true"/>
+<label for="TypeallCheckbox">All</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_20">
+<input id="21802425" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="21802425">
+<span class="filterName">Bug</span>
+<span id="countSpan21802425" class="filterCount">(4)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_21">
+<input id="10444054" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="10444054">
+<span class="filterName">Cosmetics</span>
+<span id="countSpan10444054" class="filterCount">(1)</span>
+</label>
+</li>
+<li id="Filter_HtmlTemplate_id2_22">
+<input id="5428389" type="checkbox" checked="checked" name="-SmartUI.Issues.Filters.FiltersBlock.Filter.filterCheckbox"/>
+<label for="5428389">
+<span class="filterName">Task</span>
+<span id="countSpan5428389" class="filterCount">(1)</span>
+</label>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+        </div>
+        <div class="content">
+
+        <div class="result">
+            <ul class="actions">
+                <li class="help"><a href="">.</a></li>
+                <li class="settings"><a href="#"><span>.</span></a>
+                    <ul class="dromMenu">
+                        <li id="visibilityItem_Entity_46_0" class="activ"><a href="#">Priority</a></li>
+                        <li id="visibilityItem_Entity_46_1" class="activ"><a href="#">Type</a></li>
+                        <li id="visibilityItem_Entity_46_2" class="activ"><a href="#">State</a></li>
+                        <li id="visibilityItem_Entity_46_3" class="activ"><a href="#">Assignee</a></li>
+                        <li id="visibilityItem_Entity_46_4" class="activ"><a href="#">Reporter</a></li>
+                        <li id="openInNewWindow" class=""><a href="#">Open issue in new window</a></li>
+                        <li>Issues per page
+                            <select id="issuesPerPageSelect">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100" selected="selected">100</option>
+                            </select>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sort"><a href="">Sort by</a>
+                    <ul class="dromMenu">
+                        <li class="active"><a href="#">Updated</a></li>
+                        <li class="active"><a href="#">Priority</a></li>
+                        <li class="active"><a href="#">Type</a></li>
+                        <li class=""><a href="#">State</a></li>
+                        <li class=""><a href="#">Assignee</a></li>
+                        <li class=""><a href="#">Reporter</a></li>
+                        <li class=""><a href="#">Subsystem</a></li>
+                        <li class=""><a href="#">Affected Versions</a></li>
+                        <li class=""><a href="#">Fixed in Versions</a></li>
+                        <li class=""><a href="#">Issue id</a></li>
+                        <li class=""><a href="#">Updated by</a></li>
+                        <li class=""><a href="#">Project</a></li>
+                        <li class=""><a href="#">Created</a></li>
+                        <li class=""><a href="#">Resolved</a></li>
+                        <li class="button"><a href="#">apply</a></li>
+                    </ul>
+                </li>
+                <li class="actions"><a href="">Actions</a>
+                    <ul class="dropMenu">
+                        <li class=""><a href="#">Assign to me</a></li>
+                        <li class=""><a href="#">Assign to</a></li>
+                        <li class=""><a href="#">Mark as duplicate</a></li>
+                        <li class=""><a href="#">Resolve</a></li>
+                        <li class=""><a href="#">Reopen</a></li>
+                        <li class=""><a href="#">In progress</a></li>
+                    </ul>
+                </li>
+                <li class="resolve"><a class="just" href="">Resolve</a><a class="other" href="#">.</a></li>
+                <li class="view">
+                    <ul>
+                        <li class="title"><a href=""><span>.</span></a></li>
+                        <li class="regular activ"><a href=""><span>.</span></a></li>
+                        <li class="full"><a href=""><span>.</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="newIssue">
+                <div class="checkAll"><a class="checkbox empty" href="">.</a></div>
+                <a href="">New Issue</a>
+                <a href="#" class="help">.</a>
+            </div>
+        </div>
+
+
+        <div id="issuesContent">
+
+
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><a class="checkbox empty" href="">.</a></td>
+                    <td class="num"><h2><a href="">CH-1404</a></h2></td>
+                    <td>
+                        <h2><a href="">Filters, tags and saved searches blocks should look similar. Recent searches should be moved to somewhere near the search field.</a></h2>
+                        <div class="description">
+                            What I get in result is that the comment is actually added to TW-4258.
+                            <p>What I get in result is that the comment is actually added to TW-4258 and the page reloads with the browser's title corresponding to TW-4258</p>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: konstantin solomatov</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active" title="voters">35</div></td>
+                    <td class="ico watchers"><div class="disabled" title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal disabled">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark disabled">Bug<span></span></div></td>
+                    <td class="attributes">
+                        <div class="attribute dark">Submitted<span></span></div>
+                        <span class="combobox bind">
+                            <input size="20" value="Submitted"/>
+                            <a href="">.</a>
+                            <ul class="comboboxList">
+                                <li class="Submitted active">Submitted</li>
+                                <li class="New">New</li>
+                                <li class="Open">Open</li>
+                                <li class="In Progress">In Progress</li>
+                                <li class="Can't Reproduce">Can't Reproduce</li>
+                                <li class="Duplicate">Duplicate</li>
+                             </ul>
+                        </span>
+                    </td>
+                    <td class="attributes"><div class="attribute dark">Duplicates : <a class="inline" href="">TW-505</a><span></span></div></td>
+                    <td class="attributes"><div class="attribute dark disabled">konstantin solomatov<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Add comment<span></span></div></td>
+                    <td class="date light"><span class="attachment">.</span>Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><a class="checkbox empty" href="">.</a></td>
+                    <td class="num"><h2><a href="">CH-1404</a></h2></td>
+                    <td>
+                        <h2><a href="">Filters, tags and saved searches blocks should look similar. Recent searches should be moved to somewhere near the search field.</a></h2>
+                        <div class="description">
+                            What I get in result is that the comment is actually added to TW-4258.
+                            <p>What I get in result is that the comment is actually added to TW-4258 and the page reloads with the browser's title corresponding to TW-4258</p>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: konstantin solomatov</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active" title="voters">35</div></td>
+                    <td class="ico watchers"><div class="disabled" title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal disabled">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark disabled">Bug<span></span></div></td>
+                    <td class="attributes">
+                        <div class="attribute dark">Submitted<span></span></div>
+                        <span class="combobox bind">
+                            <input size="20" value="Submitted"/>
+                            <a href="">.</a>
+                            <ul class="comboboxList">
+                                <li class="Submitted active">Submitted</li>
+                                <li class="New">New</li>
+                                <li class="Open">Open</li>
+                                <li class="In Progress">In Progress</li>
+                                <li class="Can't Reproduce">Can't Reproduce</li>
+                                <li class="Duplicate">Duplicate</li>
+                             </ul>
+                        </span>
+                    </td>
+                    <td class="attributes"><div class="attribute dark">Duplicates : <a class="inline" href="">TW-505</a><span></span></div></td>
+                    <td class="attributes"><div class="attribute dark disabled">konstantin solomatov<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Add comment<span></span></div></td>
+                    <td class="date light"><span class="attachment">.</span>Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><a class="checkbox empty" href="">.</a></td>
+                    <td class="num"><h2><a href="">CH-1404</a></h2></td>
+                    <td>
+                        <h2><a href="">Filters, tags and saved searches blocks should look similar. Recent searches should be moved to somewhere near the search field.</a></h2>
+                        <div class="description">
+                            What I get in result is that the comment is actually added to TW-4258.
+                            <p>What I get in result is that the comment is actually added to TW-4258 and the page reloads with the browser's title corresponding to TW-4258</p>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: konstantin solomatov</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active" title="voters">35</div></td>
+                    <td class="ico watchers"><div class="disabled" title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal disabled">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark disabled">Bug<span></span></div></td>
+                    <td class="attributes">
+                        <div class="attribute dark">Submitted<span></span></div>
+                        <span class="combobox bind">
+                            <input size="20" value="Submitted"/>
+                            <a href="">.</a>
+                            <ul class="comboboxList">
+                                <li class="Submitted active">Submitted</li>
+                                <li class="New">New</li>
+                                <li class="Open">Open</li>
+                                <li class="In Progress">In Progress</li>
+                                <li class="Can't Reproduce">Can't Reproduce</li>
+                                <li class="Duplicate">Duplicate</li>
+                             </ul>
+                        </span>
+                    </td>
+                    <td class="attributes"><div class="attribute dark">Duplicates : <a class="inline" href="">TW-505</a><span></span></div></td>
+                    <td class="attributes"><div class="attribute dark disabled">konstantin solomatov<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Add comment<span></span></div></td>
+                    <td class="date light"><span class="attachment">.</span>Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><a class="checkbox empty" href="">.</a></td>
+                    <td class="num"><h2><a href="">CH-1404</a></h2></td>
+                    <td>
+                        <h2><a href="">Filters, tags and saved searches blocks should look similar. Recent searches should be moved to somewhere near the search field.</a></h2>
+                        <div class="description">
+                            What I get in result is that the comment is actually added to TW-4258.
+                            <p>What I get in result is that the comment is actually added to TW-4258 and the page reloads with the browser's title corresponding to TW-4258</p>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: konstantin solomatov</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active" title="voters">35</div></td>
+                    <td class="ico watchers"><div class="disabled" title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal disabled">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark disabled">Bug<span></span></div></td>
+                    <td class="attributes">
+                        <div class="attribute dark">Submitted<span></span></div>
+                        <span class="combobox bind">
+                            <input size="20" value="Submitted"/>
+                            <a href="">.</a>
+                            <ul class="comboboxList">
+                                <li class="Submitted active">Submitted</li>
+                                <li class="New">New</li>
+                                <li class="Open">Open</li>
+                                <li class="In Progress">In Progress</li>
+                                <li class="Can't Reproduce">Can't Reproduce</li>
+                                <li class="Duplicate">Duplicate</li>
+                             </ul>
+                        </span>
+                    </td>
+                    <td class="attributes"><div class="attribute dark">Duplicates : <a class="inline" href="">TW-505</a><span></span></div></td>
+                    <td class="attributes"><div class="attribute dark disabled">konstantin solomatov<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Add comment<span></span></div></td>
+                    <td class="date light"><span class="attachment">.</span>Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><a class="checkbox empty" href="">.</a></td>
+                    <td class="num"><h2><a href="">CH-1404</a></h2></td>
+                    <td>
+                        <h2><a href="">Filters, tags and saved searches blocks should look similar. Recent searches should be moved to somewhere near the search field.</a></h2>
+                        <div class="description">
+                            What I get in result is that the comment is actually added to TW-4258.
+                            <p>What I get in result is that the comment is actually added to TW-4258 and the page reloads with the browser's title corresponding to TW-4258</p>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: konstantin solomatov</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active" title="voters">35</div></td>
+                    <td class="ico watchers"><div class="disabled" title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal disabled">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark disabled">Bug<span></span></div></td>
+                    <td class="attributes">
+                        <div class="attribute dark">Submitted<span></span></div>
+                        <span class="combobox bind">
+                            <input size="20" value="Submitted"/>
+                            <a href="">.</a>
+                            <ul class="comboboxList">
+                                <li class="Submitted active">Submitted</li>
+                                <li class="New">New</li>
+                                <li class="Open">Open</li>
+                                <li class="In Progress">In Progress</li>
+                                <li class="Can't Reproduce">Can't Reproduce</li>
+                                <li class="Duplicate">Duplicate</li>
+                             </ul>
+                        </span>
+                    </td>
+                    <td class="attributes"><div class="attribute dark">Duplicates : <a class="inline" href="">TW-505</a><span></span></div></td>
+                    <td class="attributes"><div class="attribute dark disabled">konstantin solomatov<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Add comment<span></span></div></td>
+                    <td class="date light"><span class="attachment">.</span>Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+    <!--------- new block Start -------->
+        <div class="result bottom">
+            <div class="page">1 - 50 of 110 <a href="">&raquo;</a></div>
+        </div>
+        <!--------- new block Start -------->
+        </div>
+
+
+    </div>
+
+      <div class="footer">
+            <ul class="rss">
+                <li class="first"><a href="">RSS</a> issues</li>
+                <li><a href="">RSS</a> comment</li>
+            </ul>
+            <ul>
+                <li class="first"><a href="">JetBrains Charizma</a> Beta (build 808)</li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Send your Feedback</a></li>
+            </ul>
+        </div>
+      </body>
+
+    </html>

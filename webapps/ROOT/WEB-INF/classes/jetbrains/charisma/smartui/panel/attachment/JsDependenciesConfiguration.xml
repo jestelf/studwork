@@ -1,0 +1,93 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.panel.attachment.AddAttachmentDialog" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.panel.attachment.AddAttachmentDialog</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/panel/attachment/AddAttachmentDialog.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.panel.attachment.Attachment" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.panel.attachment.Attachment</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/panel/attachment/Attachment.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.panel.attachment.AttachmentThumbnail" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.panel.attachment.AttachmentThumbnail</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/panel/attachment/AttachmentThumbnail.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.popup.Popup</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.panel.attachment.UpdateAttachmentDialog" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.panel.attachment.UpdateAttachmentDialog</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/panel/attachment/UpdateAttachmentDialog.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+</beans>

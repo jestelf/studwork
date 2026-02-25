@@ -1,0 +1,20 @@
+<beans>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminProjectResource" class="jetbrains.charisma.smartadmin.rest.AdminProjectResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminProjectProjectVersionResource" class="jetbrains.charisma.smartadmin.rest.AdminProjectProjectVersionResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminProjectProjectBuildResource" class="jetbrains.charisma.smartadmin.rest.AdminProjectProjectBuildResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminProjectProjectSubsystemResource" class="jetbrains.charisma.smartadmin.rest.AdminProjectProjectSubsystemResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminProjectProjectAssigneeResource" class="jetbrains.charisma.smartadmin.rest.AdminProjectProjectAssigneeResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminUserResource" class="jetbrains.charisma.smartadmin.rest.AdminUserResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminStatisticsResource" class="jetbrains.charisma.smartadmin.rest.AdminStatisticsResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminIssueLinkTypeResource" class="jetbrains.charisma.smartadmin.rest.AdminIssueLinkTypeResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminRoleResource" class="jetbrains.charisma.smartadmin.rest.AdminRoleResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminGroupResource" class="jetbrains.charisma.smartadmin.rest.AdminGroupResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminGroupGroupResource" class="jetbrains.charisma.smartadmin.rest.AdminGroupGroupResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminCustomfieldFieldResource" class="jetbrains.charisma.smartadmin.rest.AdminCustomfieldFieldResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminCustomfieldTypeResource" class="jetbrains.charisma.smartadmin.rest.AdminCustomfieldTypeResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminCustomfieldBundleResource" class="jetbrains.charisma.smartadmin.rest.AdminCustomfieldBundleResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.AdminProjectProjectCustomfieldResource" class="jetbrains.charisma.smartadmin.rest.AdminProjectProjectCustomfieldResource"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.RoleByNameRestStringReader" class="jetbrains.charisma.smartadmin.rest.RoleByNameRestStringReader"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.GroupByNameRestStringReader" class="jetbrains.charisma.smartadmin.rest.GroupByNameRestStringReader"></bean>
+  <bean id="jetbrains.charisma.smartadmin.rest.ProjectByIdNotStrictRestStringReader" class="jetbrains.charisma.smartadmin.rest.ProjectByIdNotStrictRestStringReader"></bean>
+</beans>

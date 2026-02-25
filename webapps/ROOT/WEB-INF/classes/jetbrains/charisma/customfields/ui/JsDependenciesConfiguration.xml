@@ -1,0 +1,132 @@
+<beans>
+  <bean id="jetbrains.charisma.customfields.ui.ContentProjectCFDialog" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.customfields.ui.ContentProjectCFDialog</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/customfields/ui/ContentProjectCFDialog.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.ui.CustomFieldsConfiguration" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.customfields.ui.CustomFieldsConfiguration</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/customfields/ui/CustomFieldsConfiguration.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.TabPanel</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.ui.CustomFieldsList" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.customfields.ui.CustomFieldsList</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/customfields/ui/CustomFieldsList.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.ui.EditProjectCustomFields" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.customfields.ui.EditProjectCustomFields</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/customfields/ui/EditProjectCustomFields.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.ui.NewCustomFieldDialog" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.customfields.ui.NewCustomFieldDialog</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/customfields/ui/NewCustomFieldDialog.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.ui.ProjectCustomFieldDialog" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.customfields.ui.ProjectCustomFieldDialog</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/customfields/ui/ProjectCustomFieldDialog.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+</beans>

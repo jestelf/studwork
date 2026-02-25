@@ -1,0 +1,41 @@
+<beans>
+  <bean id="TeamcityIntegration" class="jetbrains.charisma.teamcity.persistence.TeamcityIntegration_RulePackage">
+    <property name="rules">
+      <list>
+        <ref bean="TeamcityIntegration_watchNewSuccessfulBuild"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="TeamcityIntegration_watchNewSuccessfulBuild" class="jetbrains.charisma.teamcity.persistence.TeamcityIntegration_watchNewSuccessfulBuild_Rule">
+    <property name="rulePackage">
+      <ref bean="TeamcityIntegration"/>
+    </property>
+  </bean>
+  <bean id="watchNewSuccessfulBuildOnScheduleJob" class="jetbrains.mps.businessRules.runtime.impl.RuleJobImpl">
+    <property name="rule">
+      <ref bean="TeamcityIntegration_watchNewSuccessfulBuild"/>
+    </property>
+    <property name="ruleEngine">
+      <ref bean="ruleEngine"/>
+    </property>
+  </bean>
+  <bean id="watchNewSuccessfulBuildOnScheduleDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+    <property name="targetObject">
+      <ref bean="watchNewSuccessfulBuildOnScheduleJob"/>
+    </property>
+    <property name="targetMethod">
+      <value>execute</value>
+    </property>
+    <property name="concurrent">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="watchNewSuccessfulBuildCronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+    <property name="cronExpression">
+      <value>0 * * * * ?</value>
+    </property>
+    <property name="jobDetail">
+      <ref bean="watchNewSuccessfulBuildOnScheduleDetail"/>
+    </property>
+  </bean>
+</beans>

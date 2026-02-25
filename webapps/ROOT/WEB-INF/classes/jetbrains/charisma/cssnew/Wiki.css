@@ -1,0 +1,15 @@
+.wiki.picture {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.wiki.table {
+  background-color: green;
+  padding-right: 0;
+  
+}
+
+.wiki.table td {
+  background-color: red;
+}
+

@@ -1,0 +1,47 @@
+<beans>
+  <bean id="jetbrains.charisma.customfields.simple.readOnly.ReadOnlyValueMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.customfields.simple.readOnly.ReadOnlyValueImpl"></bean>
+    </property>
+    <property name="superType">
+      <value>FieldValue</value>
+    </property>
+    <property name="type">
+      <value>ReadOnlyValue</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>int</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>long</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>string</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,33 @@
+ul.underline {
+  margin: 0;
+  padding: 0;
+  
+  
+  
+  
+}
+
+ul.underline li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  z-index: 2;
+  color: #19466E;
+}
+
+ul.underline li.type1, ul.underline li.keyword {
+  border-bottom: solid 2px gray;
+  height: 2px;
+}
+
+ul.underline li.type2, ul.underline li.field {
+  border-bottom: solid 2px black;
+  height: 2px;
+}
+
+ul.underline li.type3, ul.underline li.error {
+  border-bottom: dotted 2px #CC0000;
+  height: 2px;
+}
+

@@ -1,0 +1,91 @@
+.calandar-ico {
+  margin: 0;
+  padding: 0 8px 3px;
+  position: absolute;
+  background: #fff url("${getClasspathUri("images/icoCalendar.gif")}") no-repeat 50% 55%;
+  border: none!important;
+  cursor: pointer;
+  color: white;
+}
+
+.calendar-container {
+  border: 2px solid #eee;
+  border-bottom-width: 3px;
+  background: #fff;
+  position: absolute;
+  z-index: 7;
+}
+
+.popup {
+  position: absolute;
+  z-index: 102;
+}
+
+.calendar {
+  border: 1px solid #b0c7e1;
+  border-bottom-width: 2px;
+  border-collapse: collapse;
+  font-size: 11px;
+  line-height: 12px;
+}
+
+.calendar td {
+  padding: 3px;
+  text-align: center;
+}
+
+.calendar .days td {
+  cursor: pointer;
+}
+
+.calendar .days td:hover {
+  background-color: #d5e4f8;
+}
+
+.calendar .title {
+  font-weight: bold;
+  background-color: #8cbef6;
+  color: white;
+  height: 21px;
+  padding-top: 1px;
+}
+
+.calendar .navigation {
+  font-weight: bold;
+}
+
+.calendar .button {
+  font-size: 13px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.calendar .button .push {
+  padding: 1px 0 3px;
+  margin: 2px;
+  min-width: 17px;
+  background-color: #d4d0c8;
+  border: 1px solid #808080;
+  border-top-color: white;
+  border-left-color: white;
+}
+
+.calendar .weekend {
+  background-color: #f1f7ff;
+}
+
+.calendar .otherDays {
+  color: #999;
+}
+
+.calendar .selected {
+  background-color: #d5e4f8;
+}
+
+.calendar .today {
+  background-color: #fff5bd;
+  border: 1px solid #e5debb;
+  border-bottom: 0;
+  border-right: 0;
+}
+

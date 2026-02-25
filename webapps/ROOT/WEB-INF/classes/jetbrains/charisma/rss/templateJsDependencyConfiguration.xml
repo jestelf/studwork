@@ -1,0 +1,24 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.rss.IssueRssDescription_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueRssDescription</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.rss.IssueSingleRssComment_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueSingleRssComment</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+</beans>

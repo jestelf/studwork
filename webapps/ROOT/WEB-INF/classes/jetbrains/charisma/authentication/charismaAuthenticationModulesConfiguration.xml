@@ -1,0 +1,4 @@
+<beans>
+  <bean id="charismaAuthenticationModule" class="jetbrains.charisma.authentication.CharismaAuthenticationModule"></bean>
+  <bean id="jiraAuthenticationModule" class="jetbrains.charisma.authentication.JiraAuthenticationModule"></bean>
+</beans>

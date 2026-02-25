@@ -1,0 +1,7 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.screenshot.JavaPluginFrameInstall_RootHtmlTemplateController" class="jetbrains.charisma.smartui.screenshot.JavaPluginFrameInstall_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,222 @@
+.toggleComments {
+  text-align: right;
+  margin: 0 3px 0 8px;
+  
+  
+  
+  
+}
+
+.toggleComments .block {
+  display: inline-block;
+  background: url("${getClasspathUri("smartui/img/default/comment.png")}") no-repeat right -127px;
+  width: 100%;
+}
+
+.toggleComments .toggleCommentsAnchor, .toggleComments .disabled {
+  height: 29px;
+  padding-top: 2px;
+  margin-left: -4px;
+  color: #106cc5;
+  text-align: center;
+  cursor: pointer;
+  background: url("${getClasspathUri("smartui/img/default/comment.png")}") no-repeat 0 -42px;
+}
+
+.toggleComments .comments {
+  font-size: 115%;
+  display: inline-block;
+  padding: 0 2px;
+  margin-top: -1px;
+  color: #000;
+  line-height: 20px;
+  
+}
+
+.toggleComments .comments strong {
+  font-weight: bold;
+}
+
+.toggleComments .disabled {
+  cursor: text;
+  
+}
+
+.toggleComments .disabled .comments {
+  background: url("${getClasspathUri("smartui/img/default/comment.png")}") no-repeat 0 -222px;
+  padding-left: 5px;
+}
+
+.issueContainer .commWrapper {
+  width: 36px;
+  float: right;
+}
+
+.toggleComments:hover {
+  
+  
+  
+}
+
+.toggleComments:hover .block {
+  background-position: right -160px;
+}
+
+.toggleComments:hover .toggleCommentsAnchor, .toggleComments:hover .disabled {
+  background-position: 0 0;
+}
+
+.toggleComments:hover .comments {
+  color: #277acb;
+}
+
+.commentsIssue {
+  margin: 10px 0 0 0;
+  padding: 10px 10px 0;
+  border: solid 5px #d7d7d7;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  
+}
+
+.commentsIssue .combobox input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.issueWikiHelp {
+  float: right;
+  padding: 0;
+  font-size: 85%;
+}
+
+.fsi-layout .commentsIssue {
+  margin: 0;
+  border-width: 1px;
+  border-top-width: 0;
+}
+
+.issuePage .commentsIssue {
+  margin: 0;
+  border: solid 1px #d7dcde;
+  border-top: none;
+}
+
+.commentsIssue .commentsScroll {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.fsi-layout .commentsScroll {
+  border: 0;
+}
+
+.commentsIssue .commentsScroll > .tableComments {
+  width: 100%;
+}
+
+.commentsIssue table.tableComments tr.selected {
+  background-color: #e9f3fd;
+  border: 0;
+}
+
+.commentsIssue table.tableComments td {
+  padding: 1em 0.8em 1em 0.8em;
+  line-height: 1.4em;
+  vertical-align: top;
+  font-family: tahoma, verdana, arial, sans-serif;
+  font-size: 85%;
+  border-bottom: solid 1px #d7dcde;
+}
+
+.commentAuthor {
+  width: 15%;
+}
+
+.showAllCommentsNote {
+  padding-bottom: 0.25em;
+  border-bottom: 2px solid #f0f2f3;
+}
+
+.commentsIssue table.tableComments td.first {
+  width: 7%;
+  padding-right: 0;
+}
+
+.commentsIssue table.tableComments td.first > div {
+  position: relative;
+}
+
+.commentsIssue table.tableComments td.comment {
+  width: auto;
+  font-size: 100%;
+}
+
+.commentsIssue table.tableComments td .light {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 85%;
+}
+
+.comment .actions {
+  margin: 0.4em 0 0 0.3em;
+  padding: 0 .5em 0.2em 0.1em;
+  background: url("${getClasspathUri("smartui/img/bgActionsCommentLeft.gif")}") no-repeat left .35em;
+}
+
+.comment .actions li {
+  margin: 0;
+  display: inline;
+  padding: 0 .38em .2em .3em;
+  font-size: 95%;
+  list-style: none;
+  background: url("${getClasspathUri("smartui/img/bgProperties.gif")}") no-repeat right 0.3em;
+}
+
+.comment .actions .last {
+  padding-left: .4em;
+  background: url("${getClasspathUri("smartui/img/bgActionsCommentRight.gif")}") no-repeat right .25em!important;
+}
+
+.comment .actions a {
+  margin: 0 .1em;
+  font-size: 90%;
+  border-bottom: dotted 1px #6699cc;
+}
+
+.commentsIssue table.tableComments td ul.actions li a:hover {
+  border-bottom: none;
+}
+
+.visible {
+  margin: 1em 0 0 0;
+  border-bottom: none;
+  color: #9EA1A5;
+  font-style: italic;
+  font-size: 85%;
+  padding-left: 12px;
+  background: url("${getClasspathUri("smartui/img/default/arrows-v.png")}") no-repeat 0 -357px;
+}
+
+.comment .tableCommentText {
+  table-layout: fixed;
+  width: 100%;
+  *width: 97%;
+}
+
+.permalink {
+  text-align: right;
+  float: right;
+  display: block;
+  font-size: 85%;
+  margin-left: 5px;
+}
+
+.commentsIssue table.tableComments td.comment table.tableCommentText td {
+  font-size: 100%;
+  border-bottom: none;
+  padding: 0;
+}
+

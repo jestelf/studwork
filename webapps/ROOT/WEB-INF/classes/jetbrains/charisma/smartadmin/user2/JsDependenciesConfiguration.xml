@@ -1,0 +1,177 @@
+<beans>
+  <bean id="jetbrains.charisma.smartadmin.user2.CreateUserDialog" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartadmin.user2.CreateUserDialog</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartadmin/user2/CreateUserDialog.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartadmin.user2.EditUser" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartadmin.user2.EditUser</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartadmin/user2/EditUser.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.TabPanel</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartadmin.user2.EditUserGroups" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartadmin.user2.EditUserGroups</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartadmin/user2/EditUserGroups.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartadmin.user2.EditUserOwnRoles" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartadmin.user2.EditUserOwnRoles</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartadmin/user2/EditUserOwnRoles.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartadmin.user2.Users" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartadmin.user2.Users</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartadmin/user2/Users.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.HTMLInputElement_extension</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartadmin.user2.UsersList" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartadmin.user2.UsersList</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartadmin/user2/UsersList.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.popup.Popup</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartadmin.user2.UsersPager" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartadmin.user2.UsersPager</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartadmin/user2/UsersPager.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>Webr.Event</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartadmin.user2.__UsersList" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartadmin.user2.__UsersList</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartadmin/user2/__UsersList.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.popup.Popup</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+</beans>

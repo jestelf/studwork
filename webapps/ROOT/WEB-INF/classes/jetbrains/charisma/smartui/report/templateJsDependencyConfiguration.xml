@@ -1,0 +1,248 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.report.Report_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Report</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.ReportReady_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ready</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.ReportCalculating_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>calculating</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.ReportCollapsed_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>collapsed</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.ReportTooBig_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>toobig</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.report.Report</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.report.Progress_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Progress</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.report.Cell_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Cell</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.report.IssueReports_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueReports</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.NoReportsHint_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>NoReportsHint</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.EditReportDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ed</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.Report_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>r</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.report.IssueReports</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.report.NoReportsHint_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>NoReportsHint</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.report.ReportCollapsed_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ReportCollapsed</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.ReportTitle_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ttl</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.report.ReportReady_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ReportReady</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.ReportTitle_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ttl</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.Cell_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>c</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.report.ReportTitle_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ReportTitle</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.report.ReportCalculating_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ReportCalculating</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.ReportTitle_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ReportTitle</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.report.ReportCalculating</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.report.EditReportDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditReportDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.report.EditReportDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.report.ReportTooBig_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ReportTooBig</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.ReportTitle_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ttl</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+</beans>

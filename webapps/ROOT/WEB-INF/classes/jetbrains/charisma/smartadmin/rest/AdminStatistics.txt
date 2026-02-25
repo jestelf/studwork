@@ -1,0 +1,27 @@
+h1./admin/statistics
+h2. GET /admin/statistics/telemetry
+Get telemetry parameters of YouTrack server
+{panel}{{GET /rest/admin/statistics/telemetry}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/statistics/telemetry{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/statistics/browserUsage
+Get browser usage statistics for the YouTrack server
+{panel}{{GET /rest/admin/statistics/browserUsage}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/statistics/browserUsage{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

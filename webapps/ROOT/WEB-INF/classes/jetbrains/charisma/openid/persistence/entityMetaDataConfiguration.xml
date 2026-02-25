@@ -1,0 +1,528 @@
+<beans>
+  <bean id="jetbrains.charisma.openid.persistence.AssociationTypeMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.openid.persistence.AssociationTypeImpl"></bean>
+    </property>
+    <property name="type">
+      <value>AssociationType</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>__ENUM_CONST_NAME__</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>isPrivate</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>type</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.openid.persistence.OpenIdUserDataMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.openid.persistence.OpenIdUserDataImpl"></bean>
+    </property>
+    <property name="superType">
+      <value>BaseUserData</value>
+    </property>
+    <property name="type">
+      <value>OpenIdUserData</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>login</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>opUrl</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>openId</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>user</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.openid.persistence.OpenIdUserData.opUrl"/>
+        <ref bean="jetbrains.charisma.authentication.BaseUserData.user"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+    <property name="requiredProperties">
+      <list>
+        <value>openId</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.openid.persistence.OpenIdAssotiationMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.openid.persistence.OpenIdAssotiationImpl"></bean>
+    </property>
+    <property name="type">
+      <value>OpenIdAssotiation</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>expdate</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>handle</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>mackey</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>opUrl</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>type</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.openid.persistence.OpenIdAssotiation.opUrl"/>
+        <ref bean="jetbrains.charisma.openid.persistence.OpenIdAssotiation.type"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+    <property name="requiredProperties">
+      <list>
+        <value>expdate</value>
+        <value>mackey</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.openid.persistence.OpenIdNonceMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.openid.persistence.OpenIdNonceImpl"></bean>
+    </property>
+    <property name="type">
+      <value>OpenIdNonce</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>created</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>nonce</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>opUrl</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.openid.persistence.OpenIdNonce.opUrl"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.openid.persistence.OpenIdOpURLMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.openid.persistence.OpenIdOpURLImpl"></bean>
+    </property>
+    <property name="type">
+      <value>OpenIdOpURL</value>
+    </property>
+    <property name="ownIndexes">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.IndexImpl">
+          <property name="fields">
+            <list>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>url</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>OpenIdOpURL</value>
+                </property>
+                <property name="property">
+                  <value>true</value>
+                </property>
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>url</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.openid.persistence.OpenIdProviderDescriptorMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.openid.persistence.OpenIdProviderDescriptorImpl"></bean>
+    </property>
+    <property name="type">
+      <value>OpenIdProviderDescriptor</value>
+    </property>
+    <property name="ownIndexes">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.IndexImpl">
+          <property name="fields">
+            <list>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>id</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>OpenIdProviderDescriptor</value>
+                </property>
+                <property name="property">
+                  <value>true</value>
+                </property>
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>id</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.openid.persistence.OpenIdSettingsMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.openid.persistence.OpenIdSettingsImpl"></bean>
+    </property>
+    <property name="type">
+      <value>OpenIdSettings</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>enabled</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>enabledDescriptors</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.openid.persistence.OpenIdSettings.enabledDescriptors"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.openid.persistence.OpenIdSettings.enabledDescriptors" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_n</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="OpenIdSettings.enabledDescriptors-OpenIdProviderDescriptor"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.openid.persistence.OpenIdProviderDescriptorMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>enabledDescriptors</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.openid.persistence.OpenIdAssotiation.type" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="OpenIdAssotiation.type-AssociationType"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.openid.persistence.AssociationTypeMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>type</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.openid.persistence.OpenIdUserData.opUrl" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="OpenIdUserData.opUrl-OpenIdOpURL"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.openid.persistence.OpenIdOpURLMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>opUrl</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.openid.persistence.OpenIdAssotiation.opUrl" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="OpenIdAssotiation.opUrl-OpenIdOpURL"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.openid.persistence.OpenIdOpURLMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>opUrl</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.openid.persistence.OpenIdNonce.opUrl" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="OpenIdNonce.opUrl-OpenIdOpURL"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.openid.persistence.OpenIdOpURLMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>opUrl</value>
+    </property>
+  </bean>
+  <bean id="OpenIdSettings.enabledDescriptors-OpenIdProviderDescriptor" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="OpenIdAssotiation.type-AssociationType" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="OpenIdUserData.opUrl-OpenIdOpURL" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="OpenIdAssotiation.opUrl-OpenIdOpURL" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="OpenIdNonce.opUrl-OpenIdOpURL" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,74 @@
+.cf-edit {
+  overflow: visible!important;
+  position: relative;
+  z-index: 19;
+  
+  
+  
+  
+}
+
+.cf-edit .shader {
+  display: none;
+}
+
+.cf-edit .clearValue {
+  display: none;
+}
+
+.cf-edit .attribute-name {
+  display: inline-block;
+}
+
+.cf-edit input {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+}
+
+.cf-int .attribute-name {
+  white-space: nowrap;
+}
+
+.cf-tbl {
+  width: auto!important;
+  margin: 0 auto;
+  
+}
+
+.cf-tbl .cf-clearValue {
+  vertical-align: middle;
+}
+
+.cf-input {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+}
+
+.cf-input-container {
+  width: 0;
+}
+
+.clearValue {
+  display: block;
+  width: 7px;
+  height: 7px;
+  padding: 1px;
+  margin-right: 2px;
+  margin-top: 2px;
+  border: 1px solid transparent;
+  background: url("${getClasspathUri("smartui/img/edit-controls.png")}") no-repeat 1px -119px;
+}
+
+.clearValue:hover {
+  background-position: 1px -145px;
+  text-decoration: none;
+  border-color: #084b96;
+}
+
+*:first-child+html .cfChooserDlg {
+  width: 480px;
+}
+

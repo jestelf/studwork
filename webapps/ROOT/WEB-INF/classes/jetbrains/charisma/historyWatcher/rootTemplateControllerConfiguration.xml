@@ -1,0 +1,7 @@
+<beans>
+  <bean id="jetbrains.charisma.historyWatcher.HistoryWatcher_RootHtmlTemplateController" class="jetbrains.charisma.historyWatcher.HistoryWatcher_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,8 @@
+                 a {
+  color: #084b96;
+}
+
+body {
+  background: url("${getClasspathUri("smartui/img/default/top-bg.png")}") repeat-x 0 0;
+}
+

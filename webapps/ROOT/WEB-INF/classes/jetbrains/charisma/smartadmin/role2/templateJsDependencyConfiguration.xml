@@ -1,0 +1,67 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.role2.EditRole_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditRole</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.admin2.AdminBreadcrumb_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>AdminBreadcrumb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.role2.Permission_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Permission</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.role2.EditRole</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.role2.Roles_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Roles</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.role2.Roles</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.role2.Permission_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Permission</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.role2.Permission</value>
+      </list>
+    </property>
+  </bean>
+</beans>

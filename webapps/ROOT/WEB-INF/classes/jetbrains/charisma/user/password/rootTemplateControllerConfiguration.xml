@@ -1,0 +1,7 @@
+<beans>
+  <bean id="jetbrains.charisma.user.password.ChangePassword_RootHtmlTemplateController" class="jetbrains.charisma.user.password.ChangePassword_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+</beans>

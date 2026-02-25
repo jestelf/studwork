@@ -1,0 +1,7 @@
+<beans>
+  <bean id="StaticHtmlRequestProcessor" class="jetbrains.mps.webr.runtime.staticHtml.StaticHtmlRequestProcessor">
+    <property name="dependentRequestProcessors">
+      <map></map>
+    </property>
+  </bean>
+</beans>

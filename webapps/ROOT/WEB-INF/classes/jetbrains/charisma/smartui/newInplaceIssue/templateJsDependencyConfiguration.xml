@@ -1,0 +1,38 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.newInplaceIssue.NewIssue_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>NewIssue</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.content.CommandsToolbarPart_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>nictb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.inplaceIssueEdit.EditIssue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ei</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+</beans>

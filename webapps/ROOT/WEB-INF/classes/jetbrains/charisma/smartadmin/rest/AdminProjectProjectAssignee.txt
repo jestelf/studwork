@@ -1,0 +1,52 @@
+h1./admin/project/{project}/assignee
+h2. GET /admin/project/\{project\}/assignee
+Get project assignees
+{panel}{{GET /rest/admin/project/*\{project\}*/assignee}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project/TODO/assignee{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/project/\{project\}/assignee/group
+Get project assignee groups
+{panel}{{GET /rest/admin/project/*\{project\}*/assignee/group}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project/TODO/assignee/group{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/project/\{project\}/assignee/individual
+Get project individual assignees
+{panel}{{GET /rest/admin/project/*\{project\}*/assignee/individual}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project/TODO/assignee/individual{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

@@ -1,0 +1,105 @@
+.content {
+  margin: 0 auto;
+}
+
+.LoginBlock {
+  margin: auto;
+  width: 34em;
+  height: 20.5em;
+  color: white;
+  background: #6a9ec8 url("${getClasspathUri("images/LogIn-back.jpg")}") repeat-x left bottom;
+  background: #9e9995 url("${getClasspathUri("images/LogIn-back-gr.jpg")}") repeat-x left bottom;
+  border: solid 0.5em #FFFFFF;
+  font-weight: normal;
+  margin-top: 10%;
+}
+
+.LoginBlockSmall {
+  margin: auto;
+  width: 34em;
+  height: 5em;
+  color: white;
+  background: #6a9ec8 url("${getClasspathUri("images/LogIn-back.jpg")}") repeat-x left bottom;
+  background: #9e9995 url("${getClasspathUri("images/LogIn-back-gr.jpg")}") repeat-x left bottom;
+  border: solid 0.5em #FFFFFF;
+  font-weight: normal;
+  margin-top: 10%;
+}
+
+.content h1 {
+  margin: 0.8em 1em 1em;
+  font-size: 1.8em;
+}
+
+.content .input {
+  float: left;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.content .label {
+  float: left;
+  clear: left;
+  width: 5.7em;
+  height: 30px;
+  padding-left: 2.5em;
+  font-size: 1.4em;
+}
+
+.Register .label {
+  font-size: 0.85em;
+  width: 10em;
+}
+
+.content .remember {
+  float: left;
+  clear: left;
+  width: 7em;
+  height: 30px;
+  padding-left: 3.2em;
+  font-size: 1.1em;
+}
+
+.inputButton {
+  margin-left: 350px;
+  clear: left;
+}
+
+.content .note {
+  float: left;
+  margin-left: 2.3em;
+  margin-top: 1.5em;
+  width: 32em;
+  font-size: 0.9em;
+  color: #c3d4e1;
+  color: #d2d2d2;
+  background: url("${getClasspathUri("images/note.gif")}") no-repeat left top;
+  background: url("${getClasspathUri("images/note-gr.gif")}") no-repeat left top;
+  padding-left: 20px;
+}
+
+.content .note a {
+  color: inherit;
+  color: #d2d2d2;
+}
+
+.content .advice {
+  clear: left;
+  width: 34em;
+  margin: auto;
+  padding-top: 0;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.content .problem {
+  color: #faa;
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+.error-message {
+  font-size: 10px!important;
+  line-height: 10px!important;
+}
+

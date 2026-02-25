@@ -1,0 +1,164 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.errors.Exception_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Exception</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.errors.ExceptionDump_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ed</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.errors.Exception</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.runtime.js.event.PopupMessage</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.errors.Error_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Error</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.errors.Error</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.errors.ExceptionDump_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ExceptionDump</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.errors.NotFound_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>NotFound</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.errors.NotFound</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.errors.AccessDenied_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AccessDenied</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.errors.AccessDenied</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.errors.Unauthorized_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Unauthorized</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.errors.Unauthorized</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.errors.UnsupportedBrowser_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>UnsupportedBrowser</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.errors.MaintenanceInProgress_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>MaintenanceInProgress</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.errors.MaintenanceInProgress</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.errors.ChromeFrameInstall_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ChromeFrameInstall</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.errors.BadRequest_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>BadRequest</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.errors.BadRequest</value>
+      </list>
+    </property>
+  </bean>
+</beans>

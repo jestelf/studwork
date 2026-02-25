@@ -1,0 +1,1446 @@
+<project name="charisma_internal" default="charisma.clean">
+  <property file="${ant.file}/../charisma.properties" />
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java" />
+    <exclude name=".debug" />
+    <exclude name=".dependencies" />
+  </patternset>
+  <path id="charisma.testing.classpath">
+    <pathelement location="${mps_home}/core/baseLanguage/JDK.mpsarch.jar" />
+    <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+    <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+    <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+    <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+    <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" />
+    <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+    <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+    <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+    <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+    <pathelement location="${mps_home}/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" />
+    <pathelement location="${mps_home}/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+    <pathelement location="${mps_home}/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" />
+    <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+    <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+    <pathelement location="${mps_home}/lib/joda-time/joda-time-1.6.jar" />
+    <pathelement location="${mps_home}/lib/junit4/junit-4.1.jar" />
+    <pathelement location="${mps_home}/lib/log4j/log4j.jar" />
+    <pathelement location="${mps_home}/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+    <pathelement location="${mps_home}/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+    <pathelement location="${mps_home}/platform/jetbrains.mps.ypath.runtime.jar" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/source" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-customfields/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-importer/solutions/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-1.3.jar" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-jaxrpc-1.3.jar" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-saaj-1.3.jar" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-wsdl4j-1.5.1.jar" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/commons-discovery-0.2.jar" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/httpclient.jar" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-ldap-integration/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-openid-integration/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-openid-integration/lib/openid4java/openid4java.jar" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-teamcity-integration/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/youtrack-rest-import/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/lib/annotations/annotations.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/apache-xerces/xerces.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/commons-codec/commons-codec-1.4.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/commons-email/activation.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/commons-email/mail.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/commons-fileupload/commons-fileupload-1.2.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/commons-io/commons-io-1.3.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/freemarker/freemarker-2.3.11.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/htmlparser/htmlparser.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/httpclient/httpclient.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/httpunit/httpunit-1.6.2.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/image-scaling/imagescaling_0_8_3.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/jdom/jdom-1.0.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/jetty-util/jetty-util-6.1.23.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/jnlp/jnlp.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/log4j/log4j-1.2.14.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/mime-util/mime-util-2.1.2.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/nekohtml/nekohtml.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/quartz/commons-collections-3.1.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/quartz/jta.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/quartz/quartz-1.6.0.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/servlet-api/servlet-api.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-api-1.5.8.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-log4j12-1.5.8.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/smack/smack.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/smack/smackx.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/spring/spring-aop.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/spring/spring-beans.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/spring/spring-context.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/spring/spring-core.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/spring/spring-tx.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/stax/stax-1.1.1-dev.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/stax/stax-api-1.0.jar" />
+    <pathelement location="${mps.webr-dnq}/lib/xstream/xstream.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/businessRules/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/BerkeleyDb/je-4.1.7.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-analyzers-2.4.0.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-core-2.4.0.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-snowball-2.4.0.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Trove/trove.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-compress/commons-compress-1.0.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-logging/commons-logging-1.1.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/license/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-api.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-impl.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-xjc.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-client-1.1.4.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-core-1.1.4.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-json-1.1.4.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-server-1.1.4-patched.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jsr173_1.0_api.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jsr311-api-1.1.1.jar" />
+    <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/stateMachine/solutions/jetbrains.mps.baseLanguage.stateMachine.runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/extensions/newWikiRuntime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/runtime/higlighter/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/solutions/jetbrains.mps.webr.rest.client.runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/solutions/jquery/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/solutions/prettify/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/solutions/tickComponent/runtime/classes_gen" />
+    <pathelement location="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" />
+    <pathelement location="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" />
+  </path>
+  <target name="charisma.compile" depends="compile.cycle.charisma" />
+  <target name="charisma.clean" depends="clean.cycle.charisma" />
+  <target name="compile.jetbrains.mps.webr.rest.client" depends="compile.jetbrains.mps.webr.dxml,compile.jetbrains.springframework.configurationInternal,compile.cycle.jetbrains.mps.webr.css,compile.jetbrains.mps.springframework.configuration.runtime,compile.jetbrains.springframework.configuration,compile.jetbrains.mps.webr.uri,compile.jetbrains.mps.webr.rest.client.runtime,compile.jetbrains.mps.webr.baseTemplate,compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.cycle.jetbrains.mps.parser.runtime">
+    <echo>[jetbrains.mps.webr.rest.client] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/clientrest/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.webr.dxmlInternal" depends="compile.jetbrains.mps.webr.dxml,compile.jetbrains.mps.webr.baseTemplate,compile.jetbrains.mps.webr.uri">
+    <echo>[jetbrains.mps.webr.dxmlInternal] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/dxmlInternal/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.wiki.higlighter" depends="compile.jetbrains.mps.webr.wiki.highlighter">
+    <echo>[jetbrains.mps.wiki.higlighter] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/extensions/wiki/languages/higlighter/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.wiki.runtime.highlighter" depends="compile.jetbrains.mps.webr.dxml,compile.jetbrains.springframework.configurationInternal,compile.cycle.jetbrains.mps.webr.css,compile.jetbrains.mps.springframework.configuration.runtime,compile.jetbrains.springframework.configuration,compile.jetbrains.mps.webr.uri,compile.jetbrains.mps.wiki.higlighter,compile.jetbrains.mps.webr.baseTemplate,compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.cycle.jetbrains.mps.parser.runtime,compile.jetbrains.mps.webr.wiki.highlighter">
+    <echo>[jetbrains.mps.wiki.runtime.highlighter] </echo>
+    <path id="classpath.jetbrains.mps.wiki.runtime.highlighter">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps_home}/lib/junit4/junit-4.1.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.ypath.runtime.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/annotations/annotations.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-codec/commons-codec-1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/activation.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/mail.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-fileupload/commons-fileupload-1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-io/commons-io-1.3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/freemarker/freemarker-2.3.11.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/htmlparser/htmlparser.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/httpunit/httpunit-1.6.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/image-scaling/imagescaling_0_8_3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jdom/jdom-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jetty-util/jetty-util-6.1.23.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jnlp/jnlp.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/log4j/log4j-1.2.14.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/mime-util/mime-util-2.1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/servlet-api/servlet-api.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-api-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-log4j12-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smack.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smackx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-aop.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-beans.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-context.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-core.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-tx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-1.1.1-dev.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-api-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/xstream/xstream.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/BerkeleyDb/je-4.1.7.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-analyzers-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-core-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-snowball-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Trove/trove.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-compress/commons-compress-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/higlighter/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" />
+    </path>
+    <path id="source.jetbrains.mps.wiki.runtime.highlighter">
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/higlighter/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/runtime/higlighter/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/webr/runtime/higlighter/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.jetbrains.mps.wiki.runtime.highlighter" />
+      <src refid="source.jetbrains.mps.wiki.runtime.highlighter" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/webr/runtime/higlighter/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/webr/runtime/higlighter/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.webr.rss" depends="compile.jetbrains.mps.webr.dxml,compile.jetbrains.mps.webr.baseTemplate,compile.jetbrains.mps.webr.uri">
+    <echo>[jetbrains.mps.webr.rss] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/rss/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.webr.weblInternal" depends="compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.jetbrains.mps.webr.uri">
+    <echo>[jetbrains.mps.webr.weblInternal] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/weblInternal/classes_gen" />
+  </target>
+  <target name="compile.cycle.jetbrains.mps.parser.runtime" depends="compile.jetbrains.mps.webr.dxmlInternal,compile.jetbrains.mps.webr.rss,compile.jetbrains.mps.webr.weblInternal,compile.jetbrains.mps.webr.dxml,compile.jetbrains.springframework.configurationInternal,compile.cycle.jetbrains.mps.webr.css,compile.jetbrains.mps.webr.runtimeLang,compile.jetbrains.mps.springframework.configuration.runtime,compile.jetbrains.mps.webr.uri.runtime,compile.jetbrains.springframework.configuration,compile.webr_languages,compile.jetbrains.mps.webr.uri,compile.jetbrains.mps.webr.build,compile.jetbrains.mps.baseLanguage.stateMachine,compile.jetbrains.mps.webr.jquery,compile.jetbrains.mps.webr.baseTemplate,compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.jetbrains.mps.webr.javascript.runtime,compile.webr_dnq">
+    <echo>[jetbrains.dnq.internal] [jetbrains.mps.dnq.migration] [jetbrains.mps.parser.runtime] [jetbrains.mps.webr.component] [jetbrains.mps.webr.componentInternal] [jetbrains.mps.webr.entityBrowser] [jetbrains.mps.webr.extjs21] [jetbrains.mps.webr.extjsComponent] [jetbrains.mps.webr.extjsInternal] [jetbrains.mps.webr.htmlComponent] [jetbrains.mps.webr.htmlComponent.runtime] [jetbrains.mps.webr.javascript.stateMachine] [jetbrains.mps.webr.javascript.stateMachine.runtime] [jetbrains.mps.webr.notifications] [jetbrains.mps.webr.notifications.runtime] [jetbrains.mps.webr.rest] [jetbrains.mps.webr.runtime] [jetbrains.mps.webr.userManagement] [jetbrains.mps.webr.userManagement.runtime] [jetbrains.mps.webr.webUnit] [jetbrains.mps.webr.webUnit.runtime] [jetbrains.teamsys.dnq] [jetbrains.teamsys.dnq.refactoring] [jetbrains.teamsys.dnq.runtime] [jetbrains.teamsys.dnq.text.retrieval] [webr.templateLanguage] [webr.templateLanguageInternal] [webr.webl] </echo>
+    <path id="classpath.cycle.jetbrains.mps.parser.runtime">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" />
+      <pathelement location="${mps_home}/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+      <pathelement location="${mps_home}/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps_home}/lib/joda-time/joda-time-1.6.jar" />
+      <pathelement location="${mps_home}/lib/junit4/junit-4.1.jar" />
+      <pathelement location="${mps_home}/lib/log4j/log4j.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.ypath.runtime.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/annotations/annotations.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-codec/commons-codec-1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/activation.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/mail.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-fileupload/commons-fileupload-1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-io/commons-io-1.3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/freemarker/freemarker-2.3.11.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/htmlparser/htmlparser.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/httpunit/httpunit-1.6.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/image-scaling/imagescaling_0_8_3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jdom/jdom-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jetty-util/jetty-util-6.1.23.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jnlp/jnlp.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/log4j/log4j-1.2.14.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/mime-util/mime-util-2.1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/servlet-api/servlet-api.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-api-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-log4j12-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smack.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smackx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-aop.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-beans.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-context.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-core.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-tx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-1.1.1-dev.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-api-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/xstream/xstream.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/BerkeleyDb/je-4.1.7.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-analyzers-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-core-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-snowball-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Trove/trove.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-compress/commons-compress-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/jquery/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/classes_gen" />
+    </path>
+    <path id="source.cycle.jetbrains.mps.parser.runtime">
+      <pathelement location="${mps.webr-dnq}/platform/parser/solutions/runtime/source_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/source" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/resources" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/source_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/source" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/source_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/source_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/source" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/source_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/resource" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/source" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/source_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/source_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/source" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/berkeleyDbEntityStore/src" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/core/src" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/openAPI/src" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/textIndex/src" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/transientDbEntityStore/src" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/dnq/languages/dnqInternal/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/dnq/languages/migration/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/component/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/componentInternal/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/extensions/entityBrowser/languages/entityBrowser/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/extjsComponent/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/extjsInternal/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/htmlComponent/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/javascriptStateMachine/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/notifications/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/rest/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/runtime/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/extensions/userManagement/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/webUnit/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/dnq/languages/dnq/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/dnq/languages/refactoring/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/dnq/languages/retrieval/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/templateLanguage/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/templateLanguageInternal/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/webl/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.cycle.jetbrains.mps.parser.runtime" />
+      <src refid="source.cycle.jetbrains.mps.parser.runtime" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/parser/solutions/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/source">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/resources">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/source">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/runtime_notifications/source">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/runtime_notifications/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/runtime/resource">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/runtime/source">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/source">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/dnq/runtime/berkeleyDbEntityStore/src">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/dnq/runtime/core/src">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/dnq/runtime/openAPI/src">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/dnq/runtime/textIndex/src">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/dnq/runtime/transientDbEntityStore/src">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/dnq/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.cycle.jetbrains.mps.webr.wiki.processor.runtime" depends="compile.jetbrains.mps.webr.dxml,compile.jetbrains.springframework.configurationInternal,compile.cycle.jetbrains.mps.webr.css,compile.jetbrains.mps.springframework.configuration.runtime,compile.jetbrains.springframework.configuration,compile.jetbrains.mps.webr.uri,compile.jetbrains.mps.wiki.runtime.highlighter,compile.jetbrains.mps.webr.baseTemplate,compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.jetbrains.mps.webr.prettify,compile.cycle.jetbrains.mps.parser.runtime,compile.jetbrains.mps.webr.javascript.runtime">
+    <echo>[jetbrains.mps.webr.wiki.precessor.lang] [jetbrains.mps.webr.wiki.processor.runtime] </echo>
+    <path id="classpath.cycle.jetbrains.mps.webr.wiki.processor.runtime">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps_home}/lib/junit4/junit-4.1.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.ypath.runtime.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/annotations/annotations.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-codec/commons-codec-1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/activation.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/mail.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-fileupload/commons-fileupload-1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-io/commons-io-1.3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/freemarker/freemarker-2.3.11.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/htmlparser/htmlparser.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/httpunit/httpunit-1.6.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/image-scaling/imagescaling_0_8_3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jdom/jdom-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jetty-util/jetty-util-6.1.23.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jnlp/jnlp.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/log4j/log4j-1.2.14.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/mime-util/mime-util-2.1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/servlet-api/servlet-api.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-api-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-log4j12-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smack.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smackx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-aop.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-beans.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-context.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-core.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-tx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-1.1.1-dev.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-api-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/xstream/xstream.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/BerkeleyDb/je-4.1.7.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-analyzers-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-core-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-snowball-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Trove/trove.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-compress/commons-compress-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/newWikiRuntime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/higlighter/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/prettify/classes_gen" />
+    </path>
+    <path id="source.cycle.jetbrains.mps.webr.wiki.processor.runtime">
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/newWikiRuntime/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/newWikiProcessor/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/extensions/newWikiRuntime/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/webr/extensions/newWikiRuntime/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.cycle.jetbrains.mps.webr.wiki.processor.runtime" />
+      <src refid="source.cycle.jetbrains.mps.webr.wiki.processor.runtime" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/webr/extensions/newWikiRuntime/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/webr/extensions/newWikiRuntime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.springframework.configuration.runtime">
+    <echo>[jetbrains.mps.springframework.configuration.runtime] </echo>
+    <path id="classpath.jetbrains.mps.springframework.configuration.runtime">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-aop.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-beans.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-context.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-core.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-tx.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+    </path>
+    <path id="source.jetbrains.mps.springframework.configuration.runtime">
+      <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/source" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.jetbrains.mps.springframework.configuration.runtime" />
+      <src refid="source.jetbrains.mps.springframework.configuration.runtime" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/springframework/runtime/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/springframework/runtime/source">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.webr.uri.runtime" depends="compile.jetbrains.springframework.configurationInternal,compile.jetbrains.mps.springframework.configuration.runtime,compile.jetbrains.springframework.configuration">
+    <echo>[jetbrains.mps.webr.uri.runtime] </echo>
+    <path id="classpath.jetbrains.mps.webr.uri.runtime">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-aop.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-beans.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-context.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-core.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-tx.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/classes_gen" />
+    </path>
+    <path id="source.jetbrains.mps.webr.uri.runtime">
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.jetbrains.mps.webr.uri.runtime" />
+      <src refid="source.jetbrains.mps.webr.uri.runtime" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.springframework.configuration" depends="compile.jetbrains.springframework.configurationInternal,compile.jetbrains.mps.springframework.configuration.runtime">
+    <echo>[jetbrains.springframework.configuration] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/springframework/languages/configuration/classes_gen" />
+  </target>
+  <target name="compile.webr_languages">
+    <echo>[webr_languages] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/devkit/webr_languages/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.teamsys.dnq#1164721465861">
+    <echo>[jetbrains.teamsys.dnq#1164721465861] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/dnq/languages/dnq/classes_gen" />
+  </target>
+  <target name="compile.cycle.jetbrains.mps.businessRules.runtime" depends="compile.jetbrains.springframework.configurationInternal,compile.jetbrains.mps.springframework.configuration.runtime,compile.jetbrains.springframework.configuration,compile.jetbrains.teamsys.dnq#1164721465861,compile.cycle.jetbrains.mps.parser.runtime">
+    <echo>[jetbrains.mps.businessRules] [jetbrains.mps.businessRules.runtime] </echo>
+    <path id="classpath.cycle.jetbrains.mps.businessRules.runtime">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps_home}/lib/joda-time/joda-time-1.6.jar" />
+      <pathelement location="${mps_home}/lib/log4j/log4j.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/annotations/annotations.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-codec/commons-codec-1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/activation.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/mail.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-fileupload/commons-fileupload-1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-io/commons-io-1.3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/freemarker/freemarker-2.3.11.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/htmlparser/htmlparser.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/httpunit/httpunit-1.6.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/image-scaling/imagescaling_0_8_3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jdom/jdom-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jetty-util/jetty-util-6.1.23.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jnlp/jnlp.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/log4j/log4j-1.2.14.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/mime-util/mime-util-2.1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/quartz/commons-collections-3.1.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/quartz/jta.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/quartz/quartz-1.6.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/servlet-api/servlet-api.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-api-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-log4j12-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smack.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smackx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-aop.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-beans.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-context.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-core.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-tx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-1.1.1-dev.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-api-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/xstream/xstream.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/businessRules/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/BerkeleyDb/je-4.1.7.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-analyzers-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-core-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-snowball-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Trove/trove.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-compress/commons-compress-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" />
+    </path>
+    <path id="source.cycle.jetbrains.mps.businessRules.runtime">
+      <pathelement location="${mps.webr-dnq}/platform/businessRules/runtime/source" />
+      <pathelement location="${mps.webr-dnq}/platform/businessRules/runtime/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/businessRules/languages/businessRules/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/businessRules/runtime/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/businessRules/runtime/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.cycle.jetbrains.mps.businessRules.runtime" />
+      <src refid="source.cycle.jetbrains.mps.businessRules.runtime" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/businessRules/runtime/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/businessRules/runtime/source">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/businessRules/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.webr.rest.server" depends="compile.jetbrains.mps.webr.dxml,compile.jetbrains.springframework.configurationInternal,compile.cycle.jetbrains.mps.webr.css,compile.jetbrains.mps.springframework.configuration.runtime,compile.jetbrains.springframework.configuration,compile.jetbrains.mps.webr.uri,compile.jetbrains.mps.webr.baseTemplate,compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.cycle.jetbrains.mps.parser.runtime">
+    <echo>[jetbrains.mps.webr.rest.server] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/rest.server/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.webr.baseTemplate" depends="compile.jetbrains.mps.webr.uri">
+    <echo>[jetbrains.mps.webr.baseTemplate] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/baseTemplate/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.webr.javascript.runtime" depends="compile.jetbrains.springframework.configurationInternal,compile.jetbrains.mps.springframework.configuration.runtime,compile.jetbrains.mps.webr.uri.runtime,compile.jetbrains.springframework.configuration">
+    <echo>[jetbrains.mps.webr.javascript.runtime] </echo>
+    <path id="classpath.jetbrains.mps.webr.javascript.runtime">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-aop.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-beans.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-context.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-core.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-tx.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/classes_gen" />
+    </path>
+    <path id="source.jetbrains.mps.webr.javascript.runtime">
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.jetbrains.mps.webr.javascript.runtime" />
+      <src refid="source.jetbrains.mps.webr.javascript.runtime" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.webr_dnq">
+    <echo>[webr_dnq] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/devkit/webr_dnq/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.webr.tickComponent" depends="compile.jetbrains.mps.webr.dxml,compile.jetbrains.springframework.configurationInternal,compile.cycle.jetbrains.mps.webr.css,compile.jetbrains.mps.springframework.configuration.runtime,compile.jetbrains.springframework.configuration,compile.jetbrains.mps.webr.uri,compile.jetbrains.mps.webr.tickComponent.runtime,compile.jetbrains.mps.webr.baseTemplate,compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.cycle.jetbrains.mps.parser.runtime">
+    <echo>[jetbrains.mps.webr.tickComponent] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/tickComponent/classes_gen" />
+  </target>
+  <target name="compile.charisma-jira-client" depends="compile.cycle.jetbrains.mps.parser.runtime">
+    <echo>[charisma-jira-client] </echo>
+    <path id="classpath.charisma-jira-client">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/classes_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-1.3.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-jaxrpc-1.3.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-saaj-1.3.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-wsdl4j-1.5.1.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/commons-discovery-0.2.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/httpclient.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/annotations/annotations.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-codec/commons-codec-1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/activation.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/mail.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-fileupload/commons-fileupload-1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-io/commons-io-1.3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/freemarker/freemarker-2.3.11.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/htmlparser/htmlparser.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/httpunit/httpunit-1.6.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/image-scaling/imagescaling_0_8_3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jdom/jdom-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jetty-util/jetty-util-6.1.23.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jnlp/jnlp.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/log4j/log4j-1.2.14.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/mime-util/mime-util-2.1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/servlet-api/servlet-api.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-api-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-log4j12-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smack.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smackx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-1.1.1-dev.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-api-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/xstream/xstream.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/BerkeleyDb/je-4.1.7.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-analyzers-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-core-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-snowball-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Trove/trove.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-compress/commons-compress-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" />
+    </path>
+    <path id="source.charisma-jira-client">
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/source" />
+    </path>
+    <mkdir dir="C:/branches/RB-2.0/charisma/charisma-jira-client/classes_gen" />
+    <javac destdir="C:/branches/RB-2.0/charisma/charisma-jira-client/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.charisma-jira-client" />
+      <src refid="source.charisma-jira-client" />
+    </javac>
+    <copy todir="C:/branches/RB-2.0/charisma/charisma-jira-client/classes_gen">
+      <fileset dir="C:/branches/RB-2.0/charisma/charisma-jira-client/source">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.baseLanguage.stateMachine.runtime">
+    <echo>[jetbrains.mps.baseLanguage.stateMachine.runtime] </echo>
+    <path id="classpath.jetbrains.mps.baseLanguage.stateMachine.runtime">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/stateMachine/solutions/jetbrains.mps.baseLanguage.stateMachine.runtime/classes_gen" />
+    </path>
+    <path id="source.jetbrains.mps.baseLanguage.stateMachine.runtime">
+      <pathelement location="${mps.webr-dnq}/platform/stateMachine/solutions/jetbrains.mps.baseLanguage.stateMachine.runtime/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/stateMachine/solutions/jetbrains.mps.baseLanguage.stateMachine.runtime/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/stateMachine/solutions/jetbrains.mps.baseLanguage.stateMachine.runtime/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.jetbrains.mps.baseLanguage.stateMachine.runtime" />
+      <src refid="source.jetbrains.mps.baseLanguage.stateMachine.runtime" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/stateMachine/solutions/jetbrains.mps.baseLanguage.stateMachine.runtime/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/stateMachine/solutions/jetbrains.mps.baseLanguage.stateMachine.runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.webr.rest.client.runtime" depends="compile.cycle.jetbrains.mps.parser.runtime">
+    <echo>[jetbrains.mps.webr.rest.client.runtime] </echo>
+    <path id="classpath.jetbrains.mps.webr.rest.client.runtime">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/annotations/annotations.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-codec/commons-codec-1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/activation.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/mail.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-fileupload/commons-fileupload-1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-io/commons-io-1.3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/freemarker/freemarker-2.3.11.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/htmlparser/htmlparser.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/httpclient/httpclient.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/httpunit/httpunit-1.6.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/image-scaling/imagescaling_0_8_3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jdom/jdom-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jetty-util/jetty-util-6.1.23.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jnlp/jnlp.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/log4j/log4j-1.2.14.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/mime-util/mime-util-2.1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/servlet-api/servlet-api.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-api-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-log4j12-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smack.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smackx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-1.1.1-dev.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-api-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/xstream/xstream.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/BerkeleyDb/je-4.1.7.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-analyzers-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-core-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-snowball-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Trove/trove.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-compress/commons-compress-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/jetbrains.mps.webr.rest.client.runtime/classes_gen" />
+    </path>
+    <path id="source.jetbrains.mps.webr.rest.client.runtime">
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/jetbrains.mps.webr.rest.client.runtime/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/solutions/jetbrains.mps.webr.rest.client.runtime/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/webr/solutions/jetbrains.mps.webr.rest.client.runtime/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.jetbrains.mps.webr.rest.client.runtime" />
+      <src refid="source.jetbrains.mps.webr.rest.client.runtime" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/webr/solutions/jetbrains.mps.webr.rest.client.runtime/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/jetbrains.mps.webr.rest.client.runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.webr.rpc.rest" depends="compile.jetbrains.mps.webr.rpc.rest.runtime">
+    <echo>[jetbrains.mps.webr.rpc.rest] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/rest/languages/rest/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.webr.rpc.rest.runtime" depends="compile.jetbrains.springframework.configurationInternal,compile.jetbrains.mps.springframework.configuration.runtime,compile.jetbrains.springframework.configuration,compile.jetbrains.mps.webr.uri,compile.jetbrains.mps.webr.weblInternal,compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.cycle.jetbrains.mps.parser.runtime">
+    <echo>[jetbrains.mps.webr.rpc.rest.runtime] </echo>
+    <path id="classpath.jetbrains.mps.webr.rpc.rest.runtime">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps_home}/lib/joda-time/joda-time-1.6.jar" />
+      <pathelement location="${mps_home}/lib/log4j/log4j.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/annotations/annotations.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-codec/commons-codec-1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/activation.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/mail.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-fileupload/commons-fileupload-1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-io/commons-io-1.3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/freemarker/freemarker-2.3.11.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/htmlparser/htmlparser.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/httpunit/httpunit-1.6.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/image-scaling/imagescaling_0_8_3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jdom/jdom-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jetty-util/jetty-util-6.1.23.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jnlp/jnlp.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/log4j/log4j-1.2.14.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/mime-util/mime-util-2.1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/servlet-api/servlet-api.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-api-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-log4j12-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smack.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smackx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-aop.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-beans.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-context.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-core.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-tx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-1.1.1-dev.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-api-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/xstream/xstream.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/BerkeleyDb/je-4.1.7.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-analyzers-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-core-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-snowball-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Trove/trove.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-compress/commons-compress-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-api.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-impl.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-xjc.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-client-1.1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-core-1.1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-json-1.1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-server-1.1.4-patched.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jsr173_1.0_api.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jsr311-api-1.1.1.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" />
+    </path>
+    <path id="source.jetbrains.mps.webr.rpc.rest.runtime">
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/rest/solutions/runtime/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/rest/solutions/runtime/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.jetbrains.mps.webr.rpc.rest.runtime" />
+      <src refid="source.jetbrains.mps.webr.rpc.rest.runtime" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/rest/solutions/runtime/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/rest/solutions/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.webr.wiki.highlighter">
+    <echo>[jetbrains.mps.webr.wiki.highlighter] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/extensions/wiki/solutions/jetbrains.mps.webr.wiki.highlighter/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.webr.dxml" depends="compile.jetbrains.mps.webr.baseTemplate,compile.jetbrains.mps.webr.uri">
+    <echo>[jetbrains.mps.webr.dxml] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/dxml/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.springframework.configurationInternal">
+    <echo>[jetbrains.springframework.configurationInternal] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/springframework/languages/configurationInternal/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.webr.runtimeLang">
+    <echo>[jetbrains.mps.webr.runtimeLang] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/runtimeLang/classes_gen" />
+  </target>
+  <target name="compile.cycle.jetbrains.mps.webr.css" depends="compile.jetbrains.mps.webr.uri">
+    <echo>[jetbrains.mps.webr.css] [jetbrains.mps.webr.cssSchema] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/css/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/cssSchema/classes_gen" />
+  </target>
+  <target name="compile.cycle.charisma" depends="compile.jetbrains.mps.webr.rest.client,compile.jetbrains.mps.webr.dxmlInternal,compile.jetbrains.mps.wiki.runtime.highlighter,compile.jetbrains.mps.webr.rss,compile.jetbrains.mps.webr.weblInternal,compile.cycle.jetbrains.mps.parser.runtime,compile.cycle.jetbrains.mps.webr.wiki.processor.runtime,compile.jetbrains.mps.springframework.configuration.runtime,compile.webr_languages,compile.jetbrains.springframework.configuration,compile.cycle.jetbrains.mps.businessRules.runtime,compile.jetbrains.mps.webr.rest.server,compile.jetbrains.mps.webr.baseTemplate,compile.webr_dnq,compile.jetbrains.mps.webr.tickComponent,compile.charisma-jira-client,compile.jetbrains.mps.webr.rest.client.runtime,compile.jetbrains.mps.webr.rpc.rest,compile.jetbrains.mps.webr.rpc.rest.runtime,compile.jetbrains.mps.webr.dxml,compile.jetbrains.springframework.configurationInternal,compile.cycle.jetbrains.mps.webr.css,compile.jetbrains.mps.webr.htmlComponent#1227092217254,compile.jetbrains.teamsys.license.runtime,compile.jetbrains.mps.webr.uri,compile.jetbrains.mps.webr.build,compile.jetbrains.mps.webr.entityBrowser#1173881036772,compile.jetbrains.mps.baseLanguage.stateMachine,compile.jetbrains.mps.webr.tickComponent.runtime,compile.jetbrains.mps.webr.jquery,compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.jetbrains.mps.parser">
+    <echo>[charisma] [charisma-customfields] [charisma-importer] [charisma-ldap-integration] [charisma-openid-integration] [charisma-teamcity-integration] [youtrack-rest-import] </echo>
+    <path id="classpath.cycle.charisma">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps_home}/lib/joda-time/joda-time-1.6.jar" />
+      <pathelement location="${mps_home}/lib/junit4/junit-4.1.jar" />
+      <pathelement location="${mps_home}/lib/log4j/log4j.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.ypath.runtime.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/source" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-customfields/classes_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-importer/solutions/classes_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/classes_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-1.3.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-jaxrpc-1.3.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-saaj-1.3.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-wsdl4j-1.5.1.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/commons-discovery-0.2.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/httpclient.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-ldap-integration/classes_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-openid-integration/classes_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-openid-integration/lib/openid4java/openid4java.jar" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-teamcity-integration/classes_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/youtrack-rest-import/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/lib/annotations/annotations.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/apache-xerces/xerces.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-codec/commons-codec-1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/activation.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/mail.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-fileupload/commons-fileupload-1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-io/commons-io-1.3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/freemarker/freemarker-2.3.11.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/htmlparser/htmlparser.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/httpclient/httpclient.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/httpunit/httpunit-1.6.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/image-scaling/imagescaling_0_8_3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jdom/jdom-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jetty-util/jetty-util-6.1.23.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jnlp/jnlp.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/log4j/log4j-1.2.14.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/mime-util/mime-util-2.1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/nekohtml/nekohtml.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/quartz/commons-collections-3.1.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/quartz/jta.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/quartz/quartz-1.6.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/servlet-api/servlet-api.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-api-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-log4j12-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smack.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smackx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-aop.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-beans.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-context.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-core.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-tx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-1.1.1-dev.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-api-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/xstream/xstream.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/businessRules/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/BerkeleyDb/je-4.1.7.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-analyzers-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-core-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-snowball-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Trove/trove.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-compress/commons-compress-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/license/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-api.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-impl.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-xjc.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-client-1.1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-core-1.1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-json-1.1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-server-1.1.4-patched.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jsr173_1.0_api.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jsr311-api-1.1.1.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/newWikiRuntime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/higlighter/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/jetbrains.mps.webr.rest.client.runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/jquery/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/tickComponent/runtime/classes_gen" />
+    </path>
+    <path id="source.cycle.charisma">
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/source_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-customfields/source_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-importer/solutions/source_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-ldap-integration/source_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-openid-integration/source_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-teamcity-integration/source" />
+      <pathelement location="C:/branches/RB-2.0/charisma/charisma-teamcity-integration/source_gen" />
+      <pathelement location="C:/branches/RB-2.0/charisma/youtrack-rest-import/source_gen" />
+    </path>
+    <mkdir dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" />
+    <mkdir dir="C:/branches/RB-2.0/charisma/charisma-customfields/classes_gen" />
+    <mkdir dir="C:/branches/RB-2.0/charisma/charisma-importer/solutions/classes_gen" />
+    <mkdir dir="C:/branches/RB-2.0/charisma/charisma-ldap-integration/classes_gen" />
+    <mkdir dir="C:/branches/RB-2.0/charisma/charisma-openid-integration/classes_gen" />
+    <mkdir dir="C:/branches/RB-2.0/charisma/charisma-teamcity-integration/classes_gen" />
+    <mkdir dir="C:/branches/RB-2.0/charisma/youtrack-rest-import/classes_gen" />
+    <javac destdir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.cycle.charisma" />
+      <src refid="source.cycle.charisma" />
+    </javac>
+    <copy todir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen">
+      <fileset dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="C:/branches/RB-2.0/charisma/charisma-customfields/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="C:/branches/RB-2.0/charisma/charisma-importer/solutions/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="C:/branches/RB-2.0/charisma/charisma-ldap-integration/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="C:/branches/RB-2.0/charisma/charisma-openid-integration/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="C:/branches/RB-2.0/charisma/charisma-teamcity-integration/source">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="C:/branches/RB-2.0/charisma/charisma-teamcity-integration/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="C:/branches/RB-2.0/charisma/youtrack-rest-import/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.webr.htmlComponent#1227092217254">
+    <echo>[jetbrains.mps.webr.htmlComponent#1227092217254] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/htmlComponent/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.teamsys.license.runtime">
+    <echo>[jetbrains.teamsys.license.runtime] </echo>
+    <path id="classpath.jetbrains.teamsys.license.runtime">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/joda-time/joda-time-1.6.jar" />
+      <pathelement location="${mps_home}/lib/log4j/log4j.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/license/runtime/classes_gen" />
+    </path>
+    <path id="source.jetbrains.teamsys.license.runtime">
+      <pathelement location="${mps.webr-dnq}/platform/license/runtime/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/license/runtime/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/license/runtime/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.jetbrains.teamsys.license.runtime" />
+      <src refid="source.jetbrains.teamsys.license.runtime" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/license/runtime/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/license/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.webr.uri" depends="compile.jetbrains.mps.webr.uri.runtime">
+    <echo>[jetbrains.mps.webr.uri] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/uri/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.webr.build">
+    <echo>[jetbrains.mps.webr.build] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/build/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.webr.entityBrowser#1173881036772">
+    <echo>[jetbrains.mps.webr.entityBrowser#1173881036772] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/extensions/entityBrowser/languages/entityBrowser/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.baseLanguage.stateMachine" depends="compile.jetbrains.mps.baseLanguage.stateMachine.runtime">
+    <echo>[jetbrains.mps.baseLanguage.stateMachine] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/stateMachine/languages/stateMachine/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.webr.tickComponent.runtime" depends="compile.jetbrains.mps.webr.uri,compile.jetbrains.mps.webr.weblInternal,compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.cycle.jetbrains.mps.parser.runtime">
+    <echo>[jetbrains.mps.webr.tickComponent.runtime] </echo>
+    <path id="classpath.jetbrains.mps.webr.tickComponent.runtime">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps_home}/lib/joda-time/joda-time-1.6.jar" />
+      <pathelement location="${mps_home}/lib/log4j/log4j.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/annotations/annotations.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-codec/commons-codec-1.4.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/activation.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-email/mail.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-fileupload/commons-fileupload-1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/commons-io/commons-io-1.3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/freemarker/freemarker-2.3.11.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/htmlparser/htmlparser.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/httpunit/httpunit-1.6.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/image-scaling/imagescaling_0_8_3.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jdom/jdom-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jetty-util/jetty-util-6.1.23.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/jnlp/jnlp.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/log4j/log4j-1.2.14.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/mime-util/mime-util-2.1.2.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/servlet-api/servlet-api.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-api-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/slf4j/slf4j-log4j12-1.5.8.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smack.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/smack/smackx.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-1.1.1-dev.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/stax/stax-api-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/xstream/xstream.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/BerkeleyDb/je-4.1.7.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-analyzers-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-core-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-snowball-2.4.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/Trove/trove.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-compress/commons-compress-1.0.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/tickComponent/runtime/classes_gen" />
+    </path>
+    <path id="source.jetbrains.mps.webr.tickComponent.runtime">
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/tickComponent/runtime/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/solutions/tickComponent/runtime/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/webr/solutions/tickComponent/runtime/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.jetbrains.mps.webr.tickComponent.runtime" />
+      <src refid="source.jetbrains.mps.webr.tickComponent.runtime" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/webr/solutions/tickComponent/runtime/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/tickComponent/runtime/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.webr.jquery" depends="compile.jetbrains.mps.webr.baseTemplate,compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.jetbrains.mps.webr.uri">
+    <echo>[jetbrains.mps.webr.jquery] </echo>
+    <path id="classpath.jetbrains.mps.webr.jquery">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/jquery/classes_gen" />
+    </path>
+    <path id="source.jetbrains.mps.webr.jquery">
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/jquery/source" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/jquery/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/solutions/jquery/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/webr/solutions/jquery/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.jetbrains.mps.webr.jquery" />
+      <src refid="source.jetbrains.mps.webr.jquery" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/webr/solutions/jquery/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/jquery/source">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/jquery/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.jetbrains.mps.webr.prettify" depends="compile.jetbrains.springframework.configurationInternal,compile.jetbrains.mps.springframework.configuration.runtime,compile.jetbrains.springframework.configuration,compile.cycle.jetbrains.mps.webr.javascriptInternal,compile.jetbrains.mps.webr.uri,compile.jetbrains.mps.webr.javascript.runtime">
+    <echo>[jetbrains.mps.webr.prettify] </echo>
+    <path id="classpath.jetbrains.mps.webr.prettify">
+      <pathelement location="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+      <pathelement location="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+      <pathelement location="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" />
+      <pathelement location="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-aop.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-beans.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-context.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-core.jar" />
+      <pathelement location="${mps.webr-dnq}/lib/spring/spring-tx.jar" />
+      <pathelement location="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/classes_gen" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/prettify/classes_gen" />
+    </path>
+    <path id="source.jetbrains.mps.webr.prettify">
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/prettify/source" />
+      <pathelement location="${mps.webr-dnq}/platform/webr/solutions/prettify/source_gen" />
+    </path>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/solutions/prettify/classes_gen" />
+    <javac destdir="${mps.webr-dnq}/platform/webr/solutions/prettify/classes_gen" fork="true" debug="true" debuglevel="lines,vars,source" memorymaximumsize="512m">
+      <classpath refid="classpath.jetbrains.mps.webr.prettify" />
+      <src refid="source.jetbrains.mps.webr.prettify" />
+    </javac>
+    <copy todir="${mps.webr-dnq}/platform/webr/solutions/prettify/classes_gen">
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/prettify/source">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+      <fileset dir="${mps.webr-dnq}/platform/webr/solutions/prettify/source_gen">
+        <patternset refid="compiler.resources" />
+        <type type="file" />
+      </fileset>
+    </copy>
+  </target>
+  <target name="compile.cycle.jetbrains.mps.webr.javascriptInternal" depends="compile.jetbrains.mps.webr.uri,compile.jetbrains.mps.webr.javascript.runtime">
+    <echo>[jetbrains.mps.webr.javascriptInternal] [webr.javascript] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/javascriptInternal/classes_gen" />
+    <mkdir dir="${mps.webr-dnq}/platform/webr/languages/javascript/classes_gen" />
+  </target>
+  <target name="compile.jetbrains.mps.parser" depends="compile.cycle.jetbrains.mps.parser.runtime">
+    <echo>[jetbrains.mps.parser] </echo>
+    <mkdir dir="${mps.webr-dnq}/platform/parser/langages/parser/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.webr.rest.client" depends="clean.jetbrains.mps.webr.dxml,clean.jetbrains.springframework.configurationInternal,clean.cycle.jetbrains.mps.webr.css,clean.jetbrains.mps.springframework.configuration.runtime,clean.jetbrains.springframework.configuration,clean.jetbrains.mps.webr.uri,clean.jetbrains.mps.webr.rest.client.runtime,clean.jetbrains.mps.webr.baseTemplate,clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.cycle.jetbrains.mps.parser.runtime" />
+  <target name="clean.jetbrains.mps.webr.dxmlInternal" depends="clean.jetbrains.mps.webr.dxml,clean.jetbrains.mps.webr.baseTemplate,clean.jetbrains.mps.webr.uri" />
+  <target name="clean.jetbrains.mps.wiki.higlighter" depends="clean.jetbrains.mps.webr.wiki.highlighter" />
+  <target name="clean.jetbrains.mps.wiki.runtime.highlighter" depends="clean.jetbrains.mps.webr.dxml,clean.jetbrains.springframework.configurationInternal,clean.cycle.jetbrains.mps.webr.css,clean.jetbrains.mps.springframework.configuration.runtime,clean.jetbrains.springframework.configuration,clean.jetbrains.mps.webr.uri,clean.jetbrains.mps.wiki.higlighter,clean.jetbrains.mps.webr.baseTemplate,clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.cycle.jetbrains.mps.parser.runtime,clean.jetbrains.mps.webr.wiki.highlighter">
+    <delete dir="${mps.webr-dnq}/platform/webr/runtime/higlighter/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.webr.rss" depends="clean.jetbrains.mps.webr.dxml,clean.jetbrains.mps.webr.baseTemplate,clean.jetbrains.mps.webr.uri" />
+  <target name="clean.jetbrains.mps.webr.weblInternal" depends="clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.jetbrains.mps.webr.uri" />
+  <target name="clean.cycle.jetbrains.mps.parser.runtime" depends="clean.jetbrains.mps.webr.dxmlInternal,clean.jetbrains.mps.webr.rss,clean.jetbrains.mps.webr.weblInternal,clean.jetbrains.mps.webr.dxml,clean.jetbrains.springframework.configurationInternal,clean.cycle.jetbrains.mps.webr.css,clean.jetbrains.mps.webr.runtimeLang,clean.jetbrains.mps.springframework.configuration.runtime,clean.jetbrains.mps.webr.uri.runtime,clean.jetbrains.springframework.configuration,clean.webr_languages,clean.jetbrains.mps.webr.uri,clean.jetbrains.mps.webr.build,clean.jetbrains.mps.baseLanguage.stateMachine,clean.jetbrains.mps.webr.jquery,clean.jetbrains.mps.webr.baseTemplate,clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.jetbrains.mps.webr.javascript.runtime,clean.webr_dnq">
+    <delete dir="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" />
+  </target>
+  <target name="clean.cycle.jetbrains.mps.webr.wiki.processor.runtime" depends="clean.jetbrains.mps.webr.dxml,clean.jetbrains.springframework.configurationInternal,clean.cycle.jetbrains.mps.webr.css,clean.jetbrains.mps.springframework.configuration.runtime,clean.jetbrains.springframework.configuration,clean.jetbrains.mps.webr.uri,clean.jetbrains.mps.wiki.runtime.highlighter,clean.jetbrains.mps.webr.baseTemplate,clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.jetbrains.mps.webr.prettify,clean.cycle.jetbrains.mps.parser.runtime,clean.jetbrains.mps.webr.javascript.runtime">
+    <delete dir="${mps.webr-dnq}/platform/webr/extensions/newWikiRuntime/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.springframework.configuration.runtime">
+    <delete dir="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.webr.uri.runtime" depends="clean.jetbrains.springframework.configurationInternal,clean.jetbrains.mps.springframework.configuration.runtime,clean.jetbrains.springframework.configuration">
+    <delete dir="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.springframework.configuration" depends="clean.jetbrains.springframework.configurationInternal,clean.jetbrains.mps.springframework.configuration.runtime" />
+  <target name="clean.webr_languages" />
+  <target name="clean.jetbrains.teamsys.dnq#1164721465861" />
+  <target name="clean.cycle.jetbrains.mps.businessRules.runtime" depends="clean.jetbrains.springframework.configurationInternal,clean.jetbrains.mps.springframework.configuration.runtime,clean.jetbrains.springframework.configuration,clean.jetbrains.teamsys.dnq#1164721465861,clean.cycle.jetbrains.mps.parser.runtime">
+    <delete dir="${mps.webr-dnq}/platform/businessRules/runtime/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.webr.rest.server" depends="clean.jetbrains.mps.webr.dxml,clean.jetbrains.springframework.configurationInternal,clean.cycle.jetbrains.mps.webr.css,clean.jetbrains.mps.springframework.configuration.runtime,clean.jetbrains.springframework.configuration,clean.jetbrains.mps.webr.uri,clean.jetbrains.mps.webr.baseTemplate,clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.cycle.jetbrains.mps.parser.runtime" />
+  <target name="clean.jetbrains.mps.webr.baseTemplate" depends="clean.jetbrains.mps.webr.uri" />
+  <target name="clean.jetbrains.mps.webr.javascript.runtime" depends="clean.jetbrains.springframework.configurationInternal,clean.jetbrains.mps.springframework.configuration.runtime,clean.jetbrains.mps.webr.uri.runtime,clean.jetbrains.springframework.configuration">
+    <delete dir="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/classes_gen" />
+  </target>
+  <target name="clean.webr_dnq" />
+  <target name="clean.jetbrains.mps.webr.tickComponent" depends="clean.jetbrains.mps.webr.dxml,clean.jetbrains.springframework.configurationInternal,clean.cycle.jetbrains.mps.webr.css,clean.jetbrains.mps.springframework.configuration.runtime,clean.jetbrains.springframework.configuration,clean.jetbrains.mps.webr.uri,clean.jetbrains.mps.webr.tickComponent.runtime,clean.jetbrains.mps.webr.baseTemplate,clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.cycle.jetbrains.mps.parser.runtime" />
+  <target name="clean.charisma-jira-client" depends="clean.cycle.jetbrains.mps.parser.runtime">
+    <delete dir="C:/branches/RB-2.0/charisma/charisma-jira-client/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.baseLanguage.stateMachine.runtime">
+    <delete dir="${mps.webr-dnq}/platform/stateMachine/solutions/jetbrains.mps.baseLanguage.stateMachine.runtime/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.webr.rest.client.runtime" depends="clean.cycle.jetbrains.mps.parser.runtime">
+    <delete dir="${mps.webr-dnq}/platform/webr/solutions/jetbrains.mps.webr.rest.client.runtime/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.webr.rpc.rest" depends="clean.jetbrains.mps.webr.rpc.rest.runtime" />
+  <target name="clean.jetbrains.mps.webr.rpc.rest.runtime" depends="clean.jetbrains.springframework.configurationInternal,clean.jetbrains.mps.springframework.configuration.runtime,clean.jetbrains.springframework.configuration,clean.jetbrains.mps.webr.uri,clean.jetbrains.mps.webr.weblInternal,clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.cycle.jetbrains.mps.parser.runtime">
+    <delete dir="${mps.webr-dnq}/platform/rest/solutions/runtime/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.webr.wiki.highlighter" />
+  <target name="clean.jetbrains.mps.webr.dxml" depends="clean.jetbrains.mps.webr.baseTemplate,clean.jetbrains.mps.webr.uri" />
+  <target name="clean.jetbrains.springframework.configurationInternal" />
+  <target name="clean.jetbrains.mps.webr.runtimeLang" />
+  <target name="clean.cycle.jetbrains.mps.webr.css" depends="clean.jetbrains.mps.webr.uri" />
+  <target name="clean.cycle.charisma" depends="clean.jetbrains.mps.webr.rest.client,clean.jetbrains.mps.webr.dxmlInternal,clean.jetbrains.mps.wiki.runtime.highlighter,clean.jetbrains.mps.webr.rss,clean.jetbrains.mps.webr.weblInternal,clean.cycle.jetbrains.mps.parser.runtime,clean.cycle.jetbrains.mps.webr.wiki.processor.runtime,clean.jetbrains.mps.springframework.configuration.runtime,clean.webr_languages,clean.jetbrains.springframework.configuration,clean.cycle.jetbrains.mps.businessRules.runtime,clean.jetbrains.mps.webr.rest.server,clean.jetbrains.mps.webr.baseTemplate,clean.webr_dnq,clean.jetbrains.mps.webr.tickComponent,clean.charisma-jira-client,clean.jetbrains.mps.webr.rest.client.runtime,clean.jetbrains.mps.webr.rpc.rest,clean.jetbrains.mps.webr.rpc.rest.runtime,clean.jetbrains.mps.webr.dxml,clean.jetbrains.springframework.configurationInternal,clean.cycle.jetbrains.mps.webr.css,clean.jetbrains.mps.webr.htmlComponent#1227092217254,clean.jetbrains.teamsys.license.runtime,clean.jetbrains.mps.webr.uri,clean.jetbrains.mps.webr.build,clean.jetbrains.mps.webr.entityBrowser#1173881036772,clean.jetbrains.mps.baseLanguage.stateMachine,clean.jetbrains.mps.webr.tickComponent.runtime,clean.jetbrains.mps.webr.jquery,clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.jetbrains.mps.parser">
+    <delete dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.webr.htmlComponent#1227092217254" />
+  <target name="clean.jetbrains.teamsys.license.runtime">
+    <delete dir="${mps.webr-dnq}/platform/license/runtime/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.webr.uri" depends="clean.jetbrains.mps.webr.uri.runtime" />
+  <target name="clean.jetbrains.mps.webr.build" />
+  <target name="clean.jetbrains.mps.webr.entityBrowser#1173881036772" />
+  <target name="clean.jetbrains.mps.baseLanguage.stateMachine" depends="clean.jetbrains.mps.baseLanguage.stateMachine.runtime" />
+  <target name="clean.jetbrains.mps.webr.tickComponent.runtime" depends="clean.jetbrains.mps.webr.uri,clean.jetbrains.mps.webr.weblInternal,clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.cycle.jetbrains.mps.parser.runtime">
+    <delete dir="${mps.webr-dnq}/platform/webr/solutions/tickComponent/runtime/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.webr.jquery" depends="clean.jetbrains.mps.webr.baseTemplate,clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.jetbrains.mps.webr.uri">
+    <delete dir="${mps.webr-dnq}/platform/webr/solutions/jquery/classes_gen" />
+  </target>
+  <target name="clean.jetbrains.mps.webr.prettify" depends="clean.jetbrains.springframework.configurationInternal,clean.jetbrains.mps.springframework.configuration.runtime,clean.jetbrains.springframework.configuration,clean.cycle.jetbrains.mps.webr.javascriptInternal,clean.jetbrains.mps.webr.uri,clean.jetbrains.mps.webr.javascript.runtime">
+    <delete dir="${mps.webr-dnq}/platform/webr/solutions/prettify/classes_gen" />
+  </target>
+  <target name="clean.cycle.jetbrains.mps.webr.javascriptInternal" depends="clean.jetbrains.mps.webr.uri,clean.jetbrains.mps.webr.javascript.runtime" />
+  <target name="clean.jetbrains.mps.parser" depends="clean.cycle.jetbrains.mps.parser.runtime" />
+</project>

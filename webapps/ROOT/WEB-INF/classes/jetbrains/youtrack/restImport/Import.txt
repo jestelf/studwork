@@ -1,0 +1,76 @@
+h1./import
+h2. PUT /import/users
+Bulk users import
+{panel}{{PUT /rest/import/users?*\{test\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| test | boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/import/users?test=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /import/\{project\}/issues
+Bulk issues import
+{panel}{{PUT /rest/import/*\{project\}*/issues?*\{assigneeGroup\}*&*\{test\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectById | TODO: Description |
+| assigneeGroup | string | TODO: Description |
+| test | boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/import/TODO/issues?assigneeGroup=TODO&test=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /import/links
+Bulk links import
+{panel}{{PUT /rest/import/links?*\{test\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| test | boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/import/links?test=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /import/\{issue\}/attachment
+Import attachment, preserve author and created date, don't change issue updated field
+{panel}{{POST /rest/import/*\{issue\}*/attachment?*\{test\}*&*\{authorLogin\}*&*\{group\}*&*\{created\}*&*\{files\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | string | TODO: Description |
+| test | boolean | TODO: Description |
+| authorLogin | string | TODO: Description |
+| group | string | TODO: Description |
+| created | instant | TODO: Description |
+| files | files | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/import/TODO/attachment?test=TODO&authorLogin=TODO&group=TODO&created=TODO&files=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

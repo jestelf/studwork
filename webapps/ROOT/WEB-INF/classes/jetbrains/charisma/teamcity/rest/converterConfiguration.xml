@@ -1,0 +1,4 @@
+<beans>
+  <bean id="jetbrains.charisma.teamcity.rest.Jetbrains_buildServer_server_rest_data_ProjectRefConverter" class="jetbrains.charisma.teamcity.rest.Jetbrains_buildServer_server_rest_data_ProjectRefConverter"></bean>
+  <bean id="jetbrains.charisma.teamcity.rest.Jetbrains_buildServer_server_rest_data_BuildTypeRefConverter" class="jetbrains.charisma.teamcity.rest.Jetbrains_buildServer_server_rest_data_BuildTypeRefConverter"></bean>
+</beans>

@@ -1,0 +1,72 @@
+<beans>
+  <bean id="jetbrains.teamsys.dnq.runtime.migration.DNQMigrationRegistryItemMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.teamsys.dnq.runtime.migration.DNQMigrationRegistryItemImpl"></bean>
+    </property>
+    <property name="type">
+      <value>DNQMigrationRegistryItem</value>
+    </property>
+    <property name="ownIndexes">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.IndexImpl">
+          <property name="fields">
+            <list>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>migration_number</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>DNQMigrationRegistryItem</value>
+                </property>
+                <property name="property">
+                  <value>true</value>
+                </property>
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>migration_number</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>migration_signature</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>migration_title</value>
+          </property>
+          <property name="type">
+            <value>TEXT</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+    <property name="requiredProperties">
+      <list>
+        <value>migration_number</value>
+        <value>migration_signature</value>
+        <value>migration_title</value>
+      </list>
+    </property>
+  </bean>
+</beans>

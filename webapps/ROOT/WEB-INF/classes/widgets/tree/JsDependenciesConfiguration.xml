@@ -1,0 +1,268 @@
+<beans>
+  <bean id="widgets.tree.AsyncTreeNode" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.AsyncTreeNode</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/AsyncTreeNode.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.tree.TreeNode</value>
+        <value>widgets.tree.TreeLoader</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.tree.TreeDragZone" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.TreeDragZone</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/TreeDragZone.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>dd.DragZone</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.tree.TreeDropZone" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.TreeDropZone</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/TreeDropZone.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>dd.DropZone</value>
+        <value>dd.DropTarget</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.tree.TreeEditor" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.TreeEditor</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/TreeEditor.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Editor</value>
+        <value>widgets.tree.TreePanel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.tree.TreeEventModel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.TreeEventModel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/TreeEventModel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list></list>
+    </property>
+  </bean>
+  <bean id="widgets.tree.TreeFilter" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.TreeFilter</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/TreeFilter.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.tree.TreePanel</value>
+        <value>widgets.tree.TreeNode</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.tree.TreeLoader" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.TreeLoader</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/TreeLoader.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>util.Observable</value>
+        <value>widgets.tree.TreeNode</value>
+        <value>data.Connection</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.tree.TreeNode" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.TreeNode</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/TreeNode.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>data.Tree</value>
+        <value>widgets.tree.TreeNodeUI</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.tree.TreeNodeUI" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.TreeNodeUI</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/TreeNodeUI.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.tree.TreePanel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.TreePanel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/TreePanel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Panel</value>
+        <value>widgets.tree.TreeNode</value>
+        <value>data.Tree</value>
+        <value>core.Element</value>
+        <value>widgets.tree.TreeLoader</value>
+        <value>widgets.tree.TreeDropZone</value>
+        <value>widgets.tree.TreeDragZone</value>
+        <value>widgets.tree.TreeEventModel</value>
+        <value>widgets.tree.TreeSelectionModel</value>
+        <value>dd.ScrollManager</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.tree.TreeSelectionModel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.TreeSelectionModel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/TreeSelectionModel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>util.Observable</value>
+        <value>widgets.tree.TreeNode</value>
+        <value>core.EventManager</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.tree.TreeSorter" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.tree.TreeSorter</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/tree/TreeSorter.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.tree.TreePanel</value>
+      </list>
+    </property>
+  </bean>
+</beans>

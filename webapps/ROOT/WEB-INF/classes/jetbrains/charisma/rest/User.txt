@@ -1,0 +1,66 @@
+h1./user
+h2. GET /user/current
+Get currently logged in user info
+{panel}{{GET /rest/user/current}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/user/current{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /user/bylogin/\{remoteUser\}
+Get user by login name
+{panel}{{GET /rest/user/bylogin/*\{remoteUser\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| remoteUser | userByLogin | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/user/bylogin/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /user/filters/\{user\}
+Get user's saved searches
+{panel}{{GET /rest/user/filters/*\{user\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| user | userByLogin | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/user/filters/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /user/login
+Login user
+{panel}{{POST /rest/user/login?*\{login\}*&*\{password\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| login | string | TODO: Description |
+| password | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/user/login?login=TODO&password=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

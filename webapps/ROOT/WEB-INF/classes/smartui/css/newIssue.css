@@ -1,0 +1,91 @@
+/*---------------------------------------------- Start newIssuePane --------------------------------------------------------*/
+.newIssuePane {
+    margin: 0;
+    padding: .5em;
+    background-color: #d7d7d7;
+    font-family: tahoma, arial, sans-serif;
+    display: none;
+}
+.newIssuePane .form {
+    margin: 0;
+    padding: 1em 2em 1.5em 2em;
+    background-color: #f6f7f8;
+    position: relative;
+}
+.newIssuePane .form ul.attr {
+    margin: .33em .5em 0 0;
+    padding: 0;
+    float: left;
+    width: 5em;
+}
+.newIssuePane .form ul.attr li {
+    margin: 0 0 1.03em 0;
+    padding: 0;
+    list-style: none;
+    color: #000;
+    text-align: right;
+}
+.newIssuePane .form ul.attr li.textarea {
+    margin-bottom: 0;
+}
+
+.newIssuePane .issueWikiHelp {
+    margin: .9em .2em 0 0;
+    padding: 0;
+    font-size: 80%;
+    float: right;
+}
+
+.newIssuePane .form .textarea {
+    margin: .3em 0 0 5em;
+    padding: 0;
+    position: relative;
+}
+
+.newIssuePane .form .textarea textarea {
+    margin: 0;
+    padding: .18em .3em;
+    display: block;
+    width: 98%;
+    height: 8em;
+    overflow-y: hidden;
+    line-height: 1.5em;
+    color: #333;
+    font-size: 100%;
+    font-family: tahoma, arial, sans-serif;
+    border: solid 2px #e1e2e2;
+}
+
+.newIssuePane ul.attachments {
+    margin-top: 1em;
+}
+.newIssuePane ul.properties {
+    margin-top: -.5em;
+}
+
+.newIssuePane ul.buttons li.checkbox {
+    padding: 0;
+    float: none;
+    font-size: 100%;
+}
+.newIssuePane ul.buttons li.checkbox input {
+    margin: 3px 2px 0 0;
+    width: 13px;
+    height: 13px;
+    font-size: 11px;
+    float: left;
+}
+/*.newIssuePane .issuePreview {
+    margin: 0;
+    padding: 1em 0 2em 0;
+    background-color: #fff;
+}
+.newIssuePane .issuePreview .issue p {
+    margin: 1em 0 .5em 0;
+    color: #55676f;
+}*/
+
+
+
+
+/*---------------------------------------------- End newIssuePane --------------------------------------------------------*/

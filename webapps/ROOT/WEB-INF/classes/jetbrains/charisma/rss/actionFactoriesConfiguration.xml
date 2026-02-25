@@ -1,0 +1,3 @@
+<beans>
+  <bean id="jetbrains.charisma.rss.CharismaRss_Controller" class="jetbrains.charisma.rss.CharismaRss_Controller"></bean>
+</beans>

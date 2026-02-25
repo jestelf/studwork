@@ -1,0 +1,7 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.fullScreenIssue.Issue_RootHtmlTemplateController" class="jetbrains.charisma.smartui.fullScreenIssue.Issue_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

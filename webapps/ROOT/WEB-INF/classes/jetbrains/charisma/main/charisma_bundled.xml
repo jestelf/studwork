@@ -1,0 +1,168 @@
+<project name="charisma_bundled" default="assemble.bundle">
+  <property file="${ant.file}/../charisma.properties" />
+  <import file="${ant.file}/../charisma_internal.xml" />
+  <property name="solution.name" value="charisma_bundled" />
+  <property name="bundle.name" value="charisma_bundle" />
+  <property name="solution.home.dir" value="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma" />
+  <property name="war.path" value="${solution.home.dir}\dist\${solution.name}.war" />
+  <property name="bundle.path" value="${solution.home.dir}\dist\${bundle.name}.jar" />
+  <target name="assemble.bundle" depends="charisma.clean,charisma.compile">
+    <dirname property="war.dir" file="${war.path}" />
+    <mkdir dir="${war.dir}" />
+    <jar destfile="${bundle.path}" duplicate="preserve">
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/source" excludes="**/*.properties" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-customfields/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-importer/solutions/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-jira-client/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-ldap-integration/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-openid-integration/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-teamcity-integration/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/youtrack-rest-import/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/businessRules/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/license/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/rest/solutions/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/stateMachine/solutions/jetbrains.mps.baseLanguage.stateMachine.runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/extensions/newWikiRuntime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/runtime/higlighter/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/jetbrains.mps.webr.rest.client.runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/jquery/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/prettify/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/tickComponent/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" excludes="**/*.properties" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" excludes="**/*.properties" />
+    </jar>
+    <jar destfile="${war.path}" duplicate="preserve">
+      <zipfileset file="${bundle.path}" prefix="WEB-INF/lib" />
+      <zipfileset file="C:/branches/RB-2.0/charisma/charisma-app/WEB-INF\web.xml" prefix="WEB-INF" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-app/WEB-INF" includes="**/*appengine-web.xml" prefix="WEB-INF" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/source" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-customfields/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-importer/solutions/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-jira-client/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-ldap-integration/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-openid-integration/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-teamcity-integration/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/youtrack-rest-import/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/businessRules/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/dnq/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/license/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/parser/solutions/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/rest/solutions/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/springframework/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/stateMachine/solutions/jetbrains.mps.baseLanguage.stateMachine.runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/extensions/newWikiRuntime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/extensions/userManagement/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/languages/webUnit/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/runtime/higlighter/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/runtime_notifications/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/ext-2.1/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/htmlComponent/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/javascriptStateMachine/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/javascript/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/jetbrains.mps.webr.rest.client.runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/jquery/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/prettify/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/tickComponent/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="${mps.webr-dnq}/platform/webr/solutions/uri/runtime/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset dir="C:/branches/RB-2.0/charisma/charisma-app/solutions/charisma/classes_gen" includes="**/*.properties" prefix="WEB-INF/classes" />
+      <zipfileset file="${mps_home}/core/baseLanguage/JDK.mpsarch.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/baseLanguage/closures.runtime.mpsarch.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/lib/commons-lang/commons-lang-2.1.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/lib/commons-logging/commons-logging-1.1.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/lib/joda-time/joda-time-1.6.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/lib/junit4/junit-4.1.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/lib/log4j/log4j.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps_home}/platform/jetbrains.mps.ypath.runtime.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-1.3.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-jaxrpc-1.3.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-saaj-1.3.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/axis-wsdl4j-1.5.1.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/commons-discovery-0.2.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="C:/branches/RB-2.0/charisma/charisma-jira-client/lib/httpclient.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="C:/branches/RB-2.0/charisma/charisma-openid-integration/lib/openid4java/openid4java.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/annotations/annotations.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/apache-xerces/xerces.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/commons-codec/commons-codec-1.4.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/commons-email/activation.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/commons-email/mail.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/commons-fileupload/commons-fileupload-1.2.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/commons-io/commons-io-1.3.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/freemarker/freemarker-2.3.11.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/htmlparser/htmlparser.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/httpclient/httpclient.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/httpunit/httpunit-1.6.2.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/image-scaling/imagescaling_0_8_3.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/jdom/jdom-1.0.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/jetty-util/jetty-util-6.1.23.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/jnlp/jnlp.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/log4j/log4j-1.2.14.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/mime-util/mime-util-2.1.2.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/nekohtml/nekohtml.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/quartz/commons-collections-3.1.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/quartz/jta.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/quartz/quartz-1.6.0.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/servlet-api/servlet-api.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/slf4j/slf4j-api-1.5.8.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/slf4j/slf4j-log4j12-1.5.8.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/smack/smack.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/smack/smackx.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-deployers.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/spring-jboss5-fix/jboss-spring-int-vfs.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/spring-support/spring-context-support.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/spring/spring-aop.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/spring/spring-beans.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/spring/spring-context.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/spring/spring-core.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/spring/spring-tx.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/stax/stax-1.1.1-dev.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/stax/stax-api-1.0.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/lib/xstream/xstream.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/dnq/runtime/lib/BerkeleyDb/je-4.1.7.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-analyzers-2.4.0.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-core-2.4.0.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/dnq/runtime/lib/Lucene/lucene-snowball-2.4.0.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/dnq/runtime/lib/Trove/trove.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-compress/commons-compress-1.0.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/dnq/runtime/lib/commons-logging/commons-logging-1.1.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-api.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-impl.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jaxb-xjc.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-client-1.1.4.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-core-1.1.4.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-json-1.1.4.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jersey-server-1.1.4-patched.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jsr173_1.0_api.jar" prefix="WEB-INF/lib" />
+      <zipfileset file="${mps.webr-dnq}/platform/rest/solutions/runtime/lib/jsr311-api-1.1.1.jar" prefix="WEB-INF/lib" />
+    </jar>
+  </target>
+</project>

@@ -1,0 +1,8 @@
+<beans>
+  <bean id="timeZonesFactory" class="jetbrains.charisma.plugins.TimeZoneFactory"></bean>
+  <bean id="extensionPoint_timeZonesFactory_decorators" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="timeZonesFactory"/>
+    <property name="extensionPropertyName" value="decorators"/>
+    <property name="extensionType" value="jetbrains.charisma.plugins.TimeZoneDecorator"/>
+  </bean>
+</beans>

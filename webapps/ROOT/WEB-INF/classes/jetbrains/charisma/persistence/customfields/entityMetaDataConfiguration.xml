@@ -1,0 +1,541 @@
+<beans>
+  <bean id="jetbrains.charisma.persistence.customfields.CustomFieldPrototypeMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.persistence.customfields.CustomFieldPrototypeImpl"></bean>
+    </property>
+    <property name="type">
+      <value>CustomFieldPrototype</value>
+    </property>
+    <property name="ownIndexes">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.IndexImpl">
+          <property name="fields">
+            <list>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>id</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>CustomFieldPrototype</value>
+                </property>
+                <property name="property">
+                  <value>true</value>
+                </property>
+              </bean>
+            </list>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.IndexImpl">
+          <property name="fields">
+            <list>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>name</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>CustomFieldPrototype</value>
+                </property>
+                <property name="property">
+                  <value>true</value>
+                </property>
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>defaultVisibility</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>id</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>instances</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>jiraId</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>name</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>readPermission</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>typeName</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>writePermission</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.persistence.customfields.CustomFieldPrototype.instances"/>
+        <ref bean="jetbrains.charisma.persistence.customfields.CustomFieldPrototype.readPermission"/>
+        <ref bean="jetbrains.charisma.persistence.customfields.CustomFieldPrototype.writePermission"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+    <property name="requiredProperties">
+      <list>
+        <value>id</value>
+        <value>name</value>
+        <value>typeName</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.persistence.customfields.ProjectCustomFieldMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.persistence.customfields.ProjectCustomFieldImpl"></bean>
+    </property>
+    <property name="type">
+      <value>ProjectCustomField</value>
+    </property>
+    <property name="ownIndexes">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.IndexImpl">
+          <property name="fields">
+            <list>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>prototype</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>ProjectCustomField</value>
+                </property>
+                <property name="property">
+                  <value>false</value>
+                </property>
+              </bean>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>project</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>ProjectCustomField</value>
+                </property>
+                <property name="property">
+                  <value>false</value>
+                </property>
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>nullValueText</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>project</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>prototype</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.persistence.customfields.ProjectCustomField.project"/>
+        <ref bean="jetbrains.charisma.persistence.customfields.ProjectCustomField.prototype"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.persistence.customfields.CustomFieldEntryMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.persistence.customfields.CustomFieldEntryImpl"></bean>
+    </property>
+    <property name="type">
+      <value>CustomFieldEntry</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>field</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>issue</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>values</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.persistence.customfields.CustomFieldEntry.field"/>
+        <ref bean="jetbrains.charisma.persistence.customfields.CustomFieldEntry.issue"/>
+        <ref bean="jetbrains.charisma.persistence.customfields.CustomFieldEntry.values"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.persistence.customfields.FieldValueMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.persistence.customfields.FieldValueImpl"></bean>
+    </property>
+    <property name="type">
+      <value>FieldValue</value>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.persistence.customfields.CustomFieldEntry.values" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1_n</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="CustomFieldEntry.values-FieldValue"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistence.customfields.FieldValueMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>values</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.persistence.customfields.CustomFieldPrototype.writePermission" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="CustomFieldPrototype.writePermission-Permission"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistent.PermissionMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="name">
+      <value>writePermission</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.persistence.customfields.ProjectCustomField.project" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="Project.fields-ProjectCustomField.project"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>ChildEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistent.ProjectMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>project</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.persistence.customfields.CustomFieldEntry.issue" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="CustomFieldEntry.issue-Issue.fields"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>UndirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistent.IssueMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>issue</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.persistence.customfields.CustomFieldEntry.field" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="CustomFieldEntry.field-ProjectCustomField"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistence.customfields.ProjectCustomFieldMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>field</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.persistence.customfields.CustomFieldPrototype.readPermission" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="CustomFieldPrototype.readPermission-Permission"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistent.PermissionMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="name">
+      <value>readPermission</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.persistence.customfields.CustomFieldPrototype.instances" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_n</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="ProjectCustomField.prototype-CustomFieldPrototype.instances"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>UndirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistence.customfields.ProjectCustomFieldMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="name">
+      <value>instances</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.persistence.customfields.ProjectCustomField.prototype" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="ProjectCustomField.prototype-CustomFieldPrototype.instances"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>UndirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistence.customfields.CustomFieldPrototypeMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>prototype</value>
+    </property>
+  </bean>
+  <bean id="CustomFieldEntry.values-FieldValue" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="CustomFieldPrototype.writePermission-Permission" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="CustomFieldEntry.issue-Issue.fields" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Undirected</value>
+    </property>
+  </bean>
+  <bean id="CustomFieldEntry.field-ProjectCustomField" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="CustomFieldPrototype.readPermission-Permission" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="ProjectCustomField.prototype-CustomFieldPrototype.instances" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Undirected</value>
+    </property>
+  </bean>
+</beans>

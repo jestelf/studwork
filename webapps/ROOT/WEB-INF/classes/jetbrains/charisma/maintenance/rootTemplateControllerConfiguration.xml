@@ -1,0 +1,32 @@
+<beans>
+  <bean id="jetbrains.charisma.maintenance.JiraIntegration_RootHtmlTemplateController" class="jetbrains.charisma.maintenance.JiraIntegration_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.maintenance.IssueLinkTypes_RootHtmlTemplateController" class="jetbrains.charisma.maintenance.IssueLinkTypes_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.maintenance.TextIndex_RootHtmlTemplateController" class="jetbrains.charisma.maintenance.TextIndex_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.maintenance.DatabaseBackup_RootHtmlTemplateController" class="jetbrains.charisma.maintenance.DatabaseBackup_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.maintenance.Telemetry_RootHtmlTemplateController" class="jetbrains.charisma.maintenance.Telemetry_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.maintenance.Statistics_RootHtmlTemplateController" class="jetbrains.charisma.maintenance.Statistics_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

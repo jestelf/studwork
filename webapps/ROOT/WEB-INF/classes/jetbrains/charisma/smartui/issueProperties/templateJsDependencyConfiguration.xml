@@ -1,0 +1,314 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.IconProperties_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IconProperties</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Favorites_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>f</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Votes_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>v</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Watches_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>w</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.IconProperties</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.Favorites_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Favorites</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.Votes_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Votes</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.Watches_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Watches</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.Priority_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Priority</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.Priority</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.Type_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Type</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.Type</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.State_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>State</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.commands.new.ui.NewCommandDialog</value>
+        <value>jetbrains.charisma.smartui.issueProperties.State</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.Assignee_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Assignee</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.Assignee</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.Subsystem_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Subsystem</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.Subsystem</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.AffectedVersions_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AffectedVersions</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.AffectedVersions</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.MultiBox</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.FixVersions_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>FixVersions</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.FixVersions</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.MultiBox</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.FixBuild_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>FixBuild</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.FixBuild</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.IconProperties2_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IconProperties2</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Favorites_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>f</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Votes_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>v</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.IconProperties2</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.Watches2_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Watches2</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.Watches2</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.Votes2_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Votes2</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.Votes2</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueProperties.Visibility_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Visibility</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueProperties.Visibility</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+</beans>

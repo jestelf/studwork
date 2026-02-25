@@ -1,0 +1,66 @@
+.footer {
+    margin: 1em auto 0 auto;
+    padding: 0;
+    text-align: left;
+    /*width: 93%;*/
+    min-width: 960px;
+    max-width: 90em;
+    clear: both;
+    height: 45px;
+    border-top: solid 1px #d7d7d7;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer ul {
+    margin: .2em 0 0 .2em;
+    padding: 0;
+}
+.footer ul li {
+    margin: 0 .3em 0 0;
+    padding: 0 0 0 .7em;
+    display: inline;
+    list-style: none;
+    font-size: 90%;
+    color: #666;
+    font-family: tahoma,arial,sans-serif;
+    border-left: solid 1px #d7d7d7;
+}
+.footer ul li.first {
+    border-left: none;
+}
+.footer ul li a {
+    border-bottom: dotted 1px #6699cc;
+}
+.footer ul li a:hover {
+    border-bottom: none;
+}
+.footer ul.rss {
+    float: right;
+}
+.footer ul.rss li {
+    margin: 0 .3em 0 0;
+    padding: 0 0 0 .7em;
+    border-left: solid 1px #d7d7d7;
+}
+.footer ul.rss li.first {
+    margin: 0 .3em 0 0;
+    padding: 0 0 0 .7em;
+    border-left: none;
+    background: none;
+}
+
+.footer ul.rss li.norss {
+    background: none;
+    padding-left: 0.5em;
+}
+
+.footer ul.rss li {
+    border-left: solid 1px #d7d7d7;
+    padding-left: 1.5em;
+    padding-bottom: .2em;
+    background: url( '../img/icoRss.gif' ) no-repeat 0.3em 0.1em;
+}
+.footer ul.rss li a {
+    border-bottom: none;
+}

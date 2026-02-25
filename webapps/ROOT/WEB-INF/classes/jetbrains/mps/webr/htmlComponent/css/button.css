@@ -1,0 +1,10 @@
+.jt-button {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.jt-button-default {
+  background-color: #084b96;
+  color: #fff;
+}
+

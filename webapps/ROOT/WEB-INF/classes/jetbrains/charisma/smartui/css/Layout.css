@@ -1,0 +1,174 @@
+/*Issue list layout*/
+.default-layout {
+  min-width: 930px;
+  margin: 0 2em;
+  padding: 0 .8em;
+  text-align: left;
+  
+  
+}
+
+.default-layout .west {
+  width: 190px;
+}
+
+.default-layout .center {
+  margin-left: 216px;
+  float: none;
+}
+
+/*Full screen issue layour*/
+.fsi-layout {
+  min-width: 930px;
+  text-align: left;
+  
+  
+  
+  
+}
+
+.fsi-layout .north {
+  margin-bottom: 0.5em;
+}
+
+.fsi-layout .west {
+  width: 195px;
+}
+
+.fsi-layout .center {
+  margin-left: 230px;
+  float: none;
+  
+  
+  
+}
+
+.fsi-layout .center .west {
+  width: 9%;
+  width: 81px;
+  vertical-align: top;
+  
+}
+
+.fsi-layout .center .west table {
+  width: 81px;
+}
+
+.fsi-layout .center .center {
+  vertical-align: top;
+  padding-left: 0;
+}
+
+.fsi-layout .center .south {
+  clear: none;
+}
+
+.fsi-layout .south .west {
+  width: auto;
+}
+
+/*issue list layout*/
+.issues {
+  
+  
+  
+  
+}
+
+.issues .north {
+  margin-bottom: 8px;
+}
+
+.issues .east {
+  text-align: right;
+}
+
+.issues .center {
+  padding-left: 0;
+  width: 85%;
+}
+
+.issues .south {
+  
+  
+  
+}
+
+.issues .south .west {
+  width: 10%;
+}
+
+.issues .south .center {
+  width: 70%;
+  padding-left: 0;
+}
+
+.issues .south .east {
+  width: 15%;
+}
+
+.userProfile-layout {
+  padding: 0;
+  
+  
+  
+  
+  
+  
+}
+
+.userProfile-layout .north {
+  margin-bottom: 2em;
+}
+
+.userProfile-layout .header {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.userProfile-layout .center {
+  
+}
+
+.userProfile-layout .center .center {
+  width: 100%;
+  margin-left: 0;
+  
+  
+  
+}
+
+.userProfile-layout .center .center .west {
+  
+  width: 30%;
+  vertical-align: top;
+}
+
+.userProfile-layout .center .center .west label {
+  min-width: 1em;
+}
+
+.userProfile-layout .center .center .center {
+  margin: 0 3% 0 0;
+  vertical-align: top;
+  float: left;
+  width: auto;
+}
+
+.userProfile-layout .center .center .east {
+  width: 55%;
+  vertical-align: top;
+}
+
+.userProfile-layout .south {
+  clear: none;
+}
+
+.userProfile-layout .footer {
+  margin: 1em 0;
+}
+
+.userProfile-layout .createIssue {
+  display: none;
+}
+

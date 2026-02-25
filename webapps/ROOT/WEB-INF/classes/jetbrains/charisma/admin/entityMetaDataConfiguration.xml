@@ -1,0 +1,137 @@
+<beans>
+  <bean id="jetbrains.charisma.admin.JiraIntegrationSettingsMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.admin.JiraIntegrationSettingsImpl"></bean>
+    </property>
+    <property name="type">
+      <value>JiraIntegrationSettings</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>enabled</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>jiraLogin</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>jiraPassword</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>jiraUrl</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.admin.JiraUserDataMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.admin.JiraUserDataImpl"></bean>
+    </property>
+    <property name="superType">
+      <value>BaseUserData</value>
+    </property>
+    <property name="type">
+      <value>JiraUserData</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>integrationSettings</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>login</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>user</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.admin.JiraUserData.integrationSettings"/>
+        <ref bean="jetbrains.charisma.authentication.BaseUserData.user"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.admin.JiraUserData.integrationSettings" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="JiraUserData.integrationSettings-JiraIntegrationSettings"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.admin.JiraIntegrationSettingsMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>integrationSettings</value>
+    </property>
+  </bean>
+  <bean id="JiraUserData.integrationSettings-JiraIntegrationSettings" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+</beans>

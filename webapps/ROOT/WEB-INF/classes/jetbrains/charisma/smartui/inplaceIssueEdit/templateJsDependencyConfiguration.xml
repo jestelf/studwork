@@ -1,0 +1,135 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.inplaceIssueEdit.EditIssue_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditIssue</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueId_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ii</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.inplaceIssueEdit.EditIssueText_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>eit</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.links.LinkPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>lp</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.tags.TagsPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tp</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.AttachmentPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>atch</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueProperties_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>props</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.inplaceIssueEdit.IssuePreview_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ip</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.smartui.inplaceIssueEdit.EditIssue</value>
+        <value>jetbrains.charisma.smartui.js.PropertySelector</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.inplaceIssueEdit.EditIssueText_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditIssueText</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.inplaceIssueEdit.IssueVisibility_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>visibility</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.inplaceIssueEdit.EditIssueText</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.inplaceIssueEdit.IssuePreview_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssuePreview</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.inplaceIssueEdit.IssueVisibility_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueVisibility</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.inplaceIssueEdit.IssueVisibility</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+</beans>

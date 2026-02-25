@@ -1,0 +1,70 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.viewSettings.SortPanel_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>SortPanel</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.viewSettings.SortPanel</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.viewSettings.ViewSettingsDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ViewSettingsDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.viewSettings.VisibilityPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>VisibilityPanel</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.viewSettings.SortPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>SortPanel</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.viewSettings.ViewSettingsDialog</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.viewSettings.VisibilityPanel_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>VisibilityPanel</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.viewSettings.VisibilityPanel</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+</beans>

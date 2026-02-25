@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>yesterday</title>
+</head>
+<body>
+
+RegExp:
+<br/>
+<input type="text" id="regexp" size="100" value = "(?:<script([^>]*)?>)((\s|.)*?)(?:<\/script>)">
+<!--input type="text" id="regexp" size="100" value = "<script(.|\s)*?\/script>"-->
+<br/>
+Text:
+<br/>
+<textarea id="source" cols="170" rows="40">
+</textarea>
+<br/>
+<input type="submit" value="Process" onclick="process();return false;"/>
+<br/>
+Result:
+<br/>
+<textarea id="result" cols="100" rows="10" readonly>
+</textarea>
+
+<script type="text/javascript">
+    function process() {
+        var regexp = document.getElementById("regexp");
+        var source = document.getElementById("source");
+        var result = document.getElementById("result");
+
+        result.value = "";
+
+        if (regexp.value == "" || source.value == "") {
+            window.alert("Enter regexp and source");
+        } else {
+            var re = new RegExp(regexp.value, "ig");
+            var match = re.exec(source.value);
+            if (!match) {
+                result.value = "Found nothing";
+            } else {
+                for (; match; match = re.exec(source.value)) {
+                    for (var i = 1; i < match.length; i++) {
+                        var script = match[i];
+                        result.value = result.value + "\n------------------------------------------\nFound " + i + ":\n" + script;
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

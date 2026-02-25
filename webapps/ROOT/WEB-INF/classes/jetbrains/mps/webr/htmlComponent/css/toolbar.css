@@ -1,0 +1,93 @@
+.jt-toolbar {
+  padding: 0 0 0.3em 0;
+  text-align: left;
+  width: auto;
+  font-size: 90%;
+}
+
+/*Table layout modificators*/
+.jt-toolbar table {
+  border-collapse: separate;
+  height: 100%;
+}
+
+.jt-toolbar-content {
+  padding: 0;
+  margin: -1px 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.jt-toolbar-item {
+  font-family: arial, tahoma, sans-serif;
+  text-align: center;
+  border: solid 1px transparent;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.jt-tabpanel-body .jt-toolbar-item:hover, .jt-tabpanel-body .jt-toolbar-item {
+  cursor: text;
+}
+
+.jt-tabpanel-body .jt-toolbar .error-message {
+  padding: 5px 10px;
+  display: block;
+}
+
+/*div based layout modificators*/
+.jt-toolbar-d-right {
+  float: right;
+}
+
+.jt-toolbar-item-d {
+  cursor: pointer;
+  float: left;
+}
+
+/*Common declarations*/
+.jt-toolbar-menu-active {
+  border-color: #898989;
+  background-color: #898989;
+}
+
+.jt-toolbar-menu-active .jt-menu-button {
+  color: #fff;
+}
+
+.jt-toolbar .jt-separator {
+  padding: 0;
+  border: none;
+  background-color: #d4d5d6;
+  width: 1px;
+  font-size: 1px;
+}
+
+.jt-toolbar {
+  
+  
+  
+  
+}
+
+.jt-toolbar div.jt-separator {
+  float: left;
+  font-size: 100%;
+}
+
+.jt-toolbar a, .jt-toolbar button {
+  width: auto;
+  display: block;
+  text-decoration: none;
+}
+
+.jt-toolbar .jt-button {
+  border: solid 1px transparent;
+  background: transparent;
+  color: #084B96;
+}
+
+.jt-toolbar .jt-menu-disabled {
+  color: gray;
+}
+

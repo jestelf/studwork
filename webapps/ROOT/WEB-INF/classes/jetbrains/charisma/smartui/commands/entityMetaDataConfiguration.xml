@@ -1,0 +1,84 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.commands.RecentCommandMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.smartui.commands.RecentCommandImpl"></bean>
+    </property>
+    <property name="type">
+      <value>RecentCommand</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>command</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>recentExecution</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>userProfile</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.smartui.commands.RecentCommand.userProfile"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+    <property name="requiredProperties">
+      <list>
+        <value>command</value>
+        <value>recentExecution</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.commands.RecentCommand.userProfile" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="UserProfile.recentCommands-RecentCommand.userProfile"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>ChildEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistent.UserProfileMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>userProfile</value>
+    </property>
+  </bean>
+</beans>

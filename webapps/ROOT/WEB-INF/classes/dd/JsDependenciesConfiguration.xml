@@ -1,0 +1,173 @@
+<beans>
+  <bean id="dd.DDCore" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>dd.DDCore</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>dd/DDCore.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>core.EventManager</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="dd.DragSource" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>dd.DragSource</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>dd/DragSource.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>dd.DDCore</value>
+        <value>dd.StatusProxy</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="dd.DragZone" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>dd.DragZone</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>dd/DragZone.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>dd.DragSource</value>
+        <value>core.EventManager</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="dd.DropTarget" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>dd.DropTarget</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>dd/DropTarget.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>dd.DDCore</value>
+        <value>dd.DragSource</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="dd.DropZone" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>dd.DropZone</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>dd/DropZone.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>dd.DropTarget</value>
+        <value>dd.DragSource</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="dd.Registry" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>dd.Registry</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>dd/Registry.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="dd.ScrollManager" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>dd.ScrollManager</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>dd/ScrollManager.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="dd.StatusProxy" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>dd.StatusProxy</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>dd/StatusProxy.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Layer</value>
+        <value>core.Element</value>
+      </list>
+    </property>
+  </bean>
+</beans>

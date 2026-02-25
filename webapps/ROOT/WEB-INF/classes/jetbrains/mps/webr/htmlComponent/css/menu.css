@@ -1,0 +1,68 @@
+.jt-menu-button {
+  padding: 0 12px 2px 5px;
+  cursor: pointer;
+  background: url("${getClasspathUri("images/arrows.png")}") no-repeat right -76px;
+  text-decoration: none!important;
+}
+
+.jt-menu-button.jt-menu-active, .jt-toolbar-menu-active .jt-menu-button {
+  color: #fff;
+  background-position: right -107px;
+}
+
+.jt-menu {
+  position: absolute;
+  display: none;
+  margin-top: 2px;
+  background-color: #fff;
+  border: solid 1px #898989;
+  z-index: 20;
+  box-shadow:2px 2px 5px #898989;
+  -moz-box-shadow:2px 2px 5px #898989;
+  -webkit-box-shadow:2px 2px 5px #898989;
+}
+
+.ieShadow {
+  display: none;
+  position: absolute;
+  z-index: 19;
+  background-color: #898989;
+  margin-top: 2px;
+  filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=4);
+}
+
+.jt-menu li {
+  text-align: left;
+  list-style: none;
+}
+
+.jt-menu li a {
+  margin: 0;
+  padding: 0.2em 0.3em;
+  color: #333;
+  white-space: nowrap;
+  display: block;
+  text-decoration: none;
+}
+
+.jt-menu-active {
+  background-color: #898989;
+}
+
+.jt-menu-disabled {
+  color: gray;
+}
+
+.jt-menu-checkitem {
+  padding-left: 1em;
+}
+
+.jt-menu-checkitem-checked {
+  background: url("${getClasspathUri("images/menuItemChecked.gif")}") no-repeat 0 center;
+}
+
+.jt-menu li a:hover {
+  background-color: #E1E2E2;
+  color: black;
+}
+

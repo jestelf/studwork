@@ -1,0 +1,318 @@
+/*general list styles*/
+/*list container with collapsable list title*/
+.jt-list-container {
+  margin-bottom: 1.5em;
+  
+}
+
+.jt-list-container .title {
+  margin: 0;
+  padding: 0 15px 0.3em 0;
+  border-bottom: 1px solid #898989;
+  background: url("${getClasspathUri("smartui/img/default/expand.png")}") no-repeat right 55%;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: arial, tahoma, verdana, sans-serif;
+  font-weight: bold;
+  color: #333;
+  
+}
+
+.jt-list-container .title .light {
+  font-weight: normal;
+}
+
+.active .title {
+  background: url("${getClasspathUri("smartui/img/default/collapse.png")}") no-repeat right 55%;
+}
+
+/*list is collapsed by default*/
+.jt-list-container .jt-list {
+  display: none;
+  line-height: 22px;
+}
+
+/*expanded list*/
+.active .jt-list {
+  display: block;
+}
+
+.jt-list .jt-list-item {
+  position: relative;
+  height: 22px;
+  list-style: none;
+  list-style-position: outside;
+  white-space: nowrap;
+}
+
+.jt-list-item a {
+  display: block;
+  cursor: pointer;
+}
+
+.jt-list-item label {
+  display: block;
+  padding-left: 10px;
+}
+
+.jt-list .jt-list-item:hover {
+  background-color: #fff;
+}
+
+/*list with an icon*/
+/*list with icons presentaion*/
+.jt-list.open {
+  display: block;
+}
+
+.jt-list-item .light {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  width: 45px;
+  background: url("${getClasspathUri("smartui/img/hider.png")}") repeat-y 0 0;
+}
+
+.jt-list-item.selected .light {
+  background-position: -421px 0;
+}
+
+.watchFolder {
+  width: 195px;
+  table-layout: fixed;
+  
+  
+  
+  
+}
+
+.watchFolder .ico {
+  width: 13px;
+  height: 13px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.watchFolder .share {
+  background-position: 5px -556px;
+}
+
+.watchFolder .tagText {
+  height: 100%;
+}
+
+.watchFolder .arrow {
+  
+  
+}
+
+.watchFolder .arrow .tagText {
+  border-color: transparent;
+}
+
+.watchFolder .arrow .share {
+  border-color: transparent;
+  background-position: 1px -577px;
+}
+
+.jt-list-item:hover {
+  
+  
+  
+  
+  
+}
+
+.jt-list-item:hover .tagText {
+  display: none!important;
+}
+
+.jt-list-item:hover a.ico {
+  background: url("${getClasspathUri("smartui/img/edit.gif")}") no-repeat -1px center;
+  cursor: pointer;
+  background-color: transparent!important;
+  border-color: transparent!important;
+  opacity:1;
+  filter:alpha(opacity=100);
+}
+
+.jt-list-item:hover div.ico {
+  cursor: text;
+  
+}
+
+.jt-list-item:hover div.ico .tagText {
+  display: block!important;
+}
+
+.jt-list-item:hover .ico.watched {
+  background: url("${getClasspathUri("smartui/img/iconWatchSmall.gif")}") no-repeat 0 0;
+  cursor: text;
+}
+
+.jt-list-item:hover .ico.favorites {
+  background: url("${getClasspathUri("smartui/img/iconFavSmall.gif")}") no-repeat 0 0;
+  cursor: text;
+}
+
+.watchType {
+  width: 20px;
+  padding-left: 2px;
+  
+}
+
+.watchType .favorites, .watchType .watched {
+  background-color: transparent!important;
+  border-color: transparent!important;
+  
+}
+
+.watchType .favorites .tagText, .watchType .watched .tagText {
+  background-color: transparent!important;
+  border-color: transparent!important;
+  width: 13px;
+}
+
+*:first-child+html .watchType .tagText {
+  width: 13px;
+}
+
+/*overlaping*/
+.closure-wrapper {
+  display: block;
+  overflow: hidden;
+}
+
+.jt-list .closure-wrapper {
+  width: 150px;
+  height: 22px;
+}
+
+.jt-list .closure-target {
+  display: block;
+}
+
+.closure-wrapper:hover {
+  overflow: visible;
+  
+}
+
+.closure-wrapper:hover .closure-target {
+  position: absolute;
+  background-color: #fff;
+  z-index: 900;
+  top: 0;
+  float: left;
+  white-space: nowrap;
+}
+
+/*filter*/
+.plus {
+  padding: 0 0 0 8px;
+  background: url("${getClasspathUri("smartui/img/default/horiz-pic.png")}") no-repeat 0 4px;
+}
+
+.filter {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.filter a:hover {
+  text-decoration: none;
+}
+
+.filter .jt-list-item {
+  height: auto;
+  clear: left;
+}
+
+.filter .jt-list-item .jt-list {
+  display: none;
+  border: 0;
+  border-top: 1px solid #f0f1f2;
+  background: #fff;
+}
+
+.filter .jt-list .jt-list-item.open {
+  
+}
+
+.filter .jt-list .jt-list-item.open .plus {
+  background-position: -26px 4px;
+}
+
+.filter .open .jt-list {
+  display: block;
+}
+
+.filter .jt-list .jt-list .jt-list-item {
+  border-bottom: 0;
+  padding-left: 10px;
+  height: 22px;
+}
+
+.filter .jt-list .jt-list .jt-list-item label {
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.filter .jt-list .jt-list .jt-list-item .closure-wrapper:hover {
+  margin-left: 18px;
+}
+
+.filter .jt-input {
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 13px;
+  height: 13px;
+}
+
+.filter .jt-list .selected {
+  background-color: #feffd9;
+}
+
+.filter .selected .closure-target {
+  background-color: #feffd9;
+}
+
+.filter .modified {
+  font-weight: bold;
+}
+
+.filter .centered {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*filter calculating message*/
+.calculating {
+  padding: 10px 0;
+  background-color: #7dbafe;
+  text-align: center;
+  color: white;
+}
+
+/*show/hide link for a list*/
+.jt-list-item {
+  
+}
+
+.jt-list-item .miniaturizer, .jt-list-item .miniaturizer:hover {
+  color: #666;
+  padding: 0;
+  font-size: 85%;
+}
+

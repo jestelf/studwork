@@ -1,0 +1,28 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredClasspathUri("/ext-1.1.1/resources/css/ext-all.css").resourcePath>
+<#include getDeferredClasspathUri("/ext-1.1.1/resources/css/ext-all.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredClasspathUri("/ext-1.1.1/resources/css/ext-all.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredClasspathUri("/ext-1.1.1/ext-ux/accordion/accordion.css").resourcePath>
+<#include getDeferredClasspathUri("/ext-1.1.1/ext-ux/accordion/accordion.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredClasspathUri("/ext-1.1.1/ext-ux/accordion/accordion.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredClasspathUri("/ext-1.1.1/ext-ux/titleToolbar/titleToolbar.css").resourcePath>
+<#include getDeferredClasspathUri("/ext-1.1.1/ext-ux/titleToolbar/titleToolbar.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredClasspathUri("/ext-1.1.1/ext-ux/titleToolbar/titleToolbar.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/ResetFonts.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/ResetFonts.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/ResetFonts.css").url}");
+</#if>

@@ -1,0 +1,9 @@
+<beans>
+  <bean class="jetbrains.charisma.refactoring.RefactoringList">
+    <property name="refactorings">
+      <list>
+        <bean class="jetbrains.charisma.openid.persistence.RefactoringAddProviderCheckboxes"></bean>
+      </list>
+    </property>
+  </bean>
+</beans>

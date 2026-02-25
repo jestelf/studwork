@@ -1,0 +1,42 @@
+/*TOOLBAR*/
+.jt-toolbar {
+  border-bottom: 1px solid #898989;
+  height: 1.6em;
+  
+}
+
+.jt-toolbar .view {
+  position: relative;
+  top: 0.35em;
+}
+
+*:first-child+html .jt-toolbar {
+  padding-left: 0;
+}
+
+.toolbarLink {
+  margin: 0 3px;
+  padding: 0 5px 1px;
+}
+
+.jt-menu {
+  padding: 3px;
+}
+
+.viewOption {
+  position: relative;
+  margin-top: -0.35em;
+}
+
+.jt-player .jt-toolbar-item {
+  font-weight: normal;
+}
+
+.command-item > a {
+  margin-right: 11px;
+  font-size: 120%;
+  line-height: 115%;
+  font-weight: bold;
+  font-family: arial, tahoma, sans-serif;
+}
+

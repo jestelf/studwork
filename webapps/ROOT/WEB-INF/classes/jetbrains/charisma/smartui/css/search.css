@@ -1,0 +1,202 @@
+/*Search area general presentation*/
+.searchWrapper {
+  margin: 2px 0 12px 0;
+  background: url("${getClasspathUri("smartui/img/bgSearch.gif")}") repeat-x 0 0;
+}
+
+.searchProjectSelector {
+  float: left;
+  display: inline;
+  width: 15em;
+  width: 195px;
+  background: url("${getClasspathUri("smartui/img/bgSelectProductsLeft.gif")}") no-repeat 0 0;
+}
+
+.mainSearch {
+  padding: 15px 0 21px 17px;
+  position: relative;
+  z-index: 1;
+  background: url("${getClasspathUri("smartui/img/bgSelectProductsRight.gif")}") no-repeat right top;
+}
+
+.searchWrapper .searchContent {
+  margin: 0 0 0 15em;
+  margin-left: 195px;
+  padding: 0 0 10px 0;
+  background: url("${getClasspathUri("smartui/img/bgSearchLeft.gif")}") no-repeat 0 0;
+}
+
+.searchWrapper .searchContent .mainSearch {
+  margin: 0;
+  padding: 11px 25px 21px 14px;
+  position: relative;
+  z-index: 1;
+  background: url("${getClasspathUri("smartui/img/bgSearchRight.gif")}") no-repeat right top;
+}
+
+.searchWrapper .searchContent .mainSearch .widthInput {
+  margin: 6px 90px 0 0;
+  padding: 0;
+  font-size: 14px;
+  position: relative;
+  z-index: 3;
+  font-family: monospace;
+  background-color: transparent;
+}
+
+.searchWrapper .searchContent .mainSearch .widthInput input {
+  padding: 0;
+  width: 99%;
+  outline-width: 0;
+  font-size: 14px;
+  font-family: monospace;
+  background-color: transparent;
+  border: none;
+}
+
+.searchWrapper .searchContent .mainSearch .buttonSearch {
+  margin: 1px -8px 0 0;
+  float: right;
+  height: 25px;
+  width: 72px;
+  background: url("${getClasspathUri("smartui/img/bgSearchButton.gif")}") no-repeat right 0;
+  border-left: solid 1px #dde7e2;
+}
+
+.searchWrapper .searchContent .mainSearch input.button {
+  padding: 6px 0 0 0;
+  color: #084b96;
+  font-size: 11px;
+  float: right;
+  width: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.searchWrapper .searchContent .mainSearch .help {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  color: #f6f7f8;
+  top: 2px;
+  right: 4px;
+  background-image: url("${getClasspathUri("smartui/img/iconHelpSearch.gif")}");
+}
+
+.searchWrapper .searchContent .mainSearch a.arrowNavigation {
+  margin-top: 1px;
+  padding: 6px 6px 2px 6px;
+  width: 8px;
+  color: #fff;
+  font-size: 11px;
+  float: right;
+  background: url("${getClasspathUri("smartui/img/arrowDown.gif")}") no-repeat center 55%;
+  border-left: solid 1px #a9a9a9;
+}
+
+.searchWrapper .searchContent .mainSearch a.cleanSearch {
+  margin-top: 1px;
+  padding: 6px 6px 2px 6px;
+  color: #fff;
+  font-size: 11px;
+  float: right;
+  background: url("${getClasspathUri("smartui/img/icoCleanSearch.gif")}") no-repeat center 55%;
+}
+
+.searchWrapper .searchContent .mainSearch .widthInput .navigationSearch {
+  margin: 0;
+  padding: 0;
+}
+
+.searchWrapper .searchContent .mainSearch .widthInput .navigationSearch ul.suggest {
+  padding: .2em 30px 0.2em 0;
+  top: 15px;
+  left: -10px;
+  width: 100%;
+  z-index: 10;
+  text-align: left;
+  border-right: solid 1px #dde7e2;
+  border-top: none;
+}
+
+.searchWrapper .searchContent .mainSearch .widthInput .navigationSearch.activ ul.suggest {
+  display: block;
+}
+
+.searchWrapper .searchContent .mainSearch .widthInput .navigationSearch ul.suggest li {
+  display: block;
+}
+
+.searchWrapper .searchContent .mainSearch .widthInput .navigationSearch ul.suggest li a {
+  margin: 0 -20px 0 0.2em;
+  padding: 0 0 0 0.2em;
+  display: block;
+}
+
+.searchWrapper .searchContent .mainSearch .widthInput .navigationSearch ul.suggest li a:hover {
+  background-color: #f0f2f3;
+}
+
+.searchStatus {
+  margin: -0.5em 0 0 18em;
+  font-size: 90%;
+  color: #55676f;
+  background-color: transparent;
+}
+
+.searchStatus strong {
+  font-weight: bold;
+}
+
+.searchStatus a.saveSearch {
+  display: inline;
+}
+
+.searchStatus a.saveSearch:hover {
+  border-bottom: solid 1px #084b96;
+}
+
+.searchStatus a.help {
+  padding-right: 1em;
+  position: static;
+  background: url("${getClasspathUri("smartui/img/iconHelp.gif")}") no-repeat right 0;
+}
+
+.searchStatus a.saveSearch:hover {
+  text-decoration: none;
+}
+
+.searchStatus ul li.first {
+  border-left: none;
+}
+
+.searchStatus .importLinks {
+  float: right;
+}
+
+.searchStatus .importLinks li {
+  display: inline;
+  margin: 0 0.3em 0 0;
+  padding: 0 0 0 0.7em;
+  border-left: solid 1px #d7d7d7;
+}
+
+.searchStatus .importLinks .first {
+  margin: 0 0.3em 0 0;
+  padding: 0 0 0 0.7em;
+  border-left: none;
+  background: none;
+}
+
+.searchStatus .importLinks .norss {
+  background: none;
+  padding-left: 0.5em;
+  border-left: solid 1px #d7d7d7;
+  padding-bottom: 0.2em;
+}
+
+.searchStatus .importLinks li a {
+  border-bottom: none;
+}
+

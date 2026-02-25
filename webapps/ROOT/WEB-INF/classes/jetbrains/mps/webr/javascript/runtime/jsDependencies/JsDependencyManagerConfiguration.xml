@@ -1,0 +1,13 @@
+<beans>
+  <bean id="jsDependencyManager" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependencyManager"></bean>
+  <bean id="extensionPoint_jsDependencyManager_dependencies" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="jsDependencyManager"/>
+    <property name="extensionPropertyName" value="dependencies"/>
+    <property name="extensionType" value="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency"/>
+  </bean>
+  <bean id="extensionPoint_jsDependencyManager_dependencyAggregators" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="jsDependencyManager"/>
+    <property name="extensionPropertyName" value="dependencyAggregators"/>
+    <property name="extensionType" value="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependencyAggregator"/>
+  </bean>
+</beans>

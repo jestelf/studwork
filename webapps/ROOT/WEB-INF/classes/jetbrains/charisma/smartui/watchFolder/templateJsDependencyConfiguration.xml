@@ -1,0 +1,104 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.watchFolder.WatchFolder_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>WatchFolder</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.watchFolder.NotificationRules_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>NotificationRules</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ClassToggler</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.watchFolder.WatchFoldersSideBar_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>WatchFoldersSideBar</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.watchFolder.WatchFolder_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>wf</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.watchFolder.WatchFoldersSideBar</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.watchFolder.EditWatchFolderDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditWatchFolderDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.watchFolder.EditIssueTagStyle_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ts</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.smartui.watchFolder.EditWatchFolderDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.MultiBox</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.watchFolder.EditIssueTagStyle_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditIssueTagStyle</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.watchFolder.EditIssueTagStyle</value>
+      </list>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,129 @@
+/*
+
+
+
+
+  .multibox  {
+   margin : 0 ;
+   display : block ;
+   padding : 0.1em   0 ;
+   position : relative ;
+   font-family : tahoma   arial  sans-serif ;
+   background-color : #fff ;
+   z-index : 100 ;
+   border : solid   2px   #e1e2e2 ;
+}
+
+  .multibox .hidden  {
+   display : none ;
+   position : absolute ;
+   border : solid   5px   #d7d7d7 ;
+   z-index : 1 ;
+}
+
+  .multibox   input  {
+   padding : 0.2em   0.2em   0.3em   0.2em ;
+   line-height :1.1em ;
+   font-size : 100% ;
+   font-family : tahoma   arial   sans-serif ;
+   border : solid   1px   #ccc ;
+   background-color : transparent ;
+}
+
+  .multibox .hidden   input  {
+   margin : 0.3em   0.3em   1.2em   0.3em ;
+   padding : 0.2em   0.2em   0.3em   0.2em ;
+   line-height : 1.1em ;
+   font-size : 100% ;
+   font-family : tahoma  arial   sans-serif ;
+   border : solid   1px   #ccc ;
+   background-color : transparent ;
+}
+
+  .multibox   ul .multiboxList  {
+   margin : 0 ;
+   padding : 0.2em   0 ;
+   width : 100% ;
+   left : -0.18em ;
+   top : 1.55em ;
+   background-color : #fff ;
+   border : 2px   solid   #e1e2e2 ;
+   border-top : none ;
+}
+
+  .multibox .hidden   ul .multiboxList  {
+   left : -0.5em ;
+   top : 2.5em ;
+   border : 5px   solid   #d7d7d7 ;
+   border-top : none ;
+   position : absolute ;
+}
+
+  .multibox   ul .multiboxList   li  {
+   margin : 0 ;
+   padding : 0.2em   0.4em   0.3em   0.4em ;
+   display : block ;
+   float : none ;                                                                             
+   height : auto ;
+   font-size : 100% ;
+}
+
+  .multibox .hidden   ul .multiboxList   li  {
+   margin-left : 0.3em ;
+   margin-right : 0.3em ;
+}
+
+  .multibox   ul .multiboxList   li :hover  {
+   cursor : pointer ;
+}
+
+  .multibox   ul .multiboxList   li .active  {
+   background-color : #f0f2f3 ;
+}
+
+  .multibox   ul .multiboxList   li   span .checkbox  {
+   margin : 0 ;
+   padding : .5em   1.6em   .5em   0 ;
+   color : #FFF ;
+   font-size : 11px ;
+}
+
+  .multibox   ul .multiboxList   li   span .checkbox .unchecked  {
+   background : url("../img/checkboxEmpty.gif")   no-repeat   .3em   .6em ;
+}
+
+  .multibox   ul .multiboxList   li   span .checkbox .checked  {
+   background : url("../img/checkbox.gif")   no-repeat   .3em   .6em ;
+}
+
+  .multibox   ul .multiboxList   li   span .match  {
+   font-weight : bold ;
+}
+
+ . multibox  {
+   <css properties>
+}
+
+ . multiboxList  {
+   <css properties>
+}
+
+ . checked  {
+   <css properties>
+}
+
+ . unchecked  {
+   <css properties>
+}
+
+ . checkbox  {
+   <css properties>
+}
+
+ . hidden  {
+   <css properties>
+}
+
+ . active  {
+   <css properties>
+}*/

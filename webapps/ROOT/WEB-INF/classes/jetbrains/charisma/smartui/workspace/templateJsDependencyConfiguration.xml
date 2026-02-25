@@ -1,0 +1,221 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.workspace.Issues_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Issues</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.workspace.Header_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ui</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.newInplaceIssue.NewIssue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ni</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.workspace.SearchBar_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>sp</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Sidebars_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>sb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.content.Content_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>c</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.viewSettings.ViewSettingsDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>vsd</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.AddAttachmentDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>aa</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.screenshot.AddScreenshotDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>as</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.commands.CommandDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>cd</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.report.EditReportDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ed</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.commands.new.ui.NewCommandDialog</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.charisma.smartui.js.Idea</value>
+        <value>jetbrains.charisma.smartui.js.IssueList</value>
+        <value>jetbrains.charisma.smartui.workspace.Issues</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.jQuery_extension</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.popup.Popup</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.workspace.SearchBar_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>SearchBar</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.workspace.StatusLine_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>sl</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.charisma.smartui.workspace.SearchBar</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ClassToggler</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.HTMLInputElement_extension</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.workspace.StatusLine_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>StatusLine</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.workspace.StatusLine</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.workspace.Footer_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Footer</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.workspace.FooterContent_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>FooterContent</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.workspace.Buttons_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Buttons</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.workspace.FooterContent_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>FooterContent</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.workspace.Header_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Header</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.help.ShortcutsDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>hlp</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.workspace.Header</value>
+      </list>
+    </property>
+  </bean>
+</beans>

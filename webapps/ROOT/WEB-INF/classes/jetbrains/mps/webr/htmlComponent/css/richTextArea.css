@@ -1,0 +1,29 @@
+.jt-rta {
+  background-color: transparent;
+  border: none;
+  font-family: monospace;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  width: 99%;
+}
+
+.jt-rta-lime {
+  color: lime;
+  text-decoration: underline;
+}
+
+.jt-rta-red {
+  color: red;
+  text-decoration: underline;
+}
+
+.jt-rta-blue {
+  color: blue;
+  text-decoration: underline;
+}
+
+.jt-rta-underline {
+  text-decoration: underline;
+}
+

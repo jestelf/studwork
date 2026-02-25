@@ -1,0 +1,366 @@
+<beans>
+  <bean id="jetbrains.charisma.customfields.complex.enumeration.EnumFieldValueMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.customfields.complex.enumeration.EnumFieldValueImpl"></bean>
+    </property>
+    <property name="superType">
+      <value>FieldValue</value>
+    </property>
+    <property name="type">
+      <value>EnumFieldValue</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>field</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.customfields.complex.enumeration.EnumFieldValue.field"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.complex.enumeration.EnumProjectCustomFieldMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.customfields.complex.enumeration.EnumProjectCustomFieldImpl"></bean>
+    </property>
+    <property name="superType">
+      <value>ProjectCustomField</value>
+    </property>
+    <property name="type">
+      <value>EnumProjectCustomField</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>bundle</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>nullValueText</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>project</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>prototype</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.customfields.complex.enumeration.EnumProjectCustomField.bundle"/>
+        <ref bean="jetbrains.charisma.persistence.customfields.ProjectCustomField.project"/>
+        <ref bean="jetbrains.charisma.persistence.customfields.ProjectCustomField.prototype"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.complex.enumeration.EnumFieldsBundleMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.customfields.complex.enumeration.EnumFieldsBundleImpl"></bean>
+    </property>
+    <property name="type">
+      <value>EnumFieldsBundle</value>
+    </property>
+    <property name="ownIndexes">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.IndexImpl">
+          <property name="fields">
+            <list>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>name</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>EnumFieldsBundle</value>
+                </property>
+                <property name="property">
+                  <value>true</value>
+                </property>
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>children</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>name</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.customfields.complex.enumeration.EnumFieldsBundle.children"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.complex.enumeration.EnumFieldMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.customfields.complex.enumeration.EnumFieldImpl"></bean>
+    </property>
+    <property name="type">
+      <value>EnumField</value>
+    </property>
+    <property name="ownIndexes">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.IndexImpl">
+          <property name="fields">
+            <list>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>parent</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>EnumField</value>
+                </property>
+                <property name="property">
+                  <value>false</value>
+                </property>
+              </bean>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>value</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>EnumField</value>
+                </property>
+                <property name="property">
+                  <value>true</value>
+                </property>
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>ordinal</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>parent</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>value</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.customfields.complex.enumeration.EnumField.parent"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.complex.enumeration.EnumProjectCustomField.bundle" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="EnumProjectCustomField.bundle-EnumFieldsBundle"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.customfields.complex.enumeration.EnumFieldsBundleMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="name">
+      <value>bundle</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.complex.enumeration.EnumFieldsBundle.children" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_n</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="EnumFieldsBundle.children-EnumField.parent"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>ParentEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.customfields.complex.enumeration.EnumFieldMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>children</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.complex.enumeration.EnumField.parent" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="EnumFieldsBundle.children-EnumField.parent"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>ChildEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.customfields.complex.enumeration.EnumFieldsBundleMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>parent</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.customfields.complex.enumeration.EnumFieldValue.field" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="EnumFieldValue.field-EnumField"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.customfields.complex.enumeration.EnumFieldMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>field</value>
+    </property>
+  </bean>
+  <bean id="EnumProjectCustomField.bundle-EnumFieldsBundle" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="EnumFieldsBundle.children-EnumField.parent" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Aggregation</value>
+    </property>
+  </bean>
+  <bean id="EnumFieldValue.field-EnumField" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+</beans>

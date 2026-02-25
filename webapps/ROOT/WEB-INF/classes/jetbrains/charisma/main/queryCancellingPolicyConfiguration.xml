@@ -1,0 +1,3 @@
+<beans>
+  <bean id="transientQueryCancellingPolicyProvider" class="jetbrains.charisma.main.QueryCancellingPolicyProviderImpl"></bean>
+</beans>

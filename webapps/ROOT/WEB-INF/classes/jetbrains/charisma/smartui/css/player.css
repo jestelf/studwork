@@ -1,0 +1,56 @@
+.jt-player {
+  border: 0;
+  
+}
+
+.jt-player .morePages {
+  color: #d4d5d6;
+}
+
+.jt-player .jt-player-selector, .jt-player .jt-player-selector:hover {
+  border-width: 1px;
+  padding: 0;
+}
+
+.jt-player .jt-player-disabled {
+  display: none!important;
+}
+
+.jt-player .jt-player-item {
+  padding: 1px 7px 3px;
+  margin-right: 2px;
+  font-weight: bold;
+  border: 1px solid #d4d5d6;
+}
+
+.jt-player a:hover {
+  text-decoration: none;
+}
+
+.jt-player .jt-player-current, .jt-player .jt-player-current:hover {
+  cursor: text;
+  color: white;
+  border-color: #999;
+  background: none #999!important;
+}
+
+.jt-player .jt-player-next {
+  background: transparent url("${getClasspathUri("smartui/img/player-controls.png")}") no-repeat 4px -39px;
+  width: 6px;
+}
+
+.jt-player .jt-player-prev {
+  background: transparent url("${getClasspathUri("smartui/img/player-controls.png")}") no-repeat 4px -61px;
+  width: 6px;
+}
+
+.jt-player .jt-player-first {
+  background: transparent url("${getClasspathUri("smartui/img/player-controls.png")}") no-repeat 4px -17px;
+  width: 6px;
+}
+
+.jt-player .jt-player-last {
+  background: transparent url("${getClasspathUri("smartui/img/player-controls.png")}") no-repeat 4px 5px;
+  width: 6px;
+}
+

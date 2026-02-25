@@ -1,0 +1,3 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.filter.Jetbrains_charisma_smartui_filter_FilterParamConverter" class="jetbrains.charisma.smartui.filter.Jetbrains_charisma_smartui_filter_FilterParamConverter"></bean>
+</beans>

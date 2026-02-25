@@ -1,0 +1,161 @@
+.selectAllBut {
+  vertical-align: bottom;
+  padding: 0;
+  margin-right: 4px;
+  margin-left: 5px;
+  width: 13px;
+  height: 13px;
+}
+
+*:first-child+html .selectAllBut {
+  margin-left: 0;
+}
+
+.borderNoneHover {
+  padding: 0 3px;
+  cursor: text!important;
+  font-weight: normal;
+}
+
+.editIssueBut {
+  padding: 0 5px 1px;
+  margin: 0 3px;
+}
+
+ .backButton, .nextButton {
+  padding: 0 6px;
+  border: 1px solid transparent;
+}
+
+.backButton {
+  background: transparent url("${getClasspathUri("smartui/img/player-controls.png")}") no-repeat center -63px;
+}
+
+.nextButton {
+  background: transparent url("${getClasspathUri("smartui/img/player-controls.png")}") no-repeat center -41px;
+}
+
+.backButton:hover, .nextButton:hover {
+  border-color: #084b96;
+  text-decoration: none;
+}
+
+.deleteIssueBut {
+  padding: 0 5px;
+}
+
+.printButton {
+  padding: 0 10px;
+  margin: 0 3px;
+  background: url("${getClasspathUri("smartui/img/default/arrows-v.png")}") no-repeat 3px -394px;
+}
+
+.printButton:hover {
+  text-decoration: none;
+}
+
+.nextBut {
+  width: 30px;
+}
+
+.prevBut {
+  width: 30px;
+}
+
+.settingsBut {
+  padding: 0 10px;
+  margin-left: 3px;
+  background: url("${getClasspathUri("smartui/img/icoSettings.png")}") no-repeat center center;
+}
+
+.settingsBut:hover {
+  text-decoration: none;
+}
+
+.newIssueBut {
+  background: #9dbfe7 url("${getClasspathUri("smartui/img/default/newissue-button-bg.png")}") repeat-x 0 bottom;
+  padding: 2px 10px 4px;
+  color: white!important;
+}
+
+.jt-tabpanel-body .deleteIssueBut {
+  background: #9dbfe7 url("${getClasspathUri("smartui/img/default/newissue-button-bg.png")}") repeat-x 0 bottom;
+  padding: 2px 10px 4px;
+  color: white;
+  border: 0;
+  margin-left: 2px;
+}
+
+.newIssueBut:hover {
+  background-position: 0 -5px;
+}
+
+.hintsButt:hover {
+  border: solid 1px #16569d!important;
+}
+
+.newIssueBut.jt-panel-active, .newIssueBut.active {
+  background: #b7d2f0 none!important;
+  border: solid 1px #b7d2f0!important;
+}
+
+.newIssueBut div, .newIssueBut a {
+  font-weight: bold!important;
+  cursor: pointer!important;
+}
+
+.borderNone, .borderNone:hover {
+  border: solid 1px transparent!important;
+}
+
+.view {
+  margin-left: 1px;
+  margin-right: 1px;
+  padding: .15em 3px 0.2em;
+  float: left;
+  height: 1em;
+  border: solid 1px transparent;
+}
+
+.view.active, .view:hover {
+  border: solid 1px #084b96;
+  text-decoration: none;
+}
+
+.view span {
+  padding: 0 .4em;
+  display: block;
+  cursor: pointer;
+  background: url("${getClasspathUri("smartui/img/icoViewA.gif")}") repeat center .1em;
+}
+
+.view.title {
+  margin-left: 3px;
+  
+}
+
+.view.title span {
+  height: 4px;
+}
+
+.view.regular span {
+  height: 8px;
+}
+
+.view.full {
+  margin-right: 3px;
+  
+}
+
+.view.full span {
+  height: 12px;
+}
+
+.prevBut .prev {
+  background: url("${getClasspathUri("smartui/img/arrowBack.png")}") no-repeat center center;
+}
+
+.nextBut .next {
+  background: url("${getClasspathUri("smartui/img/arrowNext.png")}") no-repeat center center;
+}
+

@@ -1,0 +1,290 @@
+   .combobox {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 100%!important;
+  text-align: left;
+  font-family: tahoma, arial, sans-serif;
+  background-color: #fff;
+  border: solid 1px #898989;
+  width: 194px;
+  position: relative;
+}
+
+.combobox-loading {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 5px;
+  top: 6px;
+  z-index: 1;
+  background: #fff url("${getClasspathUri("images/loader.gif")}") no-repeat center center;
+}
+
+.inputWrapper {
+  margin: 0;
+  padding-right: 24px;
+  overflow: hidden;
+  border: 0;
+}
+
+.bind {
+  display: none;
+  position: absolute;
+  z-index: 16;
+  border: solid 2px #898989;
+}
+
+.combobox input {
+  border: 0;
+  width: 100%!important;
+  background-color: #fff;
+  margin: 0;
+  padding: 2px 2px 3px;
+}
+
+.bind .inputWrapper, .multi .inputWrapper {
+  margin: 3px;
+  padding-right: 4px;
+  border: solid 1px #ccc;
+}
+
+.contentWrapper, .bind.multi .contentWrapper {
+  position: absolute;
+  z-index: 17;
+  left: 0;
+  top: 22px;
+  text-align: left;
+  width: 100%;
+}
+
+.multi .contentWrapper {
+  position: static;
+  width: auto;
+  border: 0;
+  margin: 0;
+  clear: none;
+}
+
+.reversal .contentWrapper {
+  top: auto;
+  bottom: 22px;
+  border-bottom: 0;
+  
+}
+
+.reversal .contentWrapper .extraContent {
+  position: absolute;
+  bottom: 17.4em;
+  border-top: 1px solid #898989;
+}
+
+.bind.reversal .contentWrapper {
+  bottom: 29px;
+  top: auto;
+}
+
+.comboboxList {
+  position: relative;
+  max-height: 17.4em;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 2px 0 4px;
+  margin: 0;
+  border: solid 1px #898989;
+  border-top-width: 0;
+  background-color: #fff;
+}
+
+.multi .comboboxList {
+  border-bottom: 0;
+  margin-left: -1px;
+}
+
+.bind .comboboxList, .bind .pager {
+  margin-top: 6px;
+  margin-left: -2px;
+  border: 2px solid #898989;
+  border-top: 0;
+}
+
+.bind .pager {
+  margin-top: 0;
+  padding: 3px 0;
+}
+
+.reversal .comboboxList {
+  border-top: 1px solid #898989;
+  border-bottom: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.bind.reversal .comboboxList {
+  border-top: 2px solid #898989;
+}
+
+.comboboxList li {
+  margin: 0 3px;
+  padding: 3px 6px;
+  list-style: none;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid #fff;
+}
+
+.contentWrapper .comboboxList li {
+  display: block;
+}
+
+.multi .comboboxList li {
+  width: auto;
+}
+
+.bind .comboboxList li {
+  width: auto;
+}
+
+.multi .comboboxList li span {
+  position: relative;
+}
+
+.pager {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 85%;
+  background-color: #ddd;
+  border: 1px solid #898989;
+  border-top: 0;
+  text-align: center;
+}
+
+.pager span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.combobox .checkbox {
+  margin: 0;
+  padding: 10px 5px 10px 10px;
+  background-repeat: no-repeat;
+}
+
+.combobox .checkbox.unchecked {
+  background-image: url("${getClasspathUri("images/checkboxEmpty.gif")}");
+  background-position: 0px 11px;
+}
+
+.combobox .checkbox.checked {
+  background-image: url("${getClasspathUri("images/checkbox.gif")}");
+  background-position: 0px 11px;
+}
+
+/*extended styles*/
+.combobox .arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0 8px;
+  cursor: pointer;
+  background: #fff url("${getClasspathUri("images/arrowDownGreyBlue.gif")}") no-repeat 50% 55%;
+}
+
+.combobox .arrow:hover {
+  text-decoration: none;
+}
+
+.comboboxList li.active, .comboboxList li:hover {
+  background-color: #fdf4bc;
+  border: 1px solid #dddfdf;
+}
+
+.combobox .empty {
+  color: gray;
+}
+
+.combobox .match {
+  font-weight: bold;
+}
+
+.applyButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  padding: 2px 5px;
+  background-color: #d4d0c8;
+  border: 1px solid #404040;
+  border-top-color: white;
+  border-left-color: white;
+  cursor: pointer;
+}
+
+/*combobox shadow layout*/
+.combo-t {
+  border-collapse: separate;
+}
+
+.nw {
+  background: url("${getClasspathUri("images/c-corners.png")}") no-repeat 0 0;
+  height: 3px;
+}
+
+.ne {
+  background: url("${getClasspathUri("images/c-corners.png")}") no-repeat right 0;
+  width: 6px;
+  height: 3px;
+}
+
+.sw {
+  background: url("${getClasspathUri("images/c-corners.png")}") repeat-y 0 6px;
+  width: 6px;
+  height: 6px;
+}
+
+.se {
+  background: url("${getClasspathUri("images/c-corners.png")}") repeat-y -7px 6px;
+  width: 6px;
+  height: 6px;
+}
+
+.w {
+  background: url("${getClasspathUri("images/c-vert.png")}") repeat-y 0 0;
+  width: 3px;
+}
+
+.e {
+  background: url("${getClasspathUri("images/c-vert.png")}") repeat-y -6px 0;
+  width: 3px;
+}
+
+.n {
+  height: 3px;
+  border-top: 1px solid #cdcdcd;
+}
+
+.s {
+  height: 1px;
+}
+
+.sc {
+  background: url("${getClasspathUri("images/c-horiz.png")}") repeat-x 0 bottom;
+  width: 3px;
+}
+
+.cc {
+  width: 150px;
+}
+
+.sp {
+  background-color: white;
+}
+
+.p {
+  width: 3px;
+}
+

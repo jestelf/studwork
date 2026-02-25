@@ -1,0 +1,45 @@
+.footer {
+  font-size: 90%;
+  color: #666;
+  margin: 2em 3em 1em;
+  padding: 0 0 1em;
+  text-align: left;
+  clear: both;
+  border-top: solid 1px #d7d7d7;
+  overflow-x: hidden;
+}
+
+.footer .right {
+  float: right;
+}
+
+.footer ul {
+  margin-left: -1px;
+}
+
+.footer li {
+  margin-right: 3px;
+  padding-left: 7px;
+  display: inline;
+  list-style: none;
+  border-left: solid 1px #d7d7d7;
+}
+
+.footer .right {
+  margin-right: -1px;
+}
+
+.footer .right li {
+  margin-right: 0;
+  padding-left: 0;
+  margin-left: 7px;
+  padding-right: 3px;
+  border-left: 0;
+  border-right: solid 1px #d7d7d7;
+}
+
+.footer li.rss {
+  padding-left: 15px;
+  background: url("${getClasspathUri("smartui/img/icoRss.gif")}") no-repeat 0 1px;
+}
+

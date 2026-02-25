@@ -1,0 +1,227 @@
+  .attach-wrapper {
+  text-align: left;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+
+.clrR {
+  clear: left;
+}
+
+.issuePage .attach-wrapper {
+  margin-right: 0;
+}
+
+.attach {
+  display: block;
+  z-index: 0;
+  overflow-x: hidden;
+  position: relative;
+  float: left;
+  margin: 5px 3px 5px 0;
+  border: 1px solid transparent;
+}
+
+.attach-info {
+  float: left;
+  width: 100px;
+  height: 50px;
+  font-size: 90%;
+  color: #9EA1A5;
+  
+}
+
+.attach-info a:hover {
+  text-decoration: none;
+}
+
+.attach-thumb {
+  position: relative;
+  display: table-column;
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #babdc1;
+  
+}
+
+.attach-thumb .pic {
+  width: 50px;
+  height: 50px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.attach-controls {
+  position: absolute;
+  left: 56px;
+  top: 32px;
+}
+
+.secured {
+  background: url("${getClasspathUri("smartui/img/default/arrows-v.png")}") no-repeat 0 -358px;
+  padding: 0 3px;
+}
+
+*:first-child+html .secured {
+  white-space: normal;
+}
+
+.attach-edit, .attach-delete {
+  display: block;
+  float: left;
+  width: 11px;
+  height: 11px;
+  margin-right: 3px;
+  padding: 1px;
+  line-height: 11px;
+  background: url("${getClasspathUri("smartui/img/edit-controls.png")}") no-repeat center 1px;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.attach-delete {
+  background: url("${getClasspathUri("smartui/img/edit-controls.png")}") no-repeat center -59px;
+}
+
+.attach-edit:hover {
+  background-position: center -29px;
+  border-color: #084b96;
+  text-decoration: none;
+}
+
+.attach-delete:hover {
+  background-position: center -89px;
+  border-color: #084b96;
+  text-decoration: none;
+}
+
+.attach-author {
+  color: #898989;
+  font-size: 80%;
+  text-align: center;
+}
+
+.attach-size {
+  font-size: 85%;
+  display: block;
+  position: absolute;
+  left: 58px;
+  top: 13px;
+}
+
+.popupComponent .attach-size {
+  left: 57px;
+}
+
+.attach-name {
+  white-space: nowrap;
+  
+}
+
+.attach-name a {
+  position: relative;
+}
+
+.attach-name .light {
+  position: absolute;
+  top: 0;
+  left: 85px;
+  z-index: 3;
+  text-align: right;
+  width: 15px;
+  height: 20px;
+  background-image: url("${getClasspathUri("smartui/img/hider.png")}");
+  background-repeat: repeat-y;
+  background-position: -5px 0!important;
+}
+
+.popupComponent {
+  
+  
+}
+
+.popupComponent .attach-info {
+  width: 60px;
+  
+}
+
+.popupComponent .attach-info a {
+  text-decoration: none;
+}
+
+.popupComponent .attach-name .light {
+  left: 45px;
+}
+
+.expand .attach-info .light {
+  background: url("${getClasspathUri("smartui/img/hider.png")}") repeat-y -150px 0;
+}
+
+.selected .attach-info .light, .edit .attach-info .light {
+  background: url("${getClasspathUri("smartui/img/bgTableTextSelected.png")}") repeat-y 0 0;
+}
+
+.outline .attach-info .light {
+  background: url("${getClasspathUri("smartui/img/hider.png")}") repeat-y -427px 0!important;
+}
+
+.attach:hover {
+  overflow: visible;
+  z-index: 2;
+  
+  
+}
+
+.attach:hover .attach-info {
+  overflow: visible;
+}
+
+.attach:hover .attach-name {
+  
+  
+}
+
+.attach:hover .attach-name .light {
+  display: none;
+}
+
+.attach:hover .attach-name a {
+  position: absolute;
+  z-index: 380;
+  display: inline-block;
+  padding-right: 3px;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d5d6;
+  border-right: 1px solid #d4d5d6;
+}
+
+.expand .attach:hover .attach-name a {
+  background-color: #fff;
+}
+
+.selected .attach:hover .attach-name a, .edit .attach:hover .attach-name a, .new .attach:hover .attach-name a {
+  background-color: #E9F3FD;
+}
+
+  .attach.outline:hover .attach-name a {
+  background-color: #FEFFD9!important;
+  border-color: #E2C822!important;
+}
+

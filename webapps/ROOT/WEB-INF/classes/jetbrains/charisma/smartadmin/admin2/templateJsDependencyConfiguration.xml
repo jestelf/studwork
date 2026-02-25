@@ -1,0 +1,80 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.admin2.SmartAdmin_LayoutComponent</value>
+    </property>
+    <property name="name">
+      <value>SmartAdmin</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.layouts.BrowserChecker_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>BrowserChecker</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.workspace.Header_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Header</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.admin2.AdminMenu_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>AdminMenu</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.workspace.Footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>Webr.HeartBeat</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.admin2.AdminBreadcrumb_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AdminBreadcrumb</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.admin2.AdminMenu_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AdminMenu</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.admin2.AdminMenu</value>
+      </list>
+    </property>
+  </bean>
+</beans>

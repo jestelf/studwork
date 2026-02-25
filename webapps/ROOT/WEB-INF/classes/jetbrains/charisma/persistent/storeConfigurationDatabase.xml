@@ -1,0 +1,76 @@
+<beans>
+  <bean id="transientEntityStore" class="com.jetbrains.teamsys.dnq.database.TransientEntityStoreImpl" destroy-method="close">
+    <property name="persistentStore">
+      <ref bean="persistentEntityStore"/>
+    </property>
+    <property name="abortSessionsOnClose">
+      <value>true</value>
+    </property>
+    <property name="resumeOnBeginIfExists">
+      <value>true</value>
+    </property>
+    <property name="attachToCurrentOnBeginIfExists">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="persistentEntityStore" class="com.jetbrains.teamsys.database.BerkeleyDbEntityStore" destroy-method="close">
+    <constructor-arg index="0">
+      <ref bean="persistentEntityStoreConfig"/>
+    </constructor-arg>
+    <constructor-arg index="1">
+      <value>teamsysstore</value>
+    </constructor-arg>
+    <constructor-arg index="2"><value>${database.location}</value></constructor-arg>
+    <property name="backupPath"><value>${database.backup.location}</value></property>
+    <property name="backupOnShutdown">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="persistentEntityStoreConfig" class="com.jetbrains.teamsys.database.BerkeleyDbStoreConfig">
+    <property name="maxSimutaneousTxns">
+      <value>1</value>
+    </property>
+    <property name="cleanerLockTimeout">
+      <value>5000000</value>
+    </property>
+    <property name="fairLatchers">
+      <value>false</value>
+    </property>
+    <property name="minFileUtilization">
+      <value>7</value>
+    </property>
+    <property name="minUtilization">
+      <value>50</value>
+    </property>
+    <property name="cleanerDeadlockRetry">
+      <value>10</value>
+    </property>
+    <property name="compressorLockTimeout">
+      <value>5000000</value>
+    </property>
+    <property name="entitiesCacheSize">
+      <value>160000</value>
+    </property>
+    <property name="lockTimeout">
+      <value>50000</value>
+    </property>
+    <property name="writeNoSync">
+      <value>false</value>
+    </property>
+    <property name="cleanerThreads">
+      <value>1</value>
+    </property>
+    <property name="compressorDeadlockRetry">
+      <value>10</value>
+    </property>
+    <property name="cleanerlookAheadCacheSize">
+      <value>262144</value>
+    </property>
+    <property name="logIteratorReadSize">
+      <value>262144</value>
+    </property>
+    <property name="faultReadSize">
+      <value>128</value>
+    </property>
+  </bean>
+</beans>

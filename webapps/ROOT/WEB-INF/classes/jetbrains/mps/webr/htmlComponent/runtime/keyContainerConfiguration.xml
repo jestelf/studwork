@@ -1,0 +1,13 @@
+<beans>
+  <bean id="keyContainer" class="jetbrains.mps.webr.htmlComponent.runtime.KeyContainer"></bean>
+  <bean id="extensionPoint_keyContainer_keyStrokes" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="keyContainer"/>
+    <property name="extensionPropertyName" value="keyStrokes"/>
+    <property name="extensionType" value="jetbrains.mps.webr.htmlComponent.runtime.IKeyStroke"/>
+  </bean>
+  <bean id="extensionPoint_keyContainer_keyCodes" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="keyContainer"/>
+    <property name="extensionPropertyName" value="keyCodes"/>
+    <property name="extensionType" value="jetbrains.mps.webr.htmlComponent.runtime.IKeyCode"/>
+  </bean>
+</beans>

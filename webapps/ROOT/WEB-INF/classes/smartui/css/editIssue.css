@@ -1,0 +1,138 @@
+/*
+.editIssue {
+    margin: 0;
+    padding: .5em;
+    background-color: #d7d7d7;
+    font-family: tahoma, arial, sans-serif;
+}
+
+.editIssue .form {
+    margin: 0;
+    padding: 1em 2em 1.5em 2em;
+    background-color: #f6f7f8;
+    position: relative;
+}
+
+.editIssue .form ul.attr {
+    margin: .33em .5em 0 0;
+    padding: 0;
+    float: left;
+    width: 5em;
+}
+
+.editIssue .form ul.attr li {
+    margin: 0 0 1.03em 0;
+    padding: 0;
+    list-style: none;
+    color: #000;
+    text-align: right;
+}
+
+.editIssue .form ul.attr li.textarea {
+    margin-bottom: 0;
+}
+
+.editIssue .issueWikiHelp {
+    margin: .9em .2em 0 0;
+    padding: 0;
+    font-size: 80%;
+    float: right;
+}
+
+.editIssue .form .textarea {
+    margin: .3em 0 0 5em;
+    padding: 0;
+    position: relative;
+}
+
+.editIssue .form .textarea .line {
+    margin: .3em 0 0 1em;
+    padding: .3em 0 0 0;
+    width: 96%;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    border-bottom: solid 1px #e1e2e2;
+}
+
+*:first-child+html .editIssue .form .textarea .line {
+    margin-left: .5em;
+}
+
+.editIssue .form .textarea textarea {
+    margin: 0;
+    padding: .18em .3em;
+    display: block;
+    width: 98%;
+    height: 7em;
+    overflow-y: hidden;
+    line-height: 1.5em;
+    color: #333;
+    font-size: 100%;
+    font-family: tahoma, arial, sans-serif;
+    border: solid 2px #e1e2e2;
+}
+
+.editIssue ul.properties {
+    margin-top: -.5em;
+}
+
+.editIssue ul.buttons {
+    margin: 0;
+    padding: 0;
+}
+
+.editIssue ul.buttons li {
+    margin: 0;
+    padding: 1px 0 0 0;
+    float: right;
+    list-style: none;
+    color: #55676f;
+    font-size: 80%;
+}
+
+.editIssue ul.buttons li.checkbox {
+    padding: 0;
+    float: none;
+    font-size: 100%;
+}
+
+.editIssue ul.buttons li.checkbox input {
+    margin: 3px 2px 0 0;
+    width: 13px;
+    height: 13px;
+    font-size: 11px;
+    float: left;
+}
+
+.editIssue ul.buttons li a {
+    margin: -2px .2em 0 .2em;
+    padding: .2em 1.6em .3em 1.6em;
+    display: block;
+    font-size: 100%;
+    color: #084b96;
+    font-family: tahoma, arial, sans-serif;
+    background-color: #fcfcfc;
+    border: 1px solid #e6e6e6;
+    border-right-color: #666;
+    border-bottom-color: #666;
+}
+
+.editIssue ul.buttons li a.submitButton {
+    background-color: #084b96;
+    color: #fff;
+    font-weight: bold;
+}
+
+.editIssue .preview {
+    margin: 0 0 0 0;
+    padding: 0 2em 2em 2em;
+    background-color: #fff;
+}
+
+.editIssue .preview .issue p {
+    margin: 1em 0 .5em 0;
+    color: #55676f;
+}
+
+*/

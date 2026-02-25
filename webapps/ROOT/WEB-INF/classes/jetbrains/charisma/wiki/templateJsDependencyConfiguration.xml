@@ -1,0 +1,27 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.wiki.WikiHelpWrapper_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>WikiHelpWrapper</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.mps.webr.wiki.processor.runtime.WikiHelp_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>WikiHelp</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.js.Idea</value>
+      </list>
+    </property>
+  </bean>
+</beans>

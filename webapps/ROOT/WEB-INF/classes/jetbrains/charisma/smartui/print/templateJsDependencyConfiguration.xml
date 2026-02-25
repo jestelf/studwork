@@ -1,0 +1,283 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.print.PrintIssues_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>PrintIssues</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.print.PrintListContent_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>PrintListContent</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.print.PrintIssueSubcontent_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>PrintIssueSubcontent</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.print.PrintIssueProperties_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>PrintIssueProperties</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.fullScreenIssue.ByProperties_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>bp</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.print.PrintIssueContent_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>PrintIssueContent</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueId_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>IssueId</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.fullScreenIssue.IssueTitle_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>it</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.tags.TagsPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tp</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.links.LinkPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>lp</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.FileSize_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>FileSize</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.fullScreenIssue.IssueDescription_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>IssueDescription</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.print.PrintIssueComments_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ic</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.print.PrintIssueContent</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.print.PrintListContent_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>PrintListContent</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueId_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>iid</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.fullScreenIssue.IssueTitle_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>it</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.fullScreenIssue.IssueDescription_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>id</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.print.PrintIssueProperties_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>PrintIssueProperties</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.print.PrintIssuePropertiesValue_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>PrintIssuePropertiesValue</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.print.PrintIssueProperties_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>PrintIssueProperties</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.print.PrintIssuePropertiesValue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>PrintIssuePropertiesValue</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.print.PrintIssueCustomFieldValue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>PrintIssueCustomFieldValue</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.print.Print_LayoutComponent</value>
+    </property>
+    <property name="name">
+      <value>Print</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.layouts.BrowserChecker_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>BrowserChecker</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>Webr.HeartBeat</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.print.PrintIssue_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>PrintIssue</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.print.PrintIssueSubcontent_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>is</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.print.PrintIssueContent_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>PrintIssueContent</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.print.PrintIssueComments_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>PrintIssueComments</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.print.PrintIssueCustomFieldValue_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>PrintIssueCustomFieldValue</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+</beans>

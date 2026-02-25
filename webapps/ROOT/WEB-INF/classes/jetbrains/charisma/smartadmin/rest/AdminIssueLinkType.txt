@@ -1,0 +1,89 @@
+h1./admin/issueLinkType
+h2. GET /admin/issueLinkType
+Get all issue link types
+{panel}{{GET /rest/admin/issueLinkType}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/issueLinkType{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/issueLinkType/\{name\}
+Get issue link type by name
+{panel}{{GET /rest/admin/issueLinkType/*\{name\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| name | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/issueLinkType/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /admin/issueLinkType/\{name\}
+Create new issue link type
+{panel}{{PUT /rest/admin/issueLinkType/*\{name\}*?*\{outwardName\}*&*\{inwardName\}*&*\{directed\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| name | string | TODO: Description |
+| outwardName | string | TODO: Description |
+| inwardName | string | TODO: Description |
+| directed | boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/admin/issueLinkType/TODO?outwardName=TODO&inwardName=TODO&directed=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /admin/issueLinkType/\{name\}
+Update issue link type
+{panel}{{POST /rest/admin/issueLinkType/*\{name\}*?*\{newName\}*&*\{outwardName\}*&*\{inwardName\}*&*\{directed\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| name | string | TODO: Description |
+| newName | string | TODO: Description |
+| outwardName | string | TODO: Description |
+| inwardName | string | TODO: Description |
+| directed | Boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/admin/issueLinkType/TODO?newName=TODO&outwardName=TODO&inwardName=TODO&directed=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. DELETE /admin/issueLinkType/\{name\}
+Delete issue link type
+{panel}{{DELETE /rest/admin/issueLinkType/*\{name\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| name | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}DELETE /rest/admin/issueLinkType/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

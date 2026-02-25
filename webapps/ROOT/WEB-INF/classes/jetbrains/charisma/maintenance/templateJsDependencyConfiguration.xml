@@ -1,0 +1,370 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.BackupSettings_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>BackupSettings</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.BackupFileList_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>bfl</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.SelectUserDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>SelectUserDialog</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.BackupSettingsDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>BackupSettingsDialog</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.maintenance.BackupSettings</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.JiraServerSettings_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>JiraServerSettings</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.JiraImportProject_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>JiraImportProject</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.JiraImportStatus_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>JiraImportStatus</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.JiraIntegration_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>JiraIntegration</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.JiraIntegrationContent_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>JiraIntegrationContent</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.maintenance.JiraIntegration</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.IssueLinkTypes_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueLinkTypes</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.EditIssueLinkTypeDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>EditIssueLinkTypeDialog</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.maintenance.IssueLinkTypes</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.TextIndex_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>TextIndex</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.TextIndexRefreshable_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>TextIndexRefreshable</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.maintenance.TextIndex</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.DatabaseBackup_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>DatabaseBackup</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.BackupSettings_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>BackupSettings</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.BackupProgress_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>BackupProgress</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.maintenance.DatabaseBackup</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.Telemetry_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Telemetry</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.maintenance.Telemetry</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.TextIndexRefreshable_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>TextIndexRefreshable</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.maintenance.TextIndexRefreshable</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.EditIssueLinkTypeDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditIssueLinkTypeDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.maintenance.EditIssueLinkTypeDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.BackupProgress_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>BackupProgress</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.BrowserUsageReport_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>BrowserUsageReport</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.Statistics_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Statistics</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.Telemetry_RootHtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Telemetry</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.BrowserUsageReport_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>BrowserUsageReport</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.maintenance.Statistics</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.BackupFileList_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>BackupFileList</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.BackupSettingsDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>BackupSettingsDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.maintenance.BackupSettingsDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.BackupCronExprDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>BackupCronExprDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.maintenance.BackupCronExprDialog</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.maintenance.JiraIntegrationContent_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>JiraIntegrationContent</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.JiraServerSettings_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>JiraServerSettings</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.JiraImportStatus_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>JiraImportStatus</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.maintenance.JiraImportProject_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>JiraImportProject</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,165 @@
+.combobox {
+    position: relative;
+    z-index: 6;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    text-align: left;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: white;
+    border: solid 2px #e1e2e2;
+    width: 15em;
+}
+
+.inputWrapper {
+    margin: 0;
+    padding-right: 20px;
+    overflow: hidden;
+    border: 0;
+}
+
+.bind .inputWrapper, .multi .inputWrapper {
+    margin: 3px;
+    border: solid 1px #ccc;
+}
+
+.bind {
+    visibility: hidden;
+    position: absolute !important;
+    border: solid 5px #d7d7d7;
+}
+
+.combobox input {
+    border: 0;
+    width: 100%;
+    background: none;
+    margin: 0;
+    padding: 3px 4px;
+}
+
+.multi input, .bind input {
+    border: 0;
+    width: 100%;
+    background: none;
+    margin: 0;
+}
+
+.comboboxList {
+    position: absolute;
+    z-index: 7;
+    left: 0;
+    top: 25px;
+    width: 100%;
+    max-height: 17.4em;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 2px 0 4px;
+    margin: -3px 0 0 -2px;
+    background-color: white;
+    border: solid 2px #e1e2e2;
+    border-top-width: 0;
+}
+
+.comboboxList li {
+    margin: 0px;
+    padding: 3px 6px;
+    list-style: none;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.multi {
+    width: auto;
+    z-index: 1;
+    *max-width: 20em;
+}
+
+.bind.multi {
+    width: 15em;
+    z-index: 6;
+}
+
+.multi .comboboxList {
+    position: static;
+    z-index: 1;
+    width: auto;
+    border: 0;
+    margin: 0;
+    clear: both;
+}
+
+.multi .comboboxList li {
+    width: 100%;
+}
+
+.bind .comboboxList, .bind.multi .comboboxList {
+    margin-left: -5px;
+    z-index: 7;
+    width: 100%;
+    margin-top: 4px;
+    border: 5px solid #d7d7d7;
+    border-top: none;
+    position: absolute !important;
+}
+
+.combobox.reversal .comboboxList {
+    top: auto;
+    bottom: 29px;
+    border-top: 5px solid #d7d7d7;
+    border-bottom: 0;
+    z-index: 7;
+}
+
+.combobox .checkbox {
+    margin: 0;
+    padding: 10px 5px 10px 10px;
+    background-position: 0px 11px;
+    background-repeat: no-repeat;
+}
+
+.combobox .checkbox.unchecked {
+    background-image: url(../img/checkboxEmpty.gif);
+}
+
+.combobox .checkbox.checked {
+    background-image: url(../img/checkbox.gif);
+}
+
+/* extended styles */
+.combobox a.arrow {
+    margin: 0;
+    padding: 0 4px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: transparent url(../img/arrowDownGreyBig.gif) no-repeat 0 40%;
+    border: none !important;
+    cursor: pointer;
+    color: white;
+}
+
+.combobox .comboboxList li.active, .combobox .comboboxList li:hover {
+    background-color: #f0f2f3;
+}
+
+.combobox .empty {
+    color: gray;
+}
+
+.combobox .match {
+    font-weight: bold;
+}
+
+.applyButton {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 2px 5px;
+    background-color: #d4d0c8;
+    border: 1px solid #404040;
+    border-top-color: white;
+    border-left-color: white;
+    cursor: pointer;
+}

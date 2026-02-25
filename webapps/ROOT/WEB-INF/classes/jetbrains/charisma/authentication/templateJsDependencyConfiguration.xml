@@ -1,0 +1,13 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.authentication.JiraData_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>JiraData</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+</beans>

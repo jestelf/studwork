@@ -1,0 +1,22 @@
+.treeView {
+  width: 20%;
+  vertical-align: top;
+}
+
+.attachments {
+  vertical-align: top;
+}
+
+.emptyNode, .emptyNode :link, .emptyNode :visited {
+  color: gray;
+}
+
+.selected-row, .selected-row :link, .selected-row :visited {
+  background-color: blue;
+  color: white;
+}
+
+.bold-row, .bold-row :link, .bold-row :visited {
+  font-weight: bold;
+}
+

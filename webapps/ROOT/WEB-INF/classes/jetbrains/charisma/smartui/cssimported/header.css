@@ -1,0 +1,86 @@
+.header {
+  margin-top: .5em;
+  margin-bottom: .3em;
+}
+
+.header .logo {
+  padding: 0 1.1em;
+  display: block;
+  width: 15em;
+}
+
+.header .logoimg {
+  padding: 0 1.1em;
+  display: block;
+}
+
+.header .account {
+  margin: 0 8px 0 0;
+  padding: 0;
+  font-size: 90%;
+  font-family: tahoma, verdana, arial, sans-serif;
+}
+
+.header .account.guest {
+  margin-right: 14px;
+}
+
+.header .account > li {
+  margin: 20px -1px 0 0;
+  padding: 0;
+  float: right;
+  position: relative;
+  z-index: 5;
+  list-style: none;
+  background: url("${getClasspathUri("smartui/img/bgActions.gif")}") no-repeat 0 45%;
+}
+
+.header .account.guest > li {
+  margin-top: 0.5em;
+  background: none;
+}
+
+.header .account .user {
+  background: none;
+}
+
+.header .account .login {
+  margin-left: .2em;
+  background: none;
+}
+
+.header .account .activ {
+  background-color: #d7d7d7;
+}
+
+.header .account .hint {
+  position: relative;
+}
+
+.header .account.guest .login {
+  margin: 0.4em 0.5em 0 0.3em;
+  padding-right: 0.2em;
+  background-color: #fffbe2;
+  border: solid 1px #ffe222;
+}
+
+.header .account > li > a {
+  margin-right: .6em;
+  padding-left: .7em;
+  display: block;
+}
+
+.header .account.guest > li > a {
+  display: inline;
+  background: none;
+}
+
+.header .account li.login > a {
+  padding-left: .4em;
+  margin-right: .2em;
+}
+
+.header .account .hint a {
+  display: inline;
+}
+

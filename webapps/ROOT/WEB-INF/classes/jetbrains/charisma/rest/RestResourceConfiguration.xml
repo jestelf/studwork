@@ -1,0 +1,9 @@
+<beans>
+  <bean id="jetbrains.charisma.rest.UserResource" class="jetbrains.charisma.rest.UserResource"></bean>
+  <bean id="jetbrains.charisma.rest.IssueResource" class="jetbrains.charisma.rest.IssueResource"></bean>
+  <bean id="jetbrains.charisma.rest.ProjectResource" class="jetbrains.charisma.rest.ProjectResource"></bean>
+  <bean id="jetbrains.charisma.rest.IssueByIdRestStringReader" class="jetbrains.charisma.rest.IssueByIdRestStringReader"></bean>
+  <bean id="jetbrains.charisma.rest.UserByLoginRestStringReader" class="jetbrains.charisma.rest.UserByLoginRestStringReader"></bean>
+  <bean id="jetbrains.charisma.rest.ProjectByIdRestStringReader" class="jetbrains.charisma.rest.ProjectByIdRestStringReader"></bean>
+  <bean id="jetbrains.charisma.rest.ProjectByIdForIssuesRestStringReader" class="jetbrains.charisma.rest.ProjectByIdForIssuesRestStringReader"></bean>
+</beans>

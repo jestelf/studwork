@@ -1,0 +1,206 @@
+.tagsTable td {
+  height: 17px;
+  width: 17px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tagsTable td.selectedTagStyle {
+  border: solid 1px black;
+}
+
+.tags {
+  overflow: auto;
+}
+
+.tagsInTitle {
+  float: left;
+  
+}
+
+.tagsInTitle .ico {
+  float: left;
+  height: 20px;
+  margin: 0 3px 0 -2px;
+}
+
+.tags .light span {
+  margin-right: 5px;
+  line-height: 1.5em;
+}
+
+.tagsInTitle a {
+  white-space: nowrap;
+}
+
+.tagsInTitle a:hover {
+  color: #333;
+}
+
+ .tagColor {
+  float: left;
+  font-size: 11px;
+  font-family: tahoma, verdana, arial, sans-serif;
+  line-height: 13px;
+  margin-left: 1px;
+  margin-right: 5px;
+  margin-top: 0.2em;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+.tagW {
+  overflow: hidden;
+  padding: 0 3px 1px 4px;
+}
+
+.tagText {
+  margin: 0 -1px;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+}
+
+.tagText {
+  
+  
+}
+
+.tagText .delete {
+  background: none;
+  font-size: 11px;
+  margin-right: 2px;
+}
+
+.tagText a:hover {
+  text-decoration: none;
+}
+
+.tagText .delete:hover {
+  text-decoration: none;
+}
+
+.ico.favorites {
+  background: url("${getClasspathUri("smartui/img/iconFavSmall.gif")}") no-repeat 0 0;
+  width: 17px;
+  height: 17px;
+  top: 3px;
+  margin-left: 0;
+}
+
+.ico.watched {
+  background: url("${getClasspathUri("smartui/img/iconWatchSmall.gif")}") no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+  top: 3px;
+}
+
+.share {
+  background: url("${getClasspathUri("smartui/img/default/arrows-v.png")}") no-repeat 0 -561px;
+  cursor: text;
+}
+
+.myShared {
+  background: url("${getClasspathUri("smartui/img/default/arrows-v.png")}") no-repeat 5px -631px;
+}
+
+.arrow .myShared {
+  background-position: 5px -632px;
+}
+
+.tag0, .tag0 a, .tag0 .tagText {
+  color: #333;
+  border-color: #888!important;
+  background-color: white!important;
+}
+
+ .tag1, .tag1 a, .tag1 .tagText {
+  color: white!important;
+  background-color: #cc0000!important;
+  border-color: #cc0000!important;
+}
+
+ .tag2, .tag2 a, .tag2 .tagText {
+  color: white!important;
+  background-color: #cc6600!important;
+  border-color: #cc6600!important;
+}
+
+ .tag3, .tag3 a, .tag3 .tagText {
+  color: white!important;
+  background-color: #339933!important;
+  border-color: #339933!important;
+}
+
+ .tag4, .tag4 a, .tag4 .tagText {
+  color: white!important;
+  background-color: #0066cc!important;
+  border-color: #0066cc!important;
+}
+
+ .tag5, .tag5 a, .tag5 .tagText {
+  color: white!important;
+  background-color: #a7007e!important;
+  border-color: #a7007e!important;
+}
+
+ .tag6, .tag6 a, .tag6 .tagText {
+  color: white!important;
+  background-color: #7b35db!important;
+  border-color: #7b35db!important;
+}
+
+ .tag7, .tag7 a, .tag7 .tagText {
+  color: white!important;
+  background-color: #00a1b4!important;
+  border-color: #00a1b4!important;
+}
+
+ .tag8, .tag8 a, .tag8 .tagText {
+  color: white!important;
+  background-color: #8c1801!important;
+  border-color: #8c1801!important;
+}
+
+ .tag9, .tag9 a, .tag9 .tagText {
+  color: #000!important;
+  background-color: #f294ff!important;
+  border-color: #f294ff!important;
+}
+
+ .tag10, .tag10 a, .tag10 .tagText {
+  color: #000!important;
+  background-color: #bef624!important;
+  border-color: #bef624!important;
+}
+
+ .tag11, .tag11 a, .tag11 .tagText {
+  color: #000!important;
+  background-color: #ffc600!important;
+  border-color: #ffc600!important;
+}
+
+ .tag12, .tag12 a, .tag12 .tagText {
+  color: #000!important;
+  background-color: #ffcccc!important;
+  border-color: #ffcccc!important;
+}
+
+ .tag13, .tag13 a, .tag13 .tagText {
+  color: #000!important;
+  background-color: #ffea73!important;
+  border-color: #ffea73!important;
+}
+
+ .tag14, .tag14 a, .tag14 .tagText {
+  color: #000!important;
+  background-color: #d9ffc8!important;
+  border-color: #d9ffc8!important;
+}
+
+ .tag15, .tag15 a, .tag15 .tagText {
+  color: #000!important;
+  background-color: #ccffff!important;
+  border-color: #ccffff!important;
+}
+

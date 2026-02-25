@@ -1,0 +1,14 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredClasspathUri("/css/ext-all.css").resourcePath>
+<#include getDeferredClasspathUri("/css/ext-all.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredClasspathUri("/css/ext-all.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredClasspathUri("/css/xtheme-gray.css").resourcePath>
+<#include getDeferredClasspathUri("/css/xtheme-gray.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredClasspathUri("/css/xtheme-gray.css").url}");
+</#if>

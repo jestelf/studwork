@@ -1,0 +1,163 @@
+<beans>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.panel.AbstractPanel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.js.panel.AbstractPanel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/js/panel/AbstractPanel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.HistoryDispatcher</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Webr.component.panel</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Component</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.panel.ContentPanel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.js.panel.ContentPanel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/js/panel/ContentPanel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Webr.component.panel</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.AbstractPanel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.panel.Dialog" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/js/panel/Dialog.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.AbstractPanel</value>
+        <value>Webr.Error</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.javascript.stateMachine.runtime.stateMachineRuntime</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Webr.component.panel</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Panel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.panel.FormPanel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.js.panel.FormPanel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/js/panel/FormPanel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Webr.component.panel</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Panel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.panel.Panel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.js.panel.Panel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/js/panel/Panel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Webr.component.panel</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.AbstractPanel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.panel.TabPanel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.js.panel.TabPanel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/js/panel/TabPanel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.PageStateStore</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Webr.component.panel</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.AbstractPanel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.panel.Webr.component.panel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.js.panel.Webr.component.panel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/js/panel/Webr.component.panel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.Webr.component</value>
+      </list>
+    </property>
+  </bean>
+</beans>

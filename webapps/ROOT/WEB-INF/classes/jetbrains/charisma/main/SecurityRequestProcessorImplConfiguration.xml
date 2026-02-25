@@ -1,0 +1,38 @@
+<beans>
+  <bean id="SecurityRequestProcessorImpl" class="jetbrains.charisma.main.SecurityRequestProcessorImpl">
+    <property name="dependentRequestProcessors">
+      <map>
+        <entry>
+          <key>
+            <ref bean="ActionRequestProcessor"/>
+          </key>
+          <value>BEFORE</value>
+        </entry>
+        <entry>
+          <key>
+            <ref bean="HtmlTemplateRequestProcessor"/>
+          </key>
+          <value>BEFORE</value>
+        </entry>
+        <entry>
+          <key>
+            <ref bean="RESTRequestProcessor"/>
+          </key>
+          <value>BEFORE</value>
+        </entry>
+        <entry>
+          <key>
+            <ref bean="RestRequestProcessor"/>
+          </key>
+          <value>BEFORE</value>
+        </entry>
+        <entry>
+          <key>
+            <ref bean="PersistentFileRequestProcessor"/>
+          </key>
+          <value>BEFORE</value>
+        </entry>
+      </map>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,20 @@
+<beans>
+  <bean class="jetbrains.charisma.teamcity.persistence.TeamcityLifecycleLisneter"></bean>
+  <bean class="jetbrains.charisma.plugins.CharismaMenuItem">
+    <property name="menu">
+      <ref bean="adminMenu"/>
+    </property>
+    <property name="title">
+      <value>TeamCity Integration</value>
+    </property>
+    <property name="templateName">
+      <value>TeamcityIntegrationSettings</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.charisma.teamcity.ui.TeamcityBuildDecorator"></bean>
+  <bean class="jetbrains.charisma.teamcity.ui.TeamcityIssueTab">
+    <property name="templateName">
+      <value>IssueRelatedCommits</value>
+    </property>
+  </bean>
+</beans>

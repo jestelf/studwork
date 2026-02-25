@@ -1,0 +1,203 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.content.Content_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Content</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.content.TopToolbar_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.content.IssueList_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>il</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.content.BottomToolbar_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>bb</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.content.Content</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.charisma.smartui.js.IssueList</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.content.Issue_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Issue</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.inplaceIssueEdit.EditIssue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ei</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.ViewIssue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>vi</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.content.Issue</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.charisma.smartui.js.IssueList</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.content.TopToolbar_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>TopToolbar</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.content.CommandsToolbarPart_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>c</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.charisma.smartui.js.SelectionActions</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.content.IssueList_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueList</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.content.SelectAllIssues_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>sai</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.content.Issue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>i</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.jQuery_extension</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.content.BottomToolbar_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>BottomToolbar</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.content.BottomToolbar</value>
+        <value>jetbrains.charisma.smartui.js.Pager</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.jQuery_extension</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.content.CommandsToolbarPart_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>CommandsToolbarPart</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.content.CommandsToolbarPart</value>
+        <value>jetbrains.charisma.smartui.content.commandsToolbar.CommandToolbarGuard</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.charisma.smartui.js.IssueList</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Debug</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Menu</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.content.SelectAllIssues_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>SelectAllIssues</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.content.SelectAllIssues</value>
+        <value>jetbrains.charisma.smartui.js.SelectionActions</value>
+      </list>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,3 @@
+<beans>
+  <bean id="javaHighlighter" class="jetbrains.mps.wiki.runtime.higlighter.java.JavaHighlighter"></bean>
+</beans>

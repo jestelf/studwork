@@ -1,0 +1,21 @@
+<beans>
+  <bean id="principalManager" class="jetbrains.mps.webr.userManagement.runtime.PrincipalManagerImpl">
+    <property name="clientPrincipalManager">
+      <bean id="clientPrincipalManager" class="jetbrains.charisma.main.ClientPrincipalManagerImpl"></bean>
+    </property>
+    <property name="loggedInName">
+      <value>jetbrains.charisma.main.security.LOGGED_IN</value>
+    </property>
+    <property name="principalName">
+      <value>jetbrains.charisma.main.security.PRINCIPAL</value>
+    </property>
+  </bean>
+  <bean id="securityNavigator" class="jetbrains.mps.webr.userManagement.runtime.SecurityNavigatorImpl">
+    <property name="onLoginAction">
+      <bean id="onLoginAction" class="jetbrains.charisma.main.OnLoginHandler"></bean>
+    </property>
+    <property name="loginTemplate">
+      <value>LoginForm</value>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,712 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>yesterday</title>
+    <link type="text/css" media="screen" rel="stylesheet" href="css/__main.css"/>
+    <link type="text/css" media="screen" rel="stylesheet" href="css/newIssue.css"/>
+    <link type="text/css" media="screen" rel="stylesheet" href="css/editIssue.css"/>
+    <link type="text/css" media="screen" rel="stylesheet" href="css/suggest.css"/>
+    <link type="text/css" media="screen" rel="stylesheet" href="css/__actions.css"/>
+    <!--<link type="text/css" media="screen" rel="stylesheet" href="css/singleUI.css"/>-->
+    <!--<link type="text/css" media="screen" rel="stylesheet" href="css/issueProperties.css"/>-->
+    <link type="text/css" media="screen" rel="stylesheet" href="css/combobox.css"/>
+    <link type="text/css" media="screen" rel="stylesheet" href="css/__issueContainer.css"/>
+    <link type="text/css" media="screen" rel="stylesheet" href="css/__subcontent.css"/>
+</head>
+<body class="issuePage">
+
+<div id="SmartUI_Layout_id0" class="container">
+<div id="Issues_RootHtmlTemplate_id0" class="header">
+    <ul class="account">
+        <li class="info"><a href="">Info page</a></li>
+        <li class=""><a href="">Tools</a>
+            <ul class="dropMenu">
+                <li><a href="">Take screenshot</a></li>
+                <li><a href="">Get a bookmarklet</a></li>
+            </ul>
+        </li>
+        <li class="login"><a href="">konstantin Solomatov</a>
+            <ul class="dropMenu">
+                <li><a href="">Settings</a></li>
+                <li><a href="">Log out</a></li>
+            </ul>
+        </li>
+        <li class="user">Welcome,</li>
+    </ul>
+    <a href="/charisma/issues"><img src="img/logoSmall.gif" alt="Charisma" title="Charisma"/></a>
+</div>
+
+<!--<div class="issueBar">
+    <a class="editIssue active" href="">Edit Issue</a>
+    <ul class="player">
+        <li class="navigation backSearch"><a href="">.</a></li>
+        <li class="navigation"><a href="">.</a></li>
+        <li>Showing: 4 of 19 in this search</li>
+        <li class="navigation next"><a href="">.</a></li>
+    </ul>
+</div>-->
+
+<div id="issueBar" class="issueBar content">
+<a id="id_l.I.ib.editIssue" class="editIssue" href="javascript:void(0)" cn="l.I.ib.editIssue">Edit Issue</a>
+<div class="result">
+<ul class="actions">
+<li id="actions" class="actions fsiActions">
+<a id="actions_toggler" href="javascript:void(0)">Commands</a>
+<ul id="actionsMenu" class="dropMenu">
+<li>
+<a id="id_l.I.ib.am.action_Assign to Me_for me" href="javascript:void(0)" p1="for me" p0="Assign to Me" cn="l.I.ib.am.action">Assign to Me</a>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<ul class="player">
+</ul>
+</div>
+
+<div class="subcontent">
+    <dl class="attributes">
+        <dt>Priority:</dt>
+        <dd><div class="attribute Critical">Critical</div></dd>
+        <dt>Type:</dt>
+        <dd>
+        <div id="id_l.I.is.vp.ty.issueTypeLink" class="attribute dark active" title="Type: Bug" cn="l.I.is.vp.ty.issueTypeLink">
+        Bug
+        <span/>
+        </div>
+        <span class="combobox bind" style="visibility: visible;">
+        <span class=""><input type="text" class=""/></span>
+        <ul class="comboboxList" style="visibility: visible; overflow-y: visible;">
+        <li class="Bug active">
+        <span class="match">Bug</span>
+        </li>
+        <li class="Cosmetics">Cosmetics</li>
+        <li class="Exception">Exception</li>
+        <li class="Feature">Feature</li>
+        <li class="Meta Issue">Meta Issue</li>
+        <li class="Performance Problem">Performance Problem</li>
+        <li class="Task">Task</li>
+        <li class="Usability Problem">Usability Problem</li>
+        </ul>
+        </span>
+        </dd>
+        <dt>State:</dt>
+        <dd><div class="attribute">Submitted</div></dd>
+        <dt>Assignee:</dt>
+        <dd><div class="attribute">konstantin Solomatov</div></dd>
+        <dt>Subsystem:</dt>
+        <dd><div class="attribute">Smart UI</div></dd>
+        <dt>Fix for:</dt>
+        <dd>
+            <div class="attribute active">3.1, 3.0 Minor</div>
+            <span class="combobox bind multi" style="visibility: hidden;">
+                <input type="hidden" value="30-17,30-19"/>
+                <input/>
+                <ul class="comboboxList">
+                    <li class=""><span class="checkbox checked">.</span>3.1</li>
+                    <li class=""><span class="checkbox unchecked">.</span>Not for 4.0</li>
+                    <li class=""><span class="checkbox unchecked">.</span>4.0</li>
+                    <li class=""><span class="checkbox checked">.</span>3.0 Minor</li>
+                    <li class="active"><span class="checkbox unchecked">.</span>3.0</li>
+                </ul>
+            </span>
+        </dd>
+    </dl>
+    <ul class="by">
+        <li>Submited by <a href="">Egor Yarko</a> <span>3 months ago (16 Jan 08)</span></li>
+        <li>Updated by <a href="">sashka</a> <span>5 days ago (5 Apr 09)</span></li>
+    </ul>
+    <div class="sidebarList active">
+        <div class="title"><a class="normal" href="">Tags<span class="light">(8)</span></a><a class="help">.</a></div>
+        <ul>
+            <li class="active">
+                <a href="">Pain points <span class="light">(10)</span></a><a class="ico arrow" href=""></a>
+                <ul class="popup tag">
+                    <li>
+                        Shared for
+                        <span class="combobox">
+                            <input value="form me" maxlength="30" size="16"/>
+                            <a class="arrow" href="">.</a>
+                            <ul class="comboboxList" style="visibility: hidden;">
+                                <li>form me</li>
+                                <li>form me</li>
+                                <li>form me</li>
+                            </ul>
+                        </span>
+                    </li>
+                    <li><a class="normal" href=""><span class="checkbox checked">.</span> Untag on resolve</a></li>
+                    <li><a class="normal"><span class="checkbox">.</span>Untag on resolve</a></li>
+                    <li class="rename"><a class="normal" href="">Rename</a></li>
+                    <li class="rename input"><input value="paint points" size="16"/></li>
+                    <li class="delete"><a class="normal" href="">Delete</a></li>
+                </ul>
+            </li>
+            <li class="share"><a href="">Design <span class="light">(218)</span></a><a class="ico delete" href=""></a></li>
+            <li><a href="">Serious usability problems <span class="light">(54)</span></a><a class="ico arrow" href=""></a></li>
+            <li class="hoverNo">
+                <span class="combobox">
+                    <input class="empty" size="15" valueid="" value="add tag"/>
+                    <a class="arrow">.</a>
+                    <ul class="comboboxList" style="visibility: hidden;">
+                        <li class="empty active">add tag</li>
+                        <li class="design">design</li>
+                        <li class="Pain points">Pain points</li>
+                        <li class="Serious usability problems">Serious usability problems</li>
+                        <li class="TeamCity production usage issues">TeamCity production usage issues</li>
+                        <li class="Webr UI components">Webr UI components</li>
+                    </ul>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebarList plain active">
+        <div class="title"><a class="normal" href="">Watches<span class="light">(3)</span></a><a class="help">.</a></div>
+        <ul>
+            <li><a href="">You</a></li>
+            <li><a href="" class="disabled normal">yamaxim</a></li>
+            <li><a href="">konstantin Solomatov</a></li>
+        </ul>
+    </div>
+    <div class="sidebarList plain active">
+        <div class="title"><a class="normal" href="">Votes<span class="light">(2)</span></a><a class="help">.</a></div>
+        <ul>
+            <li><a href="">You</a></li>
+            <li><a href="">konstantin Solomatov</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="content">
+
+    <div id="issuesContent">
+
+
+        <!--<div class="issueContainer edit">
+        <div class="form">
+            <a class="help" href="">.</a>
+            <table cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="num"><h2>CH-1769</h2></td>
+            </tr>
+            </table>
+            <dl class="mainProperties">
+                <dt>Project:</dt>
+                <dd>
+                    <span class="issueWikiHelp">you can use<a href="/teamsys/wikiHelpWrapper" target="_blank">wiki markup</a></span>
+                    <span class="combobox">
+                        <input id="id_l.I.c.il.i_E_6_140849.ei.editIssueProjectSelector" class="" valueid="5-0" value="Charisma" name="-l.I.c.il.i_E_6_140849.ei.editIssueProjectSelector"/>
+                        <a class="arrow">.</a>
+                    </span>
+                </dd>
+                <dt>Summary:</dt>
+                <dd>
+                    <input class="summary" name="summary" value="Showing of information about an issue requires better organization"/>
+                </dd>
+                <dt>Description:</dt>
+                <dd>
+                    <textarea class="description" rows="20" cols="50" width="auto">We've never had a lot of chargebacks (a chargeback is when a customer calls their credit card company to dispute a charge they don't recognize), but last year we made a simple change that reduced our chargebacks by 30% as a percentage of sales.We've never had a lot of chargebacks (a chargeback is when a customer calls their credit card company to dispute a charge they don't recognize), but last year we made a simple change that reduced our chargebacks by 30% as a percentage of sales.</textarea>
+                </dd>
+            </dl>
+            <table class="properties" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="attributeList">
+                    <ul class="attributeList links">
+                        <li>Duplicates:</li>
+                        <li><a class="delete" href="#">.</a><a href="">CH-1370<span>,</span></a></li>
+                        <li class=""><a class="delete" href="#">.</a><a href="">CH-1503<span>,</span></a>
+                            <div class="issueContainer" style="display: none;">
+                                <h2><a href="">Showing of information about an issue requires better organization</a></h2>
+                                <table class="properties" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">Bug<span></span></div>
+                                    </td>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">Submitted<span></span></div>
+                                    </td>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">Duplicates : <a class="inline" href="">TW-505</a><span></span>
+                                        </div>
+                                    </td>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">konstantin solomatov<span></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li>Part of:</li>
+                        <li><a class="delete" href="#">.</a><a href="">CH-160</a></li>
+                        <li class="add">[ <a href="">add link</a> ]</li>
+                    </ul>
+                    <ul class="attributeList files">
+                        <li class="light"><a class="delete" href="#">.</a> <a class="dark" href="">wrongIssueComment.png</a>
+                            (73 kB),
+                        </li>
+                        <li class="light"><a class="delete" href="#">.</a> <a class="dark" href="">wrongIssueComment.png</a>
+                            (73 kB),
+                        </li>
+                        <li class="add">[ <a href="">add file</a> ]</li>
+                    </ul>
+                    <div class="addAttributeForm files" style="display:none;">
+                        <ul class="buttons">
+                            <li><a class="discardButton" href="#">cancel</a></li>
+                            <li><a class="submitButton" href="#">submit</a></li>
+                        </ul>
+                        <ul>
+                            <li class="chooseFile"><input type="file"/></li>
+                            <li class="dark">Visible for:</li>
+                            <li class="comboboxLi">
+                                <span class="combobox">
+                                    <input value="visible to all" maxlength="30" size="18"/>
+                                    <a href="">.</a>
+                                    <ul class="comboboxList" style="visibility: hidden;">
+                                        <li>visible to all</li>
+                                        <li>visible to all</li>
+                                        <li>visible to all</li>
+                                    </ul>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            </table>
+            <ul class="buttons">
+            <li>
+            <a class="cancelButton" href="#">Cancel</a>
+            </li>
+            <li>
+            <a class="submitButton" href="#">Submit</a>
+            </li>
+            <li class="preview">
+                <a class="checkbox checked" href="">.</a>
+                <label>Preview</label>
+            </li>
+            </ul>
+        </div>
+        <div class="issuePreview">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="num"><h2>CH-1769</h2></td>
+                    <td><h2>Showing of information about an issue requires better organization</h2></td>
+                </tr>
+            </table>
+            <div class="description">
+                We've never had a lot of chargebacks (a chargeback is when a customer calls their credit card company to dispute a charge they don't recognize), but last year we made a simple change that reduced our chargebacks by 30% as a percentage of sales.We've never had a lot of chargebacks (a chargeback is when a customer calls their credit card company to dispute a charge they don't recognize), but last year we made a simple change that reduced our chargebacks by 30% as a percentage of sales.
+            </div>
+        </div>
+        </div>-->
+
+
+        <div class="issueContainer">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td><h2><span class="num">CH-1769</span> Showing of information about an issue requires better organization</h2></td>
+                </tr>
+            </table>
+            <table class="properties" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="ico favorites">
+                    <div title="favorites">.</div>
+                </td>
+                <td class="ico voters">
+                    <div class="active" title="voters">35</div>
+                </td>
+                <td class="ico watchers">
+                    <div class="disabled" title="watchers">.</div>
+                </td>
+                <td class="attributeList">
+                    <ul class="attributeList links">
+                        <li>Duplicates:</li>
+                        <li><a class="delete" href="#">.</a><a href="">CH-1370<span>,</span></a></li>
+                        <li class="resolved active"><a class="delete" href="#">.</a><a href="">CH-1503<span>,</span></a>
+                            <div class="issueContainer">
+                                <h2><a href="">Showing of information about an issue requires better organization</a></h2>
+                                <table class="properties" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">Bug<span></span></div>
+                                    </td>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">Submitted<span></span></div>
+                                    </td>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">Duplicates : <a class="inline" href="">TW-505</a><span></span>
+                                        </div>
+                                    </td>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">konstantin solomatov<span></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li>Part of:</li>
+                        <li><a class="delete" href="#">.</a><a href="">CH-160</a></li>
+                        <li class="add">[ <a href="">add link</a> ]</li>
+                    </ul>
+                    <ul class="attributeList files">
+                        <li class="light"><a class="delete" href="#">.</a> <a class="dark" href="">wrongIssueComment.png</a>
+                            (73 kB),
+                        </li>
+                        <li class="light"><a class="delete" href="#">.</a> <a class="dark" href="">wrongIssueComment.png</a>
+                            (73 kB),
+                        </li>
+                        <li class="add">[ <a href="">add file</a> ]</li>
+                    </ul>
+                    <div class="addAttributeForm files" style="display:none;">
+                        <ul class="buttons">
+                            <li><a class="discardButton" href="#">cancel</a></li>
+                            <li><a class="submitButton" href="#">submit</a></li>
+                        </ul>
+                        <ul>
+                            <li class="chooseFile"><input type="file"/></li>
+                            <li class="dark">Visible for:</li>
+                            <li class="comboboxLi">
+                                <span class="combobox">
+                                    <input value="visible to all" maxlength="30" size="18"/>
+                                    <a href="">.</a>
+                                    <ul class="comboboxList" style="visibility: hidden;">
+                                        <li>visible to all</li>
+                                        <li>visible to all</li>
+                                        <li>visible to all</li>
+                                    </ul>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            </table>
+
+            <!--<table class="properties" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="ico favorites">
+                    <div title="favorites">.</div>
+                </td>
+                <td class="ico voters">
+                    <div class="active" title="voters">35</div>
+                </td>
+                <td class="ico watchers">
+                    <div class="disabled" title="watchers">.</div>
+                </td>
+                <td class="attributeList">
+                    <ul class="attributeList links">
+                        <li>Duplicates:</li>
+                        <li><a class="delete" href="#">.</a><a href="">CH-1370<span>,</span></a></li>
+                        <li class="active"><a class="delete" href="#">.</a><a href="">CH-1503<span>,</span></a>
+
+                            <div class="issueContainer">
+                                <h2><a href="">Showing of information about an issue requires better organization</a></h2>
+                                <table class="properties" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">Bug<span></span></div>
+                                    </td>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">Submitted<span></span></div>
+                                    </td>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">Duplicates : <a class="inline" href="">TW-505</a><span></span>
+                                        </div>
+                                    </td>
+                                    <td class="attributes">
+                                        <div class="attribute dark disabled">konstantin solomatov<span></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li>Part of:</li>
+                        <li><a class="delete" href="#">.</a><a href="">CH-160</a></li>
+                        <li class="add">[ <a href="">add link</a> ]</li>
+                    </ul>
+                    <br/><br/><br/><br/><br/><br/><br/>
+                    <ul class="attributeList links">
+                        <li class="add">[ <a href="">add link</a> ]</li>
+                    </ul>
+                    <ul class="attributeList links">
+                        <li>Duplicates:</li>
+                        <li><a class="delete" href="#">.</a><a href="">CH-1370</a></li>
+                        <li class="add active">[ <a href="">add link</a> ]</li>
+                    </ul>
+                    <div class="addAttributeForm links active">
+                        <ul class="buttons">
+                            <li><a class="discardButton" href="#">cancel</a></li>
+                            <li><a class="submitButton" href="#">submit</a></li>
+                        </ul>
+                        <ul>
+                            <li class="comboboxLi">
+                                <span class="combobox">
+                                    <input value="duplicates" maxlength="30" size="18"/>
+                                    <a href="">.</a>
+                                    <ul class="comboboxList" style="display: block;">
+                                        <li>duplicates</li>
+                                        <li>relates to</li>
+                                        <li>is required for</li>
+                                        <li>is duplicated by</li>
+                                        <li>is related to</li>
+                                        <li>depends on</li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li>Issue <input class="text" size="50"/></li>
+                        </ul>
+                    </div>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <ul class="attributeList files">
+                        <li class="light"><a class="delete" href="#">.</a> <a class="dark" href="">wrongIssueComment.png</a>
+                            (73 kB),
+                        </li>
+                        <li class="light"><a class="delete" href="#">.</a> <a class="dark" href="">wrongIssueComment.png</a>
+                            (73 kB),
+                        </li>
+                        <li class="add active">[ <a href="">add file</a> ]</li>
+                    </ul>
+                    <div class="addAttributeForm files" style="display:block;">
+                        <ul class="buttons">
+                            <li><a class="discardButton" href="#">cancel</a></li>
+                            <li><a class="submitButton" href="#">submit</a></li>
+                        </ul>
+                        <ul>
+                            <li class="chooseFile"><input type="file"/></li>
+                            <li class="dark">Visible for:</li>
+                            <li class="comboboxLi">
+                                <span class="combobox">
+                                    <input value="visible to all" maxlength="30" size="18"/>
+                                    <a href="">.</a>
+                                    <ul class="comboboxList" style="display: block;">
+                                        <li>visible to all</li>
+                                        <li>visible to all</li>
+                                        <li>visible to all</li>
+                                    </ul>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <br/><br/><br/><br/><br/>
+                    <ul class="attributeList tags">
+                        <li class="light">tags:</li>
+                        <li><a href="">Pain points</a></li>
+                        <li><a href="">Design</a></li>
+                        <li><a href="">Serious usability problems</a></li>
+                        <li class="add active">[ <a href="">edit</a> ]
+                            <span class="combobox bind active">
+                                <input class="textNo" type="text" value="add tag" onblur="if(this.value == '') this.value = 'add tag', this.className = 'textNo'" onfocus="if(this.value == 'add tag') this.value = '', this.className = 'text'" name="taf"/>
+                                <a href="">.</a>
+                                <ul class="comboboxList">
+                                    <li>Pain points</li>
+                                    <li>Design</li>
+                                    <li>Serious usability problems</li>
+                                 </ul>
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="attributeList tags">
+                        <li class="add">[ <a href="">add tag</a> ]</li>
+                    </ul>
+                </td>
+            </tr>
+            </table>-->
+            <div class="description">
+                We've never had a lot of chargebacks (a chargeback is when a customer calls their credit card company to dispute a charge they don't recognize), but last year we made a simple change that reduced our chargebacks by 30% as a percentage of sales.We've never had a lot of chargebacks (a chargeback is when a customer calls their credit card company to dispute a charge they don't recognize), but last year we made a simple change that reduced our chargebacks by 30% as a percentage of sales.
+            </div>
+            <!--<div class="description empty">No description</div>-->
+
+
+        </div>
+
+        <ul class="tabs">
+                <li class="activ"><a href="">Comments (4)</a><!--<a class="add" href="">add comment</a>--></li>
+                <li class=""><a href="#">History (2)</a></li>
+            </ul>
+
+
+            <div class="commentsIssue">
+                <div class="commentsScroll">
+                    <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <div>
+                        <td class="first">
+                            <img class="avatar" alt="sashka" src="http://teamsys.labs.intellij.net/teamsys/_persistent/userpicTotoro.jpg?window_id=21&file=13-6587&v=0&w=56&h=56&c=false"/>
+                        </td>
+                        <td>
+                            <a class="autor" href="mailto:vadim dot gurov at jetbrains dot com">sashka</a>
+                            <span class="light">Aug 27 at 21:42 (2 month ago)</span>
+                        </td>
+                        </div>
+                        <td class="comment">
+                            <div>if IPR references a lot of modules that are stored in many VCSs
+                                (old IDEA scheme), when VCS roots BECOME unavailable, opening IPR runner settings
+                                page can take several minutes each time the page is opened. Introducing separate
+                                "Parse" action that will display "in progress" indicator will eliminate the problem.
+                            </div>
+                            <ul class="actions">
+                                <li><a href="">edit</a></li>
+                                <li class="last"><a href="">delete</a></li>
+                            </ul>
+                            <p class="visible light">visible to jira-admin groupp</p>
+                        </td>
+                    </tr>
+                    <tr class="selected">
+                        <td class="first">
+                            <img class="avatar" alt="" src="img/youPicture.gif"/>
+                        </td>
+                        <td class="first">
+                            <a class="autor" href="/charisma/user?user=11-31">Maarten Hazewinkel</a>
+                            <span class="light">08 Mar 2008 00:14 11 months ago</span>
+                        </td>
+                        <td class="comment">
+                            <div>
+                                I've resubmitted the issue in the correct tracker now as TW-4696
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <div>
+                        <td class="first">
+                            <img class="avatar" src="img/youPicture.gif" width="40" alt=""/>
+                        </td>
+                        <td>
+                            <a class="autor" href="">sashka</a>
+                            <span class="light">Aug 27 at 21:42 (2 month ago)</span>
+                        </td>
+                        </div>
+                        <td class="comment">
+                            <div>
+                            if IPR references a lot of modules that are stored in many VCSs (old IDEA scheme), when
+                            VCS roots BECOME unavailable, opening IPR runner settings page can take several minutes
+                            each time the page is opened. Introducing separate "Parse" action that will display "in
+                            progress" indicator will eliminate the problem.
+                            </div>
+                            <ul class="actions">
+                                <li><a href="">edit</a></li>
+                                <li class="last"><a href="">delete</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <div>
+                        <td class="first">
+                            <img class="avatar" alt="sashka" src="http://teamsys.labs.intellij.net/teamsys/_persistent/userpicTotoro.jpg?window_id=21&file=13-6587&v=0&w=56&h=56&c=false"/>
+                        </td>
+                        <td>
+                            <a class="autor" href="mailto:vadim dot gurov at jetbrains dot com">sashka</a>
+                            <span class="light">Aug 27 at 21:42 (2 month ago)</span>
+                        </td>
+                        </div>
+                        <td class="comment">
+                            <div>if IPR references a lot of modules that are stored in many VCSs
+                                (old IDEA scheme), when VCS roots BECOME unavailable, opening IPR runner settings
+                                page can take several minutes each time the page is opened.
+                            </div>
+                            <ul class="actions">
+                                <li><a href="">edit</a></li>
+                                <li class="last"><a href="">delete</a></li>
+                            </ul>
+                            <p class="visible light">visible to jira-admin groupp</p>
+                        </td>
+                    </tr>
+                    </table>
+                    <div class="formAddComment">
+                        <label class="dark">Add Comment</label>
+                        <textarea></textarea>
+                        <ul class="buttons">
+                            <li><a title="Ctrl+Enter" class="submitButton" href="#">Submit</a></li>
+                        </ul>
+                        <label class="dark">Visible for Group:</label>
+                            <span class="combobox">
+                                <input value="visible to all" size="18"/>
+                                <a href="">.</a>
+                                <ul class="comboboxList" style="visibility: visible;">
+                                    <li>visible to all</li>
+                                    <li>visible to all</li>
+                                    <li>visible to all</li>
+                                </ul>
+                            </span>
+                    </div>
+                </div>
+            </div>
+
+
+            <br/><br/><br/><br/>
+            <ul class="tabs">
+                <li><a href="">Comments (4)</a><!--<a class="add" href="">add comment</a>--></li>
+                <li class="activ"><a href="#">History (2)</a></li>
+            </ul>
+            <div class="historyIssue">
+                <table cellspacing="0" cellpadding="0">
+                <tr class="title">
+                    <td colspan="2" class="title"><a href="/teamsys/user?user=4-1">Timur Zambalaev</a> 43 hours ago <span class="light">(03 Mar 2009 19:11)</span></td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td>
+                        Default configuration file shipped with the TeamWare distribution is formatted with windows-style CR/LF characters.
+                        Expected: separate download package for Unix, where CR/LF are fixed.<br/>
+                        Environment: Linux<br/>
+                    </td>
+                </tr>
+                <tr class="title">
+                    <td colspan="2"><a href="/teamsys/user?user=4-1">yavadim</a> 43 hours ago <span class="light">(03 Mar 2009 19:11)</span></td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td><p class="old">Bug</p>Feature</td>
+                </tr>
+                <tr class="title">
+                    <td colspan="2"><a href="/teamsys/user?user=4-1">yavadim</a> 43 hours ago <span class="light">(03 Mar 2009 19:12)</span></td>
+                </tr>
+                <tr>
+                    <th>Assignee</th>
+                    <td><p class="old">&lt;no user&gt;</p>yavadim (vgurov)</td>
+                </tr>
+                <tr class="title">
+                <td colspan="2">
+                <a href="/teamsys/user?user=4-1">konstantin solomatov</a> 2 days ago <span class="light">(02 Mar 2009 21:31)</span>
+                </td>
+                </tr>
+                <tr>
+                <th>Type</th>
+                <td>
+                <p class="old">Bug</p>
+                Feature
+                </td>
+                </tr>
+                <tr>
+                <th>Assignee</th>
+                <td>
+                <p class="old">&lt;no user&gt;</p>
+                yavadim (vgurov)
+                </td>
+                </tr>
+                </table>
+            </div>
+
+    </div>
+
+</div>
+</div>
+
+
+</body>
+
+</html>

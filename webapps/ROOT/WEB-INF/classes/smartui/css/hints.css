@@ -1,0 +1,135 @@
+.hints {
+    margin: 0;
+    padding: 1.5em 2.5em 2em 1.5em;
+    font-size: 110%;
+    line-height: 1.4em;
+    font-family: arial, tahoma, verdana, sans-serif;
+    position: relative;
+    background-color: #fff;
+    border: solid 8px #f7e08b;
+}
+.content .hints table {
+    margin: 0;
+    padding: 0;
+}
+.content .hints table td {
+    padding-bottom: .8em;
+    vertical-align: top;
+}
+.content .hints table td .time {
+    text-align: right;
+    font-size: 80%;
+}
+.content .hints table td .reference {
+    display: block;
+    margin-top: .5em;
+}
+.content .hints ul {
+    margin: 0;
+    padding: 0;
+}
+.content .hints ul li {
+    margin: 0 1em .3em 0;
+    padding: 0 0 0 1em;
+    list-style: none;
+    background:  url( '../img/bullHints.gif' ) no-repeat 0 .4em;
+}
+.content .hints .shortcut {
+    padding-left: .3em;
+    padding-right: .3em;
+    background-color: #FFF5BD;
+}
+.content .hints a.shortcut {
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+}
+.content .hints .demo {
+    z-index: 1;
+    cursor: pointer;
+    background:  url( '../img/playDemo.png' ) no-repeat center center;
+    border: solid 1px #7fa2c9;
+}
+.content .hints .demo:hover {
+    background:  url( '../img/playDemoHover.png' ) no-repeat center center;
+}
+.content .hints img {
+    cursor: pointer;
+    width: 300px;
+    z-index: -1;
+    position: relative;
+    border: solid 8px #f9f9fa;
+}
+
+
+
+
+#help_div {
+    padding: .5em;
+    position: absolute;
+    width: 28em;
+    right: 0;
+    z-index: 100;
+    border-width: 5px;
+}
+#help_div div.hideHelp {
+    text-align: right;
+    border-bottom: 1px solid;
+}
+#help_div div.moreHelp {
+    padding-top: 10px;
+    text-align: right;
+    clear: both;
+}
+#help_div div.moreHelp a {
+    background: none;
+    font-size: 90%;
+    color: #084b96;
+}
+#help_div dl {
+    margin: 1em 0 0;
+}
+#help_div dt {
+    clear: left;
+    color: blue;
+    padding-top:1px;
+    text-align:right;
+    width: 30%;
+    float: left;
+    display: inline;
+}
+#help_div dt span {
+    padding-left: .3em;
+    padding-right: .3em;
+    color: #333;
+    font-weight1: bold;
+    background-color: #FEFFD9;
+    border: solid 1px #E2C822;
+}
+#help_div dt.line {
+    width: 100%;
+    color: #fff;
+    height: .5em;
+    border-top: solid 1px #d4d6d7;
+}
+#help_div dd {
+    margin: 0;
+    padding: 2px 0 .5em 5px;
+    width: 60%;
+    float: left;
+    line-height: 1.3em;
+    text-align: left;
+}
+#help_div dd.lastDd {
+    padding-bottom: 10px;
+}
+.hidden{
+    display: none;
+}
+.invisible{
+    visibility: hidden;
+}
+
+.shortcut {
+    font-weight: bold;
+}

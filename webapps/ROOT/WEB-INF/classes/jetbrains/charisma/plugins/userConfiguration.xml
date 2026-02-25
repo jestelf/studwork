@@ -1,0 +1,14 @@
+<beans>
+  <bean id="userInfos" class="jetbrains.charisma.plugins.UserInfos"></bean>
+  <bean id="userLoginDecorators" class="jetbrains.charisma.plugins.UserLoginDecorators"></bean>
+  <bean id="extensionPoint_userInfos_infos" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="userInfos"/>
+    <property name="extensionPropertyName" value="infos"/>
+    <property name="extensionType" value="jetbrains.charisma.plugins.UserInfo"/>
+  </bean>
+  <bean id="extensionPoint_userLoginDecorators_decorators" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="userLoginDecorators"/>
+    <property name="extensionPropertyName" value="decorators"/>
+    <property name="extensionType" value="jetbrains.charisma.plugins.UserLoginDecorator"/>
+  </bean>
+</beans>

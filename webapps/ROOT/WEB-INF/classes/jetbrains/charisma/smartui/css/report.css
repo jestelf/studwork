@@ -1,0 +1,121 @@
+.rprt {
+  margin-top: 20px;
+}
+
+.Report {
+  width: 100%;
+  border-bottom: 1px solid #d4d5d6;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.Report .devider {
+  display: block;
+  float: left;
+  width: 1px;
+  margin: 0 4px 0 0;
+  border: 0;
+  border-right: 1px solid #d4d5d6;
+}
+
+.Report th {
+  background-color: #4B4B4A;
+  color: white;
+  vertical-align: top;
+  padding: 5px;
+  text-align: center;
+}
+
+.Report .axis {
+  width: 130px;
+  border-right: 1px solid #d4d5d6;
+}
+
+.Report td {
+  padding: 5px;
+  text-align: center;
+}
+
+.Report table {
+  margin: 0 auto;
+  
+}
+
+.Report table tr {
+  border-bottom: 0;
+}
+
+.Report caption {
+  font-size: 150%;
+  font-weight: normal;
+  font-family: arial, tahoma, verdana, sans-serif;
+  padding-bottom: 5px;
+  color: #666;
+  border-bottom: 1px solid #898989;
+}
+
+.Report .collapse-toggler, .Report .collapse-toggler:hover {
+  float: right;
+  background: url("${getClasspathUri("smartui/img/default/expand.png")}") no-repeat right center;
+  padding: 0 3px;
+  text-decoration: none;
+}
+
+.Report .collapse-toggler.active, .Report .collapse-toggler.active:hover {
+  background: url("${getClasspathUri("smartui/img/default/collapse.png")}") no-repeat right center;
+  padding: 0 3px;
+  text-decoration: none;
+}
+
+.Report .attach-edit, .Report .attach-delete {
+  margin-top: 1px;
+}
+
+.Report .total {
+  font-weight: bold;
+}
+
+td.button a {
+  color: lightgray;
+  float: right;
+}
+
+.reportContext {
+  padding: 0 7px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.progress {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background: #fff url("${getClasspathUri("images/loader.gif")}") no-repeat center center;
+}
+
+.empty-cell {
+  color: lightgray;
+}
+
+/*new report design*/

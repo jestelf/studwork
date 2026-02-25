@@ -1,0 +1,14 @@
+h1./admin/group
+h2. GET /admin/group
+Get all available user groups
+{panel}{{GET /rest/admin/group}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/group{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

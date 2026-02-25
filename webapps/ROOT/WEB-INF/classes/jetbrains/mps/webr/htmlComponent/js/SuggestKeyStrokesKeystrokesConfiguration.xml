@@ -1,0 +1,260 @@
+<beans>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.PreviousItem" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>PreviousItem</value>
+    </property>
+    <property name="description">
+      <value>Select previous item</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>38</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.NextItem" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>NextItem</value>
+    </property>
+    <property name="description">
+      <value>Select next item</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>40</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.Close" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>Close</value>
+    </property>
+    <property name="description">
+      <value>Close suggestion list</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>27</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.ImplicitComplete" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>ImplicitComplete</value>
+    </property>
+    <property name="description">
+      <value>Implicit complete when nothing is selected</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>9</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.ExplicitComplete" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>ExplicitComplete</value>
+    </property>
+    <property name="description">
+      <value>Explicit complete when something is selected</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>13</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.js.SpaceComplete" class="jetbrains.mps.webr.htmlComponent.runtime.KeyStroke">
+    <property name="name">
+      <value>SpaceComplete</value>
+    </property>
+    <property name="description">
+      <value>Explicit complete by space key</value>
+    </property>
+    <property name="mappings">
+      <list>
+        <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyStrokeMapping">
+          <property name="browsers">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="oses">
+            <list>
+              <value><null/></value>
+            </list>
+          </property>
+          <property name="key">
+            <bean class="jetbrains.mps.webr.htmlComponent.runtime.Key">
+              <property name="ctrl">
+                <value>FALSE</value>
+              </property>
+              <property name="alt">
+                <value>FALSE</value>
+              </property>
+              <property name="meta">
+                <value>FALSE</value>
+              </property>
+              <property name="shift">
+                <value>FALSE</value>
+              </property>
+              <property name="keyCode">
+                <value>32</value>
+              </property>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+</beans>

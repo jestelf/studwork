@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<!-- Copyright (c) 2005 Tim Taylor Consulting (see LICENSE.txt) -->
+<html>
+<head>
+<title>Drag &amp; Drop Sortable Lists with JavaScript and CSS</title>
+
+<script language="JavaScript" type="text/javascript" src="js/core.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/events.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/css.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/coordinates.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/drag.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/dragsort.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/cookies.js"></script>
+
+<!--<script language="JavaScript" type="text/javascript" src="js/drag1.js"></script>-->
+
+<script language="JavaScript" type="text/javascript">
+
+    var dragsort = ToolMan.dragsort()
+	var junkdrawer = ToolMan.junkdrawer()
+
+	window.onload = function() {
+		junkdrawer.restoreListOrder("numeric")
+
+
+		dragsort.makeListSortable(document.getElementById("numeric"),
+				verticalOnly, saveOrder)
+
+
+	}
+
+	function verticalOnly(item) {
+		item.toolManDragGroup.verticalOnly()
+	}
+
+	function saveOrder(item) {
+		var group = item.toolManDragGroup
+		var list = group.element.parentNode
+		var id = list.getAttribute("id")
+		if (id == null) return
+		group.register('dragend', function() {
+			ToolMan.cookies().set("list-" + id,
+					junkdrawer.serializeList(list), 365)
+		})
+	}
+
+</script>
+</head>
+<body>
+
+<ul id="numeric">
+	<li itemID="1">one</li>
+	<li itemID="2">two</li>
+	<li itemID="3">three</li>
+</ul>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<beans>
+  <bean id="appLifecycleListeners" class="jetbrains.charisma.plugins.AppLifecycleListeners"></bean>
+  <bean id="extensionPoint_appLifecycleListeners_listeners" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="appLifecycleListeners"/>
+    <property name="extensionPropertyName" value="listeners"/>
+    <property name="extensionType" value="jetbrains.charisma.plugins.AppLifecycleListener"/>
+  </bean>
+</beans>

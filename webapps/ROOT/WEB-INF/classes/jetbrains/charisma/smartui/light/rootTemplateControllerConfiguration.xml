@@ -1,0 +1,7 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.light.Light_RootHtmlTemplateController" class="jetbrains.charisma.smartui.light.Light_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

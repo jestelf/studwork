@@ -1,0 +1,267 @@
+.box {
+  margin: 1em 0;
+  padding: 5px;
+}
+
+/*view caption field*/
+.workspace .title {
+  margin: 0;
+  background-color: #eee;
+}
+
+.workspace .title h2 {
+  color: #5b5b5b;
+}
+
+/*issue summary details*/
+dl.property {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+dl.property dt {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 80px;
+  color: #586b77;
+}
+
+dl.property dd {
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 0 0 0 80px;
+}
+
+.Devider {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+dl.property dd.Devider {
+  padding-bottom: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+dl.property dd span {
+  font-size: 90%;
+  color: #868686;
+}
+
+dl.property dd img {
+  vertical-align: middle;
+}
+
+/*Attachment box*/
+.IssueAttachment {
+  background: #fcfcfa url("${getClasspathUri("images/attach.png")}") no-repeat 3px 2px;
+  padding-left: 30px;
+}
+
+.IssueAttachment span {
+  display: block;
+  padding: 1px;
+}
+
+.scrollBox {
+  overflow-x: auto;
+  height: 100%;
+  padding: 5px;
+}
+
+.formBox {
+  padding: 5px;
+}
+
+.tableProject {
+  padding: 1px;
+}
+
+.undefined {
+  color: gray;
+}
+
+/*secondary navigation inside workspace*/
+.toolbar .input-text {
+  width: 180px;
+  padding: 0;
+}
+
+.toolbar input, .toolbar select {
+  padding: 0;
+  height: 20px;
+}
+
+ul.toolbar {
+  padding: 5px 0 0.5em 10px;
+  margin: 0;
+  background-color: #fcfcfa;
+  font-size: 85%;
+}
+
+ul.toolbar li {
+  display: inline;
+  list-style: none;
+  margin: 0 15px 0 0;
+  vertical-align: middle;
+}
+
+/*navigation related to view*/
+ul.topanel {
+  float: right;
+  margin: 0;
+}
+
+ul.topanel li {
+  margin: 0 0 0 20px;
+}
+
+/*Advanced fi*/
+.me {
+  font-weight: bold;
+}
+
+.x-grid-cell-text {
+  padding: 0px 4px;
+  color: #3f3f3f;
+}
+
+/*secial issue types style*/
+.issueInfoPanel {
+  padding: 10px;
+}
+
+.x-tree-node span.counting {
+  color: gray;
+}
+
+.top-bordered {
+  border-top: 1px solid #a3b2bd;
+}
+
+/*Priority classes*/
+.priority-minor {
+  background: url("${getClasspathUri("images/prority/Minor.png")}") no-repeat 50% 0;
+}
+
+.priority-normal {
+  background: url("${getClasspathUri("images/prority/Normal.png")}") no-repeat 50% 0;
+}
+
+.priority-major {
+  background: url("${getClasspathUri("images/prority/Major.png")}") no-repeat 50% 0;
+}
+
+.priority-critical {
+  background: url("${getClasspathUri("images/prority/Critical.png")}") no-repeat 50% 0;
+}
+
+.priority-show-stopper {
+  background: url("${getClasspathUri("images/prority/Show-stopper.png")}") no-repeat 50% 0;
+}
+
+.Open {
+  background: url("${getClasspathUri("images/state/Open.gif")}") no-repeat 0 3px;
+  padding-left: 13px;
+}
+
+.x-grid-row-selected .Open {
+  background-image: url("${getClasspathUri("images/state/Open-inverted.gif")}");
+}
+
+.New {
+  background: url("${getClasspathUri("images/state/New.gif")}") no-repeat 0 3px;
+  padding-left: 13px;
+}
+
+.x-grid-row-selected .New {
+  background-image: url("${getClasspathUri("images/state/New-inverted.gif")}");
+}
+
+.Reopened {
+  background: url("${getClasspathUri("images/state/Reopened.gif")}") no-repeat 0 4px;
+  padding-left: 13px;
+}
+
+.x-grid-row-selected .Reopened {
+  background-image: url("${getClasspathUri("images/state/Reopened-inverted.gif")}");
+}
+
+.Fixed {
+  background: url("${getClasspathUri("images/state/Fixed.gif")}") no-repeat 0 3px;
+  padding-left: 13px;
+}
+
+.x-grid-row-selected .Fixed {
+  background-image: url("${getClasspathUri("images/state/Fixed-inverted.gif")}");
+}
+
+.In-Progress {
+  background: url("${getClasspathUri("images/state/In-Progress.gif")}") no-repeat 0 3px;
+  padding-left: 13px;
+}
+
+.x-grid-row-selected .In-Progress {
+  background-image: url("${getClasspathUri("images/state/In-Progress-inverted.gif")}");
+}
+
+.Duplicate {
+  background: url("${getClasspathUri("images/state/Duplicated.gif")}") no-repeat 0 3px;
+  padding-left: 13px;
+}
+
+.x-grid-row-selected .Duplicate {
+  background-image: url("${getClasspathUri("images/state/Duplicated-inverted.gif")}");
+}
+
+table.viewSimpleFilterExpr {
+  width: 100%;
+  
+  
+}
+
+table.viewSimpleFilterExpr td {
+  width: 100px;
+  vertical-align: top;
+}
+
+table.viewSimpleFilterExpr th {
+  vertical-align: top;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.FilterIsApplied {
+  background-color: #8c3c3c;
+  background-color: #646464;
+  border: 1px solid black;
+  padding: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.FilterIsCleared {
+  background-color: #e0eef5;
+  border: 1px solid #bfbfbf;
+  padding: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  color: #929292;
+  font-weight: normal;
+}
+
+#wrapper {
+  border: 1px solid #a3b2bd;
+  border-top: 0;
+}
+
+#issuesGrid {
+  border: 1px solid #a3b2bd;
+  border-top: 0;
+}
+

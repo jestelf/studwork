@@ -1,0 +1,29 @@
+.comment {
+  width: 100%;
+  border: 1px solid #e3e9ef;
+}
+
+.comment-head {
+  background-color: #e3e9ef;
+  width: 100%;
+}
+
+.comment-body {
+  width: 100%;
+  font-size: 70%;
+}
+
+.comment-new-reply {
+  width: 100%;
+}
+
+.comment-new-reply textarea {
+  width: 95%;
+  height: 10em;
+}
+
+.comment-replies {
+  margin-left: 1em;
+  width: 100%;
+}
+

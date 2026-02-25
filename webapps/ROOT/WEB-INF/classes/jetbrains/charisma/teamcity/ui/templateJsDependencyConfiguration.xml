@@ -1,0 +1,228 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.teamcity.ui.TeamcityIntegrationSettings_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>TeamcityIntegrationSettings</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.teamcity.ui.TeamcityServers_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ts</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.teamcity.ui.TeamcityBuildTypeMappingList_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ml</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.teamcity.ui.TeamcityIntegrationSettings</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.teamcity.ui.TeamcityServers_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>TeamcityServers</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.teamcity.ui.EditTeamcityServerDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ets</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.teamcity.ui.TeamcityServers</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.teamcity.ui.TeamcityBuildTypeMappingList_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>TeamcityBuildTypeMappingList</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.teamcity.ui.TeamcityBuildTypeMapping_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>m</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.teamcity.ui.EditBuildTypeMappingDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>EditBuildTypeMappingDialog</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.teamcity.ui.TeamcityBuildTypeMappingList</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.teamcity.ui.EditBuildTypeMappingDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditBuildTypeMappingDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.teamcity.ui.SelectBuildType_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>bt</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.teamcity.ui.EditBuildTypeMappingDialogAdvanced_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>adv</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.teamcity.ui.EditBuildTypeMappingDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.teamcity.ui.SelectBuildType_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>SelectBuildType</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.teamcity.ui.SelectBuildType</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.teamcity.ui.IssueRelatedCommits_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueRelatedCommits</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.teamcity.ui.EditBuildTypeMappingDialogAdvanced_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditBuildTypeMappingDialogAdvanced</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.teamcity.ui.EditBuildTypeMappingDialogAdvanced</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.MultiBox</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.teamcity.ui.TeamcityBuildTypeMapping_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>TeamcityBuildTypeMapping</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.teamcity.ui.StateOrProgress_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>msg</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.teamcity.ui.TeamcityBuildTypeMapping</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.teamcity.ui.StateOrProgress_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>StateOrProgress</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.teamcity.ui.EditTeamcityServerDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditTeamcityServerDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.teamcity.ui.EditTeamcityServerDialog</value>
+      </list>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,682 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.watchFolder.WatchRuleMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.smartui.watchFolder.WatchRuleImpl"></bean>
+    </property>
+    <property name="type">
+      <value>WatchRule</value>
+    </property>
+    <property name="ownIndexes">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.IndexImpl">
+          <property name="fields">
+            <list>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>owner</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>WatchRule</value>
+                </property>
+                <property name="property">
+                  <value>false</value>
+                </property>
+              </bean>
+              <bean class="com.jetbrains.teamsys.dnq.database.IndexFieldImpl">
+                <property name="name">
+                  <value>watchFolder</value>
+                </property>
+                <property name="ownerEnityType">
+                  <value>WatchRule</value>
+                </property>
+                <property name="property">
+                  <value>false</value>
+                </property>
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>mask</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>owner</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>watchFolder</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.WatchRule.owner"/>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.WatchRule.watchFolder"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.WatchFolderMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>true</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.smartui.watchFolder.WatchFolderImpl"></bean>
+    </property>
+    <property name="type">
+      <value>WatchFolder</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>associatedProjects</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>name</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>sharingSetting</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>updateShareSetting</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>watchRules</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.WatchFolder.associatedProjects"/>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.WatchFolder.sharingSetting"/>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.WatchFolder.updateShareSetting"/>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.WatchFolder.watchRules"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+    <property name="requiredProperties">
+      <list>
+        <value>name</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.SharingSettingMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>false</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.smartui.watchFolder.SharingSettingImpl"></bean>
+    </property>
+    <property name="type">
+      <value>SharingSetting</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>userGroup</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>watchFolder</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>watchFolder_update</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.SharingSetting.userGroup"/>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.SharingSetting.watchFolder"/>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.SharingSetting.watchFolder_update"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.SavedQueryMetaData" class="com.jetbrains.teamsys.dnq.database.EntityMetaDataImpl">
+    <property name="versionMismatchIgnoredForWholeClass">
+      <value>true</value>
+    </property>
+    <property name="initializer">
+      <bean id="persistentClassInitializer" class="jetbrains.charisma.smartui.watchFolder.SavedQueryImpl"></bean>
+    </property>
+    <property name="superType">
+      <value>WatchFolder</value>
+    </property>
+    <property name="type">
+      <value>SavedQuery</value>
+    </property>
+    <property name="propertiesMetaData">
+      <list>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>associatedProjects</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>convertState</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>date</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>name</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>oldQuery</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>project</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>query</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>searchRequest</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>sharingSetting</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>updateShareSetting</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+        <bean class="com.jetbrains.teamsys.dnq.database.PropertyMetaDataImpl">
+          <property name="name">
+            <value>watchRules</value>
+          </property>
+          <property name="type">
+            <value>PRIMITIVE</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="associationEnds">
+      <list>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.WatchFolder.associatedProjects"/>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.SavedQuery.project"/>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.SavedQuery.searchRequest"/>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.WatchFolder.sharingSetting"/>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.WatchFolder.updateShareSetting"/>
+        <ref bean="jetbrains.charisma.smartui.watchFolder.WatchFolder.watchRules"/>
+      </list>
+    </property>
+    <property name="removeOrphan">
+      <value>true</value>
+    </property>
+    <property name="requiredProperties">
+      <list>
+        <value>date</value>
+        <value>name</value>
+        <value>query</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.WatchRule.owner" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="WatchRule.owner-User.watchRules"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>UndirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistent.UserMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>owner</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.WatchFolder.sharingSetting" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="WatchFolder.sharingSetting-SharingSetting.watchFolder"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>ParentEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.smartui.watchFolder.SharingSettingMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>sharingSetting</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.SharingSetting.watchFolder" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="WatchFolder.sharingSetting-SharingSetting.watchFolder"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>ChildEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.smartui.watchFolder.WatchFolderMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>watchFolder</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.WatchFolder.watchRules" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_n</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="WatchFolder.watchRules-WatchRule.watchFolder"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>ParentEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.smartui.watchFolder.WatchRuleMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>watchRules</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.WatchRule.watchFolder" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="WatchFolder.watchRules-WatchRule.watchFolder"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>ChildEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.smartui.watchFolder.WatchFolderMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>watchFolder</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.SharingSetting.userGroup" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="SharingSetting.userGroup-UserGroup"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistent.UserGroupMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>userGroup</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.SavedQuery.project" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="SavedQuery.project-Project"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistent.ProjectMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>project</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.SavedQuery.searchRequest" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="SearchRequest.savedQueries-SavedQuery.searchRequest"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>ChildEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.smartui.persistent.SearchRequestMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>searchRequest</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.WatchFolder.updateShareSetting" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>true</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="WatchFolder.updateShareSetting-SharingSetting.watchFolder_update"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>ParentEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.smartui.watchFolder.SharingSettingMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>updateShareSetting</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.SharingSetting.watchFolder_update" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_1</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="WatchFolder.updateShareSetting-SharingSetting.watchFolder_update"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="associationEndType">
+      <value>ChildEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.smartui.watchFolder.WatchFolderMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="name">
+      <value>watchFolder_update</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.watchFolder.WatchFolder.associatedProjects" class="com.jetbrains.teamsys.dnq.database.AssociationEndMetaDataImpl">
+    <property name="cardinality">
+      <value>_0_n</value>
+    </property>
+    <property name="cascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="associationMetaData">
+      <ref bean="WatchFolder.associatedProjects-Project"/>
+    </property>
+    <property name="clearOnDelete">
+      <value>false</value>
+    </property>
+    <property name="associationEndType">
+      <value>DirectedAssociationEnd</value>
+    </property>
+    <property name="targetCascadeDelete">
+      <value>false</value>
+    </property>
+    <property name="oppositeEntityMetaData">
+      <ref bean="jetbrains.charisma.persistent.ProjectMetaData"/>
+    </property>
+    <property name="targetClearOnDelete">
+      <value>true</value>
+    </property>
+    <property name="name">
+      <value>associatedProjects</value>
+    </property>
+  </bean>
+  <bean id="WatchRule.owner-User.watchRules" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Undirected</value>
+    </property>
+  </bean>
+  <bean id="WatchFolder.sharingSetting-SharingSetting.watchFolder" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Aggregation</value>
+    </property>
+  </bean>
+  <bean id="WatchFolder.watchRules-WatchRule.watchFolder" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Aggregation</value>
+    </property>
+  </bean>
+  <bean id="SharingSetting.userGroup-UserGroup" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="SavedQuery.project-Project" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+  <bean id="WatchFolder.updateShareSetting-SharingSetting.watchFolder_update" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Aggregation</value>
+    </property>
+  </bean>
+  <bean id="WatchFolder.associatedProjects-Project" class="com.jetbrains.teamsys.dnq.database.AssociationMetaDataImpl">
+    <property name="type">
+      <value>Directed</value>
+    </property>
+  </bean>
+</beans>

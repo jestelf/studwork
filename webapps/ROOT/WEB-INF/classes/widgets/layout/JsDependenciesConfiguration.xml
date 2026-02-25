@@ -1,0 +1,224 @@
+<beans>
+  <bean id="widgets.layout.AbsoluteLayout" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.layout.AbsoluteLayout</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/layout/AbsoluteLayout.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.layout.AnchorLayout</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.layout.AccordionLayout" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.layout.AccordionLayout</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/layout/AccordionLayout.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.layout.FitLayout</value>
+        <value>widgets.layout.ContainerLayout</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.layout.AnchorLayout" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.layout.AnchorLayout</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/layout/AnchorLayout.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.layout.ContainerLayout</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.layout.BorderLayout" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.layout.BorderLayout</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/layout/BorderLayout.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.layout.ContainerLayout</value>
+        <value>widgets.SplitBar</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.layout.CardLayout" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.layout.CardLayout</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/layout/CardLayout.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.layout.FitLayout</value>
+        <value>widgets.layout.ContainerLayout</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.layout.ColumnLayout" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.layout.ColumnLayout</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/layout/ColumnLayout.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.layout.ContainerLayout</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.layout.ContainerLayout" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.layout.ContainerLayout</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/layout/ContainerLayout.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>widgets.layout.FitLayout</value>
+        <value>widgets.layout.BorderLayout</value>
+        <value>widgets.layout.CardLayout</value>
+        <value>widgets.layout.AccordionLayout</value>
+        <value>widgets.layout.AnchorLayout</value>
+        <value>widgets.layout.FormLayout</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Container</value>
+        <value>widgets.Panel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.layout.FitLayout" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.layout.FitLayout</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/layout/FitLayout.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.layout.ContainerLayout</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.layout.FormLayout" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.layout.FormLayout</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/layout/FormLayout.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.layout.AnchorLayout</value>
+        <value>widgets.layout.ContainerLayout</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.layout.TableLayout" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.layout.TableLayout</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/layout/TableLayout.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.layout.ContainerLayout</value>
+      </list>
+    </property>
+  </bean>
+</beans>

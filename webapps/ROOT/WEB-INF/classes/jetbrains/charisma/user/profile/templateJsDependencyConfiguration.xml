@@ -1,0 +1,295 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.profile.UserSearches_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>UserSearches</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.PredefinedSearch_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>assignedPredefinedSearch</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.PredefinedSearch_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>reportedPredefinedSearch</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.PredefinedSearch_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>inProgressPredefinedSearch</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.PredefinedSearch_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>votedPredefinedSearch</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.watchFolder.WatchFoldersSideBar_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tsb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.watchFolder.WatchFoldersSideBar_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>sqsb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.PredefinedSearch_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>projectSearch</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.watchFolder.EditWatchFolderDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>edt</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.user.profile.UserSearches</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.profile.PredefinedSearch_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>PredefinedSearch</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.profile.ManageNotifications_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ManageNotifications</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.WatchFolderNotifications_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>t</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.WatchFolderNotifications_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>sq</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.profile.WatchFolderNotifications_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>WatchFolderNotifications</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.user.profile.WatchFolderNotifications</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.profile.User2_LayoutComponent</value>
+    </property>
+    <property name="name">
+      <value>User2</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.layouts.BrowserChecker_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>BrowserChecker</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>Webr.HeartBeat</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.profile.User_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>User</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.workspace.Header_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Header</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.UserSearches_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>UserSearches</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.Avatar_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>avatar</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.Avatar_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Avatar</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.avatar.SelectAvatarDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>sad</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.ManageNotifications_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ManageNotifications</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.profile.ChangePasswordDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ChangePasswordDialog</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.workspace.Footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.user.profile.User</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+        <value>jetbrains.mps.webr.runtime.js.event.PopupMessage</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.profile.ChangePasswordDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ChangePasswordDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.user.profile.ChangePasswordDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.HTMLInputElement_extension</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.profile.Avatar_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Avatar</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.UserGroup_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>UserGroup</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.UserOnline_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>UserOnline</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+</beans>

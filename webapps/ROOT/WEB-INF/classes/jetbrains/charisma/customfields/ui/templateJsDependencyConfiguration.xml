@@ -1,0 +1,141 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.customfields.ui.CustomFieldsList_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>CustomFieldsList</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.customfields.ui.NewCustomFieldDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>acfd</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.customfields.ui.CustomFieldsList</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.customfields.ui.NewCustomFieldDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>NewCustomFieldDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.customfields.ui.NewCustomFieldDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.customfields.ui.CustomFieldsConfiguration_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>CustomFieldsConfiguration</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.customfields.ui.CustomFieldsList_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>cfl</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.customfields.ui.CustomFieldsConfiguration</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.customfields.ui.EditProjectCustomFields_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditProjectCustomFields</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.customfields.ui.ProjectCustomFieldDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>apcfd</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.customfields.ui.EditProjectCustomFields</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.customfields.ui.ProjectCustomFieldDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ProjectCustomFieldDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.customfields.ui.ContentProjectCFDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>cpcfd</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.customfields.ui.ProjectCustomFieldDialog</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.customfields.ui.ContentProjectCFDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ContentProjectCFDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.customfields.ui.ContentProjectCFDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+</beans>

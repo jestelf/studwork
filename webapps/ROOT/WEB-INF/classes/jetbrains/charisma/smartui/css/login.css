@@ -1,0 +1,252 @@
+.loginPage {
+  background-color: #e9f3fd;
+  height: auto!important;
+  
+  
+}
+
+.loginPage .header {
+  margin: 0;
+  padding: 0;
+  min-width: 43em;
+}
+
+.loginPage .container {
+  margin: 10% auto 3em auto;
+  text-align: left;
+  width: 43em;
+  min-width: 43em;
+}
+
+.loginPage .logo {
+  float: none;
+}
+
+.loginBlock {
+  margin-top: .5em;
+  padding: 4em;
+  border-radius:1em;
+  -webkit-border-radius:1em;
+  -moz-border-radius:1em;
+  -o-border-radius:1em;
+  -khtml-border-radius:1em;
+  text-align: center;
+  background: #084b96 url("${getClasspathUri("smartui/img/bgLogin.gif")}") repeat-x 0 0;
+}
+
+.register {
+  padding: 3em 3em 3em 1.5em;
+}
+
+.registerLink {
+  margin-top: 0.5em;
+  margin-right: 1em;
+  float: right;
+}
+
+.registerLink a {
+  font-weight: bold;
+}
+
+.loginForm td {
+  padding: .8em .5em;
+  text-align: left;
+  vertical-align: top;
+}
+
+.loginForm .label {
+  text-align: right;
+  width: 35%;
+}
+
+.register .label {
+  width: 40%;
+}
+
+.loginForm .button {
+  text-align: right;
+}
+
+.loginForm .wrapInput {
+  position: relative;
+}
+
+.loginForm .openID {
+  vertical-align: middle;
+}
+
+.loginForm label, .loginBlock h1 {
+  font-family: arial, tahoma, verdana, sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  color: #b7d2f0;
+}
+
+.register label {
+  font-size: 150%;
+  font-weight: normal;
+}
+
+.loginForm .labelSmallText {
+  font-size: 100%;
+  font-weight: normal;
+  color: #fff;
+}
+
+.loginForm input {
+  width: 85%;
+}
+
+.loginForm input[type=checkbox] {
+  margin: .15em .3em 0 0;
+  padding: .1em;
+  float: left;
+  height: 1em;
+  width: 1em;
+}
+
+.loginForm input[type=submit] {
+  margin-right: 2.8em;
+  padding: 0 1em;
+  float: right;
+  width: auto;
+}
+
+.loginBlock .problem {
+  color: #faa;
+}
+
+.loginBlock .advice {
+  margin-top: .3em;
+  color: #fff;
+  font-size: 85%;
+  line-height: 1.1em;
+  margin-right: 35px;
+}
+
+.advice {
+  
+}
+
+.advice a, .advice a:hover {
+  color: #fff;
+  border-bottom: solid 1px #fff;
+  text-decoration: none;
+}
+
+.openID .advice {
+  padding: 0 1.5em .2em 0;
+  font-size: 100%;
+  color: #fff;
+}
+
+.openID {
+  
+}
+
+.openID .loginLink, .openID .loginLink:hover {
+  margin-right: .3em;
+  float: left;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.openID .more {
+  padding-right: 1.5em;
+  display: inline;
+  background: url("${getClasspathUri("smartui/img/icoOpenID.gif")}") no-repeat right 0;
+}
+
+.loginForm .has-error {
+  color: #faa;
+  background-color: transparent!important;
+}
+
+.hidden {
+  display: none;
+}
+
+.loginPage input[disabled=true] {
+  background-color: #666;
+}
+
+/*login screen*/
+.bookmarklet.loginPage {
+  
+  
+}
+
+.bookmarklet.loginPage .container {
+  margin: 0;
+  width: auto;
+  min-width: 3em;
+  
+  
+}
+
+.bookmarklet.loginPage .container .header {
+  display: none;
+}
+
+.bookmarklet.loginPage .container .loginBlock {
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 25px;
+  background: transparent none;
+  
+  
+}
+
+.bookmarklet.loginPage .container .loginBlock .advice {
+  
+  color: gray;
+}
+
+.bookmarklet.loginPage .container .loginBlock .advice a {
+  color: #084b96;
+  border-bottom-color: #084b96;
+}
+
+.bookmarklet.loginPage .container .loginBlock .loginForm {
+  
+  
+  
+  
+  
+}
+
+.bookmarklet.loginPage .container .loginBlock .loginForm .openID {
+  padding-left: 5px;
+}
+
+.bookmarklet.loginPage .container .loginBlock .loginForm .labelSmallText {
+  color: black;
+}
+
+.bookmarklet.loginPage .container .loginBlock .loginForm .label {
+  text-align: left;
+  width: 100px;
+}
+
+.bookmarklet.loginPage .container .loginBlock .loginForm label {
+  font-size: 110%;
+  color: black;
+}
+
+.bookmarklet.loginPage .container .loginBlock .loginForm td {
+  padding: 0 0 10px 0;
+}
+
+.bookmarklet.loginPage .loginForm {
+  
+  
+}
+
+.bookmarklet.loginPage .loginForm .input-text {
+  width: 90%;
+}
+
+.bookmarklet.loginPage .loginForm input[type=submit] {
+  margin-right: 35px;
+}
+

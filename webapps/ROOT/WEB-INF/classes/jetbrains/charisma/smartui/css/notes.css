@@ -1,0 +1,40 @@
+.infoNote {
+  border: 7px solid #f7e08b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px 7px 7px 35px;
+  background: #fff5bd url("${getClasspathUri("smartui/img/info-yellow.png")}") no-repeat 5px 6px;
+}
+
+.iNote {
+  border: 7px solid #f7e08b;
+  background-color: #fff5bd;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px;
+}
+
+.info, .note {
+  background-color: #feffd9;
+  padding: 2px 5px;
+}
+
+.helpLink {
+  float: right;
+  font-size: 11px;
+  font-weight: bold;
+  padding-left: 15px;
+  background: url("${getClasspathUri("smartui/img/iconHelp.gif")}") no-repeat 0 2px;
+}
+
+.importantInfo {
+  font-weight: bold;
+}
+
+.noteBrd {
+  background-color: #feffd9;
+  padding: 2px 5px;
+  padding: 0 3px;
+  border: 1px solid #f7e08b;
+}
+

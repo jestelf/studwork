@@ -1,0 +1,285 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.filter.Sidebars_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Sidebars</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Searches_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>s</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.FiltersSideBar_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>fb</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.filter.Sidebars</value>
+        <value>jetbrains.charisma.smartui.js.Filters</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.filter.FiltersSideBar_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>FiltersSideBar</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>prj</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tags</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>sub</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>crt</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>upd</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>updb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>res</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ass</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>rep</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>vt</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>st</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>pr</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tp</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>av</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>fv</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>fb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.FilterResults_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>fr</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.filter.FiltersSideBar</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.filter.Filter_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Filter</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.filter.FilterContent_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>fc</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.filter.Filter</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.filter.Searches_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Searches</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.watchFolder.WatchFoldersSideBar_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tsb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.watchFolder.WatchFoldersSideBar_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>sqsb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.watchFolder.EditWatchFolderDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>edt</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.filter.Searches</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.filter.FilterContent_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>FilterContent</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.filter.FilterContent</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.filter.FilterResults_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>FilterResults</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+</beans>

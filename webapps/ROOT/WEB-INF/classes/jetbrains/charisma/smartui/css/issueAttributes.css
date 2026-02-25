@@ -1,0 +1,236 @@
+.wrapperH {
+  overflow-x: hidden;
+}
+
+.properties {
+  table-layout: fixed;
+  margin-top: 10px;
+}
+
+.issues-wrapper .properties {
+  margin-left: -3px;
+}
+
+.twoLine .properties {
+  margin-top: 0;
+}
+
+.attributes {
+  font-size: 85%;
+  font-family: tahoma, arial, verdana, sans-serif;
+  padding: 0;
+}
+
+.attributes {
+  
+  
+  
+}
+
+.attributes .inline {
+  display: inline;
+  white-space: nowrap;
+}
+
+.attributes .inline:hover {
+  border-bottom: solid 1px #084b96;
+}
+
+.attributes a.inline:hover {
+  border-bottom: 0;
+}
+
+.attribute {
+  position: relative;
+  overflow: hidden;
+  height: 17px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  padding: 2px 3px 4px;
+  color: #454545;
+  background-color: #f9f9fa;
+  border-left: solid 1px #fff;
+  border-right: solid 1px #d4d5d6;
+}
+
+.attribute:hover {
+  
+}
+
+.attribute:hover .shader {
+  display: none;
+}
+
+.attribute-name {
+  color: #084b96;
+  border-bottom: 1px solid transparent;
+}
+
+.attributes.attribute-fish {
+  
+  
+}
+
+.attributes.attribute-fish .attribute {
+  cursor: text;
+}
+
+.attributes.attribute-fish .attribute-name, .attributes.attribute-fish .attribute-name:hover {
+  border: 0;
+  color: #d4d5d6;
+}
+
+.attribute-name:hover {
+  border-bottom: 1px solid #084b96;
+}
+
+.attributes .attribute.active {
+  background-color: #898989!important;
+  border-color: transparent;
+  
+  
+}
+
+.attributes .attribute.active .attribute-name, .attributes .attribute.active .attribute-name:hover {
+  color: white!important;
+  border-bottom: 0;
+}
+
+.attributes .attribute.active .inline {
+  color: #fff;
+}
+
+.Minor {
+  color: #64992C;
+  
+  
+}
+
+.Minor .attribute-name {
+  color: #64992C!important;
+}
+
+.Minor .attribute-name:hover {
+  border-bottom: solid 1px #64992c;
+}
+
+.attribute.Minor {
+  border-left-color: #f9f9fa;
+}
+
+.Normal {
+  color: #64992C;
+  
+  
+}
+
+.Normal .attribute-name {
+  color: #64992C!important;
+}
+
+.Normal .attribute-name:hover {
+  border-bottom: solid 1px #64992c;
+}
+
+.attribute.Normal {
+  background-color: #ebf4dd;
+  border-left-color: #ebf4dd;
+}
+
+ .Major {
+  color: #cc0000;
+  
+  
+}
+
+.Major .attribute-name {
+  color: #cc0000!important;
+}
+
+.Major .attribute-name:hover {
+  border-bottom: solid 1px #cc0000;
+}
+
+.attribute.Major {
+  background-color: #f0f2f3;
+  border-left-color: #f0f2f3;
+}
+
+.Critical {
+  color: #cc0000;
+  
+  
+}
+
+.Critical .attribute-name {
+  color: #cc0000!important;
+}
+
+.Critical .attribute-name:hover {
+  border-bottom: solid 1px #cc0000;
+}
+
+.attribute.Critical {
+  background-color: #ffe3e3!important;
+  border-left-color: #ffe3e3;
+}
+
+.Show-stopper {
+  color: #cc0000;
+  
+  
+}
+
+.Show-stopper .attribute-name {
+  color: #cc0000!important;
+}
+
+.Show-stopper .attribute-name:hover {
+  border-bottom: solid 1px #cc0000;
+}
+
+.attribute.Show-stopper {
+  border: 1px solid #cc0000;
+  margin-top: -1px;
+  padding-bottom: 3px;
+  background-color: #ffe3e3!important;
+}
+
+.disabled {
+  cursor: text;
+  
+}
+
+.disabled .attribute-name, .disabled .attribute-name:hover {
+  color: #454545;
+  border-bottom: 0;
+}
+
+.attribute {
+  
+}
+
+.attribute .shader {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 22px;
+  background: url("${getClasspathUri("smartui/img/bgTable-lightGray.png")}");
+}
+
+.active .shader {
+  display: none;
+}
+
+.wiki .issue-resolved {
+  text-decoration: underline;
+  color: #676E75;
+  text-decoration: line-through;
+}
+
+.wiki .issue-resolved:hover {
+  text-decoration: none;
+}
+

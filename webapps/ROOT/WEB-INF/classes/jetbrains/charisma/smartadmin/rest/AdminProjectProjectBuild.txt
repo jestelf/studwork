@@ -1,0 +1,18 @@
+h1./admin/project/{project}/build
+h2. GET /admin/project/\{project\}/build
+Get project builds
+{panel}{{GET /rest/admin/project/*\{project\}*/build}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project/TODO/build{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

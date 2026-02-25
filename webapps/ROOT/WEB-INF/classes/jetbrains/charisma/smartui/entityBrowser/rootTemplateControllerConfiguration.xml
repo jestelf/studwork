@@ -1,0 +1,7 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.entityBrowser.EntityBrowser_RootHtmlTemplateController" class="jetbrains.charisma.smartui.entityBrowser.EntityBrowser_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

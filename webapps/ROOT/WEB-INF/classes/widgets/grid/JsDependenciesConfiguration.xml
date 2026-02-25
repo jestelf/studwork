@@ -1,0 +1,271 @@
+<beans>
+  <bean id="widgets.grid.AbstractSelectionModel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.AbstractSelectionModel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/AbstractSelectionModel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>util.Observable</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.grid.CellSelectionModel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.CellSelectionModel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/CellSelectionModel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.grid.AbstractSelectionModel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.grid.CheckboxSelectionModel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.CheckboxSelectionModel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/CheckboxSelectionModel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.grid.RowSelectionModel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.grid.ColumnDD" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.ColumnDD</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/ColumnDD.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>dd.DragZone</value>
+        <value>dd.DropZone</value>
+        <value>widgets.grid.GridView</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.grid.ColumnModel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.ColumnModel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/ColumnModel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>util.Observable</value>
+        <value>widgets.form.Field</value>
+        <value>data.SortTypes</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.grid.EditorGrid" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.EditorGrid</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/EditorGrid.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.grid.GridPanel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.grid.GridPanel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.GridPanel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/GridPanel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Panel</value>
+        <value>data.Store</value>
+        <value>widgets.grid.ColumnModel</value>
+        <value>core.Element</value>
+        <value>widgets.grid.GridView</value>
+        <value>widgets.grid.RowSelectionModel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.grid.GridView" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.GridView</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/GridView.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>widgets.grid.ColumnDD</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>util.Observable</value>
+        <value>data.Record</value>
+        <value>data.Store</value>
+        <value>widgets.menu.Menu</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.grid.GroupingView" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.GroupingView</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/GroupingView.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.grid.GridView</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.grid.PropertyGrid" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.PropertyGrid</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/PropertyGrid.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>util.Observable</value>
+        <value>widgets.grid.ColumnModel</value>
+        <value>widgets.grid.EditorGrid</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.grid.RowNumberer" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.RowNumberer</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/RowNumberer.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.grid.RowSelectionModel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.grid.RowSelectionModel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/grid/RowSelectionModel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.grid.AbstractSelectionModel</value>
+        <value>util.Observable</value>
+        <value>data.Record</value>
+        <value>util.KeyNav</value>
+      </list>
+    </property>
+  </bean>
+</beans>

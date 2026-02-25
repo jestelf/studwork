@@ -1,0 +1,3 @@
+<beans>
+  <bean id="jetbrains.charisma.export.Export_Controller" class="jetbrains.charisma.export.Export_Controller"></bean>
+</beans>

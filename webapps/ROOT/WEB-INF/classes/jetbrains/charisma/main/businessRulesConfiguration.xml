@@ -1,0 +1,41 @@
+<beans>
+  <bean id="mainRules" class="jetbrains.charisma.main.mainRules_RulePackage">
+    <property name="rules">
+      <list>
+        <ref bean="mainRules_commitLoggedUsersInfo"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="mainRules_commitLoggedUsersInfo" class="jetbrains.charisma.main.mainRules_commitLoggedUsersInfo_Rule">
+    <property name="rulePackage">
+      <ref bean="mainRules"/>
+    </property>
+  </bean>
+  <bean id="commitLoggedUsersInfoOnScheduleJob" class="jetbrains.mps.businessRules.runtime.impl.RuleJobImpl">
+    <property name="rule">
+      <ref bean="mainRules_commitLoggedUsersInfo"/>
+    </property>
+    <property name="ruleEngine">
+      <ref bean="ruleEngine"/>
+    </property>
+  </bean>
+  <bean id="commitLoggedUsersInfoOnScheduleDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+    <property name="targetObject">
+      <ref bean="commitLoggedUsersInfoOnScheduleJob"/>
+    </property>
+    <property name="targetMethod">
+      <value>execute</value>
+    </property>
+    <property name="concurrent">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="commitLoggedUsersInfoCronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+    <property name="cronExpression">
+      <value>0 * * * * ?</value>
+    </property>
+    <property name="jobDetail">
+      <ref bean="commitLoggedUsersInfoOnScheduleDetail"/>
+    </property>
+  </bean>
+</beans>

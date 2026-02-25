@@ -1,0 +1,298 @@
+@import "newIssue.css";
+/* remove sidebar space*/
+#new_admin_div .content{
+    margin-left: 0;
+    margin-top: 0;
+}
+#new_admin_div .result {
+    background: transparent;
+    clear: both;
+}
+/* ---------------------------------------------- */
+/* ----- TODO: [Header] ----- */
+/* ---------------------------------------------- */
+/* removing Project dropdown menu on the Left of search area*/
+#new_admin_div .header .search .searchContent {
+    margin: 0;
+    padding: 0 0 10px 5px;
+    background: url('../img/bgSelectProductsLeft.gif') no-repeat 0 0;
+}
+#new_admin_div .header .search .searchContent {
+    margin: 0;
+    padding: 0 0 10px 5px;
+    background: url('../img/bgSelectProductsLeft.gif') no-repeat 0 0;
+}
+
+ /* --------- Header --------- */
+/* ********************************************** */
+
+/* ---------------------------------------------- */
+/* ----- TODO: [Toolbar] ----- */
+/* ---------------------------------------------- */
+#new_admin_div .toolbarContainer{
+    height: 1.7em!important;
+    padding: 0;
+    margin: 0;
+    background-color: #F0F2F3;
+}
+/* tabs adjustment */
+#new_admin_div ul.tabs{
+    float: left;
+    margin-top: 0;
+}
+#new_admin_div ul.actions {
+    float: right;
+    *width: 220px;/*ie hack*/
+}
+/* create new action for Project/Roles/Group */
+#new_admin_div .localAction{
+    clear: both;
+    margin-bottom: 1em;
+    font-size: 85%;
+}
+
+ /* --------- Toolbar --------- */
+/* ********************************************** */
+/* ---------------------------------------------- */
+/* ----- TODO: [Common elements] ----- */
+/* ---------------------------------------------- */
+.clr{
+    clear: both;
+}
+/* 'All Projects' entity */
+#new_admin_div span.name {
+    font-style: italic;
+}
+/*common table style*/
+#new_admin_div table {
+    table-layout:auto;
+    width: auto;
+    margin: 0;
+    border-collapse:collapse;
+    background-color: white;
+}
+#new_admin_div table th{
+    border: 1px solid #e1e2e2;
+    padding: 2px 2px 5px;
+    text-align: center;
+}
+#new_admin_div table td{
+    padding: 3px;
+    vertical-align: middle;
+    border: 1px solid #e1e2e2;
+}
+#new_admin_div table table{
+    border: 0;
+}
+#new_admin_div table table td{
+    border: 0;
+}
+
+/* --------- Common elements --------- */
+/* ********************************************** */
+
+/*   ------------------------- TODO: ADMIN specific general ---------------------- */
+/* content wrapper */
+#adminContent .issueContainer {
+    clear: both!important;
+    border-top: 1px solid #E8EAEC;
+    border-bottom: 0;
+}
+#adminContent .issueContainer fieldset{
+    float: left;
+    padding: 1em;
+    margin-right: 15px;
+}
+
+/* ---------------------------------------------- */
+/* ----- TODO: [Create New entity] ----- */
+/* ---------------------------------------------- */
+#adminContent .newIssuePane {
+    display: block;
+}
+#adminContent .newIssuePane .form{
+}
+#adminContent .newIssuePane input {
+    font-family: tahoma, arial, sans-serif;
+    border: 2px solid #E1E2E2;
+    color: #333333;
+    width: 14em;
+}
+#adminContent .newIssuePane div.descript {
+    float: right;
+    width: 77%;
+    margin-bottom: 1em;
+}
+
+#adminContent .newIssuePane .textarea textarea{
+    height:8.4em;
+}
+#adminContent .newIssuePane .textarea{
+    margin:0;
+}
+#adminContent .newIssuePane div label{
+    display: block;
+}
+/* Cancel/Submit buttons */
+#adminContent .newIssuePane ul.buttons {
+    clear: both;
+    padding-bottom: 2em;
+}
+/* --------- Create New entity --------- */
+/* ********************************************** */
+
+/* ---------------------------------------------- */
+/* ----- TODO: [USERS Tab] ----- */
+/* ---------------------------------------------- */
+/*user profile link*/
+.container a.userProfile{
+    width: 14px;
+    height: 14px;
+    background: url(../img/icoUser.gif) no-repeat 50% 3px;
+    padding: 0.1em 0.8em;
+}
+/* Add own role inside a table */
+#new_admin_div table td.AddOwnRole{
+    vertical-align: top;
+}
+#new_admin_div table td.AddOwnRole .combobox{
+    float: left;
+}
+#new_admin_div table td.AddOwnRole ul.buttons {
+    clear: left;
+}
+#new_admin_div table td.AddOwnRole ul.buttons li{
+    padding-top: 1em;
+    float: none;
+}
+/* Advanced view tables color scheme */
+#new_admin_div .issueContainer table.permissions{
+    border: 1px solid #e1e2e2;
+}
+#new_admin_div .issueContainer table.permissions table{
+    border-color: #87959c;
+}
+#new_admin_div .issueContainer table.permissions table table{
+    border-color: #c9dee7;
+}
+#new_admin_div .issueContainer table.permissions table table td{
+    border-color: #c9dee7;
+}
+#new_admin_div .issueContainer table.permissions table table td{
+    border-color: #e1e2e2;
+}
+#new_admin_div .issueContainer table.permissions table table table{
+    border-color: #9c9187;
+}
+
+#new_admin_div .issueContainer table.permissions table table table td{
+    border-color: #e1e2e2;
+}
+/* --------- USERS Tab --------- */
+/* ********************************************** */
+
+/* ---------------------------------------------- */
+/* ----- TODO: [PROJECT Tab] ----- */
+/* ---------------------------------------------- */
+#adminContent .addIcon a, #adminContent .addIcon label{
+display: block;
+    clear: left;
+}
+
+.form .combobox .projectLead{
+    display: block;
+    padding:0 0 0 0.5em;
+    width: 16.2em;
+}
+.setAsDefault{
+    background: url(../../images/state/Fixed-c.gif) no-repeat 50% 50%;
+}
+/* --------- PROJECT Tab --------- */
+/* ********************************************** */
+
+/* ---------------------------------------------- */
+/* ----- TODO: [ROLES Tab] ----- */
+/* ---------------------------------------------- */
+/* drop-down select*/
+#adminContent .rolesContainer {
+    padding-bottom: 2em;
+    margin-top: 1em;
+    display: block;
+}
+#adminContent .rolesContainer .combobox.multi input {
+    display: none;
+}
+#new_admin_div .localAction {
+    clear: left;
+    padding: 0.3em 0 1em 0;
+}
+/* --------- ROLES Tab --------- */
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* ----- TODO: [Scondary menu] ----- */
+/* ---------------------------------------------- */
+dl.secondaryMenu{
+    float: left;
+    padding: 0;
+    margin-top: 1em;
+    border-top: 0;
+}
+dl.secondaryMenu dt{
+    font-size: 90%;
+    background-color: #edecec;
+    border-top: 1px solid #edecec;
+    margin: 0;
+}
+dl.secondaryMenu dd{
+    display: block;
+    margin: 0;
+    padding: 0 10px 10px;
+    border: 1px solid #edecec;
+}
+
+dl.secondaryMenu dt a{
+    padding: 1px 10px 2px;
+}
+dl.secondaryMenu dt a.active{
+    border: 1px solid #edecec;
+    border-bottom: 0;
+    background-color: white;
+}
+#new_admin_div .issueContainer .secondaryMenu {
+}
+
+ /* --------- Scondary menu --------- */
+/* ********************************************** */
+
+#new_admin_div a.delete {
+    padding: .1em 0 .1em .8em!important;
+    color: #fff!important;
+    background : url("../img/icoDeleteSearch.gif") no-repeat 50% 0.5em;
+    border: none!important;
+    cursor: pointer;
+}
+#new_admin_div a.edit {
+    padding: .1em 0 .1em .8em!important;
+    color: #fff!important;
+    background : url("../../images/edit.gif") no-repeat 50% 0.3em;
+    border: none!important;
+    cursor: pointer;
+}
+#new_admin_div a.up {
+    padding: .1em 0 .1em .8em!important;
+    color: #fff!important;
+    background : url("../../images/prevIssue.png") no-repeat 50% 0.3em;
+    border: none!important;
+    cursor: pointer;
+}
+#new_admin_div a.down {
+    padding: .1em 0 .1em .8em!important;
+    color: #fff!important;
+    background : url("../../images/nextIssue.png") no-repeat 50% 0.3em;
+    border: none!important;
+    cursor: pointer;
+}
+#new_admin_div a.delete:hover, a.edit:hover, a.up:hover, a.down:hover {
+    background-color:#F0F2F3;
+}

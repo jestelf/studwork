@@ -1,0 +1,617 @@
+<beans>
+  <bean id="widgets.Action" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Action</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Action.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.BoxComponent" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.BoxComponent</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/BoxComponent.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Component</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Button" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Button</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Button.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Component</value>
+        <value>core.Template</value>
+        <value>util.TextMetrics</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.ColorPalette" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.ColorPalette</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/ColorPalette.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Component</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Component" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Component</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Component.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>util.Observable</value>
+        <value>core.Element</value>
+        <value>widgets.ComponentMgr</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.ComponentMgr" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.ComponentMgr</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/ComponentMgr.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>util.MixedCollection</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Container" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Container</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Container.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.BoxComponent</value>
+        <value>util.MixedCollection</value>
+        <value>widgets.Component</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.CycleButton" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.CycleButton</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/CycleButton.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.SplitButton</value>
+        <value>widgets.menu.CheckItem</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.DataView" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.DataView</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/DataView.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.BoxComponent</value>
+        <value>data.Store</value>
+        <value>data.Record</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.DatePicker" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.DatePicker</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/DatePicker.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Component</value>
+        <value>util.Date</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Editor" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Editor</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Editor.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Component</value>
+        <value>widgets.form.Field</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Layer" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Layer</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Layer.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>core.Element</value>
+        <value>widgets.Shadow</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.LoadMask" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.LoadMask</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/LoadMask.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>data.Store</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.MessageBox" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.MessageBox</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/MessageBox.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Window</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.PagingToolbar" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.PagingToolbar</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/PagingToolbar.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Toolbar</value>
+        <value>widgets.BoxComponent</value>
+        <value>data.Store</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Panel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Panel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Panel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>widgets.layout.ContainerLayout</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Container</value>
+        <value>core.Element</value>
+        <value>widgets.Toolbar</value>
+        <value>widgets.Button</value>
+        <value>core.UpdateManager</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.ProgressBar" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.ProgressBar</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/ProgressBar.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.BoxComponent</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Resizable" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Resizable</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Resizable.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>util.Observable</value>
+        <value>core.Element</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Shadow" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Shadow</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Shadow.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Slider" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Slider</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Slider.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.BoxComponent</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.SplitBar" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.SplitBar</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/SplitBar.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>util.Observable</value>
+        <value>dd.DDCore</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.SplitButton" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.SplitButton</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/SplitButton.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Button</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.StatusBar" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.StatusBar</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/StatusBar.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Toolbar</value>
+        <value>widgets.BoxComponent</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.TabPanel" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.TabPanel</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/TabPanel.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Panel</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Toolbar" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Toolbar</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Toolbar.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.BoxComponent</value>
+        <value>widgets.Button</value>
+        <value>widgets.SplitButton</value>
+        <value>util.MixedCollection</value>
+        <value>widgets.form.Field</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Viewport" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Viewport</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Viewport.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Container</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.Window" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.Window</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/Window.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+        <value>widgets.Panel</value>
+        <value>dd.DDCore</value>
+        <value>widgets.Resizable</value>
+        <value>widgets.WindowManager</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="widgets.WindowManager" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>widgets.WindowManager</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ClasspathUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>widgets/WindowManager.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>core.Ext</value>
+      </list>
+    </property>
+  </bean>
+</beans>

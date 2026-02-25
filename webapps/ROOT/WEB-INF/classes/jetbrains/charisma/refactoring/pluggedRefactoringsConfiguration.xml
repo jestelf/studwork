@@ -1,0 +1,65 @@
+<beans>
+  <bean id="pluggedRefactoringContainer" class="jetbrains.charisma.refactoring.PluggedRefactoringContainer"></bean>
+  <bean class="jetbrains.charisma.refactoring.RefactoringList">
+    <property name="refactorings">
+      <list>
+        <bean class="jetbrains.charisma.refactoring.RefactoringFixDuplicateLogins">
+          <property name="name">
+            <value>Fix duplicate and invalid logins</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringRebuildUniqueIndexes"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringGuestProfile"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringConvertIssueViewToWatchFolderPermission"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringAttachmentToIssueLink"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringRemoveRecentCommands"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringEmptyReports"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringIssueTagAssociatedProject"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringDuplicateWatchFolders"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringAttachmentToIssueLink2"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringRebuildAttachmentThumbnails"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringMergeNewAndSubmittedStates"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringImplicitTagsUntagOnResolve"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringCommentThreadIssue"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringCustomFieldBidirectionalAssociation"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringRenameToCustomFieldEntry"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringCustomField"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringRemoveCustomFieldEntry"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringFixLinksToDeletedIssues"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringIssueReportSort"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringCreateNotificationSearches2"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringDeleteProhibitedWatchRules"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringDuplicateProjectCustomField"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringPermissions"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringDeprecateDenormalizationOfIssueAssociations"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringClearGuestSearchRequest"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringClearWatchedIssuesSharingAndProjects"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringClearSavedSearches"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringCreateSearchRequests"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringBuildsOfDuplicates"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringMaxExportItems"></bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringFixDuplicateGroupNames">
+          <property name="name">
+            <value>Fix duplicate group names</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringFixReporterVisibility">
+          <property name="name">
+            <value>Fix reporter default visibility</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.charisma.refactoring.RefactoringMergeDuplicateTags">
+          <property name="name">
+            <value>Merge tags with same name and owner</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.charisma.refactoring.RefactoringSavedQueryAssociatedProject"></bean>
+  <bean id="extensionPoint_pluggedRefactoringContainer_refactoringLists" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="pluggedRefactoringContainer"/>
+    <property name="extensionPropertyName" value="refactoringLists"/>
+    <property name="extensionType" value="jetbrains.charisma.refactoring.RefactoringList"/>
+  </bean>
+</beans>

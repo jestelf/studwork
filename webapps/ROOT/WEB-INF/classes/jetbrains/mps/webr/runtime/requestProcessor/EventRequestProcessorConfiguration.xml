@@ -1,0 +1,14 @@
+<beans>
+  <bean id="EventRequestProcessor" class="jetbrains.mps.webr.runtime.requestProcessor.EventRequestProcessor">
+    <property name="dependentRequestProcessors">
+      <map>
+        <entry>
+          <key>
+            <ref bean="ActionRequestProcessor"/>
+          </key>
+          <value>WITH</value>
+        </entry>
+      </map>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,45 @@
+<beans>
+  <bean id="jetbrains.mps.webr.wiki.processor.runtime.TryWikiPopup" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.wiki.processor.runtime.TryWikiPopup</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/wiki/processor/runtime/TryWikiPopup.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.HTMLInputElement_extension</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.wiki.processor.runtime.WikiHelp" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.wiki.processor.runtime.WikiHelp</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/wiki/processor/runtime/WikiHelp.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+</beans>

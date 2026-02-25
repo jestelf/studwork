@@ -1,0 +1,96 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.ldap.ui.LdapAuthenticationSettings_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>LdapAuthenticationSettings</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.ldap.ui.LdapServerSettings_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>LdapServerSettings</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.ldap.ui.LdapServerSettings_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>LdapServerSettings</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.ldap.ui.AdvancedLdapServerSettings_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>AdvancedLdapServerSettings</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.ldap.ui.TestLdapSettingsDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tlsDlg</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.ldap.ui.LdapServerSettings</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.ldap.ui.TestLdapSettingsDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>TestLdapSettingsDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.ldap.ui.TestLdapSettingsDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.HTMLInputElement_extension</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.ldap.ui.LdapData_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>LdapData</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.ldap.ui.AdvancedLdapServerSettings_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AdvancedLdapServerSettings</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+</beans>

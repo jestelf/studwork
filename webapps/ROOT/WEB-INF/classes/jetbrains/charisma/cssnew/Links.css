@@ -1,0 +1,13 @@
+a {
+  color: #294dc9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.x-menu-list-item a:hover {
+  text-decoration: none;
+}
+

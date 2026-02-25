@@ -1,0 +1,45 @@
+.table {
+  border: 1px solid #cccccc;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.table th {
+  background-color: #4B4B4A;
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.table td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+.odd {
+  background: #f5f5f5;
+}
+
+.gr-description {
+  table-layout: fixed;
+  width: auto;
+  text-align: left;
+}
+
+.table .selected {
+  background: #FEFFD9;
+}
+
+.table .align-center {
+  text-align: center;
+}
+
+.table .align-left {
+  text-align: left;
+}
+
+.table .align-right {
+  text-align: right;
+}
+

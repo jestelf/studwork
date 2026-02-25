@@ -1,0 +1,55 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/CommonDefault.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/CommonDefault.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/CommonDefault.css").url}");
+</#if>
+html, body, form {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.has-error {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.table-header-icons {
+  width: 100%;
+  text-align: right;
+}
+
+.selected-tree-node {
+  background-color: blue;
+  color: white;
+}
+
+.item-shortcut-text {
+  color: gray;
+  font-style: normal;
+  font-size: 90%;
+  font-weight: normal;
+}
+
+.loading {
+  
+}
+
+.loading .x-btn-center {
+  background: url("${getClasspathUri("ext-1.1.1/resources/images/default/tree/loading.gif")}") no-repeat right;
+  padding-right: 18px;
+  
+}
+
+.loading .x-btn-center .x-btn-text {
+  background: url("${getClasspathUri("ext-1.1.1/resources/images/default/tree/loading.gif")}") no-repeat right;
+  padding-right: 18px;
+}
+
+a.href-icon img {
+  text-decoration: none;
+}
+

@@ -1,0 +1,29 @@
+.form-has-error {
+  border: 1px solid #d90000!important;
+  background: #fff url("${getClasspathUri("images/error-bg.gif")}") repeat-x 0 bottom;
+}
+
+.error-message {
+  color: red;
+  display: inline;
+  margin-left: 1em;
+}
+
+.error-bulb {
+  display: inline;
+  padding: 5px 15px;
+  background: url("${getClasspathUri("images/error.png")}") no-repeat center center;
+  cursor: default;
+}
+
+.error-tooltip {
+  color: white!important;
+  background: #d23f2f!important;
+  border: 1px solid #a01504!important;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  -o-border-radius:3px;
+  -khtml-border-radius:3px;
+}
+

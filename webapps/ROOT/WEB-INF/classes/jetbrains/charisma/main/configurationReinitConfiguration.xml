@@ -1,0 +1,9 @@
+<beans>
+  <bean id="initConfiguration" class="jetbrains.charisma.main.InitConfigurationServiceLocatorListener">
+    <property name="dependees">
+      <list>
+        <value>initModelMetaData</value>
+      </list>
+    </property>
+  </bean>
+</beans>

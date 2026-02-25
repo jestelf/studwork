@@ -1,0 +1,29 @@
+<beans>
+  <bean id="restResourceContainer" class="jetbrains.mps.webr.rpc.rest.runtime.RestResourceContainer">
+    <property name="exceptionMappers">
+      <list>
+        <bean class="jetbrains.mps.webr.rpc.rest.runtime.BadRequestExceptionMapper"></bean>
+        <bean class="jetbrains.mps.webr.rpc.rest.runtime.FailedDependencyExceptionMapper"></bean>
+        <bean class="jetbrains.mps.webr.rpc.rest.runtime.ForbiddenExceptionMapper"></bean>
+        <bean class="jetbrains.mps.webr.rpc.rest.runtime.UnauthorizedExceptionMapper"></bean>
+      </list>
+    </property>
+  </bean>
+  <bean id="transformerStringReaderProvider" class="jetbrains.mps.webr.rpc.rest.runtime.TransformerStringReaderProvider"></bean>
+  <bean id="filesStringReaderProvider" class="jetbrains.mps.webr.rpc.rest.runtime.FilesStringReaderProvider"></bean>
+  <bean id="extensionPoint_restResourceContainer_restResources" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="restResourceContainer"/>
+    <property name="extensionPropertyName" value="restResources"/>
+    <property name="extensionType" value="jetbrains.mps.webr.rpc.rest.runtime.RestResource"/>
+  </bean>
+  <bean id="extensionPoint_restResourceContainer_stringReaderProviders" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="restResourceContainer"/>
+    <property name="extensionPropertyName" value="stringReaderProviders"/>
+    <property name="extensionType" value="com.sun.jersey.spi.StringReaderProvider"/>
+  </bean>
+  <bean id="extensionPoint_transformerStringReaderProvider_transformerStringReaders" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="transformerStringReaderProvider"/>
+    <property name="extensionPropertyName" value="transformerStringReaders"/>
+    <property name="extensionType" value="jetbrains.mps.webr.rpc.rest.runtime.TransformerStringReader"/>
+  </bean>
+</beans>

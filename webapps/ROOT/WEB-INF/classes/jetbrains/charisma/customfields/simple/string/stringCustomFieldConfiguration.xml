@@ -1,0 +1,10 @@
+<beans>
+  <bean id="stringFieldType" class="jetbrains.charisma.customfields.simple.string.StringFieldType">
+    <property name="editor">
+      <value>TextEditorContainer</value>
+    </property>
+    <property name="name">
+      <value>string</value>
+    </property>
+  </bean>
+</beans>

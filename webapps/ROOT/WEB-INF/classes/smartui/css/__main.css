@@ -1,0 +1,1598 @@
+html, body {height:90%}
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: trebuchet ms, verdana, tahoma, arial, sans-serif;
+    font-size: 83%;
+    line-height: 1.3em;
+    color: #333;
+    text-align: center; /*background-color: #f4f8f9;*/
+    background-color: #fff;
+}
+
+.container .clr {clear: both}
+.container img {border: none}
+.container table {border: none}
+.container a {
+    color: #084b96;
+    text-decoration: none
+}
+.container a:hover {
+    color: #0066cc;
+    text-decoration: none
+}
+.container a.nol {
+    color: #0066cc;
+    text-decoration: none
+}
+.container a.nol:hover {
+    color: #0066cc;
+    text-decoration: underline
+}
+.container h1 {
+    line-height: 1.3em;
+}
+.light {
+    color: #9ea1a5;
+}
+.dark {
+    color: #454545;
+}
+.normal {
+    color: #333!important;
+}
+
+
+.container .last {
+    background-image: none!important;
+}
+.container .inputSelector {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+.container .inputSelector input {
+    margin: 0;
+    padding: .18em .3em;
+    width: 15em;
+    font-size: 13px;
+    font-family: tahoma, arial, sans-serif;
+    background: white url( '../img/arrowDownGreyBig.gif' ) no-repeat 96% center;
+    border: solid 2px #e1e2e2;
+}
+.container .inputSelector ul {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 1.7em;
+    left: 5.63em;
+    z-index: 1;
+    font-size: 13px;
+    width: 15.6em;
+    background-color: #fff;
+    border-left: solid 2px #e1e2e2;
+    border-right: solid 2px #e1e2e2;
+    border-bottom: solid 2px #e1e2e2;
+}
+body:nth-of-type(1) .container .inputSelector ul {
+    width: 15.5em;
+    left: 5.6em;
+}
+.container .inputSelector ul li {
+    margin: 0;
+    padding: 1px .4em 2px .4em;
+    list-style: none;
+}
+.container .inputSelector ul li.activ {
+    background-color: #f0f2f3;
+}
+
+ul.buttons {
+    margin: 0;
+    padding: 0;
+}
+ul.buttons > li {
+    margin: 0 .2em 0 0;
+    padding: 1px 0 3px 0;
+    float: right;
+    list-style: none;
+    color: #55676f;
+    font-size: 80%;
+}
+ul.buttons > li a {
+    margin: -.3em 0 0 .4em;
+    padding: .2em 1.6em .3em 1.6em;
+    float: left;
+    font-size: 100%;
+    color: #084b96;
+    font-family: tahoma, arial, sans-serif;
+    background-color: #fcfcfc;
+    border: 1px solid #e6e6e6;
+    border-right-color: #666;
+    border-bottom-color: #666;
+    text-decoration: none;
+}
+ul.buttons > li a.submitButton {
+    background-color: #084b96;
+    font-weight: bold;
+    color: #fff;
+}
+ul.buttons > li.preview {
+    float:none;
+    font-size: 100%;
+}
+ul.buttons > li.preview a {
+    margin-top: -.35em;
+    margin-left: 0;
+    margin-right: -.1em;
+    padding-right: 0;
+    color: #e9f3fd;
+    background-color: transparent;
+    border: none!important;
+}
+
+.checkbox {
+    margin: 0;
+    padding: .5em 1.6em .5em 0;
+    color : #fff;
+    font-size: 11px ;
+    background : url("../img/checkboxEmpty.gif") no-repeat .3em .5em;
+}
+.checkbox.checked {
+   background : url("../img/checkbox.gif") no-repeat .3em .5em;
+}
+span.ico.delete {
+    margin: 0 ;
+    padding: .5em 1.6em .5em 0;
+    color : #fff;
+    font-size: 11px ;
+    background : url("../img/icoDeleteSearch.gif") no-repeat .6em center;
+}
+
+.container img.avatar {
+    margin: 0;
+    padding: 0;
+    border: solid 1px #d2d2d2;
+}
+
+.container input.textNo {
+    color: #999;
+}
+.container input.text {
+    color: #333;
+}
+
+.container .help {
+    margin: 0;
+    padding: 0;
+    width: 11px;
+    color: #fff;
+    color1: red;
+    background : url("../img/iconHelp.gif") no-repeat right .2em!important;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    /*width: 93%;*/
+    min-width: 960px;
+    max-width: 90em;
+    text-align: left;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+}
+
+
+/*---------------------------------------------- Start Header --------------------------------------------------------*/
+/*
+.header {
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+.header.search {
+    margin-bottom: 0;
+}
+body.index .header {
+    */
+/*margin-top: 10%;*/
+/*
+}
+.header a {
+    margin: 0 0 0 .4em;
+}
+
+.header ul.account {
+    margin: 0 8px 0 0;
+    padding: 0;
+}
+.header ul.account.guest {
+    margin-right: 14px;
+}
+.header ul.account > li {
+    margin: 10px -1px 0 0;
+    padding: 0;
+    float: right;
+    font-size: 90%;
+    position: relative;
+    z-index: 5;
+    list-style: none;
+    background: url( '../img/bgActions.gif' ) no-repeat 0 45%;
+}
+.header ul.account.guest > li {
+    margin-top: .5em;
+    background: none;
+}
+.header ul.account li.user {
+    background: none;
+}
+.header ul.account li.login {
+    margin-left: .2em;
+    background: none;
+}
+.header ul.account li.activ {
+    background-color:  #d7d7d7;
+}
+.header ul.account.guest li.login {
+    margin: .4em .5em 0 .3em;
+    padding-right: .2em;
+    background-color: #fffbe2;
+    border: solid 1px #FFE222;
+}
+.header ul.account li a {
+    margin: 0 .6em 0 0;
+    padding: 0 1em 0 .7em;
+    display: block;
+    background:  url( '../img/arrowDownBlue.gif' ) no-repeat right .6em;
+}
+.header ul.account.guest li a {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    background: none;
+}
+.header ul.account li.info a {
+    padding-right: 0;
+    background: none;
+}
+.header ul.account li.login a {
+    padding-left: .5em;
+}
+.header ul.account li ul.dropMenu {
+    display: none;
+}
+.header ul.account li.activ ul.dropMenu {
+    margin: 0 0 0 0;
+    padding: .5em .3em;
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    border: solid 5px #d7d7d7;
+}
+.header ul.account li.login.activ ul.dropMenu {
+    width: 100%;
+}
+.header ul.account li.activ ul.dropMenu li {
+    margin: 0;
+    padding: 0;
+    float: none;
+    background: none;
+}
+.header ul.account li.activ ul.dropMenu li a {
+    margin: 0;
+    padding: 0 .5em;
+    white-space: nowrap;
+    display: block;
+    background: none;
+}
+.header ul.account li.activ ul.dropMenu li a:hover {
+    background-color: #f0f2f3;
+}
+
+.header .search {
+    margin: 2px 0 0 0;
+    padding: 0 0 0 0;
+    background: url( '../img/bgSearch.gif' ) repeat-x 0 0;
+}
+.header .search .searchProjectSelector {
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline;
+    width: 15em;
+    background: url( '../img/bgSelectProductsLeft.gif' ) no-repeat 0 0;
+}
+.header .search .searchProjectSelector div.mainSearch {
+    margin: 0;
+    padding: 16px 0 21px 16px;
+    position: relative;
+    z-index: 1;
+    background: url( '../img/bgSelectProductsRight.gif' ) no-repeat right top;
+}
+.header .search .searchProjectSelector div.mainSearch span.combobox {
+    margin: 0;
+    padding: 0 1em 0 0;
+    display: block;
+    border: none;
+    width: 12.5em;
+    position: relative;
+    z-index: 3;
+}
+.header .search .searchProjectSelector div.mainSearch span.combobox ul.comboboxList {
+    padding-left: .17em;
+    padding-right: .65em;
+    top: 19px;
+    left: -.16em;
+    width1: 9.58em;
+    border: solid 1px #a9a9a9;
+    border-top: none;
+    font-size: 14px;
+    font-family: monospace;
+    color: #000;
+}
+@media not all and (-webkit-min-device-pixel-ratio) { */
+/* hack Opera */
+/*
+.header .search .searchProjectSelector div.mainSearch span.combobox ul.comboboxList {
+    padding-right: 0;
+}
+}
+.header .search .searchProjectSelector div.mainSearch span.combobox a.arrow {
+    background-color: #fff;
+}
+.header .search .searchProjectSelector div.mainSearch span.combobox input {
+    width: 12em;
+    font-size: 14px!important;
+    font-family: monospace;
+}
+.header .search .searchContent {
+    margin: 0 0 0 15em;
+    padding: 0 0 10px 0;
+    background: url( '../img/bgSearchLeft.gif' ) no-repeat 0 0;
+}
+.header .search .searchContent div.mainSearch {
+    margin: 0;
+    padding: 11px 25px 21px 14px;
+    position: relative;
+    background: url( '../img/bgSearchRight.gif' ) no-repeat right top;
+}
+.header .search .searchContent div.mainSearch .widthInput {
+    margin: 6px 68px 0 0;
+    padding: 0 0 0 0;
+    z-index: 3;
+    font-size: 14px;
+    position: relative;
+    font-family: monospace;
+    background-color: transparent;
+}
+.header .search .searchContent div.mainSearch .widthInput input {
+    margin: 0;
+    padding: 0;
+    width: 99%;
+    font-size: 14px;
+    font-family: monospace;
+    background-color: transparent;
+    border: none;
+}
+.header .search .searchContent div.mainSearch input.button {
+    margin: 1px -8px 0 0;
+    padding: 6px 0 5px 0;
+    color: #084b96;
+    font-size: 11px;
+    float: right;
+    width: 60px;
+    cursor: pointer;
+    background: url( '../img/bgSearchButton.gif' ) no-repeat 0 0;
+    border: none;
+}
+.header .search .searchContent div.mainSearch .help {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    color: #f6f7f8;
+    top: 2px;
+    right: 4px;
+    background-image: url( '../img/iconHelpSearch.gif' );
+}
+.header .search .searchContent div.mainSearch a.arrowNavigation {
+    margin: 1px 0 0 0;
+    padding: 6px 6px 2px 6px;
+    color: #fff;
+    font-size: 11px;
+    float: right;
+    background: url( '../img/arrowDown.gif' ) no-repeat center 60%;
+}
+.header .search .searchContent div.mainSearch .widthInput .navigationSearch {
+    margin: 0;
+    padding: 0;
+}
+.header .search .searchContent div.mainSearch .widthInput .navigationSearch ul.suggest {
+    padding: .2em 23px .2em 0;
+    top: 17px;
+    left: -6px;
+    width: 100%;
+    z-index: 10;
+    border-right: solid 1px #dde7e2;
+    text-align: left;
+}
+
+.header .search .searchContent div.mainSearch .widthInput .navigationSearch.activ ul.suggest {
+    display:block;
+}
+
+.header .search .searchContent div.mainSearch .widthInput .navigationSearch ul.suggest li {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.header .search .searchContent div.mainSearch .widthInput .navigationSearch ul.suggest li a {
+    margin: 0 -20px 0 .2em;
+    padding: 0 0 0 .2em;
+    display: block;
+}
+.header .search .searchContent div.mainSearch .widthInput .navigationSearch ul.suggest li a:hover {
+    background-color: #f0f2f3;
+}
+
+
+.header .search .searchContent div.searchStatus {
+    margin: 2em 0 -1em 0;
+    padding: 0;
+    font-size: 90%;
+    color: #55676f;
+    background-color: transparent;
+}
+.header .search .searchContent div.searchStatus a.saveSearch {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    text-decoration: underline;
+}
+.header .search .searchContent div.searchStatus a.help {
+    padding-right: 1em;
+    position: static;
+    background : url("../img/iconHelp.gif") no-repeat right 0;
+}
+.header .search .searchContent div.searchStatus a.saveSearch:hover {
+    text-decoration: none;
+}
+*/
+/*
+#newInlineIssues {
+    margin: 10px 0;
+}
+*/
+/*
+
+*/
+/*---------------------------------------------- End Header --------------------------------------------------------*/
+
+/*---------------------------------------------- Start Content --------------------------------------------------------*/
+.content {
+    margin: 0 0 0 16.8em;
+    padding: .1em 0 45px 0;
+}
+body.index .content {
+    margin: 1em 1em 0 1em;
+}
+
+/*---------------------------------------------- Start Result --------------------------------------------------------*/
+.content .result {
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, arial, sans-serif;
+    background-color: #f0f2f3;
+}
+.content .result.bottom {
+    margin-top: 1.5em;
+}
+.content .result .page {
+    margin: 0;
+    padding: 0 2em 0 2.6em;
+}
+.content .result .newIssue {
+    margin: 0;
+    padding: .15em 0 .42em 0;
+    border: none;
+    font-size: 100%;
+}
+.content .result .newIssue .checkAll {
+    margin: -.18em 0 0 0;
+    padding: .2em .3em .25em .4em;
+    float: left;
+    border-right: solid 5px #fff;
+}
+.content .result .newIssue .checkAll input {
+    padding: 0;
+}
+.content .result.new .newIssue .checkAll input {
+    visibility: hidden;
+}
+.content .result .newIssue a {
+    margin: 0;
+    padding: .19em .6em .46em .6em;
+    background: url( '../img/borderBlue.gif' ) repeat-x left bottom;
+    border: none;
+    border-right: solid 5px #fff;
+}
+.content .result .newIssue a:hover, .content .result.new .newIssue a {
+    background-color: #d7d7d7;
+}
+
+.content .result ul.actions {
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, arial, sans-serif;
+    font-size: 80%;
+}
+.content .result ul.actions li, ul.dropMenu li {
+    margin: 0 -1px 0 -1px;
+    padding: 0 0 7px 0;
+    list-style: none;
+    float: right;
+    position: relative;
+    background: url( '../img/bgActions.gif' ) no-repeat right 6px;
+}
+.content .result ul.actions li.plane {
+    margin: .4em 1em 0 0;
+    padding: 0;
+    background: none;
+}
+.content .result ul.actions li a {
+    margin: 0;
+    padding: 3px 2.3em 4px 1.3em;
+    display: block;
+    color: #084b96;
+    background: url( '../img/arrowDownBlue.gif' ) no-repeat 78% center;
+}
+.content .result ul.actions li a:hover, .content .result ul.actions li.activ a, .content .result ul.actions li.active a {
+    color: #084b96;
+    background: #d7d7d7 url( '../img/arrowDownBlue.gif' ) no-repeat 78% center;
+}
+.content .result ul.actions li.view ul {
+    margin: 0 .4em 0 0;
+    padding: 0;
+}
+.content .result ul.actions li.view ul li {
+    margin: -1px 0;
+    padding: 0;
+    float: left;
+    background: none;
+}
+a.view {
+    overflow: hidden;
+    width: 12px;
+    display: block;
+    color: #f1f0ef;
+    background: url( '../img/icoView.gif' ) repeat-y 0 0;
+}
+
+a.view:hover {
+    color: #f1f0ef;
+    background: url( '../img/icoViewA.gif' ) repeat-y 0 0;
+}
+
+a.view span {
+    margin: 0 0 0 0;
+    padding: 0;
+    display: block;
+    background-color: #f1f0ef;
+}
+
+a.view.title a {
+    padding-top: 4px;
+}
+
+a.view.title a span {
+    margin-bottom: -7px;
+}
+
+a.view.regular a {
+    padding-top: 8px;
+}
+a.view.regular a span {
+    margin-bottom: -11px;
+}
+a.view.full a {
+    padding-top: 12px;
+}
+a.view.full a span {
+    margin-bottom: -15px;
+}
+a.view.activ {
+    background: url( '../img/icoViewA.gif' ) repeat-y 0 0;
+}
+.content .result ul.actions li.help {
+    margin-right: .3em;
+    margin-left: .5em;
+}
+.content .result ul.actions li.help a {
+    background: none;
+    color: #fff;
+}
+
+.content .result ul.actions li.resolve {
+    position: relative;
+}
+.content .result ul.actions li.resolve a.just {
+    padding-right: 0;
+    left: 0;
+    position: absolute;
+    background: none;
+}
+.content .result ul.actions li.resolve a.just:hover {
+    text-decoration: underline;
+}
+.content .result ul.actions li.resolve a.other {
+    padding-left: 5.5em;
+    color: #f1f0ef;
+    background: url( '../img/arrowDownBluebgGrey.gif' ) no-repeat 77% .5em;
+}
+.content .result ul.actions li.resolve a.other:hover {
+    background: #d7d7d7 url( '../img/arrowDownBlue.gif' ) no-repeat 75% center;
+}
+/*.content .result ul.actions li.resolve a.other {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    color: #d7d7d7;
+    background: url( '../img/arrowDownBluebgGrey.gif' ) no-repeat 78% center;
+}*/
+
+.content .result ul.actions li.fsiActions {
+    padding-bottom: .1em;
+    background-color: #f1f0ef;
+}
+.content .result ul.actions li.fsiActions a {
+    background-position: 83% center;
+}
+.content .result ul.actions li.settings {
+    background: none;
+}
+.content .result ul.actions li.settings a {
+    padding-right: 2.5em;
+    background-position: 66% center;
+}
+.content .result ul.actions li.settings a span {
+    padding: 0 10px 0 0;
+    display: block;
+    color: #f1f0ef;
+    background: url( '../img/icoSettings.gif' ) no-repeat 4px .4em;
+}
+.content .result ul.actions li.settings a:hover, .content .result ul.actions li.settings.activ a {
+    background-position: 70% center;
+}
+.content .result ul.actions li.settings a:hover {
+    background-position: 66% center;
+}
+
+.content .result ul.actions li.activ, .content .result ul.actions li.active {
+    z-index: 2;
+}
+
+ul.dropMenu {
+    display: none;
+    background-color: #fff;
+    text-align:left;
+    width: 12em;
+}
+.content .result ul.actions li ul.dromMenu li, ul.dropMenu li {
+    margin: 0;
+    padding: 0;
+    float: none;
+    color: #55676f;
+    background: none;
+}
+.sort ul.dropMenu li.active {
+    list-style-type: decimal;
+}
+.sort ul.dropMenu li:hover {
+    background-color: #f0f2f3;
+}
+.content .result ul.actions li ul.dromMenu li a, ul.dropMenu li a {
+    margin: 0;
+    padding: 0 0 0 1.5em;
+    display: inline;
+    color: #55676f;
+    background: none;
+}
+.content .result ul.actions li ul.dromMenu li.activ a, ul.dropMenu li.active a {
+    background: url( '../img/bullDropMenu.gif' ) no-repeat 0 center;
+}
+.sort ul.dropMenu li a {
+    margin-left: 0;
+    padding: 0;
+}
+.sort ul.dropMenu li.active a {
+    background: none;
+}
+.sort ul.dropMenu li:hover a.ico {
+    margin: -1px 0 0 0;
+    padding: 0 .8em;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border: solid 1px #f9f9fa;
+}
+.sort ul.dropMenu li:hover a.ico.add {
+    background: url( '../img/icoPlus.gif' ) no-repeat center center;
+}
+.sort ul.dropMenu li:hover a.ico.delete {
+    background: url( '../img/icoDeleteSearch.gif' ) no-repeat center center;
+}
+.content .result ul.actions li ul.dromMenu li select, ul.dropMenu li select {
+    font-size: 10px;
+}
+
+.result ul.player {
+    padding: 0;
+    background: none;
+}
+.result ul.player li {
+    padding-bottom: .9em;
+    background-color: #fff;
+}
+.result ul.player li.navigation {
+    padding: 0;
+    background-color: transparent;
+    border-right: solid 3px #fff!important;
+}
+.result ul.player li.navigation a, .prev {
+    padding: 0 .8em;
+    color: #f0f2f3;
+    background: url( '../img/arrowBackBlue.gif' ) no-repeat center .6em;
+}
+.result ul.player li.navigation.backSearch a {
+    margin-left: .8em;
+    margin-right: .8em;
+    color: #084b96;
+}
+.result ul.player li.navigation.nextSearch a {
+    margin-left: .8em;
+    margin-right: .8em;
+    color: #084b96;
+    background-image:  url( '../img/arrowNextBlue.gif' );
+}
+.result ul.player li.navigation.next a, .next {
+    background:  url( '../img/arrowNextBlue.gif' ) no-repeat center .6em;
+}
+/*---------------------------------------------- End Result --------------------------------------------------------*/
+
+/*---------------------------------------------- Start IssueBar --------------------------------------------------------*/
+.issueBar {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    height: 25px;
+    background: #676e75 url( '../img/bgIssueBarRight.gif' ) no-repeat right 0;
+}
+ul.player {
+    margin: 0;
+    padding: 0 0 0 .5em;
+    height: 25px;
+    background: url( '../img/bgIssueBarLeft.gif' ) no-repeat 0 0;
+}
+ul.player li {
+    margin: 0;
+    padding: 3px .7em;
+    float: left;
+    font-family: tahoma, arial, sans-serif;
+    font-size: 80%;
+    list-style: none;
+}
+ul.player li.navigation {
+    padding: 0;
+    background-color: #084b96;
+}
+ul.player li.navigation.backSearch {
+    border-right: solid 1px #fff;
+}
+ul.player li.navigation a {
+    margin: 0;
+    padding: 0 1.3em;
+    color: #084b96;
+    display: block;
+    width: 13px;
+    height: 25px;
+    background: url( '../img/arrowBack.gif' ) no-repeat center .6em;
+}
+ul.player li.navigation.backSearch a {
+    margin: 0 1.2em 0 .6em;
+    padding: 0;
+    color: #fff;
+    background-repeat: repeat-x;
+    background-position: 0 .6em;
+}
+ul.player li.navigation.nextSearch a {
+    margin: 0 1.2em 0 .6em;
+    padding: 0 0 0 .1em;
+    color: #fff;
+    background-repeat: repeat-x;
+    background-position: 0 .6em;
+    background-image:  url( '../img/arrowNext.gif' );
+}
+ul.player li.navigation.next a {
+    background-image:  url( '../img/arrowNext.gif' );
+}
+.issueBar a.editIssue {
+    margin: 0 .5em 0 0;
+    padding: 3px .6em 0 1em;
+    float: right;
+    height: 22px;
+    color: #fff;
+    background-color: #084b96;
+    border-left: solid 1px #fff;
+}
+/*---------------------------------------------- End IssueBar --------------------------------------------------------*/
+
+.clearr {
+    clear: right;
+}
+
+span.highlightedWord {
+    background-color: #fff5bd;
+}
+
+a.clickable:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.content .profileForm {
+    margin: 1.5em 0 0 0;
+    padding: 0;
+    font-family: tahoma, verdana, arial, sans-serif;
+}
+.content .profileForm .userAvatar {
+    margin: 0 1em 0 0;
+    padding: 0;
+    width: 8.5em;
+    float: right;
+    text-align: center;
+    color: #a6a6a6;
+}
+.content .profileForm .userAvatar .addFile {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+.content .profileForm .userAvatar .addFile a.change {
+    padding: .2em .3em;
+    font-size: 80%;
+}
+.content .profileForm .userAvatar .addFile.active a.change {
+    background-color: #d7d7d7;
+}
+.content .profileForm .userAvatar .addFile .addAttributeForm {
+    margin: 0;
+    display: none;
+    width: 40em;
+    position: absolute;
+    top: 1.3em;
+    right: 0;
+}
+.content .profileForm .userAvatar .addFile.active .addAttributeForm {
+    display: block;
+}
+
+.content .profileForm dl {
+    margin: 0 9em 0 1.6em;
+    padding: 0;
+}
+.content .profileForm dl dt {
+    margin: .4em 0 1em 0;
+    padding: 0;
+    float: left;
+    width: 6em;
+    text-align: right;
+    color: #55676f;
+}
+.content .profileForm dl dd {
+    margin: 0 0 1em 6.5em;
+    padding: 0;
+    background: url( '../img/bgProfileInputLeft.gif' ) no-repeat 0 0;
+}
+.content .profileForm dl dd p {
+    margin: 0;
+    padding: 0 7px;
+    background: url( '../img/bgProfileInputRight.gif' ) no-repeat 100% 0;
+}
+.content .profileForm dl dd p input {
+    margin: 0;
+    padding: .5em 0 .5em 0;
+    width: 99%;
+    color: #333;
+    font-size: 13px;
+    font-family: tahoma, verdana, arial, sans-serif;
+    background:  transparent url( '../img/bgProfileInput.gif' ) repeat-x 0 0;
+    border: none;
+}
+*:first-child+html .content .profileForm dl dd p input {
+    margin: -1px;
+}
+*html .content .profileForm dl dd p input {
+    margin: -1px;
+}
+.content .profileForm dl dd.addLink {
+    margin-top: -1.4em;
+    padding-left: 2.9em;
+    font-size: 80%;
+    color: #a6a6a6;
+    background: none;
+}
+.content .profileForm dl dd.addLink a {
+    border-bottom: dotted 1px #6699cc;
+}
+.content .profileForm dl dd.addLink a:hover {
+    border-bottom: none;
+}
+.content .profileForm dl dd.check {
+    padding-top: .4em;
+    padding-bottom: .6em;
+    background: none;
+}
+.content .profileForm dl dd.check input {
+    margin-bottom: 2em;
+    float: left;
+}
+.content .profileForm dl dd.usenewui {
+    background:none;
+}
+.content .profileForm dl dd.usenewui input {
+    margin-bottom: 0.5em;
+    margin-top: 0.6em;
+}
+
+.content .profileForm dl dd.check button {
+    margin: 0 .4em 0 0;
+    padding: .2em 1.2em;
+    font-size: 80%;
+    color: #084b96;
+    font-weight: bold;
+    background-color: #f0f2f3;
+    border: 1px solid #e7e7e7;
+    border-right-color: #666;
+    border-bottom-color: #666;
+
+}
+*:first-child+html .content .profileForm dl dd.check button {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+*html .content .profileForm dl dd.check button {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.content .profileForm dl dd.check button.cancel {
+    font-weight: normal;
+    background-color: #fcfcfc;
+}
+
+.content .profileForm dl dd.addLink.activ {
+    padding-top: 1em;
+}
+.content .profileForm dl dd.addLink.activ a {
+    margin: 0 1px 0 1px;
+    padding: .3em 1em;
+    background-color: #d7d7d7;
+    border-bottom: none;
+}
+.content .profileForm dl dd.addLink.activ span {
+    display: none;
+}
+.content .profileForm dl dd.addLink .drop {
+    display: none;
+}
+.content .profileForm dl dd.addLink.activ .drop {
+    margin: 0 0 0 -1.2em;
+    padding: 0;
+    display: block;
+    border: solid 5px #d7d7d7;
+}
+.content .profileForm dl dd.addLink.activ .drop dl, .content .profileForm dl dd.addLink.activ .drop table {
+    margin: -1px 1px;
+    padding: 1.5em 1.7em .5em .7em;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+}
+.content .profileForm dl dd.addLink.activ .drop dl dt {
+    width: 8.5em;
+}
+.content .profileForm dl dd.addLink.activ .drop dl dd {
+    margin-left: 9em;
+}
+.content .profileForm dl dd.addLink.activ .drop table {
+    width: 100%;
+}
+.content .profileForm dl dd.addLink.activ .drop table th {
+    padding: 0 0 .3em .5em;
+    color: #55676f;
+    font-weight: normal;
+    border-bottom: solid 1px #d2d2d2;
+    text-align: center;
+}
+.content .profileForm dl dd.addLink.activ .drop table td {
+    padding: .3em 0 .3em .5em;
+    color: #55676f;
+    text-align: center;
+}
+.content .profileForm dl dd.addLink.activ .drop table td.comment {
+    padding-left: 3.5em;
+    text-align: left;
+    color: #A6A6A6;
+}
+.content .profileForm dl dd.addLink.activ .drop table th.name, .content .profileForm dl dd.addLink.activ .drop table td.name {
+    color: #55676f;
+    text-align: left;
+}
+
+
+/*---------------------------------------------- End Content --------------------------------------------------------*/
+
+/*---------------------------------------------- Start Welcome --------------------------------------------------------*/
+body.index .content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-size: 140%;
+    font-weight: normal;
+    font-family: arial, tahoma, verdana, sans-serif;
+}
+body.index .content ul.searches {
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+body.index .content ul.searches li {
+    margin: 0;
+    padding: .3em .3em;
+    list-style: none;
+    font-size: 110%;
+    border-bottom: solid 1px #f0f1f2;
+}
+body.index .content ul.searches li a {
+    padding-left: 1.2em;
+    font-weight: bold;
+}
+body.index .content ul.searches.share li a {
+    background: url( '../img/icoShare.gif' ) no-repeat 0 .4em;
+}
+
+/*---------------------------------------------- End Welcome --------------------------------------------------------*/
+
+/*---------------------------------------------- Start Subcontent --------------------------------------------------------*/
+.subcontent {
+    margin: .1em 0 0 0;
+    padding: 0;
+    float: left;
+    width: 12em;
+}
+
+.subcontent h3 {
+    margin: 0 0 .5em 0;
+    padding: 0;
+}
+
+.subcontent ul.filtr {
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+
+.subcontent ul.filtr li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 100%;
+    font-family: tahoma, verdana, arial, sans-serif;
+}
+
+.subcontent ul.filtr li p {
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 1px #d7d7d7;
+}
+
+.subcontent ul.filtr li p a {
+    margin: 0;
+    padding: .2em 2em .3em 1.1em;
+    display: block;
+    font-size: 80%; /*color: #55676f;*/
+    color: #333;
+    background: url( '../img/arrowTwoDown.gif' ) no-repeat 95% center;
+    border-bottom: solid 1px #f0f2f3;
+}
+
+.subcontent ul.filtr .filterCount {
+    color: #808080;
+}
+
+.subcontent ul.filtr li.open p a {
+    background: #e1e2e2 url( '../img/arrowTwoTop.gif' ) no-repeat 95% center;
+    border-bottom: solid 1px #e1e2e2;
+}
+
+.subcontent ul.filtr li p a:hover {
+    background: #e8eaeb url( '../img/arrowTwoDown.gif' ) no-repeat 95% center;
+    border-bottom: solid 1px #e8eaeb;
+}
+
+.subcontent ul.filtr li.open p a:hover {
+    background: #e1e2e2 url( '../img/arrowTwoTop.gif' ) no-repeat 95% center;
+    border-bottom: solid 1px #e1e2e2;
+}
+
+.subcontent ul.filtr li ul {
+    margin: 0;
+    padding: .5em 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: none;
+}
+
+.subcontent ul.filtr li.open ul {
+    visibility: visible;
+    display: block;
+    background-color: #f0f2f3;
+    border-bottom: solid 1px #d7d7d7;
+}
+
+.subcontent ul.filtr li.open ul li {
+    margin: 0 0 .1em 2.5em;
+    padding: 0;
+    font-size: 80%;
+    color: #55676f;
+}
+
+.subcontent ul.filtr li.open ul li input {
+    margin: .2em 0 0 -1.5em;
+    padding: 0;
+    float: left;
+    width: 13px;
+    height: 13px;
+    font-size: 11px;
+}
+
+.subcontent ul.filtr li.open ul li label .highlightedWord {
+    background-color: #f0f2f3;
+    font-weight: bold;
+}
+
+.subcontent h3 {
+    margin: 0 0 .2em .8em;
+    padding: 0;
+    color: #333;
+    font-weight: bold;
+    font-family: tahoma, verdana, arial, sans-serif;
+}
+
+.subcontent ul.yourSearches {
+    margin: 0 0 2em 0;
+    padding: 0 0 .3em 0;
+    background-color: #f0f2f3;
+    font-family: tahoma, verdana, arial, sans-serif;
+}
+.subcontent ul.yourSearches li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: solid 1px #f0f2f3;
+}
+.subcontent ul.yourSearches li a {
+    padding: .25em 0 .3em 1em;
+    display: block;
+    font-weight: bold;
+    font-size: 80%;
+    color: #55676f;
+    background: url( '../img/arrowTwoDown.gif' ) no-repeat 95% center;
+}
+.subcontent ul.yourSearches li.open a {
+    background: url( '../img/arrowTwoTop.gif' ) no-repeat 95% center;
+}
+.subcontent ul.yourSearches li a.noTitle {
+    margin-top: -1.2em;
+    color: #f0f2f3;
+    background: none;
+}
+.subcontent ul.yourSearches li a.view {
+    margin: 0 0 0 1em;
+    padding: 0;
+    display: inline;
+    font-weight: normal;
+    color: #084b96;
+    background: none;
+    border-bottom: dotted 1px #6699cc;
+}
+.subcontent ul.yourSearches li a.view:hover {
+    border-bottom: none;
+}
+.subcontent ul.yourSearches li div.searches {
+    overflow: hidden;
+    visibility: hidden;
+    display: none;
+}
+.subcontent ul.yourSearches li.open div.searches {
+    margin: 0 .6em .3em .6em;
+    padding: 0;
+    visibility: visible;
+    display: block;
+    background-color: #fff;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+}
+
+.subcontent ul.yourSearches.tags li div.searches input {
+    margin: .2em 0 1em .8em;
+    padding: 2px;
+    width: 80%;
+    font-size: 11px;
+    color: #828282;
+    border: solid 1px #d7d7d7;
+}
+.subcontent ul.yourSearches.tags li div.searches input.text {
+    color: #000;
+}
+
+.subcontent ul.yourSearches li div.searches ul {
+    margin: 0 -1px 0 -1px;
+    padding: .3em 0;
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+}
+.subcontent ul.yourSearches li div.searches ul li {
+    margin: 0 .3em .2em .3em;
+    padding: 0 0 0 .7em;
+    position: relative;
+    font-size: 80%;
+    color: #55676f;
+    list-style: none;
+    border: solid 1px #fff;
+}
+.subcontent ul.yourSearches.groups li div.searches ul li {
+    margin-bottom: 0;
+}
+.subcontent ul.yourSearches li div.searches ul li.line {
+    margin-top: .3em;
+    margin-bottom: -1.3em;
+    color: #fff;
+    border-top: solid 1px #d2d2d2;
+}
+.subcontent ul.yourSearches li div.searches ul li:hover {
+    background-color: #f0f2f3;
+}
+.subcontent ul.yourSearches.groups li div.searches ul li:hover {
+    background-color: transparent;
+}
+.subcontent ul.yourSearches li div.searches ul li.notHover:hover {
+    background-color: transparent;
+}
+.subcontent ul.yourSearches li div.searches ul li a {
+    margin: 0 1.3em 0 0;
+    padding: 0 0 .3em 0;
+    line-height: 1.3em;
+    font-size: 100%;
+    color: #084b96;
+    display: block;
+    font-weight: normal;
+    background: none;
+}
+.subcontent ul.yourSearches.links li div.searches ul li span {
+    margin: -.6em 1.5em 0 0;
+    display: block;
+}
+.subcontent ul.yourSearches li div.searches ul li.notHover:hover a {
+    text-decoration: underline;
+}
+.subcontent ul.yourSearches li div.searches ul li a span {
+    color: #808080;
+}
+.subcontent ul.yourSearches li div.searches ul li a.ico {
+    padding: 0 0 0 .8em;
+    display: none;
+    position: absolute;
+    right: -1.3em;
+    top: 35%;
+    color: #fff;
+}
+.subcontent ul.yourSearches li div.searches ul li:hover a.ico {
+    display: inline;
+}
+.subcontent ul.yourSearches li div.searches.saved ul li:hover a.ico {
+    background: url( '../img/icoDeleteSearch.gif' ) no-repeat 0 0;
+}
+.subcontent ul.yourSearches li div.searches.recent ul li:hover a.ico {
+    background: url( '../img/icoAddSearch.gif' ) no-repeat 0 0;
+}
+.subcontent ul.yourSearches li div.searches ul li h4 {
+    margin: 0;
+    padding: 0 0.5em;
+}
+.subcontent ul.yourSearches li div.searches ul li ul.dromMenu {
+  margin:0;
+  padding: 0 0.5em 0.8em;
+}
+.subcontent ul.yourSearches li div.searches ul li ul.dromMenu li {
+  color:#55676F;
+  display:block;
+  float:none;
+  margin:0;
+  padding:0;
+  font-size: 100%;
+}
+.subcontent ul.yourSearches.groups li div.searches ul li a {
+    display: inline;
+    margin-right: .5em;
+}
+.subcontent ul.yourSearches.groups li div.searches ul li a:hover {
+    text-decoration: underline;
+}
+
+.subcontent ul.yourSearches li div.searches ul li ul.dromMenu li a {
+  color: #55676F;
+  display: inline;
+  margin: 0;
+  padding: 0 0 0 1.5em;
+}
+
+.subcontent ul.yourSearches li div.searches ul li ul.dromMenu li.activ a {
+  background: url( '../img/bullDropMenu.gif' ) no-repeat 0 center;
+}
+.subcontent ul.yourSearches li div.searches ul li ul.dromMenu li a.delete {
+  background: url( '../img/icoDeleteSearch.gif' ) no-repeat 0 center;
+}
+.subcontent ul.yourSearches li div.searches.tags ul li:hover a.ico {
+    background: url( '../img/arrowDownFiltr.gif' ) no-repeat 0 .5em;
+}
+.subcontent ul.yourSearches li div.searches.tags ul li a.ico.activ {
+    background: url( '../img/arrowDownFiltr.gif' ) no-repeat 0 .5em;
+}
+
+
+.issueTag {
+    border: solid 2px #F1F5EC !important;
+    background: #F1F5EC;
+    font-size: 65% !important;
+    color: #006633;
+}
+
+.subcontent ul.watching {
+    margin: 0;
+    padding: 0;
+}
+.subcontent ul.watching li {
+    margin: .2em .5em;
+    padding: 0;
+    list-style: none;
+    font-size: 80%;
+    font-family: tahoma, verdana, arial, sans-serif;
+}
+.subcontent ul.watching li.title {
+    margin: 0;
+    border-bottom: solid 1px #f0f2f3;
+}
+.subcontent ul.watching li.title p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #55676f;
+    border-bottom: solid 1px #d7d7d7;
+}
+.subcontent ul.watching li a {
+    border-bottom: dotted 1px #6699cc;
+}
+.subcontent ul.watching li a:hover {
+    border-bottom: none;
+}
+
+/*---------------------------------------------- End Subcontent --------------------------------------------------------*/
+
+/*---------------------------------------------- Start NewIssue --------------------------------------------------------*/
+.newIssue {
+    margin: 0;
+    padding: 0;
+}
+
+.newIssue ul.label {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 7em;
+}
+
+.newIssue ul.label li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.newIssue textarea {
+    font-family: monospace;
+    font-size: 14px;
+    margin: 0 0 0 8em;
+    padding: 0;
+    display: block;
+    line-height: 1.3em;
+    color: #333;
+    width: 80%;
+    border: solid 1px #ccc;
+    height: 4em;
+}
+
+
+/*---------------------------------------------- End NewIssue --------------------------------------------------------*/
+
+.changed {
+    font-weight: bold;
+}
+
+.filterName {
+}
+
+.highlightedWord {
+}
+
+.previousSearch {
+}
+
+.filtr {
+}
+
+.savedSearches {
+}
+
+.open {
+}
+
+.option {
+}
+
+.description {
+}
+
+.result {
+}
+
+.newIssue {
+}
+
+.issue {
+}
+
+.priority-div {
+}
+
+.suggest {
+}
+
+.searchStatus {
+}
+
+.parserErrors {
+}
+
+.parserError {
+}
+
+.searchContent {
+}
+
+.mainSearch {
+}
+
+.search {
+}
+
+.properties {
+}
+
+.type {
+}
+
+.state {
+}
+
+.priority {
+}
+
+.user {
+}
+
+.subsystem {
+}
+
+.affectsVersions {
+}
+
+.fixedVersions {
+}
+
+.comments {
+}
+
+.subcontent {
+}
+
+.header {
+}
+
+.content {
+}
+
+.container {
+}
+
+.saveSearch {
+}
+
+.sort {
+}
+
+.sortForm {
+}
+
+.page {
+}
+
+.current {
+}
+
+#help_div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: solid black 1px;
+    background-color: white;
+    padding: 10px;
+}
+#help_div div.hideHelp {
+    text-align: right;
+    border-bottom: 1px solid;
+}
+
+#help_div div.moreHelp {
+    clear: both;
+    text-align: center;
+    border-top: 1px solid;
+    padding-top: 10px;
+}
+
+#help_div div.moreHelp a {
+    text-decoration: underline;
+}
+
+#help_div dl {
+    clear: both;
+    margin: 1em 0 0;
+}
+
+#help_div dt {
+    clear: left;
+    color: blue;
+    padding-top:1px;
+    text-align:right;
+    width: 30%;
+    float: left;
+}
+
+#help_div dd {
+    height: 2em;
+    margin: 0;
+    padding: 1px 0 0 5px;
+    width: 60%;
+    float: left;
+    text-align: left;
+}
+
+#help_div dd.lastDd {
+    padding-bottom: 10px;
+}
+.hidden{
+    display: none;
+}
+.invisible{
+    visibility: hidden;
+}

@@ -1,0 +1,77 @@
+.footer {
+  font-size: 90%;
+  color: #666;
+  margin: 1em 3em;
+  padding: 0 .8em 1em;
+  text-align: left;
+  clear: both;
+  border-top: solid 1px #d7d7d7;
+}
+
+.footer a {
+  color: #084b96;
+  text-decoration: none;
+  border-bottom: dotted 1px #6699cc;
+}
+
+.footer a:hover {
+  border-bottom: none;
+}
+
+.footer ul {
+  margin: 0.2em 0 0 0.2em;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 0 0.3em 0 0;
+  padding: 0 0 0 0.7em;
+  display: inline;
+  list-style: none;
+  border-left: solid 1px #d7d7d7;
+}
+
+.footer ul li.first {
+  border-left: none;
+}
+
+.powered {
+  float: right;
+  margin: 0.2em 0.3em 0 0.2em;
+  padding: 0 0 0 0.7em;
+  border-left: solid 1px #d7d7d7;
+}
+
+.footer .rss {
+  float: right;
+}
+
+.footer .rss li {
+  margin: 0 0.3em 0 0;
+  padding: 0 0 0 0.7em;
+  border-left: solid 1px #d7d7d7;
+}
+
+.footer .rss .first {
+  margin: 0 0.3em 0 0;
+  padding: 0 0 0 0.7em;
+  border-left: none;
+  background: none;
+}
+
+.footer .rss .norss {
+  background: none;
+  padding-left: 0.5em;
+}
+
+.footer .rss li {
+  border-left: solid 1px #d7d7d7;
+  padding-left: 1.5em;
+  padding-bottom: 0.2em;
+  background: url("${getClasspathUri("smartui/img/icoRss.gif")}") no-repeat 0.3em 0.1em;
+}
+
+.footer .rss li a {
+  border-bottom: none;
+}
+

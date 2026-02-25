@@ -1,0 +1,299 @@
+<script type="text/javascript">$(document).ready(function () {
+  Webr.component.ClassToggler.bind("settings_toggler", "settings", "activ", true, null, null);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "_Entity_44_0", ["44-0"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "_Entity_44_1", ["44-1"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "_Entity_44_2", ["44-2"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "_Entity_44_3", ["44-3"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "_Entity_44_4", ["44-4"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "_Entity_44_15", ["44-15"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "_Entity_44_5", ["44-5"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "_Entity_44_6", ["44-6"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "_Entity_44_7", ["44-7"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "_Entity_44_8", ["44-8"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.toggleOpenInNewWindowLink"
+);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.issuesPerPageSelect"
+);
+Webr.component.ClassToggler.bind("sort_toggler", "sort", "activ", true, null, null);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.sortBySelect");
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.detailLevelLink",
+ "_Entity_39_0", ["39-0"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.detailLevelLink",
+ "_Entity_39_1", ["39-1"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.detailLevelLink",
+ "_Entity_39_2", ["39-2"]);
+charisma.smartui.SelectionActions.init("selectAllActionCheckbox");
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.topToolbar.newIssueLink");
+Webr.component.ComponentRegistry.get().addClientEventHandler("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "click", function (event) {
+  $(event.data.component.getElement().parentNode).toggleClass("activ");
+}, "SmartUI.Issues.Content.topToolbar");
+Webr.component.ComponentRegistry.get().addClientEventHandler("SmartUI.Issues.Content.topToolbar.toggleOpenInNewWindowLink"
+, "click", function (event) {
+  $(event.data.component.getElement().parentNode).toggleClass("activ");
+}, "SmartUI.Issues.Content.topToolbar");
+charisma.smartui.App.APP.setNewInlineIssue(function () {
+  (function () {
+    Webr.Event.post({handlerUrl: "/charisma/_events?window_id=3", eventName: "SmartUI.Issues.Content
+:methodCall_toggleNewIssue", eventSource: "SmartUI.Issues.Content", eventParameters: {}, collectFormElements
+: true, sync: true});
+  }).call();
+});
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.NewIssue.submitButton"
+, "click", null, "SmartUI.Issues.Content.NewIssue");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.NewIssue.discardButton"
+, "click", null, "SmartUI.Issues.Content.NewIssue");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.NewIssue.newIssueProjectSelector"
+, "submit", null, "SmartUI.Issues.Content.NewIssue");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.NewIssue.newIssuePreview"
+, "change", null, "SmartUI.Issues.Content.NewIssue");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.NewIssue.newIssueText"
+, "valuechange", null, "SmartUI.Issues.Content.NewIssue");
+Webr.component.ComponentRegistry.get().addClientEventHandler("SmartUI.Issues.Content.NewIssue.newIssueDiv"
+, "keydown", function (event) {
+  if (Webr.util.Key.isKey(event, {ctrl: true, keyCode: Webr.util.Key.ENTER})) {
+    (function () {
+      Webr.Event.post({handlerUrl: "/charisma/_events?window_id=3", eventName: "SmartUI.Issues.Content
+.NewIssue:methodCall_submit", eventSource: "SmartUI.Issues.Content.NewIssue", eventParameters: {}, collectFormElements
+: true, sync: true});
+    }).call();
+    return false;
+  }
+
+  if (Webr.util.Key.isKey(event, {keyCode: Webr.util.Key.ESC})) {
+    (function () {
+      Webr.Event.post({handlerUrl: "/charisma/_events?window_id=3", eventName: "SmartUI.Issues.Content
+.NewIssue:methodCall_hide", eventSource: "SmartUI.Issues.Content.NewIssue", eventParameters: {}, collectFormElements
+: true, sync: true});
+    }).call();
+    return false;
+  }
+
+  return true;
+}, "SmartUI.Issues.Content.NewIssue");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.NewIssue.newIssueProjectSelector"
+, "load", null, "SmartUI.Issues.Content.NewIssue");
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.IssueCheckbox.issueSelectionCheckbox", "_Entity_25_9461", ["25-9461"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.favouriteLink");
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issuePriorityLink", "_Entity_25_9461", ["25-9461"]);
+Webr.component.ComboBox.register({name: "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461.IssueAsDescription
+.Properties.issuePriority", parametersSuffix: "_Entity_25_9461", parameters: ["25-9461"]}, "id_SmartUI
+.Issues.Content.IssueList.issue_Entity_25_9461.IssueAsDescription.Properties.issuePriorityLink_Entity_25_9461"
+);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueTypeLink", "_Entity_25_9461", ["25-9461"]);
+Webr.component.ComboBox.register({name: "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461.IssueAsDescription
+.Properties.issueType", parametersSuffix: "_Entity_25_9461", parameters: ["25-9461"]}, "id_SmartUI.Issues
+.Content.IssueList.issue_Entity_25_9461.IssueAsDescription.Properties.issueTypeLink_Entity_25_9461")
+;
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueStateLink", "_Entity_25_9461", ["25-9461"]);
+Webr.component.ComboBox.register({name: "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461.IssueAsDescription
+.Properties.issueState", parametersSuffix: "_Entity_25_9461", parameters: ["25-9461"]}, "id_SmartUI.Issues
+.Content.IssueList.issue_Entity_25_9461.IssueAsDescription.Properties.issueStateLink_Entity_25_9461"
+);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueAssigneeLink", "_Entity_25_9461", ["25-9461"]);
+Webr.component.ComboBox.register({name: "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461.IssueAsDescription
+.Properties.issueAssignee", parametersSuffix: "_Entity_25_9461", parameters: ["25-9461"]}, "id_SmartUI
+.Issues.Content.IssueList.issue_Entity_25_9461.IssueAsDescription.Properties.issueAssigneeLink_Entity_25_9461"
+);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueSubsystemLink", "_Entity_25_9461", ["25-9461"]);
+Webr.component.ComboBox.register({name: "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461.IssueAsDescription
+.Properties.issueSubsystem", parametersSuffix: "_Entity_25_9461", parameters: ["25-9461"]}, "id_SmartUI
+.Issues.Content.IssueList.issue_Entity_25_9461.IssueAsDescription.Properties.issueSubsystemLink_Entity_25_9461"
+);
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.favouriteLink", "click", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueVoteLink", "click", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issuePriority", "submit", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueType", "submit", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueState", "submit", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueAssignee", "submit", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueSubsystem", "submit", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issuePriority", "load", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueType", "load", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueState", "load", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueAssignee", "load", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties.issueSubsystem", "load", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9461
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.IssueCheckbox.issueSelectionCheckbox", "_Entity_25_9438", ["25-9438"]);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.favouriteLink");
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issuePriorityLink", "_Entity_25_9438", ["25-9438"]);
+Webr.component.ComboBox.register({name: "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438.IssueAsDescription
+.Properties.issuePriority", parametersSuffix: "_Entity_25_9438", parameters: ["25-9438"]}, "id_SmartUI
+.Issues.Content.IssueList.issue_Entity_25_9438.IssueAsDescription.Properties.issuePriorityLink_Entity_25_9438"
+);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueTypeLink", "_Entity_25_9438", ["25-9438"]);
+Webr.component.ComboBox.register({name: "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438.IssueAsDescription
+.Properties.issueType", parametersSuffix: "_Entity_25_9438", parameters: ["25-9438"]}, "id_SmartUI.Issues
+.Content.IssueList.issue_Entity_25_9438.IssueAsDescription.Properties.issueTypeLink_Entity_25_9438")
+;
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueStateLink", "_Entity_25_9438", ["25-9438"]);
+Webr.component.ComboBox.register({name: "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438.IssueAsDescription
+.Properties.issueState", parametersSuffix: "_Entity_25_9438", parameters: ["25-9438"]}, "id_SmartUI.Issues
+.Content.IssueList.issue_Entity_25_9438.IssueAsDescription.Properties.issueStateLink_Entity_25_9438"
+);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueAssigneeLink", "_Entity_25_9438", ["25-9438"]);
+Webr.component.ComboBox.register({name: "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438.IssueAsDescription
+.Properties.issueAssignee", parametersSuffix: "_Entity_25_9438", parameters: ["25-9438"]}, "id_SmartUI
+.Issues.Content.IssueList.issue_Entity_25_9438.IssueAsDescription.Properties.issueAssigneeLink_Entity_25_9438"
+);
+Webr.component.ComponentRegistry.get().register("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueSubsystemLink", "_Entity_25_9438", ["25-9438"]);
+Webr.component.ComboBox.register({name: "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438.IssueAsDescription
+.Properties.issueSubsystem", parametersSuffix: "_Entity_25_9438", parameters: ["25-9438"]}, "id_SmartUI
+.Issues.Content.IssueList.issue_Entity_25_9438.IssueAsDescription.Properties.issueSubsystemLink_Entity_25_9438"
+);
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.favouriteLink", "click", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueVoteLink", "click", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issuePriority", "submit", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueType", "submit", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueState", "submit", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueAssignee", "submit", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueSubsystem", "submit", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issuePriority", "load", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueType", "load", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueState", "load", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueAssignee", "load", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties.issueSubsystem", "load", null, "SmartUI.Issues.Content.IssueList.issue_Entity_25_9438
+.IssueAsDescription.Properties");
+charisma.smartui.PropertyManager.getManagerInstance().setPropertySelector(new charisma.smartui.NewCustomSelector
+({resizable: true, loadOptions: function (prefix, issue, property) {
+  Webr.Event.post({handlerUrl: "/charisma/_events?window_id=3", eventName: "IssueList:update", eventSource
+: "SmartUI.Issues.Content.IssueList", eventParameters: {prefix: prefix, issue: issue, property: property
+}, collectFormElements: true, sync: false, preventDoubleSubmit: false, listeners: []});
+}, onSubmit: function (entityToSubmit, issue, property) {
+  Webr.Event.post({handlerUrl: "/charisma/_events?window_id=3", eventName: "IssueList:submit", eventSource
+: "SmartUI.Issues.Content.IssueList", eventParameters: {entityToSubmit: entityToSubmit, issue: issue
+, property: property}, collectFormElements: true, sync: false, preventDoubleSubmit: false, listeners: [
+]});
+}, onChangeFocus: function (focused) {
+  if (focused) {
+    $("#" + charisma.smartui.PropertyManager.getManagerInstance().getPropertySelector().config.selectionDivId
+).parent().parent().addClass("hover");
+  } else {
+    $("#" + charisma.smartui.PropertyManager.getManagerInstance().getPropertySelector().config.selectionDivId
+).parent().parent().removeClass("hover");
+  }
+
+}}));
+charisma.smartui.PropertyManager.getManagerInstance().setPropertyMultiSelector(new charisma.smartui.CustomMultiSelector
+({resizable: false, loadOptions: function (prefix, issue, property) {
+  Webr.Event.post({handlerUrl: "/charisma/_events?window_id=3", eventName: "IssueList:update", eventSource
+: "SmartUI.Issues.Content.IssueList", eventParameters: {prefix: prefix, issue: issue, property: property
+}, collectFormElements: true, sync: false, preventDoubleSubmit: false, listeners: []});
+}, onSubmit: function (entityToSubmit, issue, property) {
+  Webr.Event.post({handlerUrl: "/charisma/_events?window_id=3", eventName: "IssueList:submit", eventSource
+: "SmartUI.Issues.Content.IssueList", eventParameters: {entityToSubmit: entityToSubmit, issue: issue
+, property: property}, collectFormElements: true, sync: false, preventDoubleSubmit: false, listeners: [
+]});
+}, onChangeFocus: function (focused) {
+  if (focused) {
+    $("#" + charisma.smartui.PropertyManager.getManagerInstance().getPropertySelector().config.selectionDivId
+).parent().parent().addClass("hover");
+  } else {
+    $("#" + charisma.smartui.PropertyManager.getManagerInstance().getPropertySelector().config.selectionDivId
+).parent().parent().removeClass("hover");
+  }
+
+}}));
+var issuesList = new charisma.smartui.IssueList({content: "issueContent", selectedItemClass: "selected"
+, mouseOverItemClass: "mouseover", outlineItemClass: "create", toggleEditMode: function (issueId) {
+  Webr.Event.post({handlerUrl: "/charisma/_events?window_id=3", eventName: "Content:toggleIssueEditMode"
+, eventSource: "SmartUI.Issues.Content", eventParameters: {i: issueId}, collectFormElements: true, sync
+: false, preventDoubleSubmit: false, listeners: []});
+}});
+charisma.smartui.App.APP.setIssuesList(issuesList);
+var p = new charisma.smartui.Pager({prevPageHref: "#" + "prevPageHref", nextPageHref: "#" + "nextPageHref"
+});
+Webr.component.ComponentRegistry.get().addClientEventHandler("SmartUI.Issues.Content.bottomToolbar.toggleVisibilityLink"
+, "click", function (event) {
+  $(event.data.component.getElement().parentNode).toggleClass("activ");
+}, "SmartUI.Issues.Content.bottomToolbar");
+Webr.component.ComponentRegistry.get().addClientEventHandler("SmartUI.Issues.Content.bottomToolbar.toggleOpenInNewWindowLink"
+, "click", function (event) {
+  $(event.data.component.getElement().parentNode).toggleClass("activ");
+}, "SmartUI.Issues.Content.bottomToolbar");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.topToolbar.toggleVisibilityLink"
+, "click", null, "SmartUI.Issues.Content");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.topToolbar.toggleOpenInNewWindowLink"
+, "click", null, "SmartUI.Issues.Content");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.topToolbar.issuesPerPageSelect"
+, "change", null, "SmartUI.Issues.Content");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.topToolbar.sortBySelect"
+, "change", null, "SmartUI.Issues.Content");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.topToolbar.detailLevelLink"
+, "click", null, "SmartUI.Issues.Content");
+Webr.component.ComponentRegistry.get().addServerEventHandler("SmartUI.Issues.Content.topToolbar.newIssueLink"
+, "click", null, "SmartUI.Issues.Content");
+
+});
+</script>
+
+

@@ -1,0 +1,10 @@
+<beans>
+  <bean id="dateFieldType" class="jetbrains.charisma.customfields.simple.date.DateFieldType">
+    <property name="editor">
+      <value>DateEditorContainer</value>
+    </property>
+    <property name="name">
+      <value>date</value>
+    </property>
+  </bean>
+</beans>

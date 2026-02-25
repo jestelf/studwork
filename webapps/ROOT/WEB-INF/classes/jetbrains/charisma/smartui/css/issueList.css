@@ -1,0 +1,619 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/customfield.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/customfield.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/customfield.css").url}");
+</#if>
+.issueContainer {
+  padding: 6px 3px 5px 4px;
+  font-family: arial, tahoma, verdana, sans-serif;
+  border: solid 1px transparent;
+  border-bottom: 1px solid #E8EAEC;
+}
+
+.issue-list-panel {
+  
+  
+  
+    /*
+*/
+  
+  
+  
+  
+}
+
+.issue-list-panel .jt-tabpanel-item .jt-panel-title {
+  padding: 2px 8px 3px;
+}
+
+.issue-list-panel .newIssueBut {
+  background: none #B7D2F0!important;
+  font-weight: normal!important;
+}
+
+.issue-list-panel .jt-toolbar {
+  background: transparent none;
+  font-size: 90%;
+  border: 1px solid #d4d5d6;
+  border-top: 0;
+}
+
+.issue-list-panel .editIssueBut {
+  background: transparent none!important;
+  
+}
+
+.issue-list-panel .editIssueBut a {
+  font-weight: normal!important;
+  color: #084b96!important;
+  padding: 0 8px;
+}
+
+.issue-list-panel .settingsBut {
+  padding: 0 15px;
+  background: url("${getClasspathUri("smartui/img/icoSettings.png")}") no-repeat center center;
+}
+
+.issue-list-panel .selectAllBut {
+  border-left: 0;
+  line-height: 10px;
+}
+
+.issue-list-panel .printButton a {
+  padding: 0 15px;
+  background: url("${getClasspathUri("smartui/img/printer.gif")}") no-repeat center center;
+}
+
+.issue-list-cp {
+  
+}
+
+.issue-list-cp .jt-panel-content {
+  padding: 0;
+}
+
+.nameOrDate {
+  width: 15%;
+}
+
+.issueContainer {
+  
+  
+  
+  
+}
+
+.issueContainer table {
+  width: 100%;
+}
+
+.issueContainer td {
+  vertical-align: top;
+}
+
+.issueContainer .date {
+  padding-top: 2px;
+  width: 17%;
+  font-size: 85%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.issueContainer .nameOrDate {
+  font-size: 85%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.popupComponent h2 {
+  font-size: 135%;
+  line-height: 120%;
+  overflow-x: hidden;
+}
+
+.popupComponent.resolved {
+  
+}
+
+.popupComponent.resolved a {
+  text-decoration: none;
+  color: #676E75;
+}
+
+.attachment {
+  padding: 0 9px 7px;
+  background: url("${getClasspathUri("smartui/img/default/arrows-v.png")}") no-repeat 0 -521px;
+}
+
+.attachment:hover {
+  text-decoration: none;
+}
+
+.issues-wrapper {
+  padding-top: 5px;
+  margin-bottom: 1.5em;
+  clear: right;
+}
+
+/*issue states*/
+       .issues-wrapper {
+  
+  
+  
+  
+  
+  
+  
+}
+
+.issues-wrapper .expand {
+  background-color: #fff;
+  border-color: #9ca5a5;
+}
+
+.issues-wrapper .focused {
+  border: 1px dotted #5586bd;
+}
+
+.issues-wrapper .selected, .issues-wrapper .expand.selected {
+  background-color: #E9F3FD;
+  border: 1px dotted #5586bd;
+}
+
+.issues-wrapper .create {
+  background-color: #feffd9;
+  border-color: #e2c822;
+}
+
+.issues-wrapper .issueId {
+  line-height: 1.1em;
+}
+
+.issues-wrapper .issuePreview .issueId {
+  line-height: inherit;
+}
+
+.issues-wrapper .issueContainer.checked {
+  background-color: #E9F3FD;
+  border: 1px solid #9ca5a5;
+}
+
+.resolved {
+  
+  
+  
+}
+
+.resolved .issueId a {
+  background: url("${getClasspathUri("images/line-through.gif")}") repeat-x 0 60%;
+}
+
+.resolved .issueId, .resolved .issueId a, .resolved .issue-summary, .resolved .issue-summary a {
+  color: #676E75;
+}
+
+.resolved .issueId a:hover, .resolved .issue-summary a:hover {
+  color: #8a929b;
+}
+
+/*issue checkbox*/
+.issue-checkbox {
+  width: 20px;
+  line-height: 1.1em;
+  
+}
+
+.issue-checkbox .jt-input {
+  float: left;
+  margin-top: 0.25em;
+  width: 13px;
+  height: 13px;
+  margin-right: 3px;
+}
+
+.nameAndPermission {
+  position: relative;
+}
+
+.reporter {
+  line-height: 1.2em;
+  white-space: normal;
+}
+
+.issue-permission {
+  padding: 0 5px 3px;
+  background: url("${getClasspathUri("smartui/img/default/arrows-v.png")}") no-repeat 0 -356px;
+}
+
+/*issue details: id, summary*/
+.issueId {
+  font-size: 135%;
+  white-space: nowrap;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.description {
+  display: inline;
+}
+
+.description .wiki.text {
+  overflow-x: visible;
+}
+
+.issue-details {
+  table-layout: fixed;
+  
+}
+
+.issue-details .shader {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background: url("${getClasspathUri("smartui/img/bgTableText.png")}") repeat-y 0 0;
+}
+
+.issue-descr {
+  width: 100%;
+}
+
+.issue-info {
+  overflow: hidden;
+  line-height: 1.5em;
+  
+}
+
+.issue-info .wiki.text {
+  overflow-y: hidden;
+  padding-bottom: 0.3em;
+}
+
+.expand {
+  
+}
+
+.expand .issue-details, .expand .closure-wrapper {
+  
+}
+
+.expand .issue-details .light, .expand .issue-details .shader, .expand .closure-wrapper .light, .expand .closure-wrapper .shader {
+  background: url("${getClasspathUri("smartui/img/bgTableText.png")}") repeat-y 0 0;
+}
+
+.selected, .checked, .create.checked {
+  
+}
+
+.selected .issue-details, .selected .closure-wrapper, .checked .issue-details, .checked .closure-wrapper, .create.checked .issue-details, .create.checked .closure-wrapper {
+  
+}
+
+.selected .issue-details .light, .selected .issue-details .shader, .selected .closure-wrapper .light, .selected .closure-wrapper .shader, .checked .issue-details .light, .checked .issue-details .shader, .checked .closure-wrapper .light, .checked .closure-wrapper .shader, .create.checked .issue-details .light, .create.checked .issue-details .shader, .create.checked .closure-wrapper .light, .create.checked .closure-wrapper .shader {
+  background: url("${getClasspathUri("smartui/img/bgTableTextSelected.png")}") repeat-y 0 0;
+}
+
+.create {
+  
+}
+
+.create .issue-details, .create .closure-wrapper {
+  
+}
+
+.create .issue-details .light, .create .issue-details .shader, .create .closure-wrapper .light, .create .closure-wrapper .shader {
+  background: url("${getClasspathUri("smartui/img/bgTableTextCreate.png")}") repeat-y 0 0;
+}
+
+.filter .jt-list-item.selected .light {
+  background: url("${getClasspathUri("smartui/img/hider.png")}") repeat-y -421px 0;
+}
+
+.issue-summary {
+  font-size: 135%;
+  word-wrap:break-word;
+  padding-bottom: 1px;
+  display: inline;
+}
+
+/*------- issue list controls -------*/
+.selectAll {
+  background-color: #feffd9;
+  border: solid 1px #e2c822;
+  text-align: center;
+  padding-bottom: 1px;
+  margin-bottom: 3px;
+}
+
+/*expand/collapse toggler*/
+.collapse-toggler {
+  width: 23px;
+}
+
+.toggleDescrAnchor {
+  display: inline-block;
+  padding: 2px 2px 2px 13px;
+  margin-top: -2px;
+  color: #ffffff;
+  background: url("${getClasspathUri("smartui/img/default/arrows-v.png")}") no-repeat 0 -603px;
+}
+
+.toggleDescrAnchor:hover {
+  text-decoration: none;
+}
+
+.selected .toggleDescrAnchor {
+  background-position: 0 -248px;
+}
+
+.expand .toggleDescrAnchor, .expand.toggleDescrAnchor {
+  background-position: 0 -287px;
+}
+
+/*empty style for jquery selector*/
+/*--------------*/
+/*issue properties*/
+.ico-wrapper {
+  width: 81px;
+  
+}
+
+.ico-wrapper table {
+  width: auto;
+}
+
+.ico {
+  height: 24px;
+  width: 24px;
+  font-size: 85%;
+  color: #e9f3fd;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.votes {
+  position: relative;
+  display: inline-block;
+  
+  
+  
+  
+  
+  
+}
+
+.votes .vote, .votes .unvote {
+  position: absolute;
+  top: -1em;
+  cursor: pointer;
+  width: 10px;
+  height: 9px;
+  border: 1px solid #d4d5d6;
+  font-size: 18px;
+  color: #666;
+  margin-top: 1px;
+  line-height: 7px;
+  padding: 3px;
+  background: url("${getClasspathUri("smartui/img/default/issue-list-ico.gif")}") no-repeat -2px -2px;
+}
+
+.votes .unvote {
+  top: 1em;
+}
+
+.votes .button {
+  font-size: 140%;
+  color: #d4d5d6;
+  padding: 0 0.15em;
+}
+
+.votes .active {
+  color: black;
+}
+
+.votes .you {
+  background: url("${getClasspathUri("smartui/img/default/issue-list-ico.gif")}") no-repeat -2px -98px;
+  border: 1px solid #779236;
+  color: black;
+}
+
+.votes .disabled {
+  display: none;
+}
+
+.voters {
+  
+  font-weight: bold;
+  color: #084b96;
+  background: url("${getClasspathUri("smartui/img/default/issue-list-ico.gif")}") no-repeat 0 0;
+  
+  
+  
+}
+
+.voters .active, .voters .you, .voters .disabled {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-shadow:1px 1px 1px white;
+}
+
+.voters .active:hover {
+  background: url("${getClasspathUri("smartui/img/default/issue-list-ico.gif")}") no-repeat 0 -48px;
+}
+
+.voters .disabled, .voters .disabled:hover {
+  color: #333;
+  background: url("${getClasspathUri("smartui/img/default/issue-list-ico.gif")}") no-repeat 0 0;
+}
+
+.voters .you {
+  color: #1d1d1d;
+  background: url("${getClasspathUri("smartui/img/default/issue-list-ico.gif")}") no-repeat 0 -96px;
+}
+
+.favorites {
+  height: 24px;
+  margin-left: 3px;
+  background: url("${getClasspathUri("smartui/img/default/issue-list-ico.gif")}") no-repeat -30px 3px;
+}
+
+.favorites.active {
+  background: url("${getClasspathUri("smartui/img/default/issue-list-ico.gif")}") no-repeat -30px -45px;
+}
+
+.watchers {
+  margin-left: 3px;
+  padding: 0 0 6px;
+  background: url("${getClasspathUri("smartui/img/default/issue-list-ico.gif")}") no-repeat -60px 3px;
+}
+
+.watchers.active {
+  background-position: -60px -45px;
+}
+
+/*one-line issue presentation modificator*/
+.oneLinePrority {
+  display: none;
+}
+
+.oneLine {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.oneLine .issue-details .shader {
+  display: block;
+}
+
+.oneLine .oneLinePrority {
+  display: block;
+  padding-left: 7px;
+  padding-right: 7px;
+  
+  
+}
+
+.oneLine .oneLinePrority .attribute {
+  width: 17px;
+  padding: 0;
+  border: 1px solid transparent;
+  cursor: text;
+  
+}
+
+.oneLine .oneLinePrority .attribute .attribute-name:hover {
+  border: 0;
+}
+
+.oneLine .oneLinePrority .attribute.Show-stopper {
+  border-color: #cc0000;
+}
+
+.oneLine .expand, .oneLine .selected {
+  
+}
+
+.oneLine .expand .oneLinePrority .attribute, .oneLine .selected .oneLinePrority .attribute {
+  border: 1px solid #9ca5a5;
+}
+
+.oneLine .issueContainer {
+  padding-top: 3px;
+  padding-bottom: 0;
+}
+
+.oneLine .issueContainer.expand {
+  padding-bottom: 9px;
+}
+
+.oneLine .nameOrDate {
+  padding-bottom: 2px;
+}
+
+.oneLine .issueId, .oneLine .issue-summary, .oneLine .issue-checkbox {
+  font-size: 110%;
+}
+
+.oneLine .issueId h2 {
+  margin-left: 5px;
+  color: #084b96;
+}
+
+.oneLine .issue-info {
+  position: relative;
+  line-height: 1.1em;
+}
+
+.oneLine .tagColor {
+  margin-top: 0;
+}
+
+.oneLine .issue-checkbox .jt-input {
+  margin-top: 0.15em;
+}
+
+.oneLine .issue-summary {
+  display: block;
+  word-wrap:normal;
+  white-space: nowrap;
+  padding-bottom: 3px;
+  line-height: 1.1em;
+}
+
+.oneLine .attachment {
+  background-position: 0 -524px;
+}
+
+.oneLine .issue-permission {
+  background-position: 0 -358px;
+}
+
+*:first-child+html .oneLine .issue-info {
+  
+  
+  
+}
+
+*:first-child+html .oneLine .issue-info .issue-info {
+  position: static;
+}
+
+*:first-child+html .oneLine .issue-info .shader {
+  display: none;
+}
+
+*:first-child+html .oneLine .issue-info .issue-summary {
+  display: inline-block;
+}
+
+.oneLine .expand {
+  
+  
+}
+
+.oneLine .expand .issue-summary {
+  word-wrap:break-word;
+  white-space: normal;
+}
+
+.oneLine .expand .issue-details .shader {
+  display: none;
+}
+

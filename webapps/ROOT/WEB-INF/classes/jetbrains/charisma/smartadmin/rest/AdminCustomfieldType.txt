@@ -1,0 +1,31 @@
+h1./admin/customfield/type
+h2. GET /admin/customfield/type
+Get all available custom field types
+{panel}{{GET /rest/admin/customfield/type}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/customfield/type{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/customfield/type/\{typeName\}
+Get custom field type by its name
+{panel}{{GET /rest/admin/customfield/type/*\{typeName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| typeName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/customfield/type/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

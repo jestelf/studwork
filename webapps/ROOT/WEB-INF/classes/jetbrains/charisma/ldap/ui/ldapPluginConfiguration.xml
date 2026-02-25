@@ -1,0 +1,23 @@
+<beans>
+  <bean id="ldapAdminMenuItem" class="jetbrains.charisma.ldap.ui.LdapCharismaMenuItem">
+    <property name="menu">
+      <ref bean="adminMenu"/>
+    </property>
+    <property name="title">
+      <value>LDAP Integration</value>
+    </property>
+    <property name="templateName">
+      <value>LdapAuthenticationSettings</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.charisma.ldap.ui.LdapUserInfo">
+    <property name="templateName">
+      <value>LdapData</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.charisma.ldap.ui.LdapLoginDecorator">
+    <property name="name">
+      <value>Ldap Login</value>
+    </property>
+  </bean>
+</beans>

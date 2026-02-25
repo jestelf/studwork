@@ -1,0 +1,124 @@
+h1./project
+h2. GET /project/byname/\{project\}
+
+{panel}{{GET /rest/project/byname/*\{project\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/project/byname/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /project/all
+
+{panel}{{GET /rest/project/all}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/project/all{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /project/issues/\{project\}
+
+{panel}{{GET /rest/project/issues/*\{project\}*?*\{filter\}*&*\{after\}*&*\{max\}*&*\{updatedAfter\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdForIssues | TODO: Description |
+| filter | string | TODO: Description |
+| after | Integer | TODO: Description |
+| max | Integer | TODO: Description |
+| updatedAfter | Long | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/project/issues/TODO?filter=TODO&after=TODO&max=TODO&updatedAfter=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /project/issues
+
+{panel}{{GET /rest/project/issues?*\{filter\}*&*\{after\}*&*\{max\}*&*\{updatedAfter\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| filter | string | TODO: Description |
+| after | Integer | TODO: Description |
+| max | Integer | TODO: Description |
+| updatedAfter | Long | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/project/issues?filter=TODO&after=TODO&max=TODO&updatedAfter=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /project/priorities
+
+{panel}{{GET /rest/project/priorities}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/project/priorities{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /project/states
+
+{panel}{{GET /rest/project/states}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/project/states{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /project/types
+
+{panel}{{GET /rest/project/types}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/project/types{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /project/resolutions
+
+{panel}{{GET /rest/project/resolutions}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/project/resolutions{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

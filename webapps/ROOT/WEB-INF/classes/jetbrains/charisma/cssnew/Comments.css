@@ -1,0 +1,81 @@
+.comment {
+  font-size: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.comment .comment {
+  margin-bottom: 0.2em;
+}
+
+ul.horizontal-panel {
+  clear: both;
+  padding: 0px;
+  margin-left: 0;
+}
+
+ul.horizontal-panel li {
+  margin: 0;
+}
+
+.comment h6 {
+  float: left;
+  padding: 2px;
+  display: block;
+  color: black;
+}
+
+.comment h6 a {
+  color: black;
+}
+
+.comment p {
+  padding: 5px 0 10px 15px;
+}
+
+.comment .horizontal-panel a.CommentButton {
+  margin-left: 15px;
+  padding: 2px;
+  float: left;
+  display: block;
+}
+
+.comment .horizontal-panel .CommentDate {
+  float: right;
+  font-style: italic;
+  color: #868686;
+  padding-top: 3px;
+  font-size: 95%;
+}
+
+.comment-head {
+  height: 20px;
+  background-color: #f8f7e4;
+  border: 1px solid #e1e1e1;
+  border-bottom: none;
+}
+
+.comment-body {
+  border: 1px solid #e1e1e1;
+}
+
+.comment-new-reply {
+  width: 100%;
+}
+
+.comment-replies {
+  margin-left: 1em;
+}
+
+.comment blockquote {
+  border-left: 1px gray solid;
+  padding-left: 1em;
+}
+
+#issueComments {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+

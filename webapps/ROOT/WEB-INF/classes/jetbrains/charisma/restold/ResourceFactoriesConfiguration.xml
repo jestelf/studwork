@@ -1,0 +1,6 @@
+<beans>
+  <bean id="Issue_ResourceFactoryBean" class="jetbrains.charisma.restold.Issue_ResourceFactory"></bean>
+  <bean id="User_ResourceFactoryBean" class="jetbrains.charisma.restold.User_ResourceFactory"></bean>
+  <bean id="File_ResourceFactoryBean" class="jetbrains.charisma.restold.File_ResourceFactory"></bean>
+  <bean id="Project_ResourceFactoryBean" class="jetbrains.charisma.restold.Project_ResourceFactory"></bean>
+</beans>

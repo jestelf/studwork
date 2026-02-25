@@ -1,0 +1,92 @@
+/*backgroud color*/
+ .x-layout-container {
+  background-color: #ece9e4;
+}
+
+.x-layout-panel-north, .x-layout-panel-south {
+  background-color: #ece9e4;
+}
+
+/*ie6 compatibility point*/
+.x-layout-container .x-layout-panel-center {
+  border-color: #ece9e4;
+}
+
+/*panel background*/
+.x-toolbar {
+  background-color: #b7c8db;
+  border-top: none;
+}
+
+/*panel*/
+.x-layout-panel-hd {
+  background-color: #ece9e4;
+  background-image: none;
+  border: none;
+}
+
+.x-layout-panel-hd-tools {
+  padding-top: 0.5em;
+}
+
+.x-layout-panel-hd-text {
+  color: #656564;
+  font-size: 110%;
+  background: transparent;
+}
+
+/*rebording*/
+.x-layout-nested-layout .x-layout-panel {
+  border: none;
+}
+
+.x-layout-nested-layout .x-layout-panel .x-layout-panel-center {
+  border: 1px solid #9f9f9f;
+}
+
+.x-layout-nested-layout .x-layout-panel-south .x-layout-active-content {
+  border: #9f9f9f 1px solid;
+}
+
+.x-layout-nested-layout .x-layout-panel-south .x-layout-panel-west {
+  border-right: 1px solid #9f9f9f;
+}
+
+.x-layout-nested-layout .x-layout-panel-south .x-layout-panel-center {
+  border-color: #ece9e4;
+  border-left: 1px solid #9f9f9f;
+}
+
+.x-layout-nested-layout .x-layout-panel-south .x-layout-panel-center .x-layout-active-content {
+  border: none;
+}
+
+.x-layout-nested-layout .x-layout-panel-south .x-layout-panel-west .x-layout-active-content {
+  border: none;
+}
+
+.x-layout-nested-layout .x-layout-panel-west .x-layout-active-content {
+  border: 1px solid #bfbfbf;
+}
+
+/*accordion*/
+.x-dock-panel .x-layout-panel-hd {
+  background-image: url("${getClasspathUri("ext-1.1.1/resources/images/jblue/layout/gradient-bg-solid.gif")}");
+  border-bottom: 1px solid #b0bfd3;
+}
+
+.x-dock-panel .x-dock-panel-body-docked, .x-dock-panel .x-dock-panel-body-undocked {
+  border-color: #b0bfd3;
+}
+
+/*selected items*/
+.x-grid-row-selected td, .x-grid-locked .x-grid-row-selected td, .x-grid-cell-selected, .x-tree-node .x-tree-selected a span {
+  background-color: #bea377!important;
+}
+
+.x-dlg .x-dlg-hd {
+  padding: 1px;
+  background-color: #656564;
+  background-image: url("${getClasspathUri("ext-1.1.1/resources/images/jblue/layout/gradient-bg-solid.gif")}");
+}
+

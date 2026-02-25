@@ -1,0 +1,196 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.panel.attachment.Attachment_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Attachment</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.AttachmentThumbnail_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>at</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.FileSize_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>FileSize</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.panel.attachment.Attachment</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.panel.attachment.FileSize_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>FileSize</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.panel.attachment.AttachmentPanel_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AttachmentPanel</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.Attachment_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>a</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.UpdateAttachmentDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ua</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.panel.attachment.AddAttachmentDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AddAttachmentDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.panel.attachment.AddAttachmentDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.panel.attachment.UpdateAttachmentDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>UpdateAttachmentDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.panel.attachment.UpdateAttachmentDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.panel.attachment.AttachmentThumbnail_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AttachmentThumbnail</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.Preview_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>p</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.panel.attachment.AttachmentThumbnail</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.panel.attachment.ImagePreview_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ImagePreview</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.panel.attachment.FlashPreview_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>FlashPreview</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.panel.attachment.ThumbnailPreviewList_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ThumbnailPreviewList</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.Preview_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>p</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.Attachment_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>at</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.panel.attachment.Preview_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Preview</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+</beans>

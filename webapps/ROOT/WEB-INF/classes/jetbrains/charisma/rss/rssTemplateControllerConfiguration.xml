@@ -1,0 +1,5 @@
+<beans>
+  <bean class="jetbrains.charisma.rss.IssueComments_RssTemplateController"></bean>
+  <bean class="jetbrains.charisma.rss.Issues_RssTemplateController"></bean>
+  <bean class="jetbrains.charisma.rss.Comments_RssTemplateController"></bean>
+</beans>

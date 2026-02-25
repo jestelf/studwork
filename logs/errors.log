@@ -1,0 +1,10 @@
+25 фев 2026 14:19:05,162 WARN  [RealmVerifier       ] [-80-2] RP discovery / realm validation disabled; 
+25 фев 2026 14:49:36,950 WARN  [RealmVerifier       ] [-80-1] RP discovery / realm validation disabled; 
+25 фев 2026 14:49:47,516 ERROR [ResponseFactory     ] [/user] REST API is disabled. Contact YouTrack administrator
+25 фев 2026 14:49:59,316 ERROR [ResponseFactory     ] [/user] REST API is disabled. Contact YouTrack administrator
+25 фев 2026 14:49:59,316 ERROR [ResponseFactory     ] [/user] REST API is disabled. Contact YouTrack administrator
+25 фев 2026 14:53:08,315 ERROR [ResponseFactory     ] [rForm] No access to [RegisterUserForm]
+25 фев 2026 14:53:08,390 ERROR [ResponseFactory     ] [rForm] No access to [RegisterUserForm]
+25 фев 2026 15:24:25,785 WARN  [RealmVerifier       ] [-80-1] RP discovery / realm validation disabled; 
+25 фев 2026 15:37:45,473 WARN  [RealmVerifier       ] [-80-1] RP discovery / realm validation disabled; 
+25 фев 2026 15:39:04,030 WARN  [RealmVerifier       ] [-80-1] RP discovery / realm validation disabled; 

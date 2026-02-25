@@ -1,0 +1,69 @@
+h1./admin/project
+h2. GET /admin/project
+Get all accessible projects
+{panel}{{GET /rest/admin/project}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/project/\{project\}
+Get project by its short name
+{panel}{{GET /rest/admin/project/*\{project\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /admin/project/\{projectId\}
+Create new project
+{panel}{{PUT /rest/admin/project/*\{projectId\}*?*\{projectName\}*&*\{startingNumber\}*&*\{projectLeadLogin\}*&*\{description\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| projectId | string | TODO: Description |
+| projectName | string | TODO: Description |
+| startingNumber | Integer | TODO: Description |
+| projectLeadLogin | string | TODO: Description |
+| description | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/admin/project/TODO?projectName=TODO&startingNumber=TODO&projectLeadLogin=TODO&description=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. DELETE /admin/project/\{project\}
+Delete project
+{panel}{{DELETE /rest/admin/project/*\{project\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}DELETE /rest/admin/project/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

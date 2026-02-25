@@ -1,0 +1,87 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.commands.CommandDialog" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.commands.CommandDialog</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/commands/CommandDialog.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.commands.new.ui.NewCommandDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.charisma.main.SmartUIShortCuts</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboBoxComponent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.commands.new.ui.NewCommandBase" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.commands.new.ui.NewCommandBase</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/commands/NewCommandBase.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.HTMLInputElement_extension</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Suggest</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Component</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.commands.new.ui.NewCommandDialog" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.commands.new.ui.NewCommandDialog</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/commands/NewCommandDialog.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.charisma.main.SmartUIShortCuts</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.Dialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.HTMLInputElement_extension</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.charisma.smartui.js.InputWatcher</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Suggest</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.jQuery_extension</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+        <value>jetbrains.charisma.smartui.commands.new.ui.NewCommandBase</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Component</value>
+      </list>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,10 @@
+<beans>
+  <bean class="jetbrains.charisma.refactoring.RefactoringList">
+    <property name="refactorings">
+      <list>
+        <bean class="jetbrains.charisma.teamcity.refactoring.MultipleServersRefactoring"></bean>
+        <bean class="jetbrains.charisma.teamcity.refactoring.FillTimeoutsRefactoring"></bean>
+      </list>
+    </property>
+  </bean>
+</beans>

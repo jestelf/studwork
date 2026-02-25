@@ -1,0 +1,51 @@
+<beans>
+  <bean id="asyncRuleExecutor" class="jetbrains.mps.businessRules.runtime.QuartzSharedAsyncProcessorExecutor"></bean>
+  <bean id="ruleEngine" class="jetbrains.mps.businessRules.runtime.impl.RuleEngineImpl" destroy-method="close">
+    <property name="maxIterations">
+      <value>1000</value>
+    </property>
+    <property name="asyncExecutor">
+      <ref bean="asyncRuleExecutor"/>
+    </property>
+    <property name="ruleSelector">
+      <ref bean="ruleSelector"/>
+    </property>
+  </bean>
+  <bean id="ruleSelector" class="jetbrains.mps.businessRules.runtime.impl.RulesSelectorImpl"></bean>
+  <bean id="addDNQSessionListener" class="jetbrains.mps.businessRules.runtime.AddDNQSessionListenerServiceLocatorListener">
+    <property name="dependees">
+      <list>
+        <value>initModelMetaData</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="quartzSchedulerProperties" class="jetbrains.mps.businessRules.runtime.QuartzSchedulerPropertiesAsBean">
+    <property name="databaseThreadPoolClassName">
+      <value>jetbrains.mps.businessRules.runtime.QuartzSharedAsyncProcessorThreadPool</value>
+    </property>
+  </bean>
+  <bean id="quartzScheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+    <property name="waitForJobsToCompleteOnShutdown">
+      <value>true</value>
+    </property>
+    <property name="taskExecutor">
+      <ref bean="asyncRuleExecutor"/>
+    </property>
+    <property name="autoStartup">
+      <value>false</value>
+    </property>
+    <property name="quartzProperties">
+      <ref bean="quartzSchedulerProperties"/>
+    </property>
+  </bean>
+  <bean id="extensionPoint_ruleSelector_rulePackages" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="ruleSelector"/>
+    <property name="extensionPropertyName" value="rulePackages"/>
+    <property name="extensionType" value="jetbrains.mps.businessRules.runtime.RulePackage"/>
+  </bean>
+  <bean id="extensionPoint_quartzScheduler_triggers" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="quartzScheduler"/>
+    <property name="extensionPropertyName" value="triggers"/>
+    <property name="extensionType" value="org.springframework.scheduling.quartz.CronTriggerBean"/>
+  </bean>
+</beans>

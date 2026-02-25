@@ -1,0 +1,48 @@
+h1./admin/role
+h2. GET /admin/role
+Get all roles
+{panel}{{GET /rest/admin/role}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/role{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/role/\{role\}/permission
+Get role permissions
+{panel}{{GET /rest/admin/role/*\{role\}*/permission}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| role | roleByName | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/role/TODO/permission{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/role/\{role\}
+Get role by its name
+{panel}{{GET /rest/admin/role/*\{role\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| role | roleByName | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/role/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

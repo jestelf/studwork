@@ -1,0 +1,26 @@
+<beans>
+  <bean class="jetbrains.charisma.smartui.panel.attachment.ImageFilePreviewTemplate">
+    <property name="templateName">
+      <value>ImagePreview</value>
+    </property>
+    <property name="type">
+      <bean class="eu.medsea.mimeutil.MimeType">
+        <constructor-arg index="0">
+          <value>image/*</value>
+        </constructor-arg>
+      </bean>
+    </property>
+  </bean>
+  <bean class="jetbrains.charisma.smartui.panel.attachment.FlashFilePreviewTemplate">
+    <property name="templateName">
+      <value>FlashPreview</value>
+    </property>
+    <property name="type">
+      <bean class="eu.medsea.mimeutil.MimeType">
+        <constructor-arg index="0">
+          <value>application/x-shockwave-flash</value>
+        </constructor-arg>
+      </bean>
+    </property>
+  </bean>
+</beans>

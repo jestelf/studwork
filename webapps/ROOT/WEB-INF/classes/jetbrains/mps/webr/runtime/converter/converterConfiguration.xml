@@ -1,0 +1,21 @@
+<beans>
+  <bean id="jetbrains.mps.webr.runtime.converter.BooleanConverter" class="jetbrains.mps.webr.runtime.converter.BooleanConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.Java_lang_BooleanConverter" class="jetbrains.mps.webr.runtime.converter.Java_lang_BooleanConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.CharConverter" class="jetbrains.mps.webr.runtime.converter.CharConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.ShortConverter" class="jetbrains.mps.webr.runtime.converter.ShortConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.IntConverter" class="jetbrains.mps.webr.runtime.converter.IntConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.ByteConverter" class="jetbrains.mps.webr.runtime.converter.ByteConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.LongConverter" class="jetbrains.mps.webr.runtime.converter.LongConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.FloatConverter" class="jetbrains.mps.webr.runtime.converter.FloatConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.DoubleConverter" class="jetbrains.mps.webr.runtime.converter.DoubleConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.Java_lang_ByteConverter" class="jetbrains.mps.webr.runtime.converter.Java_lang_ByteConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.Java_lang_ShortConverter" class="jetbrains.mps.webr.runtime.converter.Java_lang_ShortConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.Java_lang_IntegerConverter" class="jetbrains.mps.webr.runtime.converter.Java_lang_IntegerConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.Java_lang_LongConverter" class="jetbrains.mps.webr.runtime.converter.Java_lang_LongConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.Java_lang_CharacterConverter" class="jetbrains.mps.webr.runtime.converter.Java_lang_CharacterConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.Java_lang_DoubleConverter" class="jetbrains.mps.webr.runtime.converter.Java_lang_DoubleConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.Java_lang_FloatConverter" class="jetbrains.mps.webr.runtime.converter.Java_lang_FloatConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.PersistentClassConverter" class="jetbrains.mps.webr.runtime.converter.PersistentClassConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.Java_lang_StringConverter" class="jetbrains.mps.webr.runtime.converter.Java_lang_StringConverter"></bean>
+  <bean id="jetbrains.mps.webr.runtime.converter.EnumerationConverter" class="jetbrains.mps.webr.runtime.converter.EnumerationConverter"></bean>
+</beans>

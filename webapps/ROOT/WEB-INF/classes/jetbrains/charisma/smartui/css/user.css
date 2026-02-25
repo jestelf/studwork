@@ -1,0 +1,267 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/header.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/header.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/header.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/footer.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/footer.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/footer.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/subcontent.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/subcontent.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/subcontent.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/buttons.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/buttons.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/buttons.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/tags.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/tags.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/tags.css").url}");
+</#if>
+.container {
+  height: auto!important;
+  margin: 0 auto;
+  max-width: 90em;
+  min-height: 100%;
+  min-width: 960px;
+  padding: 0;
+  text-align: left;
+}
+
+.container a {
+  color: #084b96;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.container a.nol {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.container a.nol:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.content {
+  margin: 0 0 0 3.8em;
+  padding: .1em 0 45px 0;
+}
+
+.dark {
+  color: #454545;
+}
+
+.normal {
+  color: #333!important;
+}
+
+.userAvatar {
+  position: relative;
+  display: inline-block;
+  margin: 0 1em 0 0;
+  padding: 0;
+  text-align: center;
+  color: #a6a6a6;
+  font-size: 80%;
+  
+  
+}
+
+.userAvatar .onlineUser, .userAvatar .offlineUser {
+  position: absolute;
+  display: block;
+  right: -10px;
+  line-height: 1.2em;
+  font-size: 70%;
+}
+
+.userAvatar .userGroup {
+  top: 44px;
+  left: 0;
+}
+
+.avatarDlg {
+  width: auto;
+  
+}
+
+.avatarDlg .jt-tools {
+  float: right;
+}
+
+*:first-child+html .avatarDlg {
+  width: 42em;
+}
+
+ul.avatarTab {
+  text-align: left;
+  font-size: medium;
+  font-size: 100%;
+  margin-top: -0.5em;
+}
+
+.avatarTab {
+  
+  
+  
+  
+}
+
+.avatarTab .jt-panel-title {
+  font-size: 120%;
+}
+
+.avatarTab li {
+  line-height: 2em;
+  
+}
+
+.avatarTab li a {
+  display: block;
+  padding-left: 10px;
+}
+
+.avatarTab li.light {
+  padding-left: 2px;
+}
+
+.avatarTab li.active {
+  background-color: #E9F3FD;
+}
+
+.manageNotifications {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 0!important;
+  
+  
+  
+  
+  
+}
+
+.manageNotifications input {
+  background-color: transparent;
+  outline-width: 0;
+}
+
+.manageNotifications th {
+  padding: 0 0 .3em .5em;
+  font-weight: normal;
+  border-bottom: solid 1px #d2d2d2;
+  text-align: center;
+}
+
+.manageNotifications td {
+  padding: .3em 0 .3em .5em;
+  color: #55676f;
+  text-align: center;
+}
+
+.manageNotifications td.comment {
+  padding-left: 3.5em;
+  text-align: left;
+  color: #A6A6A6;
+}
+
+.manageNotifications td.name {
+  color: #55676f;
+  text-align: left;
+}
+
+ul.buttons li a {
+  background-color: #FCFCFC;
+  border-color: #E6E6E6 #666666 #666666 #E6E6E6;
+  border-style: solid;
+  border-width: 1px;
+  color: #084B96;
+  float: left;
+  font-family: tahoma, arial, sans-serif;
+  font-size: 100%;
+  margin: -0.3em 0 0 0.4em;
+  padding: 0.2em 1.6em 0.3em;
+  text-decoration: none;
+}
+
+ul.buttons li a.submitButton {
+  background-color: #084B96;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.grayed-out {
+  background-color: lightgray;
+  color: gray;
+}
+
+.notifications {
+  
+  
+  
+}
+
+.notifications .jt-fieldset-descr {
+  font-size: 100%;
+}
+
+.notifications .combobox {
+  margin-top: -0.2em;
+}
+
+.notifications .label {
+  float: left;
+  margin-right: 5px;
+}
+
+.pswDlg {
+  width: 300px;
+  
+  
+  
+}
+
+.pswDlg .jt-input {
+  width: 225px;
+}
+
+.pswDlg label {
+  min-width: 1em;
+}
+
+.pswDlg .jt-panel-content {
+  padding-left: 25px;
+  padding-right: 0;
+}
+
+.userName {
+  max-width: 250px;
+  overflow-x: hidden;
+}
+
+.jt-panel-title span {
+  font-weight: normal;
+  line-height: 120%;
+}
+

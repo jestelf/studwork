@@ -1,0 +1,7 @@
+<beans>
+  <bean id="jetbrains.charisma.user.profile.User_RootHtmlTemplateController" class="jetbrains.charisma.user.profile.User_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

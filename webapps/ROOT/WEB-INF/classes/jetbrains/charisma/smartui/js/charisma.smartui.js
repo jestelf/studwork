@@ -1,0 +1,2 @@
+var charisma = {};
+charisma.smartui = {};

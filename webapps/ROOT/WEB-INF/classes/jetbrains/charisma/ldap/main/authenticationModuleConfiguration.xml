@@ -1,0 +1,3 @@
+<beans>
+  <bean id="ldapAuthenticationModule" class="jetbrains.charisma.ldap.main.LdapAuthenticationModule"></bean>
+</beans>

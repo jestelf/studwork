@@ -1,0 +1,768 @@
+25.02.2026 14:18:56 org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.1.20.
+25.02.2026 14:18:56 org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+25.02.2026 14:18:56 org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-80
+25.02.2026 14:18:56 org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+25.02.2026 14:18:56 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 444 ms
+25.02.2026 14:18:56 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+25.02.2026 14:18:56 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+25.02.2026 14:18:56 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+25.02.2026 14:18:56 org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-80
+25.02.2026 14:18:56 org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+25.02.2026 14:18:56 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 388 ms
+25.02.2026 14:49:16 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Yoorta\2\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\jeste\.codex\tmp\arg0\codex-arg0ImehJ3;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;C:\Program Files\Oculus\Support\oculus-runtime;D:\vmware\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\libnvvp;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ffmpeg\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\jeste\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;D:\cursor\resources\app\bin;D:\cuda118\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python310\;C:\Users\jeste\AppData\Local\Programs\git-cola\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python312\;D:\git-cola\bin;C:\Users\jeste\AppData\Local\Programs\Microsoft\jdk-21.0.5.11-hotspot\bin;C:\Users\jeste\.cargo\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python311\;C:\Users\jeste\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python313\;C:\Users\jeste\AppData\Local\Microsoft\WindowsApps;C:\Users\jeste\AppData\Local\GitHubDesktop\bin;C:\Users\jeste\.dotnet\tools;C:\Program Files (x86)\dotnet;C:\Users\jeste\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jeste\AppData\Roaming\npm;C:\Users\jeste\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\jeste\AppData\Local\Programs\Ollama;C:\Users\jeste\.dotnet\tools;D:\Steam\steamapps\common\DSX\Main_v3_Beta\;D:\Steam\steamapps\common\DSX\Main_v3_Beta\Console;C:\Users\jeste\.dotnet\tools;D:\cuda118\bin;c:\Users\jeste\.vscode\extensions\openai.chatgpt-0.4.76-win32-x64\bin\windows-x86_64
+25.02.2026 14:49:16 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-80
+25.02.2026 14:49:16 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 167 ms
+25.02.2026 14:49:16 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+25.02.2026 14:49:16 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+25.02.2026 14:49:16 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+25.02.2026 14:49:16 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-80
+25.02.2026 14:49:16 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+25.02.2026 14:49:16 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/0  config=null
+25.02.2026 14:49:16 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 347 ms
+25.02.2026 15:23:51 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-80
+25.02.2026 15:23:52 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [threadJobProcessorPoolSpawner] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EntityStoreSharedAsyncProcessor0] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EntityStoreSharedAsyncProcessor1] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [TextIndexManager] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor0] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor1] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor2] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor3] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor4] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor5] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor6] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor7] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor8] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor9] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor10] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor11] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor12] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor13] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor14] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor15] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EventsMultiplexerJobProcessor] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+SEVERE: A web application appears to have started a TimerThread named [Timer-0] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [jetbrains.charisma.main.SessionManagerC:\Users\jeste/teamsysdata] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.runtime.Coordinator$1@1cbbcb3]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@d1aa70]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10cbe41]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10cbe41]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.ClassFactory$1@1259ee0]) and a value of type [java.util.WeakHashMap] (value [{class javax.xml.bind.annotation.W3CDomHandler=java.lang.ref.WeakReference@ca9651}]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.runtime.Coordinator$1@1cbbcb3]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@52ded2]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:23:52 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10cbe41]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:23:53 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-80
+25.02.2026 15:24:08 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Yoorta\2\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\jeste\.codex\tmp\arg0\codex-arg0ImehJ3;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;C:\Program Files\Oculus\Support\oculus-runtime;D:\vmware\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\libnvvp;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ffmpeg\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\jeste\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;D:\cursor\resources\app\bin;D:\cuda118\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python310\;C:\Users\jeste\AppData\Local\Programs\git-cola\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python312\;D:\git-cola\bin;C:\Users\jeste\AppData\Local\Programs\Microsoft\jdk-21.0.5.11-hotspot\bin;C:\Users\jeste\.cargo\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python311\;C:\Users\jeste\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python313\;C:\Users\jeste\AppData\Local\Microsoft\WindowsApps;C:\Users\jeste\AppData\Local\GitHubDesktop\bin;C:\Users\jeste\.dotnet\tools;C:\Program Files (x86)\dotnet;C:\Users\jeste\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jeste\AppData\Roaming\npm;C:\Users\jeste\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\jeste\AppData\Local\Programs\Ollama;C:\Users\jeste\.dotnet\tools;D:\Steam\steamapps\common\DSX\Main_v3_Beta\;D:\Steam\steamapps\common\DSX\Main_v3_Beta\Console;C:\Users\jeste\.dotnet\tools;D:\cuda118\bin;c:\Users\jeste\.vscode\extensions\openai.chatgpt-0.4.76-win32-x64\bin\windows-x86_64
+25.02.2026 15:24:08 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-80
+25.02.2026 15:24:08 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 146 ms
+25.02.2026 15:24:08 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+25.02.2026 15:24:08 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+25.02.2026 15:24:08 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+25.02.2026 15:24:09 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-80
+25.02.2026 15:24:09 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+25.02.2026 15:24:09 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/16  config=null
+25.02.2026 15:24:09 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 333 ms
+25.02.2026 15:26:32 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-80
+25.02.2026 15:26:33 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [threadJobProcessorPoolSpawner] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EntityStoreSharedAsyncProcessor0] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EntityStoreSharedAsyncProcessor1] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [TextIndexManager] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor0] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor1] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor2] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor3] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor4] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor5] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor6] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor7] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor8] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor9] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor10] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor11] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor12] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor13] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor14] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor15] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EventsMultiplexerJobProcessor] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+SEVERE: A web application appears to have started a TimerThread named [Timer-0] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [jetbrains.charisma.main.SessionManagerC:\Users\jeste/teamsysdata] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.ClassFactory$1@d00c99]) and a value of type [java.util.WeakHashMap] (value [{class javax.xml.bind.annotation.W3CDomHandler=java.lang.ref.WeakReference@1b93f89}]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.runtime.Coordinator$1@fa55e6]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@11d9371]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@bb0f79]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.runtime.Coordinator$1@fa55e6]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@15d9805]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:26:33 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@bb0f79]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:26:34 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-80
+25.02.2026 15:26:42 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Yoorta\2\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\jeste\.codex\tmp\arg0\codex-arg0ImehJ3;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;C:\Program Files\Oculus\Support\oculus-runtime;D:\vmware\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\libnvvp;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ffmpeg\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\jeste\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;D:\cursor\resources\app\bin;D:\cuda118\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python310\;C:\Users\jeste\AppData\Local\Programs\git-cola\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python312\;D:\git-cola\bin;C:\Users\jeste\AppData\Local\Programs\Microsoft\jdk-21.0.5.11-hotspot\bin;C:\Users\jeste\.cargo\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python311\;C:\Users\jeste\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python313\;C:\Users\jeste\AppData\Local\Microsoft\WindowsApps;C:\Users\jeste\AppData\Local\GitHubDesktop\bin;C:\Users\jeste\.dotnet\tools;C:\Program Files (x86)\dotnet;C:\Users\jeste\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jeste\AppData\Roaming\npm;C:\Users\jeste\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\jeste\AppData\Local\Programs\Ollama;C:\Users\jeste\.dotnet\tools;D:\Steam\steamapps\common\DSX\Main_v3_Beta\;D:\Steam\steamapps\common\DSX\Main_v3_Beta\Console;C:\Users\jeste\.dotnet\tools;D:\cuda118\bin;c:\Users\jeste\.vscode\extensions\openai.chatgpt-0.4.76-win32-x64\bin\windows-x86_64
+25.02.2026 15:26:42 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-80
+25.02.2026 15:26:42 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 145 ms
+25.02.2026 15:26:42 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+25.02.2026 15:26:42 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+25.02.2026 15:26:42 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+25.02.2026 15:26:43 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-80
+25.02.2026 15:26:43 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+25.02.2026 15:26:43 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/15  config=null
+25.02.2026 15:26:43 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 344 ms
+25.02.2026 15:38:06 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-80
+25.02.2026 15:38:07 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [threadJobProcessorPoolSpawner] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EntityStoreSharedAsyncProcessor0] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EntityStoreSharedAsyncProcessor1] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [TextIndexManager] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor0] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor1] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor2] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor3] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor4] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor5] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor6] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor7] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor8] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor9] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor10] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor11] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor12] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor13] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor14] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor15] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EventsMultiplexerJobProcessor] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.runtime.Coordinator$1@1229fdf]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@2e1730]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.ClassFactory$1@1f489d9]) and a value of type [java.util.WeakHashMap] (value [{class javax.xml.bind.annotation.W3CDomHandler=java.lang.ref.WeakReference@1ef252a}]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:38:07 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@1711479]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:38:08 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-80
+25.02.2026 15:38:16 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Yoorta\2\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\jeste\.codex\tmp\arg0\codex-arg0ImehJ3;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;C:\Program Files\Oculus\Support\oculus-runtime;D:\vmware\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\libnvvp;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ffmpeg\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\jeste\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;D:\cursor\resources\app\bin;D:\cuda118\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python310\;C:\Users\jeste\AppData\Local\Programs\git-cola\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python312\;D:\git-cola\bin;C:\Users\jeste\AppData\Local\Programs\Microsoft\jdk-21.0.5.11-hotspot\bin;C:\Users\jeste\.cargo\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python311\;C:\Users\jeste\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python313\;C:\Users\jeste\AppData\Local\Microsoft\WindowsApps;C:\Users\jeste\AppData\Local\GitHubDesktop\bin;C:\Users\jeste\.dotnet\tools;C:\Program Files (x86)\dotnet;C:\Users\jeste\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jeste\AppData\Roaming\npm;C:\Users\jeste\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\jeste\AppData\Local\Programs\Ollama;C:\Users\jeste\.dotnet\tools;D:\Steam\steamapps\common\DSX\Main_v3_Beta\;D:\Steam\steamapps\common\DSX\Main_v3_Beta\Console;C:\Users\jeste\.dotnet\tools;D:\cuda118\bin;c:\Users\jeste\.vscode\extensions\openai.chatgpt-0.4.76-win32-x64\bin\windows-x86_64
+25.02.2026 15:38:17 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-80
+25.02.2026 15:38:17 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 155 ms
+25.02.2026 15:38:17 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+25.02.2026 15:38:17 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+25.02.2026 15:38:17 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+25.02.2026 15:38:17 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-80
+25.02.2026 15:38:17 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+25.02.2026 15:38:17 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/16  config=null
+25.02.2026 15:38:17 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 366 ms
+25.02.2026 15:39:22 org.apache.tomcat.util.net.JIoEndpoint createWorkerThread
+INFO: Maximum number of threads (200) created for connector with address null and port 80
+25.02.2026 15:40:35 org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-80
+25.02.2026 15:40:36 org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [threadJobProcessorPoolSpawner] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EntityStoreSharedAsyncProcessor0] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EntityStoreSharedAsyncProcessor1] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [TextIndexManager] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor0] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor1] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor2] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor3] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor4] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor5] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor6] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor7] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor8] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor9] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor10] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor11] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor12] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor13] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor14] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [QuartzJobProcessor15] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [EventsMultiplexerJobProcessor] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesStopTimerThread
+SEVERE: A web application appears to have started a TimerThread named [Timer-0] via the java.util.Timer API but has failed to stop it. To prevent a memory leak, the timer (and hence the associated thread) has been forcibly cancelled. 
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+SEVERE: A web application appears to have started a thread named [jetbrains.charisma.main.SessionManagerC:\Users\jeste/teamsysdata] but has failed to stop it. This is very likely to create a memory leak.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.runtime.Coordinator$1@23e73f]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@122f1ca]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.ClassFactory$1@1300768]) and a value of type [java.util.WeakHashMap] (value [{class javax.xml.bind.annotation.W3CDomHandler=java.lang.ref.WeakReference@fcbdc5}]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.runtime.Coordinator$1@23e73f]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@c49a8e]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.runtime.Coordinator$1@23e73f]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@17ef37d]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.runtime.Coordinator$1@23e73f]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@1a3c8a0]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [com.sun.xml.bind.v2.runtime.Coordinator$1@23e73f]) and a value of type [java.lang.Object[]] (value [[Ljava.lang.Object;@1c8a104]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:36 org.apache.catalina.loader.WebappClassLoader clearThreadLocalMap
+SEVERE: A web application created a ThreadLocal with key of type [null] (value [jetbrains.mps.baseLanguage.dates.runtime.DateTimeOperations$1@10ed51f]) and a value of type [org.joda.time.tz.CachedDateTimeZone] (value [Europe/Moscow]) but failed to remove it when the web application was stopped. To prevent a memory leak, the ThreadLocal has been forcibly removed.
+25.02.2026 15:40:37 org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-80
+25.02.2026 15:40:44 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: E:\Yoorta\2\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\jeste\.codex\tmp\arg0\codex-arg0ImehJ3;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\libnvvp;C:\Program Files\Oculus\Support\oculus-runtime;D:\vmware\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\libnvvp;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ffmpeg\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\jeste\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;D:\cursor\resources\app\bin;D:\cuda118\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python310\;C:\Users\jeste\AppData\Local\Programs\git-cola\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python312\;D:\git-cola\bin;C:\Users\jeste\AppData\Local\Programs\Microsoft\jdk-21.0.5.11-hotspot\bin;C:\Users\jeste\.cargo\bin;C:\Users\jeste\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python311\;C:\Users\jeste\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\jeste\AppData\Local\Programs\Python\Python313\;C:\Users\jeste\AppData\Local\Microsoft\WindowsApps;C:\Users\jeste\AppData\Local\GitHubDesktop\bin;C:\Users\jeste\.dotnet\tools;C:\Program Files (x86)\dotnet;C:\Users\jeste\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jeste\AppData\Roaming\npm;C:\Users\jeste\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\jeste\AppData\Local\Programs\Ollama;C:\Users\jeste\.dotnet\tools;D:\Steam\steamapps\common\DSX\Main_v3_Beta\;D:\Steam\steamapps\common\DSX\Main_v3_Beta\Console;C:\Users\jeste\.dotnet\tools;D:\cuda118\bin;c:\Users\jeste\.vscode\extensions\openai.chatgpt-0.4.76-win32-x64\bin\windows-x86_64
+25.02.2026 15:40:44 org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-80
+25.02.2026 15:40:44 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 147 ms
+25.02.2026 15:40:44 org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+25.02.2026 15:40:44 org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.26
+25.02.2026 15:40:44 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+25.02.2026 15:40:44 org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-80
+25.02.2026 15:40:44 org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+25.02.2026 15:40:44 org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/15  config=null
+25.02.2026 15:40:44 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 351 ms

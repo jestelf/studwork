@@ -1,0 +1,38 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.password.RestorePasswordLetter_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>RestorePasswordLetter</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.password.ChangePassword_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ChangePassword</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.user.password.ChangePassword</value>
+      </list>
+    </property>
+  </bean>
+</beans>

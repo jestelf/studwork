@@ -1,0 +1,149 @@
+     .jt-fieldset-wrapper {
+  margin: 1em 0 1em;
+}
+
+.jt-fieldset-title {
+  color: #898a8a;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+.jt-fieldset {
+  padding: 0;
+  font-size: 100%;
+  clear: both;
+  background-color: #f9f9fa;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #d4d5d6;
+}
+
+.jt-fieldset-transparent {
+  background: transparent none;
+  border-color: transparent;
+}
+
+.jt-fieldset-legend {
+  font-weight: bold;
+  color: #084B96;
+  padding: 0 5px;
+  background: none;
+}
+
+.jt-fieldset-content {
+  padding: 5px;
+}
+
+.jt-fieldset-pair {
+  padding: 1px 3px;
+  margin: 5px 0;
+}
+
+.jt-fieldset-descr {
+  color: gray;
+  font-size: 85%;
+  padding-top: 0.1em;
+  padding-left: 12.75em;
+  padding-right: 0.4em;
+}
+
+.jt-fs-pair-top .jt-fieldset-descr {
+  padding: 0;
+}
+
+.jt-fs-pair-top {
+  text-align: left;
+}
+
+.jt-fieldset label, .jt-fieldset-pair label {
+  font-weight: normal;
+  margin: 0.2em 0.5em 0 0;
+  padding-right: 3px;
+  float: left;
+  min-width: 10em;
+  text-align: right;
+}
+
+.jt-fieldset-pair.jt-fs-pair-top label {
+  float: none;
+  text-align: left;
+  min-width: 27em;
+  display: block;
+  font-weight: bold;
+  color: #777;
+}
+
+.jt-fieldset-pair.jt-fs-pair-right {
+  text-align: left;
+  
+}
+
+.jt-fieldset-pair.jt-fs-pair-right .jt-fieldset-descr {
+  padding-left: 19px;
+}
+
+.jt-fieldset-pair.jt-fs-pair-right label {
+  text-align: left;
+  float: none;
+  font-weight: normal;
+  color: #000;
+}
+
+.jt-fieldset-pair.jt-fs-pair-left {
+  
+}
+
+.jt-fieldset-pair.jt-fs-pair-left label {
+  font-weight: normal;
+  color: #000;
+}
+
+.jt-fieldset-required label {
+  background: url("${getClasspathUri("images/red-asterisk.gif")}") no-repeat right 2px;
+}
+
+.jt-fs-pair-top.jt-fieldset-required label {
+  background-position: left 4px;
+  padding-left: 5px;
+  margin-left: -4px;
+}
+
+.jt-fieldset input, .jt-fieldset-pair input {
+  float: none;
+  width: 190px;
+}
+
+.jt-fieldset input[type=checkbox], .jt-fieldset-pair input[type=checkbox] {
+  width: 13px;
+  height: 13px;
+  margin-top: .2em;
+}
+
+.jt-fieldset.jt-fs-pair-right input[type=checkbox], .jt-fieldset-pair.jt-fs-pair-right input[type=checkbox] {
+  margin-right: 5px;
+  float: left;
+}
+
+.jt-fieldset input[type=file], .jt-fieldset-pair [type=file] {
+  width: auto;
+}
+
+.jt-fieldset select, .jt-fieldset-pair select {
+  width: 190px;
+}
+
+.jt-fieldset textarea, .jt-fieldset-pair textarea {
+  float: none;
+  overflow-x: auto;
+  height: 10em;
+  width: 190px;
+}
+
+.jt-fieldset-pair.jt-fs-pair-top textarea {
+  width: 350px;
+}
+
+.jt-fieldset .combobox .comboboxList, .jt-fieldset-pair .combobox .comboboxList {
+  max-height: 15em;
+}
+

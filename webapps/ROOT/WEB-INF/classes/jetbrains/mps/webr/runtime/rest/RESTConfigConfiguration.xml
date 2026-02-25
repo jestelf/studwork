@@ -1,0 +1,8 @@
+<beans>
+  <bean id="RESTFactoryContainerBean" class="jetbrains.mps.webr.runtime.rest.RESTFactoryContainer"></bean>
+  <bean id="extensionPoint_RESTFactoryContainerBean_factories" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="RESTFactoryContainerBean"/>
+    <property name="extensionPropertyName" value="factories"/>
+    <property name="extensionType" value="jetbrains.mps.webr.runtime.rest.ResourceFactory"/>
+  </bean>
+</beans>

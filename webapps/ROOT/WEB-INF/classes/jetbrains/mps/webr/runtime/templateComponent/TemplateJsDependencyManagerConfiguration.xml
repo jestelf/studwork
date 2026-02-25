@@ -1,0 +1,8 @@
+<beans>
+  <bean id="templateJsDependencyManager" class="jetbrains.mps.webr.runtime.templateComponent.TemplateJsDependencyManager"></bean>
+  <bean id="extensionPoint_templateJsDependencyManager_templateDependencies" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="templateJsDependencyManager"/>
+    <property name="extensionPropertyName" value="templateDependencies"/>
+    <property name="extensionType" value="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency"/>
+  </bean>
+</beans>

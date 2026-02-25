@@ -1,0 +1,790 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.Issue_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Issue</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.LinkPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>LinkPanel</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.TagsPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>TagsPanel</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.AttachmentsPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>AttachmentsPanel</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.ColoredProperty_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ColoredProperty</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Property_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Property</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.comment_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>comment</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.footer_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>footer</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.TestMessage_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>TestMessage</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.IssueComment_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueComment</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Title_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Title</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.comment_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>comment</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Issue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Issue</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.reason_footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>reason_footer</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.Activity_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Activity</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Title_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Title</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.IssueChange_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>IssueChange</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Issue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Issue</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.reason_footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>reason_footer</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.UpdatedIssue_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>UpdatedIssue</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Title_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Title</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.IssueChange_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>IssueChange</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Issue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Issue</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.reason_footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>reason_footer</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.NewIssue_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>NewIssue</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Issue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Issue</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.reason_footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>reason_footer</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.IssueVote_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueVote</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Title_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Title</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Issue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Issue</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.reason_footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>reason_footer</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.ImportStatus_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ImportStatus</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.errors.ExceptionDump_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ExceptionDump</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.NewIssueJabber_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>NewIssueJabber</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.ActivityJabber_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ActivityJabber</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.IssueCommentJabber_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueCommentJabber</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.UpdatedIssueJabber_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>UpdatedIssueJabber</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.BackupStatus_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>BackupStatus</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.errors.ExceptionDump_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ExceptionDump</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.ResolveIssue_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ResolveIssue</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Title_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Title</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.IssueChange_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>IssueChange</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Issue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Issue</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.reason_footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>reason_footer</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.ResolveIssueJabber_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ResolveIssueJabber</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.FieldChaged_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>FieldChaged</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.IssueCommentReply_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueCommentReply</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Title_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Title</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.comment_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>comment</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Issue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Issue</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.reason_footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>reason_footer</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.IssueCommentReplyJabber_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueCommentReplyJabber</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.IssueVoteJabber_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueVoteJabber</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.reason_footer_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>reason_footer</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.AssignIssue_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AssignIssue</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Title_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Title</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.IssueChange_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>IssueChange</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Issue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Issue</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.reason_footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>reason_footer</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.AssignIssueJabber_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AssignIssueJabber</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.IssueNotice_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueNotice</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Title_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Title</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Issue_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Issue</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.reason_footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>reason_footer</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>footer</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.NoticeIssueJabber_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>NoticeIssueJabber</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.IssueChange_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueChange</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.LinkPanel_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>LinkPanel</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.notificationTemplates.Links_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Links</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.Links_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Links</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.TagsPanel_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>TagsPanel</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.AttachmentsPanel_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AttachmentsPanel</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.FileSize_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>FileSize</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.Property_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Property</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.Title_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Title</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.notificationTemplates.ColoredProperty_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ColoredProperty</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+</beans>

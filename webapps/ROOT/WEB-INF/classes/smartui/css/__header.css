@@ -1,0 +1,71 @@
+.header {
+    margin: .7em 0 0 0;
+    padding: 0;
+}
+.header a {
+    margin: 0 0 0 .4em;
+}
+
+.header ul.account {
+    margin: 0 8px 0 0;
+    padding: 0 0 .1em 0;
+}
+.header ul.account.guest {
+    margin-right: 14px;
+}
+.header ul.account > li {
+    margin: 10px -1px 0 0;
+    padding: 0;
+    float: right;
+    font-size: 90%;
+    position: relative;
+    z-index: 5;
+    list-style: none;
+    background: url( '../img/bgActions.gif' ) no-repeat 0 45%;
+}
+.header ul.account.guest > li {
+    margin-top: .5em;
+    background: none;
+}
+.header ul.account li.user {
+    background: none;
+}
+.header ul.account li.login {
+    margin-left: .2em;
+    background: none;
+}
+.header ul.account li.activ {
+    background-color:  #d7d7d7;
+}
+.header ul.account li.info.activ {
+    background-color:  #f7e08b;
+}
+.header ul.account.guest li.login {
+    margin: .4em .5em 0 .3em;
+    padding-right: .2em;
+    background-color: #fffbe2;
+    border: solid 1px #FFE222;
+}
+.header ul.account > li > a {
+    margin: 0 .6em 0 0;
+    padding: 0 1em 0 .7em;
+    display: block;
+    background:  url( '../img/arrowDownBlue.gif' ) no-repeat right .6em;
+}
+.header ul.account.guest > li > a {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    background: none;
+}
+.header ul.account li.info > a {
+    padding-right: .8em;
+    background: none;
+}
+.header ul.account li.info.activ > a {
+    color: #333;
+    background: url( '../img/icoCloseHint.gif' ) no-repeat right .4em;
+}
+.header ul.account li.login > a {
+    padding-left: .5em;
+}

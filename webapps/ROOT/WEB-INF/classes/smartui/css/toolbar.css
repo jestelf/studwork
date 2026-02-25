@@ -1,0 +1,86 @@
+.jt-toolbar {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    max-width: 100%;
+    width: auto;
+    background: #dee0e1 url( '../img/bgToolbar.gif' ) repeat-x 0 0;
+    border: solid 1px #d4d5d6;
+}
+table.jt-toolbar-content {
+    margin: -1px 0;
+    width: 100%;
+}
+td.jt-toolbar-item {
+    padding: 0;
+    text-align: center;
+    border: solid 1px transparent;
+    border-left: solid 1px #d4d5d6;
+}
+td.jt-toolbar-item:hover {
+    border: solid 1px #898989;
+}
+.jt-toolbar-item.jt-toolbar-active {
+    position: relative;
+    background-color: #898989;
+    border: solid 1px #898989;
+}
+.jt-toolbar-item div, .jt-toolbar-item a {
+    margin: 0 0 0 0;
+    padding: .3em .6em .44em .6em;
+    font-size: 100%;
+    font-family: arial, tahoma, sans-serif;
+    line-height: 1em;
+    color: #084b96;
+    width: auto;
+}
+.jt-toolbar-item.jt-toolbar-active div,.jt-toolbar-item.jt-toolbar-active a {
+    background: none;
+}
+
+.jt-toolbar-item .jt-button {
+    cursor: pointer;
+    display: block;
+}
+.jt-toolbar-item .jt-menu-button {
+    cursor: pointer;
+}
+.jt-toolbar-item.jt-toolbar-active .jt-menu-button {
+    color: #fff;
+}
+td.jt-toolbar-item.jt-separator {
+    padding: 0;
+    background: #fff none;
+    border: none;
+    border-left: solid 1px #d4d5d6;
+    /*border-right: solid 1px #d4d5d6;*/
+}
+.jt-toolbar-item.jt-toolbar-active ul.jt-menu {
+    display: block;
+}
+ul.jt-menu {
+    margin: 0 0 0 -1px;
+    padding: 0;
+    *left: 0;
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    border: solid 1px #898989;
+}
+ul.jt-menu li {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}
+ul.jt-menu li a {
+    margin: 0;
+    padding: .3em;
+    color: #333;
+    white-space: nowrap;
+    display: block;
+    text-decoration: none;
+}
+ul.jt-menu li a:hover {
+    background-color: #f0f2f3;
+}

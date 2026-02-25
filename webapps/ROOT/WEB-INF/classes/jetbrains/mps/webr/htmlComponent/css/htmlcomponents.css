@@ -1,0 +1,133 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/reset.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/reset.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/reset.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/colors.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/colors.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/colors.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/borderlayout.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/borderlayout.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/borderlayout.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/button.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/button.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/button.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/input.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/input.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/input.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/chekbox.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/chekbox.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/chekbox.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/combo.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/combo.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/combo.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/dialog.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/dialog.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/dialog.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/forms.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/forms.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/forms.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/panel.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/panel.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/panel.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/suggest.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/suggest.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/suggest.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/tabpanel.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/tabpanel.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/tabpanel.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/toolbar.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/toolbar.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/toolbar.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/underline.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/underline.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/underline.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/calendar.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/calendar.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/calendar.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/richTextArea.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/richTextArea.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/richTextArea.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/menu.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/menu.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/menu.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/popup.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/popup.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/popup.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/tooltip.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/tooltip.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/tooltip.css").url}");
+</#if>

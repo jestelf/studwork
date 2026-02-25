@@ -1,0 +1,73 @@
+ .jt-dialog {
+  display: none;
+  position: fixed;
+  border: 5px solid #676e75;
+  border-top: 0;
+  background-color: #fff;
+  z-index: 100;
+  left: 40%;
+  top: 33.33%;
+  left: 0;
+  top: 0;
+}
+
+.jt-dialog .jt-dialod-focus {
+  display: block;
+  width: 0!important;
+  height: 0!important;
+  text-indent: -5000em;
+}
+
+.jt-dialog-close {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  text-decoration: none;
+  color: #676e75;
+  background: transparent url("${getClasspathUri("images/closeCommandLine.gif")}") no-repeat right 0;
+}
+
+.jt-dialog .jt-dialog-close:hover {
+  background: url("${getClasspathUri("images/closeCommandLineHover.gif")}") no-repeat right 0;
+  text-decoration: none;
+}
+
+.jt-dialog > .jt-panel-title {
+  border: none;
+  background: #676e75;
+  color: white;
+  font-size: 120%;
+  margin: 0 0 1em;
+  padding: 5px .5em 0.4em;
+  text-align: left;
+  cursor: move;
+}
+
+.jt-nonselectable {
+  user-select:none;
+  -moz-user-select:none;
+  -khtm-user-select:none;
+}
+
+.jt-dialog-mask {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -moz-opacity:0.5;
+  opacity:0.5;
+  filter:alpha( opacity = 50 );
+  background-color: #ccc;
+}
+
+.jt-dialog-animation {
+  border: 2px solid gray;
+  position: absolute;
+  display: none;
+  z-index: 11;
+}
+

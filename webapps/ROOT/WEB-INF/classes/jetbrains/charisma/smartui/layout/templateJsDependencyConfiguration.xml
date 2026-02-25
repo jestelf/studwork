@@ -1,0 +1,37 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.layout.SmartUI_LayoutComponent</value>
+    </property>
+    <property name="name">
+      <value>SmartUI</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.layouts.BrowserChecker_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>BrowserChecker</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.workspace.Footer_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>f</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>Webr.HeartBeat</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+</beans>

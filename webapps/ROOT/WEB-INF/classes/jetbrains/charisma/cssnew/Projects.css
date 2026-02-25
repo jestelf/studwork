@@ -1,0 +1,39 @@
+.assigneeGroupsTable {
+  margin-bottom: 2em;
+}
+
+.assigneeUsersTable {
+  margin-bottom: 2em;
+}
+
+.projectSubsystemsTable {
+  margin-bottom: 2em;
+}
+
+.projectVersionsTable {
+  margin-bottom: 2em;
+}
+
+.InnerContent {
+  padding: 10px;
+}
+
+.BlockItem {
+  display: block;
+  width: 395px;
+  float: left!important;
+  overflow-x: auto!important;
+  margin-right: 15px;
+  padding: 10px;
+}
+
+.BlockItem .x-grid {
+  border-top: 1px solid #a3b2bd;
+}
+
+.x-tabs-body .x-toolbar, .x-tabs-body .x-toolbar table {
+  background-image: none;
+  background-color: transparent;
+  border-bottom: none;
+}
+

@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: trebuchet ms, verdana, tahoma, arial, sans-serif;
+  text-align: left;
+  color: #333;
+  font-size: 82%;
+  line-height: 1.5em;
+  background-color: #fff;
+}
+
+html {
+  border: none;
+  padding: 0;
+}
+
+#container {
+  padding: 5px;
+  margin: 0;
+  clear: both;
+}
+
+.clr {
+  clear: both;
+}
+
+img {
+  border: none;
+}
+
+h1 {
+  font-size: 160%;
+}
+
+h2 {
+  font-size: 140%;
+}
+
+h3 {
+  font-size: 130%;
+}
+
+h4 {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 105%;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+div.toolip {
+  padding: 5px;
+  margin: 5px;
+  background-color: #ff0000;
+}
+
+blockquote {
+  border-left: 1px solid gray;
+  padding-left: 1em;
+}
+
+.block100 {
+  display: block;
+  width: 100%;
+}
+
+.block95 {
+  display: block;
+  width: 95%!important;
+  float: none!important;
+}
+
+.block80 {
+  display: block;
+  width: 80%;
+}
+
+.block45 {
+  display: block;
+  width: 45%;
+}
+
+.block30 {
+  display: block;
+  width: 30%;
+}
+
+.block15 {
+  display: block;
+  width: 15%;
+}
+

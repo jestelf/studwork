@@ -1,0 +1,10 @@
+<beans>
+  <bean class="jetbrains.charisma.customfields.plugin.CustomFieldTypeEditor">
+    <property name="name">
+      <value>Enumerations</value>
+    </property>
+    <property name="template">
+      <value>CustomEnumerationsList</value>
+    </property>
+  </bean>
+</beans>

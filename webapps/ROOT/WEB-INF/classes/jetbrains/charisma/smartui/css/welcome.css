@@ -1,0 +1,49 @@
+.demo-dialog {
+  background: black;
+  
+  
+}
+
+.demo-dialog .jt-panel-title {
+  margin-bottom: 0;
+}
+
+.demo-dialog .jt-panel-content {
+  padding: 0;
+}
+
+.welcome-screen {
+  
+  
+  
+  
+  
+}
+
+.welcome-screen .jt-tabpanel-body {
+  margin-top: 20px;
+}
+
+.welcome-screen .jt-list-container {
+  width: auto;
+}
+
+.welcome-screen .watchFolder {
+  font-size: 110%;
+  width: auto;
+  
+}
+
+.welcome-screen .watchFolder .light {
+  color: #9EA1A5;
+}
+
+.welcome-screen .miniaturizer {
+  font-size: 85%;
+  color: #666;
+}
+
+.welcome-screen .jt-list-item a {
+  display: inline;
+}
+

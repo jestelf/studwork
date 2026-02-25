@@ -1,0 +1,92 @@
+h1./admin/project/{project}/customfield
+h2. GET /admin/project/\{project\}/customfield
+Get custom fields used in the project
+{panel}{{GET /rest/admin/project/*\{project\}*/customfield}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project/TODO/customfield{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/project/\{project\}/customfield/\{customFieldName\}
+Get project custom field
+{panel}{{GET /rest/admin/project/*\{project\}*/customfield/*\{customFieldName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| customFieldName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project/TODO/customfield/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /admin/project/\{project\}/customfield/\{customFieldName\}
+Add custom field to the project
+{panel}{{PUT /rest/admin/project/*\{project\}*/customfield/*\{customFieldName\}*?*\{emptyFieldText\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| customFieldName | string | TODO: Description |
+| emptyFieldText | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/admin/project/TODO/customfield/TODO?emptyFieldText=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /admin/project/\{project\}/customfield/\{customFieldName\}
+Update custom field in the project
+{panel}{{POST /rest/admin/project/*\{project\}*/customfield/*\{customFieldName\}*?*\{emptyFieldText\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| customFieldName | string | TODO: Description |
+| emptyFieldText | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/admin/project/TODO/customfield/TODO?emptyFieldText=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. DELETE /admin/project/\{project\}/customfield/\{customFieldName\}
+Remove custom field from the project
+{panel}{{DELETE /rest/admin/project/*\{project\}*/customfield/*\{customFieldName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| customFieldName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}DELETE /rest/admin/project/TODO/customfield/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

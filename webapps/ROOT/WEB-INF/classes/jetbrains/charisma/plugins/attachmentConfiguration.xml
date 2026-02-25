@@ -1,0 +1,8 @@
+<beans>
+  <bean id="attachmentPreviews" class="jetbrains.charisma.plugins.AttachmentPreviewTemplates"></bean>
+  <bean id="extensionPoint_attachmentPreviews_previews" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="attachmentPreviews"/>
+    <property name="extensionPropertyName" value="previews"/>
+    <property name="extensionType" value="jetbrains.charisma.plugins.AttachmentPreviewTemplate"/>
+  </bean>
+</beans>

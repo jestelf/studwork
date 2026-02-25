@@ -1,0 +1,87 @@
+.jt-tabpanel-navigation {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    max-width: 100%;
+    width: auto;
+    background: #dee0e1 url( '../img/bgToolbar.gif' ) repeat-x 0 0;
+    border: solid 1px #d4d5d6;
+}
+.jt-tabpanel-navigation table {
+    margin: -1px 0;
+    width: 100%;
+    border-collapse: separate;
+}
+.jt-tabpanel-navigation table td table {
+    margin: 0;
+    width: auto;
+    border-collapse: separate;
+}
+.jt-tabpanel-navigation table td table td {
+    padding: 0;
+    text-align: center;
+    border: solid 1px transparent;
+    border-right-color: #d4d5d6;
+    border-left-color: #fff;
+}
+.jt-tabpanel-navigation table td table td:hover {
+    border: solid 1px #898989;
+}
+.jt-tabpanel-navigation table td table td.jt-panel-active:hover {
+    border: 1px solid #d4d5d6;
+    border-bottom-color: transparent;
+    border-left-color: #fff;
+}
+.jt-tabpanel-navigation table td.jt-panel-active {
+    background-color: #fff;
+    border-top: solid 1px #d4d5d6;
+    border-bottom: solid 1px #fff;
+}
+.jt-tabpanel-navigation table td .jt-panel-title {
+    margin: 0;
+    padding: .48em .6em .54em .6em;
+    font-size: 100%;
+    font-family: arial, tahoma, sans-serif;
+    line-height: 1em;
+    color: #084b96;
+    cursor: pointer;
+}
+
+
+.newIssueButt {
+    background: #9dbfe7 url( '../img/bgNewIssue.gif' ) repeat-x 0 0!important;
+    border: solid 1px #5888be!important;
+}
+.newIssueButt:hover {
+    border: solid 1px #898989!important;
+}
+.newIssueButt.jt-panel-active {
+    background: #b7d2f0 none!important;
+    border: solid 1px #b7d2f0!important;
+}
+.newIssueButt div {
+    font-weight: bold!important;
+    cursor: pointer!important;
+}
+.hintsButt {
+    background: #084b96 url( '../img/bgHintsButt.gif' ) repeat-x 0 0;;
+    border: solid 1px #16569D!important;
+}
+.hintsButt.jt-panel-active {
+    background: #f7e08b none!important;
+    border: solid 1px #f7e08b!important;
+}
+.hintsButt.jt-panel-active:hover {
+    border: solid 1px #f7e08b!important;
+}
+.hintsButt:hover {
+    border: solid 1px #898989!important;
+}
+.hintsButt div {
+    color: #fff!important;
+    font-weight: bold;
+    cursor: pointer!important;
+}
+.hintsButt.jt-panel-active div {
+    color: #333!important;
+}

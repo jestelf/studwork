@@ -1,0 +1,14 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/CommonDefault.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/CommonDefault.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/CommonDefault.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredClasspathUri("/yui_2.7.0/base/base.css").resourcePath>
+<#include getDeferredClasspathUri("/yui_2.7.0/base/base.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredClasspathUri("/yui_2.7.0/base/base.css").url}");
+</#if>

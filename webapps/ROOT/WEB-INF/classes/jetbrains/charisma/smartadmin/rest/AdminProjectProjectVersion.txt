@@ -1,0 +1,100 @@
+h1./admin/project/{project}/version
+h2. GET /admin/project/\{project\}/version
+Get project versions
+{panel}{{GET /rest/admin/project/*\{project\}*/version?*\{showReleased\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| showReleased | boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project/TODO/version?showReleased=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/project/\{project\}/version/\{versionName\}
+Get project version by name
+{panel}{{GET /rest/admin/project/*\{project\}*/version/*\{versionName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| versionName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project/TODO/version/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /admin/project/\{project\}/version/\{versionName\}
+Create new project version
+{panel}{{PUT /rest/admin/project/*\{project\}*/version/*\{versionName\}*?*\{description\}*&*\{releaseDate\}*&*\{isReleased\}*&*\{isArchived\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| versionName | string | TODO: Description |
+| description | string | TODO: Description |
+| releaseDate | instant | TODO: Description |
+| isReleased | boolean | TODO: Description |
+| isArchived | boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/admin/project/TODO/version/TODO?description=TODO&releaseDate=TODO&isReleased=TODO&isArchived=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /admin/project/\{project\}/version/\{versionName\}
+Update project version
+{panel}{{POST /rest/admin/project/*\{project\}*/version/*\{versionName\}*?*\{newName\}*&*\{description\}*&*\{releaseDate\}*&*\{isReleased\}*&*\{isArchived\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| versionName | string | TODO: Description |
+| newName | string | TODO: Description |
+| description | string | TODO: Description |
+| releaseDate | instant | TODO: Description |
+| isReleased | Boolean | TODO: Description |
+| isArchived | Boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/admin/project/TODO/version/TODO?newName=TODO&description=TODO&releaseDate=TODO&isReleased=TODO&isArchived=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. DELETE /admin/project/\{project\}/version/\{versionName\}
+Remove project version
+{panel}{{DELETE /rest/admin/project/*\{project\}*/version/*\{versionName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| versionName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}DELETE /rest/admin/project/TODO/version/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

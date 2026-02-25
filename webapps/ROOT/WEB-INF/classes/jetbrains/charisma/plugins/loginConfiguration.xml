@@ -1,0 +1,8 @@
+<beans>
+  <bean id="loginTemplates" class="jetbrains.charisma.plugins.LoginTemplates"></bean>
+  <bean id="extensionPoint_loginTemplates_loginTemplates" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="loginTemplates"/>
+    <property name="extensionPropertyName" value="loginTemplates"/>
+    <property name="extensionType" value="jetbrains.charisma.plugins.LoginTemplate"/>
+  </bean>
+</beans>

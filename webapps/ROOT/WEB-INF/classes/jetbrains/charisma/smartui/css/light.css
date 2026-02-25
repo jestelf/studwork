@@ -1,0 +1,46 @@
+.lightWeight {
+  padding: 10px;
+  font-size: 90%;
+}
+
+h1 {
+  padding: 0;
+  font-size: 130%;
+  font-family: arial, tahoma, verdana, sans-serif;
+}
+
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: 0;
+  margin-top: 1.5em;
+}
+
+td {
+  vertical-align: top;
+}
+
+.jt-panel {
+  padding: 10px;
+}
+
+.jt-player-item {
+  border-radius:15px;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  -o-border-radius:15px;
+  -khtml-border-radius:15px;
+  background-color: #999;
+  font-size: 140%;
+  color: white;
+  padding: 5px 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  float: right;
+}
+
+.jt-player-item:hover {
+  text-decoration: underline;
+}
+

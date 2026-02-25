@@ -1,0 +1,13 @@
+<beans>
+  <bean id="menus" class="jetbrains.charisma.plugins.CharismaMenus"></bean>
+  <bean id="adminMenu" class="jetbrains.charisma.plugins.CharismaMenu">
+    <property name="name">
+      <value>ADMIN_MENU</value>
+    </property>
+  </bean>
+  <bean id="extensionPoint_menus_items" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="menus"/>
+    <property name="extensionPropertyName" value="items"/>
+    <property name="extensionType" value="jetbrains.charisma.plugins.CharismaMenuItem"/>
+  </bean>
+</beans>

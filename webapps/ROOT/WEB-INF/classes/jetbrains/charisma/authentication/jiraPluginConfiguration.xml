@@ -1,0 +1,13 @@
+<beans>
+  <bean class="jetbrains.charisma.authentication.JiraLifecycleListener"></bean>
+  <bean class="jetbrains.charisma.authentication.JiraUserInfo">
+    <property name="templateName">
+      <value>JiraData</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.charisma.authentication.JiraLoginDecorator">
+    <property name="name">
+      <value>Jira Login</value>
+    </property>
+  </bean>
+</beans>

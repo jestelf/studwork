@@ -1,0 +1,27 @@
+<beans>
+  <bean id="customFieldsMenuItem" class="jetbrains.charisma.plugins.CharismaMenuItem">
+    <property name="menu">
+      <ref bean="adminMenu"/>
+    </property>
+    <property name="title">
+      <value>Custom Fields</value>
+    </property>
+    <property name="templateName">
+      <value>CustomFieldsConfiguration</value>
+    </property>
+  </bean>
+  <bean id="customFieldsProjectTab" class="jetbrains.charisma.plugins.ProjectTab">
+    <property name="name">
+      <value>Custom Fields</value>
+    </property>
+    <property name="template">
+      <value>EditProjectCustomFields</value>
+    </property>
+  </bean>
+  <bean id="customFieldTypesEditor" class="jetbrains.charisma.customfields.plugin.CustomFieldTypeEditors"></bean>
+  <bean id="extensionPoint_customFieldTypesEditor_editors" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="customFieldTypesEditor"/>
+    <property name="extensionPropertyName" value="editors"/>
+    <property name="extensionType" value="jetbrains.charisma.customfields.plugin.CustomFieldTypeEditor"/>
+  </bean>
+</beans>

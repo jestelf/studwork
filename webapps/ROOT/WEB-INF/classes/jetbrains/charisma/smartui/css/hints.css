@@ -1,0 +1,118 @@
+.hints {
+  
+  
+}
+
+.hints td {
+  padding-bottom: .8em;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.hints li {
+  margin: 0 1em .3em 0;
+  padding-left: 1em;
+  list-style: none;
+  background: url("${getClasspathUri("smartui/img/bullHints.gif")}") no-repeat 0 .4em;
+}
+
+.reference {
+  margin-top: .5em;
+}
+
+.shortcut {
+  text-align: right;
+  padding-left: 2px;
+  padding-right: 2px;
+  white-space: nowrap;
+  background-color: #fff5bd;
+}
+
+a.shortcut {
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: bold;
+  background: none;
+}
+
+.demo {
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.hintsSearch {
+  cursor: pointer;
+}
+
+.shortcuts {
+  
+  
+  
+  
+}
+
+.shortcuts td {
+  padding: .2em;
+  padding-top: .5em;
+  text-align: left;
+}
+
+.shortcuts hr {
+  height: 1px;
+  border: 0;
+  background-color: #d4d5d6;
+}
+
+.shortcuts td[align="right"] {
+  text-align: right;
+}
+
+.shortcuts td[colspan="4"] {
+  padding: 0;
+}
+
+.fp {
+  padding: 0 10px 10px;
+  line-height: 1.4em;
+}
+
+.hideHints {
+  margin-bottom: 1em;
+  text-align: right;
+}
+
+.moreHelp {
+  text-align: right;
+  
+}
+
+.moreHelp a {
+  margin-right: .5em;
+}
+
+.shortcutsDlg {
+  width: 600px;
+  
+}
+
+.shortcutsDlg .hints {
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+.welcome-screen {
+  
+}
+
+.welcome-screen .hints {
+  padding-top: 10px;
+  font-size: 110%;
+  line-height: 1.4em;
+  
+}
+
+.welcome-screen .hints h2 {
+  margin-bottom: 0.7em;
+  font-size: 140%;
+}
+

@@ -1,0 +1,21 @@
+<beans>
+  <bean id="stringNullableEditor" class="jetbrains.mps.webr.runtime.util.StringNullableEditor"></bean>
+  <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+    <property name="customEditors">
+      <map>
+        <entry>
+          <key>
+            <value>jetbrains.mps.webr.runtime.util.UserBrowser</value>
+          </key>
+          <ref bean="stringNullableEditor"/>
+        </entry>
+        <entry>
+          <key>
+            <value>jetbrains.mps.webr.runtime.util.UserOS</value>
+          </key>
+          <ref bean="stringNullableEditor"/>
+        </entry>
+      </map>
+    </property>
+  </bean>
+</beans>

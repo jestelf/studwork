@@ -1,0 +1,112 @@
+<beans>
+  <bean id="IssueRules" class="jetbrains.charisma.persistent.IssueRules_RulePackage">
+    <property name="rules">
+      <list>
+        <ref bean="IssueRules_saveIssueTrace"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="AdministrativeTasks" class="jetbrains.charisma.persistent.AdministrativeTasks_RulePackage">
+    <property name="rules">
+      <list>
+        <ref bean="AdministrativeTasks_CronDatabaseBackup"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="IssueViewRules" class="jetbrains.charisma.persistent.IssueViewRules_RulePackage">
+    <property name="rules">
+      <list>
+        <ref bean="IssueViewRules_untagIssue"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="IssueTouch" class="jetbrains.charisma.persistent.IssueTouch_RulePackage">
+    <property name="rules">
+      <list>
+        <ref bean="IssueTouch_touchOnReport"/>
+        <ref bean="IssueTouch_touchOnChange"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="AutoWatch" class="jetbrains.charisma.persistent.AutoWatch_RulePackage">
+    <property name="rules">
+      <list>
+        <ref bean="AutoWatch_newComment"/>
+        <ref bean="AutoWatch_issueUpdate"/>
+        <ref bean="AutoWatch_issueVote"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="AdministrativeTasks_CronDatabaseBackup" class="jetbrains.charisma.persistent.AdministrativeTasks_CronDatabaseBackup_Rule">
+    <property name="rulePackage">
+      <ref bean="AdministrativeTasks"/>
+    </property>
+  </bean>
+  <bean id="IssueViewRules_untagIssue" class="jetbrains.charisma.persistent.IssueViewRules_untagIssue_Rule">
+    <property name="rulePackage">
+      <ref bean="IssueViewRules"/>
+    </property>
+  </bean>
+  <bean id="IssueTouch_touchOnReport" class="jetbrains.charisma.persistent.IssueTouch_touchOnReport_Rule">
+    <property name="rulePackage">
+      <ref bean="IssueTouch"/>
+    </property>
+  </bean>
+  <bean id="IssueTouch_touchOnChange" class="jetbrains.charisma.persistent.IssueTouch_touchOnChange_Rule">
+    <property name="rulePackage">
+      <ref bean="IssueTouch"/>
+    </property>
+  </bean>
+  <bean id="IssueRules_saveIssueTrace" class="jetbrains.charisma.persistent.IssueRules_saveIssueTrace_Rule">
+    <property name="rulePackage">
+      <ref bean="IssueRules"/>
+    </property>
+  </bean>
+  <bean id="AutoWatch_newComment" class="jetbrains.charisma.persistent.AutoWatch_newComment_Rule">
+    <property name="rulePackage">
+      <ref bean="AutoWatch"/>
+    </property>
+  </bean>
+  <bean id="AutoWatch_issueUpdate" class="jetbrains.charisma.persistent.AutoWatch_issueUpdate_Rule">
+    <property name="rulePackage">
+      <ref bean="AutoWatch"/>
+    </property>
+  </bean>
+  <bean id="AutoWatch_issueVote" class="jetbrains.charisma.persistent.AutoWatch_issueVote_Rule">
+    <property name="rulePackage">
+      <ref bean="AutoWatch"/>
+    </property>
+  </bean>
+  <bean id="CronDatabaseBackupOnScheduleJob" class="jetbrains.mps.businessRules.runtime.impl.RuleJobImpl">
+    <property name="rule">
+      <ref bean="AdministrativeTasks_CronDatabaseBackup"/>
+    </property>
+    <property name="ruleEngine">
+      <ref bean="ruleEngine"/>
+    </property>
+  </bean>
+  <bean id="CronDatabaseBackupOnScheduleDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+    <property name="targetObject">
+      <ref bean="CronDatabaseBackupOnScheduleJob"/>
+    </property>
+    <property name="targetMethod">
+      <value>execute</value>
+    </property>
+    <property name="concurrent">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="CronDatabaseBackupCronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+    <property name="cronExpression">
+      <value>0 0 9 * * ?</value>
+    </property>
+    <property name="jobDetail">
+      <ref bean="CronDatabaseBackupOnScheduleDetail"/>
+    </property>
+  </bean>
+  <bean id="AdministrativeTasks_CronDatabaseBackup_CustomSchedule" class="jetbrains.charisma.persistent.AdministrativeTasks_CronDatabaseBackup_CustomScheduleLiteralImpl">
+    <property name="trigger">
+      <ref bean="CronDatabaseBackupCronTrigger"/>
+    </property>
+  </bean>
+</beans>

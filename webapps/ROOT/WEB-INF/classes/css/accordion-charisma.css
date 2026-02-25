@@ -1,0 +1,95 @@
+.x-dock-panel {
+    border: none;
+}
+
+/*header*/
+.x-dock-panel .x-layout-panel-hd:hover {
+    background-position: left -2px;
+}
+
+.x-dock-panel .x-layout-panel-hd {
+    height: 1.75em;
+    background: #ddd url( ../images/accordion/gradient-bg.gif ) left top;
+    border: 1px solid #a3b2bd;
+}
+
+.x-layout-panel-center .x-layout-panel-west .x-dock-panel .x-layout-panel-hd, .x-layout-panel-center .x-layout-panel-center .x-dock-panel .x-layout-panel-hd{
+    border-color: transparent;
+    border-bottom-color: #a3b2bd;
+}
+
+
+.x-layout-nested-layout .x-layout-panel-south .x-dock-panel .x-layout-panel-hd{
+    border: none;
+    border-bottom: 1px solid #a3b2bd;
+}
+
+.x-dock-panel .x-dock-panel-title {
+    color: black;
+    position: relative !important;
+    margin-left: 0;
+    padding-right: 5px;
+}
+/*tollbar inside the panel title*/
+.x-dock-panel .x-dock-panel-title .x-titleToolbar {
+    /*padding: 0 0 0 0 !important;*/
+}
+/*panels background inside*/
+.x-dock-panel .x-dock-panel-body {
+    background-color: #f8f8f8;
+}
+
+.x-dock-panel-title-icon-ct {
+    padding-left: 0;
+    padding-right: 10px;
+    background: url( ../images/accordion/drug-n-grop.gif ) no-repeat 2px 50%;
+}
+
+.x-dock-panel .x-dock-panel-title-text {
+    font-size: 11px;
+    padding-top: 0.4em;
+}
+
+.x-dock-body{
+    background-color: #e9ebec;
+    border: 1px solid #a3b2bd;
+    border-top: 0;
+}
+
+.x-dlg-bd .x-dock-body {
+    background-color: #e9ebec;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+
+.x-dlg-bd .x-dock-panel .x-layout-panel-hd{
+    margin-top: 1px;
+}
+.x-dlg-bd .x-dock-body .x-dock-panel-body{
+    border: 1px solid #a3b2bd;
+    padding: 10px;
+    border-top:0;
+}
+
+.x-dock-panel .x-dock-panel-body-docked, .x-dock-panel .x-dock-panel-body-undocked {
+    border-color: #a3b2bd;
+    border-bottom: #c8d1d7 2px solid;
+}
+
+.x-dock-panel .x-layout-collapse-south {
+    background-image: url( ../images/accordion/ns-collapse.gif );
+
+}
+
+.x-dock-panel .x-layout-collapse-east {
+    background-image: url( ../images/accordion/ns-expand.gif );
+
+}
+.x-dock-panel fieldset{
+    border: none;
+}
+
+
+
+
+

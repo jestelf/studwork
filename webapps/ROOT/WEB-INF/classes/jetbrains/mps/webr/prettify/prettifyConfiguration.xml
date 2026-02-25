@@ -1,0 +1,13 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependencyAggregator">
+    <property name="wildcard">
+      <value>classpath*:**/prettify/lang-*-min.js</value>
+    </property>
+    <property name="fqNamePrefix">
+      <value>jetbrains.mps.webr.prettify</value>
+    </property>
+    <property name="relativePathPrefix">
+      <value>prettify</value>
+    </property>
+  </bean>
+</beans>

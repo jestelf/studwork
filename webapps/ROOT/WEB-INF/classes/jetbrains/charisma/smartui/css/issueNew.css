@@ -1,0 +1,48 @@
+.new, .new.edit, .fsi-layout .edit {
+  
+}
+
+.new .issueId, .new.edit .issueId, .fsi-layout .edit .issueId {
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+.newIssue {
+  display: none;
+  min-width: 930px;
+  margin: 3em 3em 0;
+  
+  
+}
+
+.newIssue .jt-toolbar {
+  position: absolute;
+  z-index: 19;
+  top: 4.5em;
+  left: 3em;
+  height: auto;
+  padding: 0;
+  border: 0;
+}
+
+.newIssue td {
+  text-align: left;
+}
+
+*:first-child+html .newIssue .attribute {
+  position: static;
+  
+}
+
+*:first-child+html .newIssue .attribute .shader {
+  display: none;
+}
+
+.newIssueBookmarklet {
+  float: right;
+  margin-top: 1.8em;
+  margin-right: 35px;
+  font-size: 85%;
+  text-align: right;
+}
+

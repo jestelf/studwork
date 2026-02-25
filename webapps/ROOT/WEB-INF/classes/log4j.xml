@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  Log4j Configuration                                                  -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<!-- $Id: log4j.xml,v 1.26.2.5 2005/09/15 09:31:02 dimitris Exp $ -->
+
+<!--
+   | For more configuration infromation and examples see the Jakarta Log4j
+   | owebsite: http://jakarta.apache.org/log4j
+ -->
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+  <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+    <param name="Target" value="System.out"/>
+    <!--param name="Threshold" value="INFO"/-->
+
+    <layout class="org.apache.log4j.PatternLayout">
+      <!-- The default pattern: Date Priority [Category] Message\n -->
+      <!-- param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [%-30.30c{1}] %-5.5t %m (%C:%L)%n"/-->
+      <param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [%-30.30c{1}] [%-15.15t] %m%n"/>
+    </layout>
+  </appender>
+
+  <!-- Limit the org.apache category to INFO as its DEBUG is verbose -->
+  <category name="org.apache">
+    <priority value="INFO"/>
+  </category>
+
+  <category name="org.springframework">
+    <priority value="INFO"/>
+  </category>
+
+  <category name="jetbrains.springframework.configuration.runtime.MyClassPathXmlApplicationContext">
+    <priority value="INFO"/>
+  </category>
+
+<!--
+  <category name="com.jetbrains.teamsys">
+    <priority value="DEBUG"/>
+  </category>
+-->
+
+<!--
+  <category name="jetbrains.mps.webr">
+    <priority value="DEBUG"/>
+  </category>
+-->
+
+<!--
+  <category name="jetbrains.mps.businessRules">
+    <priority value="DEBUG"/>
+  </category>
+-->
+
+  <category name="jetbrains.mps">
+    <priority value="INFO"/>
+  </category>
+
+  <category name="jetbrains.mps.baseLanguage.stateMachine">
+    <priority value="INFO"/>
+  </category>
+
+  <category name="jetbrains">
+    <priority value="INFO"/>
+  </category>
+
+  <category name="com.jetbrains">
+    <priority value="INFO"/>
+  </category>
+
+  <category name="com.jetbrains.teamsys.dnq.database">
+    <priority value="INFO"/>
+  </category>
+
+  <category name="httpclient">
+    <priority value="ERROR"/>
+  </category>
+
+  <root>
+    <appender-ref ref="CONSOLE"/>
+  </root>
+
+</log4j:configuration>

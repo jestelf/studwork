@@ -1,0 +1,51 @@
+.container {
+    margin-top: .3em!important;
+    width: 75%;
+}
+.searchContent {
+    padding-bottom: 0!important;
+}
+.content #issueContent {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/*.content .oneLine .issueContainer {
+    margin: 0;
+    padding: 0;
+}
+.oneLine .issueContainer h2 {
+    font-size: 110%;
+}
+.oneLine .issueContainer h2 a {
+    padding-top: .35em;
+    padding-bottom: .5em;
+    display: block;
+    line-height: 1em;
+}*/
+
+.content .twoLine .issueContainer {
+    margin-top: .2em;
+    padding-top: 0;
+    padding-bottom: .4em;
+}
+.twoLine .issueContainer h2 {
+    font-size: 125%;
+    font-family: tahoma, arial, sans-serif;
+}
+.twoLine .issueContainer h2 a {
+    padding-top: 0;
+    padding-bottom: .2em;
+    display: block;
+    line-height: 1.1em;
+}
+
+.issueContainer table td.date {
+    width: 40%;
+}
+.issueContainer table td.expand_collapse a {
+    position: absolute;
+}
+.issueContainer table.properties {
+    margin-top: -.2em;
+}

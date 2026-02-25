@@ -1,0 +1,8 @@
+<beans>
+  <bean id="authenticationManager" class="jetbrains.charisma.authentication.AuthenticationManager"></bean>
+  <bean id="extensionPoint_authenticationManager_authModules" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="authenticationManager"/>
+    <property name="extensionPropertyName" value="authModules"/>
+    <property name="extensionType" value="jetbrains.charisma.authentication.IAuthenticationModule"/>
+  </bean>
+</beans>

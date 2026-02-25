@@ -1,0 +1,25 @@
+.jt-bl-wrapper {
+  width: 100%;
+}
+
+.jt-bl-west {
+  float: left;
+}
+
+.jt-bl-east {
+  float: left;
+}
+
+.jt-bl-center {
+  float: left;
+}
+
+.jt-bl-south {
+  clear: left;
+}
+
+.jt-tbl {
+  width: 100%;
+  height: 100%;
+}
+

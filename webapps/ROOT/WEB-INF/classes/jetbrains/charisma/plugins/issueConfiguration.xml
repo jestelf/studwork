@@ -1,0 +1,14 @@
+<beans>
+  <bean id="issueTabs" class="jetbrains.charisma.plugins.IssueTabs"></bean>
+  <bean id="customTypesManager" class="jetbrains.charisma.plugins.CustomFieldTypeManager"></bean>
+  <bean id="extensionPoint_issueTabs_tabs" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="issueTabs"/>
+    <property name="extensionPropertyName" value="tabs"/>
+    <property name="extensionType" value="jetbrains.charisma.plugins.IssueTab"/>
+  </bean>
+  <bean id="extensionPoint_customTypesManager_types" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="customTypesManager"/>
+    <property name="extensionPropertyName" value="types"/>
+    <property name="extensionType" value="jetbrains.charisma.plugins.CustomFieldType"/>
+  </bean>
+</beans>

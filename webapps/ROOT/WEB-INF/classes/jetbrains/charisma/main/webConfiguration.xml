@@ -1,0 +1,82 @@
+<beans>
+  <bean id="centralManager" class="webr.framework.controller.CentralManager">
+    <property name="requestProcessors">
+      <ref bean="requestProcessorContainer"/>
+    </property>
+    <property name="applicationName">
+      <value>YouTrack</value>
+    </property>
+    <property name="freemarkerConfiguration">
+      <bean id="freemarkerConfiguration" class="freemarker.template.Configuration">
+        <property name="objectWrapper">
+          <ref bean="myDefaultObjectWrapper"/>
+        </property>
+      </bean>
+    </property>
+    <property name="usingStaticHtml">
+      <value>false</value>
+    </property>
+    <property name="sessionVariableInitializers">
+      <map>
+        <entry>
+          <key>
+            <value>filtersExpanded</value>
+          </key>
+          <bean id="h" class="jetbrains.charisma.main.FiltersExpandedSessionVaraibleInitializer"></bean>
+        </entry>
+        <entry>
+          <key>
+            <value>tagsExpanded</value>
+          </key>
+          <bean id="h" class="jetbrains.charisma.main.TagsExpandedSessionVaraibleInitializer"></bean>
+        </entry>
+        <entry>
+          <key>
+            <value>showIrrelevantTags</value>
+          </key>
+          <bean id="h" class="jetbrains.charisma.main.ShowIrrelevantTagsSessionVaraibleInitializer"></bean>
+        </entry>
+        <entry>
+          <key>
+            <value>savedQueriesExpanded</value>
+          </key>
+          <bean id="h" class="jetbrains.charisma.main.SavedQueriesExpandedSessionVaraibleInitializer"></bean>
+        </entry>
+        <entry>
+          <key>
+            <value>showIrrelevantSavedQueries</value>
+          </key>
+          <bean id="h" class="jetbrains.charisma.main.ShowIrrelevantSavedQueriesSessionVaraibleInitializer"></bean>
+        </entry>
+      </map>
+    </property>
+    <property name="typeConvertManager">
+      <ref bean="typeConvertManager"/>
+    </property>
+    <property name="debugMode">
+      <value>false</value>
+    </property>
+    <property name="appicationVersion">
+      <value>2.2.1</value>
+    </property>
+    <property name="appicationBuild">
+      <value>803 [01-Feb-2011 10:04] </value>
+    </property>
+  </bean>
+  <bean id="initWebApplication" class="jetbrains.charisma.main.InitWebApplicationServiceLocatorListener">
+    <property name="dependees">
+      <list>
+        <value>initModelMetaData</value>
+        <value>addDNQSessionListener</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="hostToBaseUrlConfiguration" class="webr.framework.url.HostToBaseUrlConfiguration">
+    <property name="hostToBaseUrlMapping">
+      <map></map>
+    </property>
+    <property name="defaultBaseUrl">
+      <value>http://localhost:8080/youtrack</value>
+    </property>
+  </bean>
+</beans>

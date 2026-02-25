@@ -1,0 +1,12 @@
+<beans>
+  <bean id="jetbrains.charisma.user.LoginForm_RootHtmlTemplateController" class="jetbrains.charisma.user.LoginForm_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.user.RegisterUserForm_RootHtmlTemplateController" class="jetbrains.charisma.user.RegisterUserForm_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+</beans>

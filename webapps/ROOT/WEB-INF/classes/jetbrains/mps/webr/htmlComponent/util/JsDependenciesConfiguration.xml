@@ -1,0 +1,237 @@
+<beans>
+  <bean id="jetbrains.mps.webr.htmlComponent.util.CheckBrowser" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.util.CheckBrowser</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/util/CheckBrowser.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Webr.util</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.util.HashParametersParser" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.util.HashParametersParser</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/util/HashParametersParser.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.javascript.stateMachine.runtime.stateMachineRuntime</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Webr.util</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.util.HistoryDispatcher" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.util.HistoryDispatcher</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/util/HistoryDispatcher.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.PageStateStore</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Map</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Webr.util</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Set</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.HashParametersParser</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.util.IKeyStroke" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.util.IKeyStroke</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/util/IKeyStroke.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Webr.util</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.util.Key" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/util/Key.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Webr.util</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.util.Map" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.util.Map</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/util/Map.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Webr.util</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.util.PageStateStore" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.util.PageStateStore</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/util/PageStateStore.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Webr.util</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.HashParametersParser</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Map</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.util.Set" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.util.Set</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/util/Set.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Webr.util</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.util.StringExtension" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.util.StringExtension</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/util/StringExtension.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list></list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.util.Util" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/util/Util.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Webr.util</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.htmlComponent.util.Webr.util" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.htmlComponent.util.Webr.util</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/htmlComponent/util/Webr.util.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+</beans>

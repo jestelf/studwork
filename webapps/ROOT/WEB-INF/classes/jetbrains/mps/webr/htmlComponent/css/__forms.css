@@ -1,0 +1,104 @@
+    fieldset {
+  padding: 0 1em 1em;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  border: none;
+  font-size: 100%;
+  border: 2px solid #f0f1f2;
+  background-color: #f9f9fa;
+  clear: both;
+}
+
+fieldset legend {
+  position: relative!important;
+  top: -0.7em;
+  padding: 0 3px;
+  font-weight: bold;
+  color: #084b96;
+  background-color: transparent;
+}
+
+fieldset label {
+    /*
+  margin: 0;
+  margin-top: 0.35em;
+  margin-right: 0.5em;
+  float: left;
+  clear: left;
+  min-width: 8em;
+  text-align: right;
+*/
+}
+
+fieldset input {
+  float: left;
+}
+
+fieldset textarea {
+  float: left;
+}
+
+fieldset span.combobox {
+  float: left;
+}
+
+fieldset input[type=checkbox] {
+  border: 0;
+  background-color: transparent;
+}
+
+fieldset p {
+  clear: left;
+  margin: 0;
+  padding: 0;
+}
+
+.jt-form-layout {
+  position: relative;
+  width: 80%;
+}
+
+.jt-form-layout label {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.jt-form-layout fieldset label {
+  width: 10em;
+  text-align: right;
+  margin-top: 1em;
+}
+
+.jt-form-layout fieldset select {
+  margin-top: 1em;
+}
+
+.jt-form-layout fieldset input {
+  width: 82%;
+  margin: 0.7em;
+}
+
+.jt-form-layout fieldset textarea {
+  width: 95%;
+  margin: 1em;
+}
+
+.jt-form-layout fieldset p input {
+  width: 45%;
+}
+
+.inline {
+  text-align: left;
+  width: auto!important;
+  display: inline-block;
+  table-layout: auto;
+}
+
+.jt-form-layout fieldset .inline {
+  color: black;
+  font-weight: normal;
+  clear: none;
+  margin-top: 1em;
+  padding: 0;
+}
+

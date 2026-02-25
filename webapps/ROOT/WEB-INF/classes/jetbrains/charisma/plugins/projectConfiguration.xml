@@ -1,0 +1,14 @@
+<beans>
+  <bean id="buildDecorators" class="jetbrains.charisma.plugins.BuildDecorators"></bean>
+  <bean id="projectTabs" class="jetbrains.charisma.plugins.ProjectTabs"></bean>
+  <bean id="extensionPoint_buildDecorators_buildDecorators" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="buildDecorators"/>
+    <property name="extensionPropertyName" value="buildDecorators"/>
+    <property name="extensionType" value="jetbrains.charisma.plugins.BuildDecorator"/>
+  </bean>
+  <bean id="extensionPoint_projectTabs_tabs" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="projectTabs"/>
+    <property name="extensionPropertyName" value="tabs"/>
+    <property name="extensionType" value="jetbrains.charisma.plugins.ProjectTab"/>
+  </bean>
+</beans>

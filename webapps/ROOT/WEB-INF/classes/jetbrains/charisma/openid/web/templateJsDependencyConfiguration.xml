@@ -1,0 +1,105 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.openid.web.FormRedirection_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>FormRedirection</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.openid.web.OpenIdIntegrationSettings_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>OpenIdIntegrationSettings</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.openid.web.OpenIdSettings_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>OpenIdSettings</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.openid.web.OpenIdSettings_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>OpenIdSettings</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.openid.web.Providers_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>Providers</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.openid.web.OpenIdSettings</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.openid.web.OpenIdData_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>OpenIdData</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.openid.web.OpenIdLoginForm_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>OpenIdLoginForm</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.openid.web.OpenIdLoginForm</value>
+        <value>jetbrains.charisma.user.LoginFormUtil</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.PageStateStore</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.openid.web.Providers_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Providers</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.openid.web.Providers</value>
+      </list>
+    </property>
+  </bean>
+</beans>

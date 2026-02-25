@@ -1,0 +1,54 @@
+.history-table {
+  border: none;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table td {
+  border: 1px solid #ccc;
+  padding: 2px;
+  padding-left: 10px;
+  width: 31%;
+}
+
+.change-header {
+  background: #f8f7e4 none repeat scroll 0%;
+}
+
+.history-table .change-header td {
+  color: #9f9f9f;
+  padding-left: 4px;
+}
+
+.history-table .change-header td b {
+  font-size: 110%;
+  color: black;
+}
+
+.change-header-columns {
+  background: #f0f0f0 none repeat scroll 0%;
+  text-align: center;
+  font-size: 115%;
+  font-weight: bold;
+}
+
+.change-field {
+  background-color: #f1f1f1;
+}
+
+.diff-ins {
+  background-color: #E6FFE6;
+}
+
+.diff-del {
+  background-color: #FFE6E6;
+}
+
+td.change-field {
+  padding-left: 10px;
+}
+
+.change-attachment {
+  text-align: center;
+}
+

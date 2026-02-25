@@ -1,0 +1,10 @@
+<beans>
+  <bean class="jetbrains.mps.webr.openSearch.runtime.OpenSearchActionFactory">
+    <constructor-arg index="0">
+      <value>ytSearch.xml</value>
+    </constructor-arg>
+    <property name="templateClass">
+      <value>jetbrains.charisma.layouts.ytSearch</value>
+    </property>
+  </bean>
+</beans>

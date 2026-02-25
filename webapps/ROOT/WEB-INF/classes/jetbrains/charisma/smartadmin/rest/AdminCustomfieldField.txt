@@ -1,0 +1,88 @@
+h1./admin/customfield/field
+h2. GET /admin/customfield/field
+Get all custom field prototypes
+{panel}{{GET /rest/admin/customfield/field}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/customfield/field{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/customfield/field/\{customFieldName\}
+Get custom field prototype by name
+{panel}{{GET /rest/admin/customfield/field/*\{customFieldName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| customFieldName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/customfield/field/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /admin/customfield/field/\{customFieldName\}
+Create new custom field prototype
+{panel}{{PUT /rest/admin/customfield/field/*\{customFieldName\}*?*\{typeName\}*&*\{isPrivate\}*&*\{defaultVisibility\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| customFieldName | string | TODO: Description |
+| typeName | string | TODO: Description |
+| isPrivate | boolean | TODO: Description |
+| defaultVisibility | boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/admin/customfield/field/TODO?typeName=TODO&isPrivate=TODO&defaultVisibility=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /admin/customfield/field/\{customFieldName\}
+Update custom field prototype
+{panel}{{POST /rest/admin/customfield/field/*\{customFieldName\}*?*\{newName\}*&*\{isPrivate\}*&*\{defaultVisibility\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| customFieldName | string | TODO: Description |
+| newName | string | TODO: Description |
+| isPrivate | Boolean | TODO: Description |
+| defaultVisibility | Boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/admin/customfield/field/TODO?newName=TODO&isPrivate=TODO&defaultVisibility=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. DELETE /admin/customfield/field/\{customFieldName\}
+Delete custom field prototype
+{panel}{{DELETE /rest/admin/customfield/field/*\{customFieldName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| customFieldName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}DELETE /rest/admin/customfield/field/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

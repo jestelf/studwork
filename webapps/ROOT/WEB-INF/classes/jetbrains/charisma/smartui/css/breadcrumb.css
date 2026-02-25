@@ -1,0 +1,14 @@
+.breadcrumb .breadcrumb-item {
+  display: inline;
+  list-style-type: none;
+}
+
+.breadcrumb-devider {
+  color: #898989;
+  padding: 0 5px;
+}
+
+.breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+}
+

@@ -1,0 +1,91 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.LoginForm_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>LoginForm</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.openid.web.OpenIdLoginForm_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>openIdLoginForm</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.user.LoginForm</value>
+        <value>jetbrains.charisma.user.LoginFormUtil</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.HTMLInputElement_extension</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.PageStateStore</value>
+        <value>jetbrains.mps.webr.runtime.js.event.PopupMessage</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.RegisterUserForm_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>RegisterUserForm</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.user.RegisterUserForm</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.UserOnline_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>UserOnline</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.UserGroup_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>UserGroup</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.user.UserInfo_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>UserInfo</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.UserOnline_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>UserOnline</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+</beans>

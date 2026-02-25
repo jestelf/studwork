@@ -1,0 +1,41 @@
+<beans>
+  <bean id="UserAgent" class="jetbrains.charisma.maintenance.UserAgent_RulePackage">
+    <property name="rules">
+      <list>
+        <ref bean="UserAgent_clean"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="UserAgent_clean" class="jetbrains.charisma.maintenance.UserAgent_clean_Rule">
+    <property name="rulePackage">
+      <ref bean="UserAgent"/>
+    </property>
+  </bean>
+  <bean id="cleanOnScheduleJob" class="jetbrains.mps.businessRules.runtime.impl.RuleJobImpl">
+    <property name="rule">
+      <ref bean="UserAgent_clean"/>
+    </property>
+    <property name="ruleEngine">
+      <ref bean="ruleEngine"/>
+    </property>
+  </bean>
+  <bean id="cleanOnScheduleDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+    <property name="targetObject">
+      <ref bean="cleanOnScheduleJob"/>
+    </property>
+    <property name="targetMethod">
+      <value>execute</value>
+    </property>
+    <property name="concurrent">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="cleanCronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+    <property name="cronExpression">
+      <value>1 1 1 * * ?</value>
+    </property>
+    <property name="jobDetail">
+      <ref bean="cleanOnScheduleDetail"/>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,478 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueCheckbox_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueCheckbox</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueId_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueId</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueSummary_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueSummary</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueProperties_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueProperties</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.IconProperties_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ip</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Priority_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>pr</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Type_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ty</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.State_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>st</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Assignee_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>as</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Subsystem_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>su</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.AffectedVersions_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>av</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.FixVersions_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>fv</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.FixBuild_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>fb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueAttachmentCommentsDate_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>iacd</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueAttachmentAndDate_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueAttachmentAndDate</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssuePermittedGroup_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>IssuePermittedGroup</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.ThumbnailPreviewList_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tpl</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueAttachmentAndDate</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2.ViewIssue_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ViewIssue</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueCheckbox_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ic</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueId_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ii</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueTagsInTitle_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tags</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueSummary_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>is</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.links.LinkPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>lp</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.tags.TagsPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tp</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.AttachmentPanel_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>atchs</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.UserInfo_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>UserInfo</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueAttachmentAndDate_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>iad</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueProperties_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ip</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.Comments_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>cs</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueTagsInTitle_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueTagsInTitle</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2.IssuePermittedGroup_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssuePermittedGroup</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueAttachmentAndPermittedGroup_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueAttachmentAndPermittedGroup</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssuePermittedGroup_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>IssuePermittedGroup</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.ThumbnailPreviewList_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tpl</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueAttachmentAndPermittedGroup</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueAttachmentCommentsDate_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueAttachmentCommentsDate</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.CommentsTitle2_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ct</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssuePermittedGroup_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>IssuePermittedGroup</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.ThumbnailPreviewList_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tpl</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueAttachmentCommentsDate</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueAttachmentDatePermittedGroup_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>IssueAttachmentDatePermittedGroup</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.panel.attachment.ThumbnailPreviewList_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>tpl</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueAttachmentDatePermittedGroup</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.issueDetailLevel2._IssueProperties_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>_IssueProperties</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Votes2_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ip</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Priority_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>pr</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Type_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ty</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.State_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>st</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Assignee_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>as</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.Subsystem_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>su</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.AffectedVersions_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>av</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.FixVersions_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>fv</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueProperties.FixBuild_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>fb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.issueDetailLevel2.IssueAttachmentCommentsDate_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>iacd</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.issueDetailLevel2._IssueProperties</value>
+      </list>
+    </property>
+  </bean>
+</beans>

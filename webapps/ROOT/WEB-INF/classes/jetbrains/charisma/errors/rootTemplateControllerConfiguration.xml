@@ -1,0 +1,47 @@
+<beans>
+  <bean id="jetbrains.charisma.errors.Exception_RootHtmlTemplateController" class="jetbrains.charisma.errors.Exception_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.errors.Error_RootHtmlTemplateController" class="jetbrains.charisma.errors.Error_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.errors.NotFound_RootHtmlTemplateController" class="jetbrains.charisma.errors.NotFound_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.errors.AccessDenied_RootHtmlTemplateController" class="jetbrains.charisma.errors.AccessDenied_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.errors.Unauthorized_RootHtmlTemplateController" class="jetbrains.charisma.errors.Unauthorized_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.errors.UnsupportedBrowser_RootHtmlTemplateController" class="jetbrains.charisma.errors.UnsupportedBrowser_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.errors.MaintenanceInProgress_RootHtmlTemplateController" class="jetbrains.charisma.errors.MaintenanceInProgress_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.errors.ChromeFrameInstall_RootHtmlTemplateController" class="jetbrains.charisma.errors.ChromeFrameInstall_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.errors.BadRequest_RootHtmlTemplateController" class="jetbrains.charisma.errors.BadRequest_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>true</value>
+    </property>
+  </bean>
+</beans>

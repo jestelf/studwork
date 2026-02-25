@@ -1,0 +1,357 @@
+.subcontent {
+    margin: -1em 0 0 0;
+    padding: 0;
+    float: left;
+    width: 15em;
+}
+.issuePage .subcontent {
+    margin-top: 1em;
+    /*font-size: 90%;
+    font-family: tahoma, arial, verdana, sans-serif;
+    width: 13.5em;*/
+}
+
+dl.attributes {
+    margin: .5em 0 0 0;
+    padding: .7em;
+    font-size: 90%;
+    font-family: tahoma, arial, verdana, sans-serif;
+    border: solid 5px #f0f1f2;
+}
+dl.attributes dt {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 5.5em;
+}
+dl.attributes dd {
+    margin: 0 0 .3em 5.7em;
+    padding: 0;
+    text-align: center;
+}
+dl.attributes dd .attribute {
+    padding: .1em;
+    background-color: #f9f9fa;
+    cursor: pointer;
+}
+dl.attributes dd .attribute.active, dl.attributes dd .attribute:hover {
+    background-color: #d7d7d7;
+}
+dl.attributes dd .attribute.Show-stopper {
+    color: #ffe3e3;
+    background-color: #cc0000;
+}
+dl.attributes dd .attribute.Critical {
+    color: #cc0000;
+    background-color: #ffe3e3;
+}
+dl.attributes dd .attribute.Major {
+    color: #cc0000;
+}
+dl.attributes dd .attribute.Normal {
+    color: #64992c;
+    background-color: #ebf4dd;
+}
+dl.attributes dd .attribute.Minor {
+    color: #64992c;
+}
+dl.attributes dd .combobox {
+    /*display: block;*/
+}
+*+html dl.attributes dd .combobox {/*hack IE*/
+    margin-left: -4.35em;
+}
+
+ul.by {
+    margin: .5em 0 0 0;
+    padding: .7em 1.2em;
+    font-size: 90%;
+    background-color: #f0f1f2;
+}
+ul.by li {
+    margin: 0 0 .5em 0;
+    padding: 0;
+    list-style: none;
+}
+ul.by li span {
+    white-space: nowrap;
+}
+
+.subcontent .title {
+    margin: 0;
+    padding: 0 1.2em .4em 0;
+    background: url( '../img/arrowExpand.gif' ) no-repeat 98% 40%;
+    border-bottom: solid 5px #f0f1f2;
+}
+.subcontent .title:hover {
+    cursor: pointer;
+}
+.subcontent .title a {
+    font-family: arial, tahoma, verdana, sans-serif;
+    font-weight: bold;
+}
+.subcontent .title .help {
+    padding-right: 0.5em;
+}
+.subcontent .active .title {
+    background: url( '../img/arrowCollapse.gif' ) no-repeat 98% 40%;
+}
+.subcontent .title a:hover {
+    color: #333;
+}
+.subcontent .title a span {
+    margin-left: .2em;
+}
+.sidebarList {
+    margin: 1em 0 1.5em 0;
+    padding: 0;
+}
+.sidebarList ul {
+    margin: 0;
+    padding: .1em 0;
+    background-color: #f9f9fa;
+    border: solid 5px #f0f1f2;
+    border-top: none;
+    display: none;
+}
+.sidebarList.active ul {
+    display: block;
+}
+.sidebarList.plain ul {
+    padding: .5em 0;
+}
+.sidebarList.filtr ul {
+    padding: 0;
+    overflow: hidden;
+}
+.sidebarList ul li {
+    margin: 0 0 .1em 0;
+    padding: 0 .7em 0 1.4em;
+    list-style: none;
+    position: relative;
+    border-top: solid 1px #f9f9fa;
+    border-bottom: solid 1px #f9f9fa;
+}
+.sidebarList.filtr ul li {
+    margin: 0;
+    padding-left: 0;
+    padding-right: .8em;
+    border: none;
+}
+.sidebarList.plain ul li {
+    padding-left: 1.1em;
+    position: static;
+    border: none;
+}
+.sidebarList ul li.share {
+    background: url( '../img/icoShare.gif' ) no-repeat .3em .2em;
+}
+.sidebarList ul li.favorites {
+    background: url( '../img/iconFavSmall.gif' ) no-repeat .2em .1em;
+}
+.sidebarList ul li.watched {
+    background: url( '../img/iconWatchSmall.gif' ) no-repeat .2em .1em;
+}
+.sidebarList ul li.active, .sidebarList ul li:hover {
+    cursor: auto;
+    background-color: #fff;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+}
+.sidebarList ul li.tag, .sidebarList ul li.tag a {
+    color: #084b96!important; 
+    background-color: transparent!important;
+}
+.sidebarList.filtr ul li:hover {
+    background-color: transparent;
+    border: none;
+}
+.sidebarList ul li.active{
+    z-index: 2;
+}
+.sidebarList.plain ul li:hover {
+    background-color: transparent;
+    border: none;
+}
+.sidebarList ul li.hoverNo:hover {
+    background-color: transparent;
+    border-top: solid 1px #f9f9fa;
+    border-bottom: solid 1px #f9f9fa;
+}
+.sidebarList ul li a, .sidebarList.filtr ul li ul>li label {
+    margin: 0 .6em 0 0;
+    padding: 0 1.4em 0 0;
+    display: block;
+    line-height: 1.2em;
+
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+.sidebarList ul li span.light {
+    margin-right: 0;
+    *margin-right: .8em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    width: 60px;
+    height: 100%;
+    background: url( '../img/bgSubcontentText.png' ) repeat-y 0 0;
+}
+.sidebarList.filtr ul li ul li span.light {
+    background: url( '../img/bgSubcontentTextHover.png' ) repeat-y 0 0;
+}
+.sidebarList ul li.active a span.light, .sidebarList ul li:hover a span.light {
+    background: url( '../img/bgSubcontentTextHover.png' ) repeat-y 0 0;
+}
+.sidebarList.filtr ul li.active a span.light, .sidebarList.filtr ul li:hover a span.light {
+    background: url( '../img/bgSubcontentText.png' ) repeat-y 0 0;
+}
+.sidebarList.plain ul li a {
+    padding-right: 0;
+}
+.sidebarList.filtr ul li a {
+    margin-right: .5em;
+    padding: .2em .7em .3em 1em;
+    border-bottom: solid 1px #f0f1f2;
+}
+.sidebarList.filtr ul li a.modified {
+    font-weight: bold;
+}
+.sidebarList ul li a.ico {
+    margin: -1px 0 0 0;
+    padding: 0 .6em;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    /*-moz-border-radius: 0;*/
+    /*-webkit-border-radius: 0;*/
+    border: 0;
+}
+.tagsTable .tag0, .jt-input.tag0{
+    /*-moz-border-radius: 0;*/
+    /*-webkit-border-radius: 0;*/
+}
+.sidebarList ul li a.ico.color {
+    margin-top: .2em;
+    margin-right: .2em;
+    padding: 0;
+    height: 1em;
+    width: 1em;
+}
+.sidebarList ul li a.userName {
+    margin-left: 1em;
+}
+.sidebarList ul li.active a.ico {
+    border: solid 1px #676e75;
+    border-bottom: solid 1px #fff;
+}
+.sidebarList ul li.active a.ico.arrow, .sidebarList ul li:hover a.ico.arrow {
+    background: url( '../img/edit.gif' ) no-repeat center center;
+}
+.sidebarList ul li.active a.ico.color, .sidebarList ul li:hover a.ico.color {
+    background: url( '../img/edit.gif' ) no-repeat center center;
+}
+.sidebarList ul li.active a.ico.delete, .sidebarList ul li:hover a.ico.delete {
+    background: url( '../img/icoDeleteSearch.gif' ) no-repeat center center;
+}
+.sidebarList ul li.active a.ico {
+    z-index: 2;
+}
+.sidebarList.filtr ul li>ul {
+    margin: 0 -.8em 0 0;
+    padding: .5em .5em .3em 0;
+    display: none;
+    background-color: #fff;
+    border: none;
+    /*overflow: auto;
+    max-height: 37em;*/
+}
+
+.sidebarList.filtr a.showAll {
+    border: none!important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebarList.filtr .filterCount {
+    color: #9ea1a5;
+}
+.sidebarList.filtr .filterCountZero {
+    color: #9ea1a5;
+}
+.sidebarList.filtr .filterCounting {
+    color: #9ea1a5;
+}
+.sidebarList.filtr ul li.open ul {
+    display: block;
+}
+.sidebarList.filtr ul li.open ul li {
+    height: 100%;
+}
+.sidebarList.filtr ul li.open ul li input {
+    margin: .2em .3em 0 1em;
+    padding: 0;
+    height: 1em;
+    width: 1em;
+    float: left;
+}
+.sidebarList.filtr ul li.open ul li label {
+    margin: 0 0 .2em 0;
+    padding: 0;
+    display: block;
+    color: #084b96;
+}
+
+
+.sidebarList ul li.hoverNo .combobox ul.comboboxList li {
+    border: none;
+}
+
+.sidebarList ul li ul.popup {
+    margin: .1em 0 0 -1.56em;
+    padding: .5em 0;
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    border: solid 1px #676e75;
+}
+.sidebarList ul li.active .popup {
+    display: block;
+}
+.sidebarList ul li ul.popup li {
+    margin: 0 0 .5em .8em;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    z-index: auto;
+}
+.sidebarList ul li ul.popup li.rename.input  {
+    margin-top: -.2em;
+    margin-bottom: .25em;
+}
+.sidebarList ul li ul.popup li.rename a, .sidebarList ul li ul.popup li.delete a {
+    padding-left: 2.1em;
+}
+.sidebarList ul li ul.popup li.delete a:hover {
+    background : url("../img/icoDeleteSearch.gif") no-repeat .8em 60%;
+}
+.sidebarList ul li ul.popup li.rename input {
+    padding: 0 .2em .2em .2em;
+    border: solid 1px #ccc;
+}
+.sidebarList ul li ul.popup li a:hover {
+    color: #0066cc!important;
+}
+.sidebarList ul li ul.popup li .combobox {
+    margin-left: -.2em;
+}
+.sidebarList ul li ul.popup li .combobox a {
+    color: #fff!important;
+}
+.sidebarList ul li ul.popup li .combobox ul.comboboxList {
+    z-index: 3;
+}

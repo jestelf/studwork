@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: trebuchet ms, verdana, tahoma, arial, sans-serif;
+    text-align: left!important;
+    text-align: left;
+}
+/* no preview */
+#issuePreview{
+    display: none;
+}
+ul.buttons li.checkbox{
+    display: none;
+}
+/* size adjust */
+.container{
+    min-width: 100%!important;
+    min-height: 60%!important;
+}
+.newIssuePane {
+    display: block;
+    padding: 0;
+}
+.newIssuePane .form {
+    padding: 1em 1em 2.8em;
+    height: 100%;
+}
+
+/* custom add file */
+.addAttributeForm ul.fileProperties ul.comboboxList{
+    height: 7em;
+    overflow-y: auto!important;
+}
+.addAttributeForm {
+    margin-top:-8.8em;
+    height: 4em;
+}
+.addAttributeForm ul.fileProperties{
+    float: left;
+}
+
+.addAttributeForm ul.fileProperties li {
+    margin-top: -2.2em;
+}
+.addAttributeForm ul.fileProperties li.chooseFile {
+    margin-top: -4.2em;
+}
+.addAttributeForm ul.buttons{
+    float: right;
+}
+.addAttributeForm ul.buttons li{
+    display: block;
+    float: none;
+}

@@ -1,0 +1,10 @@
+<beans>
+  <bean id="readOnlyFieldType" class="jetbrains.charisma.customfields.simple.readOnly.ReadOnlyFieldType">
+    <property name="editor">
+      <value>ReadOnlyContainer</value>
+    </property>
+    <property name="name">
+      <value>readOnly</value>
+    </property>
+  </bean>
+</beans>

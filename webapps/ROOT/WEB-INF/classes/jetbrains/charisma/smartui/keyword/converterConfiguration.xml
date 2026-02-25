@@ -1,0 +1,3 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.keyword.BaseFieldConverter" class="jetbrains.charisma.smartui.keyword.BaseFieldConverter"></bean>
+</beans>

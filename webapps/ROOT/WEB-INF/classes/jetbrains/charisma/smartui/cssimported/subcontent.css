@@ -1,0 +1,270 @@
+.subcontent {
+  margin: -1em 0 0 0;
+  padding: 0;
+  float: left;
+  width: 195px;
+}
+
+/*FSI position*/
+.issuePage .subcontent {
+  margin-top: 1em;
+}
+
+/*sidebar issue attributes*/
+.subcontent .borderAttributes {
+  margin-top: .5em;
+  padding: .4em;
+  border: solid 5px #f0f1f2;
+}
+
+.subcontent .attributes td {
+  font-size: 90%;
+  padding: .2em .4em;
+  vertical-align: top;
+}
+
+.subcontent .attribute {
+  background-color: #f0f1f2;
+  width: 80px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/*issue dateset and belonging */
+.subcontent .by {
+  margin-top: 10px;
+  padding: 0 15px 12px;
+  font-size: 90%;
+  background-color: #f0f1f2;
+}
+
+.subcontent .by li {
+  padding-top: 8px;
+}
+
+.subcontent .by strong {
+  font-weight: bold;
+}
+
+/*general list styles*/
+/*list container with collapsable list title*/
+.jt-list-container {
+  margin: 1em 0 1.5em 0;
+  padding: 0;
+}
+
+.jt-list-container .title {
+  margin: 0;
+  padding: 0 1.2em 0.4em 0;
+  background: url("${getClasspathUri("smartui/img/exp-collapse-sb.gif")}") no-repeat right 2px;
+  border-bottom: solid 5px #f0f1f2;
+  cursor: pointer;
+}
+
+.jt-list-container .title {
+  font-family: arial, tahoma, verdana, sans-serif;
+  font-weight: bold;
+}
+
+.active .title {
+  background: url("${getClasspathUri("smartui/img/exp-collapse-sb.gif")}") no-repeat right -22px;
+}
+
+/*list is collapsed by default*/
+.jt-list-container .jt-list {
+  display: none;
+  background-color: #F9F9FA;
+  border: 5px solid #F0F1F2;
+  border-top: 0;
+  line-height: 22px;
+}
+
+/*expanded list*/
+.active .jt-list {
+  display: block;
+}
+
+.jt-list .jt-list-item {
+  position: relative;
+  height: 22px;
+  list-style: none;
+  list-style-position: outside;
+  white-space: nowrap;
+}
+
+.jt-list-item a {
+  display: block;
+  padding-right: 5px;
+  padding-left: 10px;
+}
+
+.jt-list-item label {
+  display: block;
+  padding-left: 10px;
+}
+
+.jt-list .jt-list-item:hover {
+  background-color: #fff;
+}
+
+/*list with an icon*/
+.editable-list .jt-list-item {
+  padding-left: 12px;
+}
+
+/*list with icons presentaion*/
+.jt-list .open {
+  display: block;
+}
+
+.jt-list-item .light {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  text-align: right;
+  width: 45px;
+  background: url("${getClasspathUri("smartui/img/bgSubcontentText.png")}") repeat-y left 0;
+}
+
+.jt-list-item:hover .light {
+  background-image: url("${getClasspathUri("smartui/img/bgSubcontentTextHover.png")}");
+}
+
+.jt-list .ico {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  padding: 0;
+  height: 12px;
+  width: 12px;
+}
+
+.subcontent .share {
+  background: url("${getClasspathUri("smartui/img/icoShare.gif")}") no-repeat 4px 5px;
+}
+
+.subcontent .favorites {
+  background: url("${getClasspathUri("smartui/img/iconFavSmall.gif")}") no-repeat 3px 2px;
+}
+
+.subcontent .watched {
+  background: url("${getClasspathUri("smartui/img/iconWatchSmall.gif")}") no-repeat 3px 3px;
+}
+
+.jt-list .jt-list-item:hover .ico {
+  background: url("${getClasspathUri("smartui/img/edit.gif")}") no-repeat center center;
+}
+
+/*overlaping*/
+.jt-list-item .closure-wrapper {
+  width: 80%;
+  height: 22px;
+  display: block;
+  overflow: hidden;
+}
+
+.closure-wrapper:hover .closure-target {
+  overflow: visible;
+  position: absolute;
+  background-color: #fff;
+  z-index: 3;
+  top: 0;
+  float: left;
+}
+
+/*filter*/
+.filter .jt-list-item {
+  height: auto;
+}
+
+.filter .jt-list .jt-list-item {
+  border-bottom: 1px solid #f0f2f3;
+}
+
+.filter .jt-list-item .jt-list {
+  display: none;
+  border: 0;
+  border-top: 1px solid #f0f1f2;
+  background: #fff;
+}
+
+.filter .open .jt-list {
+  display: block;
+}
+
+.filter .jt-list .jt-list .jt-list-item {
+  border-bottom: 0;
+  padding-left: 10px;
+  height: 22px;
+}
+
+.filter .jt-list .jt-list .jt-list-item label {
+  padding-left: 0;
+}
+
+.filter .jt-input {
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 13px;
+  height: 13px;
+}
+
+.filter .jt-list .selected {
+  background-color: #feffd9;
+}
+
+.filter .jt-list .jt-list .light {
+  background-image: url("${getClasspathUri("smartui/img/bgSubcontentTextHover.png")}");
+}
+
+.filter .jt-list .selected .light {
+  background-image: url("${getClasspathUri("smartui/img/bgTableTextCreate.png")}");
+}
+
+.filter .jt-list .selected .closure-target {
+  background-color: #feffd9;
+}
+
+.filter .modified {
+  font-weight: bold;
+}
+
+.filter .centered {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*filter calculating message*/
+.calculating {
+  padding: 10px 0;
+  background-color: #7dbafe;
+  text-align: center;
+  color: white;
+}
+
+/*show/hide link for a list*/
+.jt-list .miniaturizer {
+  margin: 0 10px;
+  padding: 0 2px;
+  text-align: center;
+  background: url("${getClasspathUri("smartui/img/line-g.gif")}") no-repeat left center;
+}
+
+.jt-list .miniaturizer:hover {
+  background-color: transparent;
+}
+
+.miniaturizer .expand {
+  display: inline-block;
+  font-size: 85%;
+  padding: 0 1.8em 0 0.5em;
+  background: #F9F9FA url("${getClasspathUri("smartui/img/horiz-arrow.gif")}") no-repeat 85% 10px;
+  font-weight: normal!important;
+}
+
+.miniaturizer .expand.collapse {
+  background-position: 15% -17px;
+  padding: 0 8px 0 20px;
+}
+

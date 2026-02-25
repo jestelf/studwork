@@ -1,0 +1,14 @@
+<beans>
+  <bean id="ResourceBundleRequestProcessor" class="jetbrains.mps.webr.runtime.requestProcessor.ResourceBundleRequestProcessor">
+    <property name="dependentRequestProcessors">
+      <map>
+        <entry>
+          <key>
+            <ref bean="ActionRequestProcessor"/>
+          </key>
+          <value>BEFORE</value>
+        </entry>
+      </map>
+    </property>
+  </bean>
+</beans>

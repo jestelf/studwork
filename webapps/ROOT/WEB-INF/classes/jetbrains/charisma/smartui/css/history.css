@@ -1,0 +1,87 @@
+.issueFsiTab {
+  margin: 0;
+  border: 1px solid #d7dcde;
+  border-top: none;
+}
+
+.issueHistoryItem {
+  margin-bottom: 1em;
+}
+
+.issueHistory {
+  color: #333;
+  padding: 1em;
+  border: 1px solid #d7dcde;
+  border-top: none;
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.issueHistory h3 {
+  margin: 0 0 .5em;
+  padding-bottom: .3em;
+  font-size: 120%;
+  font-weight: normal;
+  border-bottom: 1px solid #d4d5d6;
+}
+
+.issueHistory .first {
+  margin-top: 0;
+}
+
+.issueHistory .title {
+  width: 140px;
+  float: left;
+  margin-bottom: .5em;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.issueHistory .block {
+  margin-bottom: .5em;
+  margin-left: 130px;
+  word-wrap:break-word;
+  overflow-y: hidden;
+}
+
+.issueHistory .light {
+  padding-left: 5px;
+  font-size: 90%;
+}
+
+.issueHistory .attach {
+  width: auto;
+  
+  
+}
+
+.issueHistory .attach .attach-info {
+  width: auto;
+}
+
+.issueHistory .attach .light {
+  display: none;
+}
+
+.issueHistory .devider {
+  padding: 0;
+  line-height: 0;
+  border-bottom: 1px solid #d4d5d6;
+}
+
+.issueHistory .old {
+  margin: 0;
+  text-decoration: line-through;
+  
+}
+
+.issueHistory .old .attach-name, .issueHistory .old .attach-size {
+  text-decoration /*\**/:line-through\9;
+}
+

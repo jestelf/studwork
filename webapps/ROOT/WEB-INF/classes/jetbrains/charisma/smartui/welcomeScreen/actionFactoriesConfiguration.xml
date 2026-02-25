@@ -1,0 +1,3 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.welcomeScreen.Welcome_DispatchAction" class="jetbrains.charisma.smartui.welcomeScreen.Welcome_DispatchAction"></bean>
+</beans>

@@ -1,0 +1,12 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.print.PrintIssues_RootHtmlTemplateController" class="jetbrains.charisma.smartui.print.PrintIssues_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.print.PrintIssue_RootHtmlTemplateController" class="jetbrains.charisma.smartui.print.PrintIssue_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

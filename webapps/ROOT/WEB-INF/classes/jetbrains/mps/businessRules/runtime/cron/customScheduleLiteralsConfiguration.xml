@@ -1,0 +1,8 @@
+<beans>
+  <bean id="customScheduleLiteralContainer" class="jetbrains.mps.businessRules.runtime.cron.CustomScheduleLiteralContainer"></bean>
+  <bean id="extensionPoint_customScheduleLiteralContainer_literals" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="customScheduleLiteralContainer"/>
+    <property name="extensionPropertyName" value="literals"/>
+    <property name="extensionType" value="jetbrains.mps.businessRules.runtime.cron.CustomScheduleLiteral"/>
+  </bean>
+</beans>

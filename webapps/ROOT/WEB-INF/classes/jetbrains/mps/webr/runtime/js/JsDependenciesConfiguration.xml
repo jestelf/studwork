@@ -1,0 +1,415 @@
+<beans>
+  <bean id="Webr.BorderLayout" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.BorderLayout</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/BorderLayout.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.layout.BorderLayout</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.ComboSupport" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.ComboSupport</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/ComboSupport.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.SimpleStore</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.HttpProxy</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.Store</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.JsonReader</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.util.Observable</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ResponseServerEventListener</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.core.Ext</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.core.Template</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.form.Combo</value>
+        <value>Webr.Component</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.Component" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.Component</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/Component.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.Dialogs" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.Dialogs</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/Dialogs.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.extjsComponent.js.core.Element</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+        <value>jetbrains.mps.webr.runtime.js.event.CommandProcessors</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.Error" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.Error</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/Error.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>Webr.Component</value>
+        <value>jetbrains.mps.webr.runtime.js.event.PopupMessage</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.Event" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.Event</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/Event.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.ResponseServerEventListener</value>
+        <value>jetbrains.mps.webr.runtime.js.event.InProgressEventListener</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ServerEvent</value>
+        <value>jetbrains.mps.webr.runtime.js.event.UploadEvent</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+        <value>jetbrains.mps.webr.runtime.js.event.LoadingServerEventListener</value>
+        <value>jetbrains.mps.webr.runtime.js.event.PopupMessage</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.ExtInit" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.ExtInit</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/ExtInit.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.extjsComponent.js.adapter.ext-base</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.state.State</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.QuickTips</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.core.Ext</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.GlobalShortcuts" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.GlobalShortcuts</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/GlobalShortcuts.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>Webr.Dialogs</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.core.Element</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.core.EventManager</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.BasicDialog</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.HeartBeat" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.HeartBeat</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/HeartBeat.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>Webr.Event</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.MultiSelectSupport" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.MultiSelectSupport</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/MultiSelectSupport.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.SimpleStore</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.HttpProxy</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.Store</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.JsonReader</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.util.Observable</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ResponseServerEventListener</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.core.Ext</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.ux.Ext.ux.Multiselect</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.form.Field</value>
+        <value>Webr.Component</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.Template" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.Template</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/Template.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list></list>
+    </property>
+  </bean>
+  <bean id="Webr.TreeNodeSupport" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.TreeNodeSupport</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/TreeNodeSupport.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.tree.AsyncTreeNode</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.core.Ext</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.tree.TreeNode</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.Tree</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.tree.TreePanel</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.Webr" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.Webr</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/Webr.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list></list>
+    </property>
+  </bean>
+  <bean id="Webr.WikiTextarea" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.WikiTextarea</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/WikiTextarea.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.grid.GridStateManager" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.grid.GridStateManager</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/GridStateManager.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.extjsComponent.js.state.State</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.grid.Grid</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.grid.ColumnModel</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.util.Observable</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.Store</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.grid.grid</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.grid.GridSupport" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.grid.GridSupport</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/GridSupport.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.PagingToolbar</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.grid.RowSelectionModel</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.grid.ColumnModel</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.util.Observable</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ResponseServerEventListener</value>
+        <value>Webr.grid.GridStateManager</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.state.State</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+        <value>Webr.grid.grid</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.grid.Grid</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.grid.GridView</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.Store</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.HttpProxy</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.JsonReader</value>
+        <value>Webr.Component</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="Webr.grid.grid" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>Webr.grid.grid</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/grid.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+</beans>

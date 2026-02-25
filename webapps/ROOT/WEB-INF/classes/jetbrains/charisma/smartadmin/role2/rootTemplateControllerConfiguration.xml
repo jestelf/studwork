@@ -1,0 +1,12 @@
+<beans>
+  <bean id="jetbrains.charisma.smartadmin.role2.EditRole_RootHtmlTemplateController" class="jetbrains.charisma.smartadmin.role2.EditRole_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartadmin.role2.Roles_RootHtmlTemplateController" class="jetbrains.charisma.smartadmin.role2.Roles_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

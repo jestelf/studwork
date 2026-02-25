@@ -1,0 +1,13 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.customfields.simple.readOnly.ReadOnlyContainer_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ReadOnlyContainer</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+</beans>

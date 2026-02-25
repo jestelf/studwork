@@ -1,0 +1,134 @@
+h1./admin/customfield/bundle
+h2. GET /admin/customfield/bundle
+Get all custom field enumeration bundles
+{panel}{{GET /rest/admin/customfield/bundle}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/customfield/bundle{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/customfield/bundle/\{bundleName\}
+Get custom field enumeration bundle by its name
+{panel}{{GET /rest/admin/customfield/bundle/*\{bundleName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| bundleName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/customfield/bundle/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. DELETE /admin/customfield/bundle/\{bundleName\}
+Delete custom field enumeration bundle
+{panel}{{DELETE /rest/admin/customfield/bundle/*\{bundleName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| bundleName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}DELETE /rest/admin/customfield/bundle/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /admin/customfield/bundle
+Create new custom field enumeration bundle
+{panel}{{PUT /rest/admin/customfield/bundle}}{panel}
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/admin/customfield/bundle{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /admin/customfield/bundle/\{bundleName\}
+Update custom field enumeration bundle
+{panel}{{POST /rest/admin/customfield/bundle/*\{bundleName\}*?*\{newName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| bundleName | string | TODO: Description |
+| newName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/admin/customfield/bundle/TODO?newName=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /admin/customfield/bundle/\{bundleName\}/\{fieldValue\}
+Add new value to custom field enumeration bundle
+{panel}{{PUT /rest/admin/customfield/bundle/*\{bundleName\}*/*\{fieldValue\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| bundleName | string | TODO: Description |
+| fieldValue | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/admin/customfield/bundle/TODO/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /admin/customfield/bundle/\{bundleName\}/\{fieldValue\}
+Update value in custom field enumeration bundle
+{panel}{{POST /rest/admin/customfield/bundle/*\{bundleName\}*/*\{fieldValue\}*?*\{newValue\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| bundleName | string | TODO: Description |
+| fieldValue | string | TODO: Description |
+| newValue | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/admin/customfield/bundle/TODO/TODO?newValue=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. DELETE /admin/customfield/bundle/\{bundleName\}/\{fieldValue\}
+Remove value from custom field enumeration bundle
+{panel}{{DELETE /rest/admin/customfield/bundle/*\{bundleName\}*/*\{fieldValue\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| bundleName | string | TODO: Description |
+| fieldValue | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}DELETE /rest/admin/customfield/bundle/TODO/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

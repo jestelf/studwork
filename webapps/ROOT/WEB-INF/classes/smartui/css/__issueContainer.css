@@ -1,0 +1,1135 @@
+.content .search {
+    margin: 3em 0;
+    text-align: center;
+    background: none;
+}
+.content .search h1 {
+    padding: .5em 0 2em 3.5em;
+    display: inline;
+}
+.content .search.nothing h1 {
+    background:  url( '../img/bgSearchNothing.png' ) no-repeat 0 0;
+}
+.content .search.error h1 {
+    background:  url( '../img/bgSearchError.png' ) no-repeat 0 0;
+}
+.content .search ul li {
+    list-style: none;
+}
+
+.content #issuesContent {
+    margin: .7em 0 2em 0;
+}
+.content .issueContainer {
+    margin: -1px 0 0 0;
+    padding: 6px .5em 10px .3em;
+    font-family: arial, tahoma, verdana, sans-serif;
+    border: solid 1px transparent;
+    border-bottom: solid 1px #e8eaec;
+}
+.content .oneLine .issueContainer {
+    margin: -1px 0 0 0;
+    padding: 0;
+}
+.issuePage .issueContainer {
+    margin-top: 1.3em;
+    border-bottom: none;
+}
+.content .issueContainer.expand {
+    background-color: #f4f9fe;
+    border: solid 1px #d7dcde;
+}
+.content .issueContainer.checked, .content .issueContainer.selected {
+    background-color: #e9f3fd;
+    border: solid 1px #d7dcde;
+}
+.content .issueContainer.selected {
+    border: solid 1px #5586bd;
+}
+.content .issueContainer.create {
+    background-color: #feffd9;
+    border: solid 1px #e2c822;
+}
+.content .issueContainer.expand, .content .issueContainer.checked, .content .issueContainer.selected, .content .issueContainer.create {
+    margin: -1px 0 4px 0;
+    padding-bottom: 6px;
+}
+.content .oneLine .issueContainer.expand, .content .oneLine .issueContainer.checked, .content .oneLine .issueContainer.selected, .content .oneLine .issueContainer.create {
+    margin: -1px 0 -1px 0;
+    padding-bottom: 0;
+}
+.content .issueContainer.edit {
+    margin: -1px 0 4px 0;
+    padding: 0;
+    border: solid 8px #b7d2f0;
+}
+.content .issueContainer.new {
+    margin-top: 0;
+    display:none;
+}
+body.index .content .issueContainer.new {
+    margin-top: -1em;
+}
+
+
+.issueContainer table {
+    margin: 0 0 .2em 0;
+    padding: 0;
+    width: 100%;
+    border-spacing: 0;
+    /*table-layout: fixed;*/
+    border-collapse: collapse;
+}
+.issueContainer table td {
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+}
+.issueContainer table td.checkbox {
+    padding: 0;
+    width: 2.3em;
+    background: none!important;
+}
+.issueContainer table td.num {
+    padding-right: .6em;
+    max-width: 10%;
+    white-space: nowrap;
+    text-align: right;
+}
+.issueContainer.edit .form table td.num {
+    padding-left: 6em;
+    text-align: left;
+}
+.issuePage .issueContainer table td.num {
+    width: 7.5em;
+}
+.issueContainer table td.issueDescription {
+    width: 72%;
+}
+.issueContainer.edit table td.issueDescription {
+    width: 92%;
+}
+.issueContainer table td.nameOrDate {
+    padding-left: 1em;
+    padding-right: .6em;
+    padding-top: .3em;
+    text-align: right;
+    font-size: 80%;
+    font-family: tahoma, arial, sans-serif;
+    width: 15%;
+    white-space: nowrap;
+}
+.issueContainer table td.expand_collapse {
+    width: 1.7em;
+}
+.issueContainer table td.checkbox input {
+    padding: 0;
+}
+.issueContainer table td .issueText {
+    padding-right: 30px;
+    padding-bottom: .1em;
+    overflow: hidden;
+    position: relative;
+}
+.issueContainer.expand table td .issueText {
+    overflow: visible;
+}
+.issueContainer table td .issueText span.shader {
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background:  url( '../img/bgTableText.png' ) repeat-y 0 0;
+}
+.issueContainer.selected table td .issueText span.shader, .issueContainer.checked table td .issueText span.shader {
+    background:  url( '../img/bgTableTextSelected.png' ) repeat-y 0 0;
+}
+.issueContainer.create table td .issueText span.shader {
+    background:  url( '../img/bgTableTextCreate.png' ) repeat-y 0 0;
+}
+.issueContainer span.attachment {
+    margin: 0 .3em 0 0;
+    padding: .3em .6em;
+    background: url( '../img/icoAttachment.gif' ) no-repeat 0 .4em;
+}
+.issueContainer table td.expand_collapse a {
+    padding-top: .3em;
+    padding-bottom: .1em;
+    padding-left: 0;
+    width: 1.3em;
+    display: block;
+    color: #fff;
+}
+.name {
+    margin: 0 2.6em 0 0;
+    padding: 0;
+    text-align: right;
+    font-size: 80%;
+    font-family: tahoma, arial, sans-serif!important;
+}
+/*---------------------------------- Start Attributes ---------------------------------------*/
+.issueContainer table.properties {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    table-layout: fixed;
+    font-family: tahoma, arial, sans-serif!important;
+}
+.issuePage .issueContainer table.properties {
+    margin-left: -.5em;
+    margin-top: -.8em;
+}
+.issueContainer.edit table.properties {
+    border-left: solid 1px #fff;
+}
+.issueContainer.edit table.properties {
+    border-left: none;
+}
+.issueContainer table td.ico {
+    width: 2.2em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+.issuePage .issueContainer table.properties td.ico {
+    padding-top: .5em;
+}
+.issueContainer table td.ico.favorites {
+    width: 3em;
+}
+.issueContainer.selected table td.ico.watchers, .issueContainer.checked table td.ico.watchers, .issueContainer.create table td.ico.watchers, .issueContainer.expand table td.ico.watchers {
+    border-right: solid 1px #e8eaec;
+}
+.issuePage .issueContainer.edit table td.ico.watchers {
+    border-right: solid 1px #e9f3fd;
+}
+.issueContainer table td.ico div {
+    color: #fff;
+    display: block;
+    font-size: 70%;
+    cursor: pointer;
+    border-left: solid 1px #e8eaec;
+}
+.issueContainer.edit table td.ico div {
+    color: #e9f3fd;
+}
+.issueContainer table td.ico.favorites div {
+    margin-right: .55em;
+}
+.issueContainer table td.ico.voters div {
+    padding-right: .3em;
+}
+.issueContainer table td.ico.watchers div {
+    margin-right: .4em;
+}
+.issueContainer table td.favorites div {
+    border-left: none;
+    background: url( '../img/iconFav.gif' ) no-repeat right 0;
+}
+/*
+.issueContainer table td.favorites div:hover {
+    background: url( '../img/iconFav_on.gif' ) no-repeat center 0;
+}
+*/
+.issueContainer table td.favorites div.active {
+    background: url( '../img/iconFav_on.gif' ) no-repeat right 0;
+}
+/*
+.issueContainer table td.favorites div.active:hover {
+    background: url( '../img/iconFav_hover.gif' ) no-repeat center 0;
+}
+*/
+.issueContainer table td.voters div {
+    background: url( '../img/iconVote.gif' ) no-repeat center 0;
+}
+/*
+.issueContainer table td.voters div:hover {
+    background: url( '../img/iconVote_hover.gif' ) no-repeat center 0;
+}
+*/
+.issueContainer table td.voters div.active {
+    text-align: center;
+    color: #084b96;
+    font-weight: bold;
+    letter-spacing: -.2em;
+    background: url( '../img/iconVoteBg.gif' ) no-repeat center 0;
+}
+/*
+.issueContainer table td.voters div.active:hover {
+    color: #777;
+    background: url( '../img/iconVoteBg_hover.gif' ) no-repeat center 0;
+}
+*/
+.issueContainer table td.voters div.active.you {
+    color: #1d1d1d;
+    background: url( '../img/iconVoteBg_hover.gif' ) no-repeat center 0;
+}
+/*
+.issueContainer table td.voters div.active.you:hover {
+    color: #aaa;
+    background: url( '../img/iconVoteBg.gif' ) no-repeat center 0;
+}
+*/
+.issueContainer table td.watchers div {
+    background: url( '../img/iconWatch.gif' ) no-repeat center 0;
+}
+/*
+.issueContainer table td.watchers div:hover {
+    background: url( '../img/iconWatch_on.gif' ) no-repeat center 0;
+}
+*/
+.issueContainer table td.watchers div.active {
+    background: url( '../img/iconWatch_on.gif' ) no-repeat center 0;
+}
+/*
+.issueContainer table td.watchers div.active:hover {
+    background: url( '../img/iconWatch_hover.gif' ) no-repeat center 0;
+}
+*/
+.issueContainer td.attributeList {
+    padding-left: .5em;
+}
+.issueContainer td.attributes {
+    padding: 0;
+    min-width: 2%;
+    /*width: 10%;*/
+    max-width: 10%;
+    /*position: relative;*/
+    font-size: 80%!important;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+}
+.issueContainer.selected td.attributes, .issueContainer.checked td.attributes, .issueContainer.create td.attributes, .issueContainer.expand td.attributes {
+    border-top: solid 1px #e8eaec;
+    border-bottom: solid 1px #e8eaec;
+}
+@media not all and (-webkit-min-device-pixel-ratio) {
+    .issueContainer td.attributes { width: 10%; }
+}
+.issueContainer table.properties td.attributes div.attribute {
+    margin: 0;
+    padding: 2px .5em 4px .5em;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 17px;
+    position: relative;
+    background-color: #f9f9fa;
+    border-left: solid 1px #e8eaec;
+}
+.issueContainer.edit table.properties td.attributes div.attribute {
+    z-index: 0;
+}
+.issueContainer table.properties td.attributes a.inline {
+    white-space: nowrap;
+    color: #084b96;
+    text-decoration: underline;
+}
+.issueContainer table.properties td.attributes>div.attribute>span {
+    margin-right: -1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 22px;
+    background:  url( '../img/bgTable.png' );
+}
+.issueContainer table.properties td.attributes div.attribute:hover,
+.issueContainer table.properties td.attributes div.active {
+    z-index: 1;
+    cursor: pointer;
+    background-color: #898989;
+    border-left: solid 1px #898989;
+    color:white;
+}
+.issueContainer table.properties td.attributes div.disabled:hover, .issueContainer table.properties td.attributes.active div.disabled {
+    z-index: 1;
+    cursor: text;
+    background-color: #f9f9fa;
+}
+.issueContainer table.properties td.attributes>div:hover>span, .issueContainer table.properties td.attributes>div.active>span {
+    display: none;
+}
+*html .issueContainer table.properties td.attributes>div>span { _background: none; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bgTable.png', sizingMethod='crop')  }
+*html .issueContainer table.properties td.attributes>div { position: static; }
+
+.issueContainer table td.attributes div.priority {
+    border-left: none!important;
+}
+.issueContainer table.properties td.attributes div.priority:hover,
+    .issueContainer table.properties td.attributes.active div.priority {
+    border-left: none!important;
+}
+.issueContainer table td.attributes div.priority.Normal,
+    .issueContainer table td.attributes div.priority.Normal:hover,
+    .issueContainer table td.attributes div.priority.Minor,
+    .issueContainer table td.attributes div.priority.Minor:hover {
+    color: #64992c;
+    background-color: #ebf4dd;
+}
+.issueContainer table td.attributes div.priority.Critical,
+    .issueContainer table td.attributes div.priority.Critical:hover,
+    .issueContainer table td.attributes div.priority.Major,
+    .issueContainer table td.attributes div.priority.Major:hover,
+    .issueContainer table td.attributes div.priority.Critical,
+    .issueContainer table td.attributes div.priority.Critical:hover,
+    .issueContainer table td.attributes div.priority.Show-stopper,
+    .issueContainer table td.attributes div.priority.Show-stopper:hover {
+    color: #cc0000;
+    background-color: #ffe3e3;
+}
+
+.combobox ul li.Show-stopper, .combobox ul li.Critical, .combobox ul li.Major {
+    color: #cc0000;
+}
+
+.combobox ul li.Normal, .combobox ul li.Minor {
+    color: #64992c;
+}
+
+
+.issueContainer table td.date {
+    padding-top: 2px;
+    padding-right: 2.6em;
+    width: 15%;
+    font-size: 80%;
+    text-align: right!important;
+    white-space: nowrap;
+    border-left: solid 1px #fff;
+}
+.issueContainer.selected table td.date, .issueContainer.checked table td.date, .issueContainer.create table td.date, .issueContainer.expand table td.date {
+    border-left: solid 1px #e8eaec;
+}
+@media not all and (-webkit-min-device-pixel-ratio) {
+    .issueContainer table td.date { width: auto; }
+}
+
+/*---------------------------------- End Attributes ---------------------------------------*/
+a.checkbox {
+    margin: 0;
+    padding: .5em 1.6em .5em 0;
+    color: #fff;
+    font-size: 11px;
+}
+a.checkbox.empty {
+    background: url( '../img/checkboxEmpty.gif' ) no-repeat .3em .6em!important;
+}
+a.checkbox.check {
+    background: url( '../img/checkbox.gif' ) no-repeat .3em .6em!important;
+}
+@media all and (-webkit-min-device-pixel-ratio:0) {
+body:first-of-type a.checkbox { background-position: .4em .5em!important; }
+}
+/*.issueContainer input[type="checkbox"] {
+    margin: .3em 0 0 .2em;
+    padding: 0;
+    width: 1em;
+    height: 1em;
+}*/
+.issueContainer h2 {
+    margin: 0 0 .2em 0;
+    display: inline;
+    font-size: 135%;
+    color: #0066cc;
+    line-height: 1.1em;
+    font-weight: normal;
+}
+.oneLine .issueContainer h2 {
+    font-size: 110%;
+}
+.oneLine .issueContainer .issueText, .oneLine .issueContainer .num {
+    padding-top: .35em;
+    line-height: 1em;
+}
+.issueContainer.resolved td h2 a, .issueContainer.resolved td h2 {
+    color: #676e75;
+}
+.issueContainer.resolved h2 a:hover {
+    color: #8a929b;
+}
+.issueContainer.resolved td.num h2 a, .issueContainer.resolved td.num h2 {
+    text-decoration: line-through;
+}
+.issueContainer.resolved h2 a span.num {
+    text-decoration: line-through;
+}
+.issueContainer.edit h2 {
+    color: #333;
+}
+.issuePage .issueContainer h2 {
+    margin: 0 0 .2em 0;
+    color: #202020;
+    font-size: 170%;
+    display: block;
+}
+.issueContainer .description {
+    margin: 0;
+    display: inline;
+}
+.issueContainer.expand .description, .issuePage .issueContainer .description {
+    margin-bottom: 1.5em;
+    display: block;
+}
+.issuePage .issueContainer .description {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-size: 110%;
+    line-height: 1.3em;
+}
+.issueContainer .description.empty {
+    color: #9ea1a5;
+}
+.issueContainer .description textarea {
+    width: 100%;
+    border: solid 2px #e1e2e2;
+}
+.issueContainer .description p {
+    margin: 0;
+    display: inline;
+}
+.issueContainer.expand .description p, .issuePage .issueContainer .description p {
+    margin-bottom: 1.5em;
+    display: block;
+}
+
+.issueContainer table td.expand_collapse a {
+    padding: .3em;
+    background: url( '../img/arrowExpandIssue.gif' ) no-repeat center .2em;
+}
+.issueContainer.expand table td.expand_collapse a {
+    background: url( '../img/arrowCollapseIssue.gif' ) no-repeat center .2em;
+}
+
+
+.issueContainer ul.attributeList {
+    margin: .4em 0 0 0;
+    padding: 0 0 .5em 0;
+}
+.issueContainer ul.attributeList>li {
+    margin: 0 .3em 0 0;
+    padding: 0 0 .38em 0;
+    list-style: none;
+    display: inline;
+    vertical-align: middle;
+    font-size: 80%;
+    line-height: 1.2em;
+    font-family: tahoma, arial, sans-serif;
+}
+
+.issueContainer ul.attributeList>li.add {
+    padding: 0 .2em .38em .2em;
+    color: #084b96;
+}
+.issueContainer ul.attributeList>li.add.active {
+    background-color: #d7d7d7;
+}
+/*.issueContainer ul.attributeList li a {
+    margin: 0;
+    padding: .2em 0 .25em 0;
+    display: inline-block;
+    background-color: transparent;
+}*/
+.issueContainer ul.attributeList>li.add a {
+    padding: 0 .1em .1em .1em!important;
+    text-decoration: none!important;
+    background-color: transparent!important;
+    color: #084b96!important;
+    border: none!important;
+}
+
+.issueContainer ul.attributeList>li.add a:hover {
+    text-decoration: underline;
+}
+.issueContainer ul.attributeList>li a.delete {
+    padding: .1em 0 .1em .8em!important;
+    color: #fff!important;
+    background: transparent url( '../img/icoDeleteAttach.gif' ) no-repeat 0 .4em;
+    border: none!important;
+}
+*+html .issueContainer ul.attributeList>li a.delete { /*hack IE*/
+    background-position: 0 .3em;
+}
+*+html .issueContainer ul.attributeList.links li a.delete { /*hack IE*/
+    background-position: 0 .1em;
+}
+/*.issueContainer ul.attributeList li .combobox {
+    top: 1.5em;
+    left: 0;
+}*/
+/*.issueContainer ul.attributeList.tags>li {
+    line-height: 2.1em;
+}
+.issueContainer ul.attributeList.tags>li a {
+    padding: 0;
+    color: #333;
+    font-size: 110%;
+    line-height: 1.2em;
+    font-family:  arial, tahoma, sans-serif;
+    white-space: nowrap;
+}
+.issueContainer ul.attributeList.tags>li a.delete {
+    padding: 0 0 0 .4em!important;
+    color: #555!important;
+    background: none;
+    border: none!important;
+}*/
+.issueContainer ul.attributeList.links li a {
+    margin: 0;
+    padding-left: .3em;
+    padding-right: .2em;
+    padding-bottom: .5em;
+    border: solid 1px #fff;
+}
+.issueContainer.expand ul.attributeList.links li a {
+    border: solid 1px #f4f9fe;
+}
+.issueContainer.checked ul.attributeList.links li a, .issueContainer.selected ul.attributeList.links li a {
+    border: solid 1px #e9f3fd;
+}
+.issueContainer.create ul.attributeList.links li a {
+    border: solid 1px #feffd9;
+}
+.issueContainer ul.attributeList.links li.resolved>a {
+    color: #676e75;
+    text-decoration: line-through;
+}
+.issueContainer ul.attributeList.links li.resolved h2 a {
+    color: #676e75;
+}
+.issueContainer ul.attributeList.links li.resolved>a:hover {
+    color: #8a929b;
+}
+.issueContainer.edit ul.attributeList.links li a {
+    border: solid 1px #e9f3fd;
+}
+.issueContainer ul.attributeList.links li.active>a {
+    margin: 0;
+    background-color: #fff;
+    border: solid 1px #676e75;
+    border-bottom: solid 1px #fff;
+}
+.issueContainer ul.attributeList.links li.active>a.delete {
+    background-color: transparent;
+}
+.issueContainer ul.attributeList.links li.active a span {
+    color: #fff;
+}
+
+.issueContainer ul.attributeList.links li .issueContainer {
+    margin: 0;
+    padding: 1em 1.5em 1em .5em;
+    width: 40em;
+    position: absolute;
+    top: 1.6em;
+    z-index: -1;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    border: solid 1px #676e75;
+}
+*+html .issueContainer ul.attributeList.links li .issueContainer { /*hack IE*/
+    top: 2.1em;
+}
+@-moz-document url-prefix() { /*hack FF*/
+    .issueContainer ul.attributeList.links li .issueContainer {top: 1.7em;}
+}
+@media not all and (-webkit-min-device-pixel-ratio) {/*hack Opera*/
+    .issueContainer ul.attributeList.links li .issueContainer {top: 2em;}
+}
+.issueContainer ul.attributeList.links li.active .issueContainer {
+    display: block;
+}
+.issueContainer ul.attributeList.links li.active .issueContainer table.properties {
+    font-size: 130%;
+}
+.issueContainer ul.attributeList.links li.active .issueContainer a {
+    padding: 0;
+    border: none!important;
+}
+.issueContainer ul.attributeList.links li.active .issueContainer table.properties {
+    margin: .5em 0 0 0;
+}
+
+.issueContainer ul.addAttribute {
+    margin: 0;
+    padding: 0;
+}
+.issueContainer ul.addAttribute li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.addAttributeForm {
+    margin: -.3em 0 2em 0;
+    padding: 1em 1em 3em 1em;
+    /*position: relative;*/
+    background-color: #fff;
+    border: solid 5px #d7d7d7;
+    display: none;
+}
+@-moz-document url-prefix() { /*hack FF*/
+    .addAttributeForm {margin-top: -.4em}
+}
+*+html .addAttributeForm { /*hack IE*/
+    margin-top: -.35em;
+}
+@media not all and (-webkit-min-device-pixel-ratio) {/*hack Opera*/
+    .addAttributeForm {margin-top: -.45em}
+}
+.addAttributeForm.links {
+    margin-top: -.58em;
+}
+.addAttributeForm.active {
+    display: block;
+}
+.addAttributeForm>ul {
+    margin: 0;
+    padding: 0;
+}
+.addAttributeForm .formlist{
+    margin: 0 .2em .3em .8em;
+    padding: .1em 0 0 0;
+    list-style: none;
+}
+.addAttributeForm ul>li label {
+    margin: .3em .3em 0 0;
+    float: left;
+    width: 8em;
+    text-align: right;
+}
+.addAttributeForm ul li input.text {
+    padding: 2px;
+    border: 2px solid #e1e2e2;
+}
+.addAttributeForm ul li.chooseFile {
+    margin-top: -.2em;
+}
+.addAttributeForm ul li.comboboxLi {
+    margin-left: 0;
+    padding-top: 0;
+}
+/*
+.addAttributeForm ul li .combobox ul li {
+    margin: 0;
+    padding: 0 0 0 .3em;
+    line-height: 1.3;
+    float: none;
+}
+*/
+
+.content ul.tabs {
+    margin: 1em 0 0 0;
+    padding: 0;
+    height: 1.67em;
+    position: relative;
+    background-color: #f0f2f3;
+}
+.content ul.tabs li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    border: solid 1px #f0f2f3;
+    border-bottom: none;
+}
+.content ul.tabs li.activ {
+    background-color: #f9f9fa;
+    border: solid 1px #d7dcde;
+    border-bottom: none;
+}
+.content ul.tabs li.activ a {
+    color: #484849;
+}
+.content ul.tabs li a {
+    margin: 0;
+    padding: .1em 1.7em .2em 1.7em;
+    list-style: none;
+    display: block;
+}
+.content ul.tabs li a.add {
+    margin: 0;
+    padding: .3em 1em;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #084b96;
+    font-size: 80%;
+    line-height: 1.3em;
+    background: transparent;
+    border: solid 1px #ccc;
+}
+.content ul.tabs li.activ a.add {
+    display: block;
+}
+
+.content .commentsIssue {
+    margin: -.1em 0 0 0;
+    padding: .2em .2em .2em 0;
+    border: solid 5px #d7d7d7;
+    background-color: #fff;
+}
+.issuePage .content .commentsIssue {
+    margin: 0;
+    background-color: #f9f9fa;
+    border: solid 1px #d7dcde;
+    border-top: none;
+}
+.content .commentsIssue .commentsScroll {
+    margin: 0;
+    padding: 1em 2em 0 1em;
+    position: relative;
+    z-index: 1;
+}
+.content .commentsIssue table {
+    margin: 0 0 1em 0;
+    padding: 0;
+    width: 98%;
+}
+.content .commentsIssue table tr.selected {
+    background-color: #e9f3fd;
+}
+.content .commentsIssue table td {
+    padding: 1em .8em 1em .8em;
+    width: 15%;
+    position: static;
+    vertical-align: top;
+    font-family: tahoma, verdana, arial, sans-serif;
+    font-size: 85%;
+    border-bottom: solid 1px #d7dcde;
+}
+.content .commentsIssue table td.first {
+    width: 7%;
+    padding-right: 0;
+}
+.content .commentsIssue table td.comment {
+    width: auto;
+    font-size: 90%;
+}
+.content .commentsIssue table td a.autor {
+    margin: 0;
+    display: block;
+    white-space: nowrap;
+}
+
+.content .commentsIssue table td span.autor {
+    margin: 0;
+    display: block;
+    white-space: nowrap;
+}
+
+.content .commentsIssue table td span.light {
+    margin: 0;
+    white-space: nowrap;
+}
+.content .commentsIssue table td.comment div {
+    /*display: inline;*/
+}
+.content .commentsIssue table td ul.actions {
+    margin: 0 0 0 .3em;
+    padding: 0 0 .2em .1em;
+    display: inline;
+    background: url( '../img/bgActionsCommentLeft.gif' ) no-repeat left .3em;
+}
+.content .commentsIssue table td ul.actions li {
+    margin: 0;
+    padding: 0 .4em .2em .3em;
+    display: inline;
+    list-style: none;
+    background: url( '../img/bgProperties.gif' ) no-repeat right .3em;
+}
+.content .commentsIssue table td ul.actions li.last {
+    background: url( '../img/bgActionsCommentRight.gif' ) no-repeat right .3em!important;
+}
+.content .commentsIssue table td ul.actions li a {
+    margin: 0 .1em;
+    font-size: 90%;
+    border-bottom: dotted 1px #6699cc;
+}
+.content .commentsIssue table td ul.actions li a:hover {
+    border-bottom: none;
+}
+.content .commentsIssue table td .visible {
+    margin: 1em 0 0 0;
+    border-bottom: none;
+    font-style: italic;
+}
+.content .commentsIssue .formAddComment {
+    margin: 0 0 1em 0;
+    padding: 1em;
+}
+.content .commentsIssue .comment .formAddComment {
+    padding: 0;
+}
+.content .commentsIssue .formAddComment label {
+    margin-left: .2em;
+}
+.content .commentsIssue .formAddComment textarea {
+    margin: 0 0 .2em 0;
+    padding: 2px;
+    font-family: tahoma, verdana, arial, sans-serif;
+    line-height: 1.4em;
+    font-size: 90%;
+    color: #333;
+    width: 97%;
+    height: 2.8em;
+    overflow: auto;
+    border: solid 2px #e1e2e2;
+}
+.content .commentsIssue .formAddComment ul.buttons {
+    margin-top: .2em;
+    margin-right: 1.1%;
+}
+
+.content .historyIssue {
+    margin: 0;
+    padding: 2em 1.8em;
+    background-color: #f9f9fa;
+    border: solid 1px #d7dcde;
+    border-top: none;
+}
+.content .historyIssue table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.content .historyIssue table td, .content .historyIssue table th {
+    padding: .5em 0 1em 0!important;
+    border: none;
+}
+.content .historyIssue table tr.title td {
+    padding-bottom: .2em!important;
+    font-size: 80%;
+    background-color: #f0f1f2;
+    border-bottom: solid 1px #d7dcde;
+}
+.content .historyIssue table tr th, .content .historyIssue table tr td {
+    padding: 1em;
+    vertical-align: top;
+}
+.content .historyIssue table tr th {
+    width: 12%;
+}
+.content .historyIssue table tr td .old {
+    margin: 0;
+    text-decoration: line-through;
+}
+.content .historyIssue table tr.title td a {
+    margin: 0 .8em 0 .5em;
+    font-size: 120%;
+}
+
+
+.issueContainer.edit .form {
+    margin: 0;
+    padding: 1em 1.6em;
+    /*position: relative;*/
+    background-color: #e9f3fd;
+}
+.issueContainer.edit a.help {
+    margin: 0;
+    padding: 0;
+    float: right;
+    color: #e9f3fd;
+}
+.issueContainer dl.mainProperties {
+    margin: 0 0 1.5em 0;
+    padding: 0;
+}
+.issueContainer dl.mainProperties dt {
+    margin: .35em 0 0 0;
+    padding: 0;
+    width: 5.5em;
+    float: left;
+    text-align: right;
+}
+.issueContainer dl.mainProperties dd {
+    margin: 0 0 .3em 6em;
+    padding: 0;
+    /*position: relative;*/
+}
+.issueContainer dl.mainProperties input.summary, .issueContainer dl.mainProperties textarea.description {
+    margin: 0;
+    padding: .2em .3em;
+    width: 98%;
+    color: #333;
+    font-size: 100%;
+    font-family: tahoma, arial, sans-serif;
+}
+.issueContainer dl.mainProperties textarea.description {
+    height: 7em;
+    overflow: auto;
+    resize: none;
+}
+.issueContainer.edit .issueWikiHelp {
+    margin: .9em 1.7em 0 0;
+    padding: 0;
+    font-size: 80%;
+    float: right;
+}
+.issueContainer.edit ul.buttons {
+    margin: 1em 1em .5em -.3em;
+    padding: 0;
+}
+.issueContainer.edit .issuePreview {
+    margin: 0;
+    padding: 1em 1.6em;
+    position: relative;
+    display:none;
+}
+.issueContainer.edit .issuePreview.active {
+    display:block;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.issueContainer.selected p {
+    color: #333;
+}
+.newIssue p {
+    margin: 0 0 .1em 0;
+    color: #55676f;
+}
+.issueContainer .issue p a {
+    color: #084b96;
+    border-bottom: dotted 1px #6699cc;
+}
+
+.issueContainer .issue p a:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
+.issueContainer .issue a.title {
+    font-size: 120%;
+    border-bottom: solid 1px #003f7e;
+}
+.issueContainer .issue a.title.issueResolved {
+    text-decoration:line-through;
+    color: #919191;
+    border-bottom: none;
+}
+.issueContainer .issue a.title:hover {
+    border-bottom: none;
+}
+.issueContainer.new .issue a.title {
+    font-weight: bold;
+}
+.issuePage .issue p a.title {
+    font-size: 140%;
+    color: #333;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.issueContainer .issue p a.toggleDescription {
+    border-bottom: none;
+}
+
+.issueContainer .updateDate {
+    margin-right: -1.6em;
+    padding-right: 0;
+    float: right;
+    display: block;
+    color: #55676f;
+    font-size: 80%;
+}
+.issueContainer .updateDate.attach {
+    padding-left: 1.7em;
+    background: url( '../img/attach.png' ) no-repeat 0 0;
+}
+
+
+
+/* ------ for delete new welcome page ----- */
+.content table.activity {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.content table.activity td {
+    padding: .2em 1.8em .4em 1.4em;
+    font-size: 110%;
+    font-family: tahoma, verdana, arial, sans-serif;
+    border-bottom: solid 1px #ebebeb;
+}
+.content table.activity td.share {
+    background-image: url( '../img/icoShare.gif' );
+    background-repeat: no-repeat;
+    background-position: .3em .4em;
+}
+.content table.activity td.date {
+    text-align: right;
+    font-size: 80%;
+    color: #55676f;
+}
+.content table.activity td a {
+    font-weight: bold;
+}
+.content table.activity td .number {
+    margin-left: .8em;
+    font-size: 75%;
+    color: #55676f;
+}
+.content table.activity td .number a {
+    margin: 0 .1em;
+    border-bottom: dotted 1px #6699cc;
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* TODO: hack for IE overlaping*/
+.issueContainer ul.attributeList.tags {
+    position: relative;
+    z-index: 2;
+}
+.issueContainer ul.fileProperties, .issueContainer .formAddComment {
+    position: relative;
+    z-index: 1;
+}
+.addAttributeForm.active .fileProperties .combobox{
+    position: relative;
+}
+.issueContainer ul.attributeList.tags>li {
+    position: relative;
+    z-index: 1;
+}
+.issueContainer ul.attributeList.links li.active {
+    z-index: 7;
+    position: relative;
+}
+.issueContainer ul.attributeList.links li.active>.issueContainer {
+    
+}
+.issueContainer ul.attributeList.links li.active>.issueContainer>.issueContainerWrapper {
+    z-index: 10;
+    position: relative;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */

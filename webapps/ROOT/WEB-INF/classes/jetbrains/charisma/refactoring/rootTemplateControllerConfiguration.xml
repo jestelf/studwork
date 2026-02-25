@@ -1,0 +1,7 @@
+<beans>
+  <bean id="jetbrains.charisma.refactoring.SecretRefactoringPage_RootHtmlTemplateController" class="jetbrains.charisma.refactoring.SecretRefactoringPage_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

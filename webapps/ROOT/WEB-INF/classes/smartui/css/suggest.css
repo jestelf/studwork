@@ -1,0 +1,50 @@
+.suggest {
+    display: none;
+    margin: 0 0 0 0;
+    padding: 0;
+    position: absolute;
+    background-color: #fff;
+    border-bottom: solid 1px #a9a9a9;
+    border-left: solid 1px #a9a9a9;
+    border-right: solid 1px #a9a9a9;
+    text-align: right;
+    z-index: 4;
+}
+
+.suggest ul {
+    margin: 0;
+    padding: 0;
+}
+
+.suggest ul li {
+    margin: 0;
+    padding: .2em .6em;
+    list-style: none;
+    font-size: 80%;
+    font-family: tahoma, arial, sans-serif;
+    cursor: pointer;
+}
+
+.suggest ul li span.option span.match {
+    font-weight: bold;
+}
+
+.suggest ul li.current {
+    background-color: #E1E2E2;
+}
+.suggest ul li.current .description {
+    color: #55676f;
+}
+
+.suggest ul li span.option {
+    float: left;
+    padding-right: 33px;
+}
+
+.suggest ul li span.optionType1 {
+  font-style: italic;
+}
+
+.suggest ul li span.description {
+    color: gray;
+}

@@ -1,0 +1,17 @@
+<beans>
+  <bean id="jetbrains.charisma.smartadmin.project2.EditProject_RootHtmlTemplateController" class="jetbrains.charisma.smartadmin.project2.EditProject_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartadmin.project2.Projects_RootHtmlTemplateController" class="jetbrains.charisma.smartadmin.project2.Projects_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartadmin.project2.CreateProject_RootHtmlTemplateController" class="jetbrains.charisma.smartadmin.project2.CreateProject_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

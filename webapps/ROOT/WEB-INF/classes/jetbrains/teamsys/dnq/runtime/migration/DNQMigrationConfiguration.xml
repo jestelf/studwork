@@ -1,0 +1,8 @@
+<beans>
+  <bean id="dnqMigrationsContainer" class="jetbrains.teamsys.dnq.runtime.migration.DNQMigrationsContainer"></bean>
+  <bean id="extensionPoint_dnqMigrationsContainer_migrations" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="dnqMigrationsContainer"/>
+    <property name="extensionPropertyName" value="migrations"/>
+    <property name="extensionType" value="jetbrains.teamsys.dnq.runtime.migration.AbstractMigration"/>
+  </bean>
+</beans>

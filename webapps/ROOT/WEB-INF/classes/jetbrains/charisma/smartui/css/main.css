@@ -1,0 +1,603 @@
+html, body {
+  font-size: 90%;
+  font-family: tahoma, arial, verdana, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.3em;
+  color: #333;
+  text-align: center;
+  background-color: #fff;
+}
+
+.clr {
+  clear: both;
+}
+
+.container img {
+  border: none;
+}
+
+.container table {
+  border: none;
+}
+
+a, a:visited {
+  color: #084b96;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.nol {
+  color: #084b96;
+  text-decoration: none;
+}
+
+.container h1 {
+  line-height: 1.3em;
+}
+
+.light {
+  color: #9ea1a5;
+}
+
+.lightText {
+  color: #9ea1a5;
+}
+
+.dark {
+  color: #454545;
+}
+
+.normal {
+  color: #333333!important;
+}
+
+.outline {
+  background-color: #feffd9;
+  border: solid 1px #e2c822;
+}
+
+.container .last {
+  background-image: none!important;
+}
+
+.container .inputSelector {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.container .inputSelector input {
+  margin: 0;
+  padding: 0.18em 0.3em;
+  width: 15em;
+  font-size: 13px;
+  background: white url("${getClasspathUri("smartui/img/arrowDownGreyBig.gif")}") no-repeat 96% center;
+  border: solid 2px #e1e2e2;
+}
+
+.container .inputSelector ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 1.7em;
+  left: 5.63em;
+  z-index: 1;
+  font-size: 13px;
+  width: 15.6em;
+  background-color: #ffffff;
+  border-left: solid 2px #e1e2e2;
+  border-right: solid 2px #e1e2e2;
+  border-bottom: solid 2px #e1e2e2;
+}
+
+body:nth-of-type(1) .container .inputSelector ul {
+  width: 15.5em;
+  left: 5.6em;
+}
+
+.container .inputSelector ul li {
+  margin: 0;
+  padding: 1px 0.4em 2px 0.4em;
+  list-style: none;
+}
+
+.container .inputSelector ul li.activ {
+  background-color: #f0f2f3;
+}
+
+ul.buttons {
+  margin: 0;
+  padding: 0;
+}
+
+ul.buttons > li {
+  margin-left: 2px;
+  padding: 1px 0 3px 0;
+  float: right;
+  list-style: none;
+  color: #55676f;
+  font-size: 85%;
+}
+
+ul.buttons > li a {
+  margin: -0.3em 0 0 0.4em;
+  padding: 0.2em 1.6em 0.3em 1.6em;
+  float: left;
+  font-size: 100%;
+  color: #084b96;
+  background-color: #fcfcfc;
+  border: 1px solid #e6e6e6;
+  border-right-color: #666666;
+  border-bottom-color: #666666;
+  text-decoration: none;
+}
+
+ul.buttons > li a.submitButton {
+  background-color: #084b96;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+ul.buttons > li.preview {
+  float: none;
+}
+
+ul.buttons > li.preview a {
+  margin-top: -0.35em;
+  margin-left: 0;
+  margin-right: -0.1em;
+  padding-right: 0;
+  color: #e9f3fd;
+  background-color: transparent;
+  border: none!important;
+}
+
+.preview .checkbox {
+  margin: 0;
+  padding: 0.5em 1.6em 0.5em 0;
+  color: #ffffff;
+  font-size: 11px;
+  background: url("${getClasspathUri("smartui/img/checkboxEmpty.gif")}") no-repeat 0.3em 0.5em;
+}
+
+.preview .checkbox.checked {
+  background: url("${getClasspathUri("smartui/img/checkbox.gif")}") no-repeat 0.3em 0.5em;
+}
+
+span.ico.delete {
+  margin: 0;
+  padding: 0.5em 1.6em 0.5em 0;
+  color: #ffffff;
+  font-size: 11px;
+  background: url("${getClasspathUri("smartui/img/icoDeleteSearch.gif")}") no-repeat 0.6em center;
+}
+
+img.avatar {
+  margin: 0;
+  padding: 0;
+  border: solid 1px #d2d2d2;
+}
+
+.container input.textNo {
+  color: #999999;
+}
+
+.container input.text {
+  color: #333333;
+}
+
+.container {
+  margin: 0 2em;
+  padding: 0 .8em;
+  min-width: 930px;
+  height: auto!important;
+  height: 100%;
+  min-height: 100%;
+  text-align: left;
+}
+
+.container.widthAuto {
+  min-width: 0;
+}
+
+body.index .content {
+  margin: 1em 1em 0 1em;
+}
+
+.clearr {
+  clear: right;
+}
+
+span.highlightedWord {
+  background-color: #fff5bd;
+}
+
+a:hover .highlightedWord {
+  text-decoration: underline;
+}
+
+a.clickable:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content .profileForm {
+  margin: 1.5em 0 0 0;
+  padding: 0;
+}
+
+.content .profileForm .userAvatar {
+  margin: 0 1em 0 0;
+  padding: 0;
+  width: 8.5em;
+  float: right;
+  text-align: center;
+  color: #a6a6a6;
+}
+
+.content .profileForm .userAvatar .addFile {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.content .profileForm .userAvatar .addFile a.change {
+  padding: 0.2em 0.3em;
+  font-size: 85%;
+}
+
+.content .profileForm .userAvatar .addFile.active a.change {
+  background-color: #d7d7d7;
+}
+
+.content .profileForm .userAvatar .addFile .addAttributeForm {
+  margin: 0;
+  display: none;
+  width: 40em;
+  position: absolute;
+  top: 1.3em;
+  right: 0;
+}
+
+.content .profileForm .userAvatar .addFile.active .addAttributeForm {
+  display: block;
+}
+
+.content .profileForm dl {
+  margin: 0 9em 0 1.6em;
+  padding: 0;
+}
+
+.content .profileForm dl dt {
+  margin: 0.4em 0 1em 0;
+  padding: 0;
+  float: left;
+  width: 6em;
+  text-align: right;
+  color: #55676f;
+}
+
+.content .profileForm dl dd {
+  margin: 0 0 1em 6.5em;
+  padding: 0;
+  background: url("${getClasspathUri("smartui/img/bgProfileInputLeft.gif")}") no-repeat 0 0;
+}
+
+.content .profileForm dl dd p {
+  margin: 0;
+  padding: 0 7px;
+  background: url("${getClasspathUri("smartui/img/bgProfileInputRight.gif")}") no-repeat 100% 0;
+}
+
+.content .profileForm dl dd p input {
+  margin: 0;
+  padding: 0.5em 0 0.5em 0;
+  width: 99%;
+  color: #333333;
+  font-size: 13px;
+  background: transparent url("${getClasspathUri("smartui/img/bgProfileInput.gif")}") repeat-x 0 0;
+  border: none;
+  *margin: -1px;
+}
+
+.content .profileForm dl dd.addLink {
+  margin-top: -1.4em;
+  padding-left: 2.9em;
+  font-size: 85%;
+  color: #a6a6a6;
+  background: none;
+}
+
+.content .profileForm dl dd.addLink a {
+  border-bottom: dotted 1px #6699cc;
+}
+
+.content .profileForm dl dd.addLink a:hover {
+  border-bottom: none;
+}
+
+.content .profileForm dl dd.check {
+  padding-top: 0.4em;
+  padding-bottom: 0.6em;
+  background: none;
+}
+
+.content .profileForm dl dd.check input {
+  margin-bottom: 2em;
+  float: left;
+}
+
+.content .profileForm dl dd.usenewui {
+  background: none;
+}
+
+.content .profileForm dl dd.usenewui input {
+  margin-bottom: 0.5em;
+  margin-top: 0.6em;
+}
+
+.content .profileForm dl dd.check button {
+  margin: 0 0.4em 0 0;
+  padding: 0.2em 1.2em;
+  font-size: 85%;
+  color: #084b96;
+  font-weight: bold;
+  background-color: #f0f2f3;
+  border: 1px solid #e7e7e7;
+  border-right-color: #666666;
+  border-bottom-color: #666666;
+  *padding-top: 0;
+  *padding-bottom: 0;
+}
+
+.content .profileForm dl dd.check button.cancel {
+  font-weight: normal;
+  background-color: #fcfcfc;
+}
+
+.content .profileForm dl dd.addLink.activ {
+  padding-top: 1em;
+}
+
+.content .profileForm dl dd.addLink.activ a {
+  margin: 0 1px 0 1px;
+  padding: 0.3em 1em;
+  background-color: #d7d7d7;
+  border-bottom: none;
+}
+
+.content .profileForm dl dd.addLink.activ span {
+  display: none;
+}
+
+.content .profileForm dl dd.addLink .drop {
+  display: none;
+}
+
+.content .profileForm dl dd.addLink.activ .drop {
+  margin: 0 0 0 -1.2em;
+  padding: 0;
+  display: block;
+  border: solid 5px #d7d7d7;
+}
+
+.content .profileForm dl dd.addLink.activ .drop dl, .content .profileForm dl dd.addLink.activ .drop table {
+  margin: -1px 1px;
+  padding: 1.5em 1.7em 0.5em 0.7em;
+  border-top: solid 1px #ffffff;
+  border-bottom: solid 1px #ffffff;
+}
+
+.content .profileForm dl dd.addLink.activ .drop dl dt {
+  width: 8.5em;
+}
+
+.content .profileForm dl dd.addLink.activ .drop dl dd {
+  margin-left: 9em;
+}
+
+.content .profileForm dl dd.addLink.activ .drop table {
+  width: 100%;
+}
+
+.content .profileForm dl dd.addLink.activ .drop table th {
+  padding: 0 0 0.3em 0.5em;
+  color: #55676f;
+  font-weight: normal;
+  border-bottom: solid 1px #d2d2d2;
+  text-align: center;
+}
+
+.content .profileForm dl dd.addLink.activ .drop table td {
+  padding: 0.3em 0 0.3em 0.5em;
+  color: #55676f;
+  text-align: center;
+}
+
+.content .profileForm dl dd.addLink.activ .drop table td.comment {
+  padding-left: 3.5em;
+  text-align: left;
+  color: #a6a6a6;
+}
+
+.content .profileForm dl dd.addLink.activ .drop table th.name, .content .profileForm dl dd.addLink.activ .drop table td.name {
+  color: #55676f;
+  text-align: left;
+}
+
+/*welcome screen*/
+.welcome-search-panel {
+  padding-top: 20px;
+  
+  
+  
+  
+}
+
+.welcome-search-panel .jt-list-container .title {
+  border-bottom-color: transparent;
+  background-image: none;
+}
+
+.welcome-search-panel .watchType {
+  display: none;
+}
+
+.welcome-search-panel .jt-list-item {
+  height: 28px;
+  margin-left: 10px;
+  border-bottom: 1px solid #f0f2f3;
+}
+
+.welcome-search-panel h2 {
+  font-family: arial, tahoma, verdana, sans-serif;
+  font-size: 140%;
+  font-weight: normal;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+.welcome-search-panel ul.searches {
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+
+.welcome-search-panel ul.searches li {
+  margin: 0;
+  padding: 0.3em 0.3em;
+  list-style: none;
+  font-size: 110%;
+  border-bottom: solid 1px #f0f1f2;
+}
+
+.welcome-search-panel ul.searches li a {
+  padding-left: 1.2em;
+  font-weight: bold;
+}
+
+ul.searches li a.expand_collapse {
+  font-size: 85%;
+}
+
+/*-----------*/
+.issueTag {
+  border: solid 2px #f1f5ec;
+  background: #f1f5ec;
+  font-size: 65%;
+  color: #006633;
+}
+
+.changed {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.block {
+  display: block;
+}
+
+.javaExceptionFirstLine {
+  font-family: monospace;
+}
+
+.offlineUser {
+  background: url("${getClasspathUri("smartui/img/userOffline.png")}") no-repeat 0 55%;
+  padding-left: 5px;
+}
+
+.onlineUser {
+  background-image: url("${getClasspathUri("smartui/img/userOnline.png")}");
+}
+
+.userGroup {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -3px;
+  line-height: 0;
+  padding: 1px;
+  background-color: white;
+  border: 1px solid #d4d5d6;
+  border-right-color: #898989;
+  border-bottom-color: #898989;
+  width: 16px;
+  height: 16px;
+}
+
+.propertyVisibility {
+  min-width: 320px;
+  max-width: 900px;
+  
+  
+  
+  
+  
+  
+}
+
+.propertyVisibility .closure-wrapper {
+  position: relative;
+  width: 130px;
+  height: 17px;
+  margin: 0;
+}
+
+.propertyVisibility .closure-target {
+  white-space: nowrap;
+}
+
+.propertyVisibility .closure-wrapper:hover .closure-target {
+  left: 18px;
+}
+
+.propertyVisibility .jt-fieldset-descr {
+  padding-top: 0;
+  
+}
+
+.propertyVisibility .jt-fieldset-descr .closure-wrapper:hover .closure-target {
+  left: 0;
+}
+
+.propertyVisibility .jt-fieldset-pair {
+  padding-top: 0;
+}
+
+.propertyVisibility .light {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  width: 25px;
+  background: url("${getClasspathUri("smartui/img/hider.png")}") repeat-y 0 0;
+}
+
+*:first-child+html .propertyVisibility {
+  zoom: 1;
+  
+}
+
+*:first-child+html .propertyVisibility .closure-wrapper:hover .closure-target {
+  left: 0;
+}
+
+.wiki.text .javaExceptionFirstLine {
+  white-space: pre;
+}
+

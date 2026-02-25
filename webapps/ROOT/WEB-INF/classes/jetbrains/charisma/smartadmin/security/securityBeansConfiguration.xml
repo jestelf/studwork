@@ -1,0 +1,3 @@
+<beans>
+  <bean class="jetbrains.charisma.smartadmin.security.AdminAuditLifecycleListener"></bean>
+</beans>

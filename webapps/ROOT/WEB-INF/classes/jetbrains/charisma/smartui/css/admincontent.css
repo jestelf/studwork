@@ -1,0 +1,216 @@
+.header {
+  margin-bottom: 1em;
+}
+
+/*body class for admin section*/
+.administration {
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.administration .header {
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+.administration .footer {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.administration .table {
+  border: 1px solid #d4d5d6;
+  table-layout: fixed;
+  margin-bottom: 1em;
+  
+  
+  
+  
+}
+
+.administration .table th {
+  vertical-align: top;
+}
+
+.administration .table td {
+  word-wrap:break-word;
+}
+
+.administration .table td td {
+  padding: 0;
+}
+
+.administration .table .light {
+  font-size: 85%;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.administration .jt-fieldset {
+  padding: 5px 10px;
+}
+
+.administration .jt-fieldset-title {
+  color: #000;
+  
+}
+
+.administration .jt-fieldset-title input[type=checkbox] {
+  margin-top: .35em;
+}
+
+.administration .jt-fieldset-title:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+
+.administration .jt-player {
+  margin-bottom: 3em;
+}
+
+.administration .attributeList {
+  margin: 0;
+}
+
+.customField {
+  
+  
+  
+  
+}
+
+.customField .label {
+  width: 4.7em;
+  text-align: right;
+  
+}
+
+.customField .label label {
+  display: block;
+  margin-left: -0.4em;
+}
+
+.customField .jt-fieldset-pair label, .customField label {
+  width: 4.5em;
+  min-width: 4.5em;
+}
+
+.customField .jt-input {
+  width: 195px;
+}
+
+.customField .actions {
+  margin-left: 70px;
+  margin-top: 0.5em;
+}
+
+.customFieldValue {
+  margin-bottom: .2em;
+  
+}
+
+.customFieldValue .delete {
+  background: url("${getClasspathUri("images/delete.png")}") no-repeat center center;
+  padding: 1px 7px;
+}
+
+.users-table {
+  
+  
+}
+
+.users-table td {
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.users-table .actions {
+  display: block;
+}
+
+.jt-sort-up, .jt-sort-down {
+  background: url("${getClasspathUri("smartui/img/prev.png")}") no-repeat center center;
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-left: 5px;
+}
+
+.jt-sort-down {
+  background-image: url("${getClasspathUri("smartui/img/next.png")}");
+}
+
+.jt-sort-up:hover, .jt-sort-down:hover {
+  text-decoration: none!important;
+}
+
+.jt-action {
+  display: block;
+}
+
+.nothing h1 {
+  font-size: 200%;
+  padding: 0.5em 0 2em 3.5em;
+}
+
+.small-comment {
+  color: gray;
+  font-size: 85%;
+}
+
+.field-content td {
+  padding: 0 4px 0 4px;
+  min-width: 10em;
+  margin: 0.2em 0.5em;
+}
+
+.group-icon {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+img.group-icon {
+  padding: 0;
+  float: left;
+  margin-right: 5px;
+}
+
+.indent .jt-fieldset {
+  padding: 3px 10px;
+}
+
+.createUserDlg {
+  
+  
+}
+
+.createUserDlg .jt-fieldset-wrapper {
+  margin-top: 0;
+}
+
+.createUserDlg fieldset {
+  
+  
+}
+
+.createUserDlg fieldset label {
+  min-width: 1em;
+  width: 110px;
+}
+
+.createUserDlg fieldset input[type=checkbox] {
+  margin-left: 120px;
+}
+

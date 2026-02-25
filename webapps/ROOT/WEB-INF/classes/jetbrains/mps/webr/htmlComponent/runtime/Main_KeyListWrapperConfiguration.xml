@@ -1,0 +1,295 @@
+<beans>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>32</value>
+    </property>
+    <property name="name">
+      <value>SPACE</value>
+    </property>
+    <property name="macName">
+      <value>␣</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>27</value>
+    </property>
+    <property name="name">
+      <value>ESC</value>
+    </property>
+    <property name="macName">
+      <value>⎋</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>46</value>
+    </property>
+    <property name="name">
+      <value>DELETE</value>
+    </property>
+    <property name="macName">
+      <value>⌦</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>8</value>
+    </property>
+    <property name="name">
+      <value>BACKSPACE</value>
+    </property>
+    <property name="macName">
+      <value>⌫</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>13</value>
+    </property>
+    <property name="name">
+      <value>ENTER</value>
+    </property>
+    <property name="macName">
+      <value>⏎</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>33</value>
+    </property>
+    <property name="name">
+      <value>PAGEUP</value>
+    </property>
+    <property name="macName">
+      <value>⇞</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>34</value>
+    </property>
+    <property name="name">
+      <value>PAGEDOWN</value>
+    </property>
+    <property name="macName">
+      <value>⇟</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>35</value>
+    </property>
+    <property name="name">
+      <value>END</value>
+    </property>
+    <property name="macName">
+      <value>⇲</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>36</value>
+    </property>
+    <property name="name">
+      <value>HOME</value>
+    </property>
+    <property name="macName">
+      <value>⇱</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>38</value>
+    </property>
+    <property name="name">
+      <value>UP</value>
+    </property>
+    <property name="macName">
+      <value>↑</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>37</value>
+    </property>
+    <property name="name">
+      <value>LEFT</value>
+    </property>
+    <property name="macName">
+      <value>←</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>39</value>
+    </property>
+    <property name="name">
+      <value>RIGHT</value>
+    </property>
+    <property name="macName">
+      <value>→</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>40</value>
+    </property>
+    <property name="name">
+      <value>DOWN</value>
+    </property>
+    <property name="macName">
+      <value>↓</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>9</value>
+    </property>
+    <property name="name">
+      <value>TAB</value>
+    </property>
+    <property name="macName">
+      <value>⇥</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>45</value>
+    </property>
+    <property name="name">
+      <value>INSERT</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>156</value>
+    </property>
+    <property name="name">
+      <value>MAC_HELP</value>
+    </property>
+    <property name="macName">
+      <value>?⃝</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>187</value>
+    </property>
+    <property name="name">
+      <value>=</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>189</value>
+    </property>
+    <property name="name">
+      <value>-</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>61</value>
+    </property>
+    <property name="name">
+      <value>=</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>65</value>
+    </property>
+    <property name="name">
+      <value>A</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>67</value>
+    </property>
+    <property name="name">
+      <value>C</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>68</value>
+    </property>
+    <property name="name">
+      <value>D</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>72</value>
+    </property>
+    <property name="name">
+      <value>H</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>73</value>
+    </property>
+    <property name="name">
+      <value>I</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>74</value>
+    </property>
+    <property name="name">
+      <value>J</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>76</value>
+    </property>
+    <property name="name">
+      <value>L</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>78</value>
+    </property>
+    <property name="name">
+      <value>N</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>80</value>
+    </property>
+    <property name="name">
+      <value>P</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>83</value>
+    </property>
+    <property name="name">
+      <value>S</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>86</value>
+    </property>
+    <property name="name">
+      <value>V</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.htmlComponent.runtime.KeyCode">
+    <property name="code">
+      <value>113</value>
+    </property>
+    <property name="name">
+      <value>F2</value>
+    </property>
+  </bean>
+</beans>

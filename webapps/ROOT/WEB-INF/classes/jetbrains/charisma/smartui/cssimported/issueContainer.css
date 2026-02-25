@@ -1,0 +1,864 @@
+.content #issuesContent {
+  margin: 0.7em .3em 2em 0;
+  padding-bottom: 1em;
+}
+
+.issueContainer {
+  margin-top: -1px;
+  padding: 6px .5em 10px .3em;
+  font-family: arial, tahoma, verdana, sans-serif;
+  border: solid 1px transparent;
+  border-bottom: solid 1px #e8eaec;
+}
+
+.content .oneLine .issueContainer {
+  padding-bottom: 2px;
+}
+
+.issuePage .issueContainer {
+  margin-top: 1.3em;
+  border-bottom: none;
+}
+
+.issueContainer.expand {
+  background-color: #f4f9fe;
+  border: solid 1px #d7dcde;
+}
+
+.issueContainer.checked {
+  background-color: #e9f3fd;
+  border: solid 1px #d7dcde;
+}
+
+.issueContainer.selected {
+  border: dotted 1px #5586bd;
+  background-color: #e9f3fd;
+}
+
+.issueContainer.focused {
+  border: dotted 1px #5586bd;
+}
+
+.content .issueContainer.create {
+  background-color: #feffd9;
+  border: solid 1px #e2c822;
+}
+
+.issueContainer.expand, .issueContainer.checked, .issueContainer.selected, .issueContainer.create {
+  margin-bottom: 4px;
+  padding-bottom: 6px;
+}
+
+.oneLine .issueContainer.expand, .oneLine .issueContainer.checked, .oneLine .issueContainer.selected, .oneLine .issueContainer.create {
+  margin-bottom: 2px;
+  padding-bottom: 0;
+  *padding-bottom:2px;
+}
+
+.issueContainer.edit {
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  border: solid 8px #b7d2f0;
+}
+
+.issueContainer table {
+  margin: 0 0 0.2em 0;
+  padding: 0;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.issueContainer table td {
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.issueContainer table td.checkbox {
+  width: 2.3em;
+  background: none!important;
+}
+
+.issueContainer table td.checkbox input {
+  margin-top: .2em;
+  *margin-top:-.1em;
+  margin-right: .34em;
+}
+
+.issueContainer table td.num {
+  padding-right: 0.6em;
+  max-width: 8%;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.issueContainer.edit .form table td.num {
+  padding-left: 6em;
+  text-align: left;
+}
+
+.issuePage .issueContainer table td.num {
+  width: 7.5em;
+}
+
+.issueContainer table td.issueDescription {
+  width: 75.2%;
+}
+
+.issueContainer.edit table td.issueDescription {
+  width: 92%;
+}
+
+.issueContainer table td.nameOrDate {
+  padding-left: 1em;
+  padding-right: 0.6em;
+  padding-top: 0.3em;
+  text-align: right;
+  font-size: 85%;
+  width: 15%;
+  white-space: nowrap;
+}
+
+.issueContainer table td.issueDescription table.issueDescriptoinTable {
+  table-layout: fixed;
+}
+
+.issueContainer table td .issueText {
+  padding-right: 30px;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+  position: relative;
+  *position:static;
+}
+
+.issueContainer.expand table td .issueText {
+  overflow: visible;
+}
+
+.issueContainer table td .issueText span.shader {
+  margin-right: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  background: url("${getClasspathUri("smartui/img/bgTableText.png")}") repeat-y 0 0;
+}
+
+.issueContainer.selected table td .issueText span.shader, .issueContainer.checked table td .issueText span.shader {
+  background: url("${getClasspathUri("smartui/img/bgTableTextSelected.png")}") repeat-y 0 0;
+}
+
+.issueContainer.create table td .issueText span.shader {
+  background: url("${getClasspathUri("smartui/img/bgTableTextCreate.png")}") repeat-y 0 0;
+}
+
+.issueContainer span.attachment {
+  margin: 0 0.3em 0 0;
+  padding: .3em .6em;
+  background: url("${getClasspathUri("smartui/img/icoAttachment.gif")}") no-repeat 0 0.4em;
+}
+
+.issueContainer table td.expand_collapse {
+  width: 1.7em;
+}
+
+.issueContainer table td.expand_collapse a {
+  padding: 0 .1em .1em .1em;
+  width: 1.7em;
+  display: block;
+  color: #ffffff;
+}
+
+.issueContainer table td.expand_collapse a {
+  padding-bottom: .3em;
+  background: url("${getClasspathUri("smartui/img/arrowExpandIssue.gif")}") no-repeat .5em 0;
+}
+
+.issueContainer.expand table td.expand_collapse a {
+  background: url("${getClasspathUri("smartui/img/arrowCollapseIssue.gif")}") no-repeat .3em .2em;
+}
+
+.name {
+  margin: 0 2.6em 0 0;
+  padding: 0;
+  text-align: right;
+  font-size: 85%;
+}
+
+.issueContainer .properties {
+  margin: 0 0 0 -0.3em;
+  padding: 0;
+  z-index: 1;
+  table-layout: fixed;
+}
+
+.issueContainer.new .properties {
+  width: 99%;
+}
+
+.issueContainer .properties td.attributesIco {
+  width: 7.8em;
+  text-align: right!important;
+}
+
+.issueContainer.new .properties td.attributesIco {
+  width: 6.3em;
+}
+
+.issueContainer .properties td.attributesIco table {
+  width: auto;
+}
+
+.issueContainer .properties .ico {
+  width: 2.5em;
+  color: #e9f3fd;
+  padding: 0;
+  padding-bottom: 0.2em;
+}
+
+.issueContainer .properties .ico div {
+  color: #ffffff;
+  display: block;
+  font-size: 85%;
+  cursor: pointer;
+  border-left: solid 1px #e8eaec;
+  border: 0;
+  padding: 0.25em 0 0.4em;
+}
+
+.issueContainer .properties .favorites div {
+  background: url("${getClasspathUri("smartui/img/iconFav.gif")}") no-repeat center 50%;
+}
+
+.issueContainer .properties .favorites div.active {
+  background: url("${getClasspathUri("smartui/img/iconFav_on.gif")}") no-repeat center 50%;
+}
+
+.issueContainer .properties .voters div {
+  text-align: center;
+  font-weight: bold;
+  text-indent: 0;
+  padding-top: 0.3em;
+  padding-bottom: 0.55em;
+  color: #084b96;
+  background: url("${getClasspathUri("smartui/img/issue-list-action-button.gif")}") no-repeat center -48px;
+}
+
+.issueContainer .properties .voters div.active {
+  background: url("${getClasspathUri("smartui/img/issue-list-action-button.gif")}") no-repeat center 0;
+}
+
+.issueContainer .properties .voters div.active.disabled {
+  color: #333;
+  background: url("${getClasspathUri("smartui/img/issue-list-action-button.gif")}") no-repeat center 0;
+}
+
+.issueContainer .properties .voters div.active.you {
+  color: #1d1d1d;
+  background: url("${getClasspathUri("smartui/img/issue-list-action-button.gif")}") no-repeat center -96px;
+}
+
+.issueContainer .properties .ico.watchers div {
+  background: url("${getClasspathUri("smartui/img/iconWatch.gif")}") no-repeat 45% 50%;
+}
+
+.issueContainer .properties .watchers div {
+  background: url("${getClasspathUri("smartui/img/iconWatch.gif")}") no-repeat 45% 50%;
+}
+
+.issueContainer .properties .watchers div.active {
+  background: url("${getClasspathUri("smartui/img/iconWatch_on.gif")}") no-repeat 45% 50%;
+}
+
+.issueContainer td.attributeList {
+  padding-left: 0.5em;
+}
+
+.issueContainer td.attributes {
+  padding: 0;
+  min-width: 2%;
+  max-width: 10%;
+  font-size: 85%!important;
+  font-family: tahoma, arial, verdana, sans-serif;
+}
+
+.issueContainer table.properties td.attributes strong {
+  font-weight: bold;
+}
+
+.issueContainer table.properties td.attributes .attribute {
+  overflow: hidden;
+  height: 17px;
+  position: relative;
+  white-space: nowrap;
+  border-left: solid 1px #fff;
+  border-right: solid 1px #d4d5d6;
+}
+
+.issueContainer table.properties td.attributes .attribute.active {
+  border-left: solid 1px #898989;
+}
+
+.issueContainer table.properties td.attributes a.inline {
+  display: inline;
+  white-space: nowrap;
+}
+
+.issueContainer table.properties td.attributes a.inline:hover {
+  border-bottom: solid 1px #084b96;
+}
+
+.issueContainer table.properties td.attributes > .attribute > span.shadow {
+  margin-right: -1px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 22px;
+  background: url("${getClasspathUri("smartui/img/bgTable-lightGray.png")}");
+}
+
+.issueContainer table.properties td.attributes > div:hover > span.shadow, .issueContainer table.properties td.attributes > div.active > span.shadow {
+  display: none;
+}
+
+*html .issueContainer table.properties td.attributes>div>span.shadow {
+   _background: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bgTable.png', sizingMethod='crop')  };
+}
+
+*html .issueContainer table.properties td.attributes>div {
+  position: static;
+}
+
+.issueContainer table td.attributes.toggleComments {
+  min-width: 10em;
+}
+
+.issueContainer table td.date {
+  padding-top: 2px;
+  padding-right: 2.6em;
+  width: 15%;
+  font-size: 85%;
+  text-align: right!important;
+  white-space: nowrap;
+  border-left: solid 1px #ffffff;
+}
+
+.issueContainer.selected table td.date, .issueContainer.checked table td.date, .issueContainer.create table td.date, .issueContainer.expand table td.date {
+  border-left: solid 1px #e8eaec;
+}
+
+a.checkbox {
+  margin: 0;
+  padding: 0.5em 1.6em 0.5em 0;
+  color: #ffffff;
+  font-size: 11px;
+}
+
+a.checkbox.empty {
+  background: url("${getClasspathUri("smartui/img/checkboxEmpty.gif")}") no-repeat 0.3em 0.6em;
+}
+
+a.checkbox.check {
+  background: url("${getClasspathUri("smartui/img/checkbox.gif")}") no-repeat 0.3em 0.6em;
+}
+
+.issueContainer h2 {
+  margin: 0 0 0.2em 0;
+  display: inline;
+  font-size: 135%;
+  color: #0066cc;
+  line-height: 1.1em;
+  font-weight: normal;
+}
+
+.issueContainer h2 a {
+  text-decoration: none;
+}
+
+.oneLine .issueContainer h2 {
+  font-size: 110%;
+}
+
+.issueContainer.resolved h2 a, .issueContainer.resolved h2, .issueContainer .attributeList .resolved a {
+  color: #676e75;
+}
+
+.issueContainer.resolved h2 a:hover {
+  color: #8a929b;
+}
+
+.issueContainer.resolved td.num h2 a, .issueContainer.resolved td.num h2 {
+  text-decoration: line-through;
+}
+
+.issueContainer.resolved h2 a span.num {
+  text-decoration: line-through;
+}
+
+.issueContainer.edit h2 {
+  color: #333333;
+}
+
+.issuePage .issueContainer h2 {
+  margin: 0 0 0.2em 0;
+  color: #202020;
+  font-size: 170%;
+  display: block;
+}
+
+.issuePage .issueContainer.resolved td h2 {
+  color: #676e75;
+}
+
+.issueContainer .description {
+  margin: 0;
+  display: inline;
+  line-height: 1.4em;
+}
+
+.issueContainer .issuePreview .description {
+  margin-top: .5em;
+  display: block;
+}
+
+.issueContainer.expand .description, .issuePage .issueContainer .description {
+  margin-bottom: 1.5em;
+  display: block;
+}
+
+.issuePage .issueContainer .description {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: 110%;
+  line-height: 1.3em;
+}
+
+.issueContainer .description.empty {
+  color: #9ea1a5;
+}
+
+.issueContainer .description textarea {
+  width: 100%;
+  border: solid 2px #e1e2e2;
+}
+
+.issueContainer .description p {
+  margin: 0;
+  display: inline;
+}
+
+.issueContainer.expand .description p, .issuePage .issueContainer .description p {
+  margin-bottom: 1.5em;
+  display: block;
+}
+
+.content ul.tabs {
+  margin: 1em 0 0 0;
+  padding: 0;
+  height: 1.67em;
+  position: relative;
+  background-color: #f0f2f3;
+}
+
+.content ul.tabs li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  border: solid 1px #f0f2f3;
+  border-bottom: none;
+}
+
+.content ul.tabs li.activ {
+  background-color: #f9f9fa;
+  border: solid 1px #d7dcde;
+  border-bottom: none;
+}
+
+.content ul.tabs li.activ a {
+  color: #484849;
+}
+
+.content .commentsIssue {
+  margin: -0.1em 0 0 0;
+  padding: 0.2em 0.2em 0.2em 0;
+  border: solid 5px #d7d7d7;
+  background-color: #ffffff;
+}
+
+.issuePage .content .commentsIssue {
+  margin: 0;
+  background-color: #f9f9fa;
+  border: solid 1px #d7dcde;
+  border-top: none;
+}
+
+.content .commentsIssue .commentsScroll {
+  margin: 0;
+  padding: 1em 2em 0 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.content .commentsIssue .commentsScroll > .tableComments {
+  margin: 0 0 1em 0;
+  padding: 0;
+  width: 98%;
+}
+
+.content .commentsIssue table.tableComments tr.selected {
+  background-color: #e9f3fd;
+}
+
+.content .commentsIssue table.tableComments td {
+  padding: 1em 0.8em 1em 0.8em;
+  width: 15%;
+  line-height: 1.4em;
+  position: static;
+  vertical-align: top;
+  font-family: tahoma, verdana, arial, sans-serif;
+  font-size: 85%;
+  border-bottom: solid 1px #d7dcde;
+}
+
+.content .commentsIssue table.tableComments td.showAllCommentsNote {
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.content .commentsIssue table.tableComments td.first {
+  width: 7%;
+  padding-right: 0;
+}
+
+.content .commentsIssue table.tableComments td.comment {
+  width: auto;
+  font-size: 100%;
+}
+
+.content .commentsIssue table.tableComments td a.author {
+  margin: 0;
+  display: block;
+  white-space: nowrap;
+}
+
+.content .commentsIssue table.tableComments td .light {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 85%;
+}
+
+.content .commentsIssue table.tableComments td ul.actions {
+  margin: 0 0 0 0.3em;
+  padding: 0 .5em 0.2em 0.1em;
+  display: inline;
+  background: url("${getClasspathUri("smartui/img/bgActionsCommentLeft.gif")}") no-repeat left .3em;
+}
+
+.content .commentsIssue table.tableComments td ul.actions li {
+  margin: 0;
+  padding: 0 .38em .2em .3em;
+  display: inline;
+  font-size: 95%;
+  list-style: none;
+  background: url("${getClasspathUri("smartui/img/bgProperties.gif")}") no-repeat right 0.3em;
+}
+
+.content .commentsIssue table.tableComments td ul.actions li.last {
+  padding-left: .4em;
+  background: url("${getClasspathUri("smartui/img/bgActionsCommentRight.gif")}") no-repeat right .25em!important;
+}
+
+.content .commentsIssue table.tableComments td ul.actions li a {
+  margin: 0 .1em;
+  font-size: 90%;
+  border-bottom: dotted 1px #6699cc;
+}
+
+.content .commentsIssue table.tableComments td ul.actions li a:hover {
+  border-bottom: none;
+}
+
+.content .commentsIssue table.tableComments td .visible {
+  margin: 1em 0 0 0;
+  border-bottom: none;
+  font-style: italic;
+}
+
+.content .commentsIssue table.tableComments td.comment table.tableCommentText {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.permalink {
+  text-align: right;
+  display: block;
+  font-size: 85%;
+}
+
+.content .commentsIssue table.tableComments td.comment table.tableCommentText td {
+  font-size: 100%;
+  border-bottom: none;
+  padding: 0;
+}
+
+.content table.tableCommentText td .wiki.code {
+  font-size: 110%;
+}
+
+.content .commentsIssue .formAddComment {
+  margin: 0 0 1em 0;
+  padding: 1em;
+}
+
+.content .commentsIssue .comment .formAddComment {
+  padding: 0;
+}
+
+.content .formAddComment .jt-tbl {
+  width: 98%;
+  height: auto;
+}
+
+.content .commentsIssue .formAddComment label {
+  margin-left: 0.2em;
+}
+
+.content .commentsIssue .formAddComment textarea {
+  margin: 0 0 0.2em 0;
+  padding: 2px;
+  font-family: tahoma, verdana, arial, sans-serif;
+  line-height: 1.4em;
+  font-size: 90%;
+  color: #333333;
+  width: 97%;
+  height: 2.8em;
+  overflow: auto;
+  border: solid 2px #e1e2e2;
+}
+
+.content .commentsIssue .formAddComment ul.buttons {
+  margin-top: 0.2em;
+  margin-right: 1.1%;
+}
+
+.issueFsiTab {
+  margin: 0;
+  border: solid 1px #d7dcde;
+  border-top: none;
+}
+
+.content .historyIssue {
+  margin: 0;
+  padding: 2em 1.8em;
+  background-color: #f9f9fa;
+  border: solid 1px #d7dcde;
+  border-top: none;
+}
+
+.content .historyIssue table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.content .historyIssue table td, .content .historyIssue table th {
+  padding: 0.5em 0 1em 0!important;
+  border: none;
+}
+
+.content .historyIssue table tr.title td {
+  padding-bottom: 0.2em!important;
+  font-size: 85%;
+  background-color: #f0f1f2;
+  border-bottom: solid 1px #d7dcde;
+}
+
+.content .historyIssue table tr th, .content .historyIssue table tr td {
+  padding: 1em;
+  vertical-align: top;
+}
+
+.content .historyIssue table tr th {
+  width: 12%;
+}
+
+.content .historyIssue table tr td .old {
+  margin: 0;
+  text-decoration: line-through;
+}
+
+.content .historyIssue table tr.title td a {
+  margin: 0 0.8em 0 0.5em;
+  font-size: 120%;
+}
+
+.issueContainer.edit .form {
+  margin: 0;
+  padding: 1em 1.6em;
+  background-color: #e9f3fd;
+}
+
+.issueContainer.edit a.help {
+  margin: 0;
+  padding: 0;
+  float: right;
+  color: #e9f3fd;
+}
+
+.issueContainer dl.mainProperties {
+  margin: 0 0 1.5em 0;
+  padding: 0;
+}
+
+.issueContainer dl.mainProperties dt {
+  margin: 0.35em 0 0 0;
+  padding: 0;
+  width: 5.5em;
+  float: left;
+  text-align: right;
+}
+
+.issueContainer dl.mainProperties dd {
+  margin: 0 0 0.3em 6em;
+  padding: 0;
+}
+
+.issueContainer dl.mainProperties input.summary, .issueContainer dl.mainProperties textarea.description {
+  margin: 0;
+  padding: 0.2em 0.3em;
+  width: 98%;
+  font-size: 100%;
+  font-family: tahoma, arial, verdana, sans-serif;
+  color: #333;
+}
+
+.issueContainer dl.mainProperties textarea.description {
+  height: 7em;
+  overflow: auto;
+  resize:none;
+}
+
+.issueWikiHelp {
+  margin: 0.9em 1.7em 0 0;
+  padding: 0;
+  font-size: 85%;
+  float: right;
+}
+
+.commentsIssue .issueWikiHelp {
+  margin: 0 3% 0 0;
+}
+
+.issueContainer.edit ul.buttons {
+  margin: 1em 1em 0.5em -0.3em;
+  padding: 0;
+}
+
+.issueContainer.edit ul.buttons li.preview {
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+
+.issueContainer.edit ul.buttons li.preview .checkBox {
+  float: left;
+  height: 20px;
+}
+
+.issueContainer.edit ul.buttons li.preview .labelPreview {
+  float: left;
+  padding-left: 3px;
+  *padding-left: 0;
+}
+
+.issueContainer.edit .issuePreview {
+  margin: 0;
+  padding: 1em 1.6em;
+  position: relative;
+  display: none;
+}
+
+.issueContainer.edit .issuePreview.active {
+  display: block;
+  background-color: #ffffff;
+}
+
+.issueContainer.selected p {
+  color: #333333;
+}
+
+.issueContainer .issue p a {
+  color: #084b96;
+  border-bottom: dotted 1px #6699cc;
+}
+
+.issueContainer .issue p a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.issueContainer .issue a.title {
+  font-size: 120%;
+  border-bottom: solid 1px #003f7e;
+}
+
+.issueContainer .issue a.title.issueResolved {
+  text-decoration: line-through;
+  color: #919191;
+  border-bottom: none;
+}
+
+.issueContainer .issue a.title:hover {
+  border-bottom: none;
+}
+
+.issueContainer.new .issue a.title {
+  font-weight: bold;
+}
+
+.newIssueCombo .comboboxList {
+  margin-left: 0;
+}
+
+.issuePage .issue p a.title {
+  font-size: 140%;
+  color: #333333;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.issueContainer .issue p a.toggleDescription {
+  border-bottom: none;
+}
+
+.issueContainer .updateDate {
+  margin-right: -1.6em;
+  padding-right: 0;
+  float: right;
+  display: block;
+  color: #55676f;
+  font-size: 85%;
+}
+
+.issueContainer .updateDate.attach {
+  padding-left: 1.7em;
+  background: url("${getClasspathUri("smartui/img/attach.png")}") no-repeat 0 0;
+}
+
+.buildDecorator {
+  position: relative;
+  top: 0.3em;
+}
+
+.selectAll {
+  background-color: #feffd9;
+  border: solid 1px #e2c822;
+  text-align: center;
+  padding-bottom: 1px;
+  margin-bottom: 3px;
+}
+

@@ -1,0 +1,146 @@
+.edit {
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  border: 8px solid #B7D2F0!important;
+}
+
+.form {
+  margin: 0;
+  padding: 2em 25px 2em 15px;
+  background-color: #e9f3fd;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.form .date {
+  display: none;
+}
+
+.form .table {
+  table-layout: fixed;
+  border: 0;
+  margin: 0;
+  
+}
+
+.form .table td {
+  padding-right: 0;
+}
+
+.form label {
+  font-size: 110%;
+  line-height: 140%;
+  font-weight: bold;
+  color: #333;
+}
+
+.form .align-right {
+  width: 125px;
+  text-align: right;
+}
+
+.form .ico-wrapper {
+  width: 135px;
+  
+}
+
+.form .ico-wrapper table {
+  float: right;
+  width: 83px;
+}
+
+.form .description, .form .summary {
+  width: 99.7%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.form .summary {
+  margin-top: -3px;
+}
+
+.form .description {
+  margin-top: 0;
+  height: 7.5em;
+  overflow: auto;
+}
+
+.form .issueId {
+  margin-left: 135px;
+  
+}
+
+.form .issueId h2 {
+  color: #000;
+}
+
+.form .attributeList, .form .attach-wrapper {
+  margin-left: 135px;
+  overflow-y: hidden;
+}
+
+.form .attributeList li {
+  color: #000;
+}
+
+.form .help {
+  padding: 0 6px;
+  background: url("${getClasspathUri("smartui/img/iconHelp.gif")}") no-repeat right 0.2em;
+}
+
+.form .buttons {
+  margin-top: 1em;
+  padding: 0;
+  
+}
+
+.form .buttons .preview {
+  line-height: 1em;
+  padding-top: 2em;
+  
+  
+}
+
+.form .buttons .preview .checkBox {
+  float: left;
+  margin-right: 2px;
+  width: 13px;
+  height: 13px;
+}
+
+.form .buttons .preview .labelPreview {
+  float: left;
+  padding-left: 3px;
+  *padding-left: 0;
+}
+
+.issuePreview {
+  position: relative;
+  display: none;
+  padding: 15px;
+  overflow: hidden;
+  
+}
+
+.issuePreview .issueId {
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+.issuePreview.active {
+  display: block;
+  background-color: white;
+}
+

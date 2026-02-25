@@ -1,0 +1,1 @@
+charisma.smartui.entityBrowser = {};

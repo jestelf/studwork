@@ -1,0 +1,273 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.comments.Comments_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Comments</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.Comment_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>c</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.AddComment_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ac</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.comments.Comments</value>
+        <value>jetbrains.charisma.smartui.comments.js.CommentsList</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.charisma.smartui.js.FullScreenIssue</value>
+        <value>jetbrains.charisma.smartui.js.IssueList</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ElementExpander</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.jQuery_extension</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.comments.AddComment_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>AddComment</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.CommentSettings_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>cs</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.CommentPreview_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>acp</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.comments.AddComment</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.jQuery_extension</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.comments.CommentUserInfo_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>CommentUserInfo</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.UserGroup_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>UserGroup</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.user.UserInfo_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>UserInfo</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.comments.CommentContent_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>CommentContent</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.comments.CommentContent</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.comments.Comment_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Comment</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.CommentUserInfo_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>cui</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.CommentText_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ct</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.comments.EditCommentContent_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditCommentContent</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.CommentSettings_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>cs</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.CommentPreview_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>cp</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.comments.EditCommentContent</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.comments.CommentText_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>CommentText</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.EditCommentContent_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ecc</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartui.comments.CommentContent_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>cc</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.comments.CommentText</value>
+        <value>jetbrains.charisma.smartui.comments.js.CommentItem</value>
+        <value>jetbrains.charisma.smartui.comments.js.CommentsList</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.charisma.smartui.js.FullScreenIssue</value>
+        <value>jetbrains.charisma.smartui.js.IssueList</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.comments.CommentPreview_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>CommentPreview</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.comments.CommentsTitle_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>CommentsTitle</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.comments.CommentSettings_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>CommentSettings</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.comments.CommentSettings</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.comments.CommentsTitle2_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>CommentsTitle2</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+</beans>

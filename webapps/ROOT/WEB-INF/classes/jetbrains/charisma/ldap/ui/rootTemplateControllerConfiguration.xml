@@ -1,0 +1,7 @@
+<beans>
+  <bean id="jetbrains.charisma.ldap.ui.LdapAuthenticationSettings_RootHtmlTemplateController" class="jetbrains.charisma.ldap.ui.LdapAuthenticationSettings_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

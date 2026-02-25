@@ -1,0 +1,13 @@
+<beans>
+  <bean id="singleEnumFieldType" class="jetbrains.charisma.customfields.complex.enumeration.SingleEnumFieldType">
+    <property name="editor">
+      <value>SingleEnumEditorContainer</value>
+    </property>
+    <property name="name">
+      <value>enum[1]</value>
+    </property>
+    <property name="customCreator">
+      <value>EnumFieldCreator</value>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,284 @@
+/*Layout*/
+.search-panel {
+  width: 100%;
+  height: 40px;
+  clear: both;
+  margin: 2px 0 3em 0;
+  background: url("${getClasspathUri("smartui/img/default/search.png")}") repeat-x 0 0;
+  
+  
+  
+  
+  
+}
+
+.search-panel .search-west {
+  width: 17%;
+  width: 195px;
+  background: url("${getClasspathUri("smartui/img/default/search.png")}") no-repeat 0 -62px;
+  padding-bottom: 4px;
+  
+}
+
+.search-panel .search-west .panel {
+  padding: 9px 1px 7px 9px;
+}
+
+.search-panel .search-center {
+  float: none;
+  margin-left: 195px;
+  background: url("${getClasspathUri("smartui/img/default/sp-sl.png")}") no-repeat 0 0;
+  
+}
+
+.search-panel .search-center .panel {
+  padding: 8px 9px 11px 8px;
+  background: url("${getClasspathUri("smartui/img/default/sp-sr.png")}") no-repeat right 0;
+}
+
+.search-panel .search-south {
+  margin-left: 216px;
+  overflow: hidden;
+  color: #5b646c;
+}
+
+.search-panel .search-south.active {
+  display: none;
+}
+
+.search-panel .filterPopup {
+  top: 64px;
+  left: 248px;
+  z-index: 199;
+  display: block;
+  margin: 0;
+  background: url("${getClasspathUri("smartui/img/bgColout-rev.gif")}") no-repeat 13px 0;
+  
+  
+}
+
+.search-panel .filterPopup .info {
+  color: black;
+}
+
+.search-panel .filterPopup .jt-panel-content {
+  padding: 7px 20px 7px 7px;
+  margin-left: 0;
+  margin-top: 5px;
+  background: #feffd9 url("${getClasspathUri("smartui/img/bgColoutContent.gif")}") no-repeat 0 0;
+  border: 1px solid #084b96;
+  border-top: 0;
+  
+}
+
+.search-panel .filterPopup .jt-panel-content .delete {
+  top: 5px;
+}
+
+.fsi-layout .search-panel .search-center {
+  background: url("${getClasspathUri("smartui/img/default/sp-sl2.png")}") no-repeat 0 0;
+}
+
+/*search input*/
+.search-panel-input {
+  position: relative;
+  overflow-x: hidden;
+  font-size: 14px;
+  height: 24px;
+  padding-left: 5px;
+  padding-top: 2px;
+  
+}
+
+.search-panel-input .jt-input {
+  position: absolute;
+  width: 99%;
+  font-size: 14px;
+  font-family: monospace;
+  border-color: transparent;
+  padding: 0;
+  background-color: white;
+  outline-width: 0;
+}
+
+/*right hand actions: search now & show suggest*/
+.reset-search {
+  float: right;
+  height: 24px;
+  padding: 0 10px;
+  background: url("${getClasspathUri("smartui/img/icoCleanSearch.gif")}") no-repeat center 50%;
+}
+
+.reset-search:hover {
+  text-decoration: none;
+}
+
+.search-button {
+  font-family: arial, tahoma, verdana, sans-serif;
+  float: right;
+  position: relative;
+  height: 24px;
+  background-color: #d9dbde;
+  padding-right: 25px;
+  padding-left: 2px;
+  
+  
+}
+
+.search-button .jt-button {
+  height: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  background-color: #d9dbde;
+  border: 0;
+  margin: 0 5px;
+  padding: 2px 0 3px;
+}
+
+.search-button .jt-button[type=submit] {
+  font-family: arial, tahoma, verdana, sans-serif;
+}
+
+.suggest-selector {
+  position: absolute;
+  right: 0;
+  height: 24px;
+  padding: 0 10px;
+  border-left: 1px dotted #aeafb2;
+  background: url("${getClasspathUri("smartui/img/arrowDownBlack.gif")}") no-repeat center 50%;
+}
+
+.suggest-selector:hover {
+  text-decoration: none;
+}
+
+/*status line*/
+/*export options*/
+.importLinks {
+  float: right;
+  margin-right: -1px;
+  
+  
+}
+
+.importLinks li {
+  display: inline;
+  margin: 0 0 0 7px;
+  padding: 0 3px 0 0;
+  border-right: solid 1px #d7d7d7;
+}
+
+.importLinks li a {
+  border-bottom: none;
+}
+
+/*Select project combobox*/
+.search-panel .combobox {
+  width: 100%;
+  border: 0;
+  
+  
+  
+  
+}
+
+.search-panel .combobox input {
+  font-size: 14px;
+  font-family: monospace;
+  padding-left: 5px;
+  background-color: transparent;
+}
+
+.search-panel .combobox .arrow {
+  background-color: transparent;
+}
+
+.search-panel .combobox .match {
+  font-weight: bold;
+}
+
+.search-panel .combobox .combobox-loading {
+  top: 3px;
+  right: 2px;
+}
+
+.contentWrapper.selectProject {
+  font-size: 14px;
+  font-family: monospace;
+  margin-top: -2px;
+  margin-left: -1px;
+  
+}
+
+.contentWrapper.selectProject .comboboxList {
+  padding-right: 1px;
+}
+
+/*Recent searches suggest*/
+.showRecentSearch {
+  
+  
+  
+}
+
+.showRecentSearch .recent-search {
+  position: relative;
+  display: table;
+  width: 100%;
+  top: -2px;
+  left: 0;
+  z-index: 19;
+  border-bottom: 2px solid #d4d5d6;
+  
+  
+  
+  
+}
+
+.showRecentSearch .recent-search ul {
+  text-align: left;
+}
+
+.showRecentSearch .recent-search li {
+  padding: 0;
+  cursor: text;
+}
+
+.showRecentSearch .recent-search a {
+  display: block;
+  padding: .2em .6em;
+  color: #333;
+}
+
+.showRecentSearch .recent-search li:hover {
+  background-color: #E1E2E2;
+}
+
+.showRecentSearch .suggest {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.showRecentSearch .search-south {
+  display: none;
+}
+
+.suppose {
+  background-color: #feffd9;
+  display: inline;
+  
+  
+}
+
+.suppose .delete {
+  padding: 0 4px;
+  background: url("${getClasspathUri("smartui/img/icoDeleteFiltrPopup.gif")}") no-repeat 0 3px;
+}
+
+.suppose .delete:hover {
+  background-position: 0 -11px;
+}
+

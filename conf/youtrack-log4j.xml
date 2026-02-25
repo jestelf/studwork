@@ -1,0 +1,119 @@
+<!DOCTYPE log4j:configuration
+  PUBLIC
+    "-//log4j//DTD//EN"
+    "http://logging.apache.org/log4j/docs/api/org/apache/log4j/xml/log4j.dtd"
+>
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false"><appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender"><param name="Target" value="System.out"></param>
+<layout class="org.apache.log4j.PatternLayout"><param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [%-30.30c{1}] [%-15.15t] %m%n"></param>
+</layout>
+</appender>
+
+<appender name="FILE" class="org.apache.log4j.RollingFileAppender"><param name="File" value="${catalina.base}/logs/youtrack.log"></param>
+<param name="MaxFileSize" value="10Mb"></param>
+<param name="MaxBackupIndex" value="20"></param>
+<layout class="org.apache.log4j.PatternLayout"><param name="ConversionPattern" value="%d{DATE} %-5p [%-30.30c{1}] [%-50.50t] %m%n"></param>
+</layout>
+</appender>
+
+<appender name="DNQDUMPSFILE" class="org.apache.log4j.RollingFileAppender"><param name="File" value="${catalina.base}/logs/dnqdumps.log"></param>
+<param name="MaxFileSize" value="10Mb"></param>
+<param name="MaxBackupIndex" value="5"></param>
+<layout class="org.apache.log4j.PatternLayout"><param name="ConversionPattern" value="%d{DATE} %-5p [%-30.30c{1}] [%-15.15t] %m%n"></param>
+</layout>
+</appender>
+
+<appender name="UNIQUECONSTRAINTSRESOLUTIONFILE" class="org.apache.log4j.RollingFileAppender"><param name="File" value="${catalina.base}/logs/uniqueconstraints.log"></param>
+<param name="MaxFileSize" value="10Mb"></param>
+<param name="MaxBackupIndex" value="5"></param>
+<layout class="org.apache.log4j.PatternLayout"><param name="ConversionPattern" value="%d{DATE} %-5p [%-30.30c{1}] [%-15.15t] %m%n"></param>
+</layout>
+</appender>
+
+
+<appender name="SECURITYF" class="org.apache.log4j.RollingFileAppender"><param name="File" value="${catalina.base}/logs/security.log"></param>
+<param name="MaxFileSize" value="10Mb"></param>
+<param name="MaxBackupIndex" value="50"></param>
+<layout class="org.apache.log4j.PatternLayout"><param name="ConversionPattern" value="%d{DATE} %-5p [%-8.8c{1}] [%-15.15t] %m%n"></param>
+</layout>
+</appender>
+
+<appender name="ERRORS" class="org.apache.log4j.RollingFileAppender"><param name="File" value="${catalina.base}/logs/errors.log"></param>
+<param name="MaxFileSize" value="10Mb"></param>
+<param name="MaxBackupIndex" value="5"></param>
+<param name="Threshold" value="WARN"></param>
+<layout class="org.apache.log4j.PatternLayout"><param name="ConversionPattern" value="%d{DATE} %-5p [%-20.20c{1}] [%-5.5t] %m%n"></param>
+</layout>
+</appender>
+
+<appender name="ASYNC" class="org.apache.log4j.AsyncAppender"><param name="BufferSize" value="2098"></param>
+<param name="Blocking" value="false"></param>
+<appender-ref ref="FILE"></appender-ref>
+<appender-ref ref="CONSOLE"></appender-ref>
+<appender-ref ref="ERRORS"></appender-ref>
+</appender>
+
+<category name="org.mortbay.log"><priority value="INFO"></priority>
+</category>
+
+<category name="org.apache"><priority value="INFO"></priority>
+</category>
+
+<category name="org.springframework"><priority value="INFO"></priority>
+</category>
+
+<category name="jetbrains.springframework.configuration.runtime.MyClassPathXmlApplicationContext"><priority value="INFO"></priority>
+</category>
+
+<category name="jetbrains.mps"><priority value="INFO"></priority>
+</category>
+
+<category name="jetbrains.mps.webr"><priority value="INFO"></priority>
+</category>
+
+<category name="jetbrains.mps.baseLanguage.stateMachine"><priority value="INFO"></priority>
+</category>
+
+<category name="jetbrains"><priority value="INFO"></priority>
+</category>
+
+<category name="com.jetbrains"><priority value="INFO"></priority>
+</category>
+
+
+<category name="com.jetbrains.teamsys.core.execution.locks"><priority value="INFO"></priority>
+</category>
+
+<category name="jetbrains.charisma.teamcity"><priority value="TRACE"></priority>
+</category>
+
+<category name="com.jetbrains.teamsys.database"><priority value="INFO"></priority>
+</category>
+
+<category name="com.jetbrains.teamsys.dnq.database"><priority value="INFO"></priority>
+</category>
+
+<category name="com.jetbrains.teamsys.database.impl.iterate.binop"><priority value="DEBUG"></priority>
+</category>
+
+
+<category name="httpclient"><priority value="ERROR"></priority>
+</category>
+<category name="freemarker"><priority value="INFO"></priority>
+</category>
+
+<category name="security"><priority value="INFO"></priority>
+<appender-ref ref="SECURITYF"></appender-ref>
+</category>
+
+<category name="DNQDUMPS"><priority value="TRACE"></priority>
+<appender-ref ref="DNQDUMPSFILE"></appender-ref>
+</category>
+
+<category name="UNIQUECONSTRAINTSRESOLUTION"><priority value="TRACE"></priority>
+<appender-ref ref="UNIQUECONSTRAINTSRESOLUTIONFILE"></appender-ref>
+</category>
+
+
+<root><appender-ref ref="ASYNC"></appender-ref>
+</root>
+</log4j:configuration>

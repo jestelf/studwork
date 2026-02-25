@@ -1,0 +1,35 @@
+h1./admin/group/{group}
+h2. GET /admin/group/\{group\}
+Get user group by its name
+{panel}{{GET /rest/admin/group/*\{group\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| group | groupByName | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/group/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/group/\{group\}/role
+Get roles assigned to user group
+{panel}{{GET /rest/admin/group/*\{group\}*/role}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| group | groupByName | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/group/TODO/role{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

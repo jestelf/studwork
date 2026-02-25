@@ -1,0 +1,29 @@
+<beans>
+  <bean class="jetbrains.charisma.openid.web.OpenIdLifecycleListener"></bean>
+  <bean id="openIdMenuItem" class="jetbrains.charisma.plugins.CharismaMenuItem">
+    <property name="menu">
+      <ref bean="adminMenu"/>
+    </property>
+    <property name="title">
+      <value>OpenID Integration</value>
+    </property>
+    <property name="templateName">
+      <value>OpenIdIntegrationSettings</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.charisma.openid.web.OpenIdUserInfo">
+    <property name="templateName">
+      <value>OpenIdData</value>
+    </property>
+  </bean>
+  <bean id="openIdLoginTemplate" class="jetbrains.charisma.openid.web.OpenIdLoginTemplate">
+    <property name="template">
+      <value>OpenIdLoginForm</value>
+    </property>
+  </bean>
+  <bean class="jetbrains.charisma.openid.web.OpenIdLoginDecorator">
+    <property name="name">
+      <value>OpenID</value>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,35 @@
+<html>
+<head>
+    <script type="text/javascript" src="/Users/maximmazin/webr-dnq/platform/webr/solutions/jquery/source/jquery-1.2.6.js"></script>
+</head>
+<body>
+<style>
+    input {
+        font-family: monospace;
+        font-size: 20px;
+        font-style: italic;
+        font-variant: small-caps;
+        font-weight: bold;
+
+    }
+</style>
+
+<input id="myText" type="text">
+<div id="myDiv"></div>
+
+<script type="text/javascript">
+    var t = document.getElementById("myText");
+    var myDiv = document.getElementById("myDiv");
+    t.onkeydown = function() {
+        $(myDiv).css("font-family", $(t).css("font-family"));
+        $(myDiv).css("font-size", $(t).css("font-size"));
+        $(myDiv).css("font-style", $(t).css("font-style"));
+        $(myDiv).css("font-variant", $(t).css("font-variant"));
+        $(myDiv).css("font-weight", $(t).css("font-weight"));
+        myDiv.innerHTML = t.value;
+    };
+</script>
+
+
+</body>
+</html>

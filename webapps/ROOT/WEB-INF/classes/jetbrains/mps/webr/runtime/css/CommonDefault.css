@@ -1,0 +1,70 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/htmlcomponents.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/htmlcomponents.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/htmlcomponents.css").url}");
+</#if>
+.input-text, textarea {
+  font-family: "Courier New", monospace;
+}
+
+.horizontal-panel {
+  margin: 0;
+  padding: .5em;
+  list-style-type: none;
+}
+
+.horizontal-panel:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.horizontal-panel li {
+  float: left;
+  padding-left: .6em;
+  padding-right: .6em;
+  list-style-type: none;
+}
+
+.horizontal-panel h1 {
+  margin: 0;
+}
+
+.horizontal-panel {
+  zoom: 1;
+}
+
+.fieldset-label {
+  width: 11%;
+  font-weight: bold;
+  font-size: 108%;
+  text-align: right;
+  padding-top: .2em;
+}
+
+.fieldset-input input.input-text, .fieldset-input textarea {
+  width: 100%;
+}
+
+.fieldset-buttons {
+  margin-top: .6em;
+  text-align: right;
+}
+
+.loading-msg {
+  position: absolute;
+  left: 35%;
+  top: 10px;
+  width: 100px;
+  z-index: 20000;
+  background-color: #D0DEF0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+

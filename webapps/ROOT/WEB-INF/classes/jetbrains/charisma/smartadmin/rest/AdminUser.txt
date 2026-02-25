@@ -1,0 +1,133 @@
+h1./admin/user
+h2. GET /admin/user
+Query users
+{panel}{{GET /rest/admin/user?*\{q\}*&*\{group\}*&*\{role\}*&*\{project\}*&*\{permission\}*&*\{onlineOnly\}*&*\{start\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| q | string | TODO: Description |
+| group | string | TODO: Description |
+| role | string | TODO: Description |
+| project | string | TODO: Description |
+| permission | string | TODO: Description |
+| onlineOnly | boolean | TODO: Description |
+| start | Integer | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/user?q=TODO&group=TODO&role=TODO&project=TODO&permission=TODO&onlineOnly=TODO&start=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /admin/user
+Update user
+{panel}{{POST /rest/admin/user?*\{login\}*&*\{fullName\}*&*\{email\}*&*\{jabber\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| login | string | TODO: Description |
+| fullName | string | TODO: Description |
+| email | string | TODO: Description |
+| jabber | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/admin/user?login=TODO&fullName=TODO&email=TODO&jabber=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /admin/user/\{userName\}
+Create new user
+{panel}{{PUT /rest/admin/user/*\{userName\}*?*\{fullName\}*&*\{email\}*&*\{jabber\}*&*\{password\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| userName | string | TODO: Description |
+| fullName | string | TODO: Description |
+| email | string | TODO: Description |
+| jabber | string | TODO: Description |
+| password | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/admin/user/TODO?fullName=TODO&email=TODO&jabber=TODO&password=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/user/\{user\}/group
+Get groups user participates in
+{panel}{{GET /rest/admin/user/*\{user\}*/group}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| user | userByLogin | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/user/TODO/group{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/user/\{user\}
+Get user by login
+{panel}{{GET /rest/admin/user/*\{user\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| user | userByLogin | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/user/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. DELETE /admin/user/\{user\}
+Delete user
+{panel}{{DELETE /rest/admin/user/*\{user\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| user | userByLogin | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}DELETE /rest/admin/user/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/user/\{user\}/role
+Get user roles
+{panel}{{GET /rest/admin/user/*\{user\}*/role}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| user | userByLogin | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/user/TODO/role{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

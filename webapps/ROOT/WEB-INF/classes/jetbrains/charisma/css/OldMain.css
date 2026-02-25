@@ -1,0 +1,9 @@
+.urgent {
+  color: red;
+  font-weight: bold;
+}
+
+.not-changed-property, .not-changed-property:link, .not-changed-property:visited {
+  color: gray;
+}
+

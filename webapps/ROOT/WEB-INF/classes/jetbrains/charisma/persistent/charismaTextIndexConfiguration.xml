@@ -1,0 +1,61 @@
+<beans>
+  <bean id="textIndexMetaData" class="jetbrains.charisma.persistent.MyTextIndexMetaData"></bean>
+  <bean id="transactionalTextIndexJob" class="jetbrains.charisma.persistent.TransactionalTextIndexJob"></bean>
+  <bean id="textIndexManager" class="com.jetbrains.teamsys.textindex.berkeleydb.BerkeleyDbTextIndexManager" destroy-method="close">
+    <constructor-arg index="0">
+      <ref bean="textIndexMetaData"/>
+    </constructor-arg>
+    <constructor-arg index="1">
+      <ref bean="persistentEntityStore"/>
+    </constructor-arg>
+    <constructor-arg index="2">
+      <ref bean="transientEntityStore"/>
+    </constructor-arg>
+    <constructor-arg index="3">
+      <ref bean="transactionalTextIndexJob"/>
+    </constructor-arg>
+    <property name="useFinishStemmer">
+      <value>false</value>
+    </property>
+    <property name="useFrenchStemmer">
+      <value>true</value>
+    </property>
+    <property name="useGermanStemmer">
+      <value>true</value>
+    </property>
+    <property name="useItalianStemmer">
+      <value>false</value>
+    </property>
+    <property name="nonStemmedTerms">
+      <value></value>
+    </property>
+    <property name="useDutchStemmer">
+      <value>false</value>
+    </property>
+    <property name="useSwedishStemmer">
+      <value>false</value>
+    </property>
+    <property name="useRussianStemmer">
+      <value>true</value>
+    </property>
+    <property name="useNorwegianStemmer">
+      <value>false</value>
+    </property>
+    <property name="useSpanishStemmer">
+      <value>true</value>
+    </property>
+    <property name="usePortugueseStemmer">
+      <value>false</value>
+    </property>
+    <property name="useDanishStemmer">
+      <value>false</value>
+    </property>
+  </bean>
+  <bean id="addTextIndexListener" class="jetbrains.charisma.persistent.AddTextIndexListenerServiceLocatorListener">
+    <property name="dependees">
+      <list>
+        <value>initModelMetaData</value>
+      </list>
+    </property>
+  </bean>
+</beans>

@@ -1,0 +1,32 @@
+.up {
+    padding: .1em 0 .1em .8em!important;
+    color: #fff!important;
+    background : url("../../images/prevIssue.png") no-repeat 50% 0.3em;
+    border: none!important;
+    cursor: pointer;
+}
+.down {
+    padding: .1em 0 .1em .8em!important;
+    color: #fff!important;
+    background : url("../../images/nextIssue.png") no-repeat 50% 0.3em;
+    border: none!important;
+    cursor: pointer;
+}
+.up:hover, .down:hover {
+    background-color:#F0F2F3;
+}
+.setAsDefault{
+    background: url(../../images/state/Fixed-c.gif) no-repeat 50% 50%;
+}
+
+.actionUnderTable {
+    font-size: 110%;
+    font-weight: bold;
+    color: #0254D0;
+    text-decoration: none;
+}
+
+.actionUnderTable:hover {
+    color: #0254D0;
+    text-decoration: underline;
+}

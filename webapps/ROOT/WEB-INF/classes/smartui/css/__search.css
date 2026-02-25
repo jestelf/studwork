@@ -1,0 +1,173 @@
+div.search {
+    margin: 2px 0 1em 0;
+    padding: 0 0 0 0;
+    background: url( '../img/bgSearch.gif' ) repeat-x 0 0;
+}
+div.search .searchProjectSelector {
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline;
+    width: 15em;
+    background: url( '../img/bgSelectProductsLeft.gif' ) no-repeat 0 0;
+}
+.searchProjectSelector .mainSearch {
+    margin: 0;
+    padding: 13px 0 21px 17px;
+    position: relative;
+    z-index: 1;
+    background: url( '../img/bgSelectProductsRight.gif' ) no-repeat right top;
+}
+.searchProjectSelector .mainSearch .combobox {
+    margin: 0;
+    padding: 0 1em 0 0;
+    display: block;
+    border: none;
+    width: 12.45em;
+    position: relative;
+    z-index: 3;
+}
+.searchProjectSelector .mainSearch .combobox .inputWrapper {
+    margin: 0;
+}
+.searchProjectSelector .mainSearch .combobox .contentWrapper {
+    top: 22px;
+}
+.searchProjectSelector .mainSearch .combobox ul.comboboxList {
+    padding-left: 3px;
+    padding-right: 2px;
+    margin-left: -3px;
+    overflow-x: hidden;
+    width1: 9.58em;
+    border: solid 1px #a9a9a9;
+    border-top: none;
+    font-size: 14px;
+    font-family: monospace;
+    color: #000;
+    position:absolute;
+}
+@media not all and (-webkit-min-device-pixel-ratio) {/* hack Opera */
+div.search .searchProjectSelector .mainSearch .combobox ul.comboboxList {
+    padding-right: 0;
+}
+}
+div.search .searchProjectSelector .mainSearch .combobox a.arrow {
+    background-color: #fff;
+}
+div.search .searchProjectSelector .mainSearch .combobox input {
+    font-size: 14px!important;
+    font-family: monospace;
+}
+div.search .searchContent {
+    margin: 0 0 0 15em;
+    padding: 0 0 10px 0;
+    background: url( '../img/bgSearchLeft.gif' ) no-repeat 0 0;
+}
+div.search .searchContent .mainSearch {
+    margin: 0;
+    padding: 11px 25px 21px 14px;
+    position: relative;
+    z-index: 1;
+    background: url( '../img/bgSearchRight.gif' ) no-repeat right top;
+}
+div.search .searchContent .mainSearch .widthInput {
+    margin: 6px 68px 0 0;
+    padding: 0;
+    font-size: 14px;
+    position: relative;
+    z-index: 3;
+    font-family: monospace;
+    background-color: transparent;
+}
+div.search .searchContent .mainSearch .widthInput input {
+    margin: 0;
+    padding: 0;
+    width: 99%;
+    font-size: 14px;
+    font-family: monospace;
+    background-color: transparent;
+    border: none;
+}
+div.search .searchContent .mainSearch input.button {
+    margin: 1px -8px 0 0;
+    padding: 6px 0 5px 0;
+    color: #084b96;
+    font-size: 11px;
+    float: right;
+    width: 60px;
+    cursor: pointer;
+    background: url( '../img/bgSearchButton.gif' ) no-repeat 0 0;
+    border: none;
+}
+
+div.search .searchContent .mainSearch .help {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    color: #f6f7f8;
+    top: 2px;
+    right: 4px;
+    background-image: url( '../img/iconHelpSearch.gif' );
+}
+div.search .searchContent .mainSearch a.arrowNavigation {
+    margin: 1px 0 0 0;
+    padding: 6px 6px 2px 6px;
+    color: #fff;
+    font-size: 11px;
+    float: right;
+    background: url( '../img/arrowDown.gif' ) no-repeat center 60%;
+}
+div.search .searchContent .mainSearch .widthInput .navigationSearch {
+    margin: 0;
+    padding: 0;
+}
+div.search .searchContent .mainSearch .widthInput .navigationSearch ul.suggest {
+    padding: .2em 21px .2em 0;
+    top: 15px;
+    left: -6px;
+    width: 100%;
+    z-index: 10;
+    text-align: left;
+    border-right: solid 1px #dde7e2;
+    border-top: none;
+}
+
+div.search .searchContent .mainSearch .widthInput .navigationSearch.activ ul.suggest {
+    display:block;
+}
+
+div.search .searchContent .mainSearch .widthInput .navigationSearch ul.suggest li {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+div.search .searchContent .mainSearch .widthInput .navigationSearch ul.suggest li a {
+    margin: 0 -20px 0 .2em;
+    padding: 0 0 0 .2em;
+    display: block;
+}
+div.search .searchContent .mainSearch .widthInput .navigationSearch ul.suggest li a:hover {
+    background-color: #f0f2f3;
+}
+
+div.searchStatus {
+    margin: -.5em 0 0 18em;
+    padding: 0;
+    font-size: 90%;
+    color: #55676f;
+    background-color: transparent;
+}
+div.searchStatus a.saveSearch {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    text-decoration: underline;
+}
+div.searchStatus a.help {
+    padding-right: 1em;
+    position: static;
+    background : url("../img/iconHelp.gif") no-repeat right 0;
+}
+div.searchStatus a.saveSearch:hover {
+    text-decoration: none;
+}

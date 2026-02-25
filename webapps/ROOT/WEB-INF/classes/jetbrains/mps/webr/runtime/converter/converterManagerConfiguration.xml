@@ -1,0 +1,9 @@
+<beans>
+  <bean id="typeConvertManager" class="jetbrains.mps.webr.runtime.converter.TypeConvertManager"></bean>
+  <bean id="recordManager" class="webr.dnq.DNQRecordManager"></bean>
+  <bean id="extensionPoint_typeConvertManager_typeConverters" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="typeConvertManager"/>
+    <property name="extensionPropertyName" value="typeConverters"/>
+    <property name="extensionType" value="jetbrains.mps.webr.runtime.converter.TypeConverter"/>
+  </bean>
+</beans>

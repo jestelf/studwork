@@ -1,0 +1,77 @@
+<beans>
+  <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+    <property name="host">
+      <value>mail.intellij.net</value>
+    </property>
+    <property name="defaultEncoding">
+      <value>UTF-8</value>
+    </property>
+  </bean>
+  <bean id="templateMessage" class="org.springframework.mail.SimpleMailMessage">
+    <property name="from">
+      <value>no_reply@jetbrains.com</value>
+    </property>
+  </bean>
+  <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+    <property name="corePoolSize">
+      <value>3</value>
+    </property>
+    <property name="maxPoolSize">
+      <value>3</value>
+    </property>
+  </bean>
+  <bean id="mailingService" class="jetbrains.mps.webr.notifications.runtime.spring.MailingServiceImpl">
+    <property name="taskExecutor">
+      <ref bean="taskExecutor"/>
+    </property>
+    <property name="debugModeEmails">
+      <list>
+        <value>maxim.mazin@gmail.com</value>
+        <value>maxim.mazin@jetbrains.com</value>
+        <value>vadim.gurov@gmail.com</value>
+        <value>vadim.gurov@jetbrains.com</value>
+        <value>anisimov@jetbrains.com</value>
+        <value>Alexander.Anisimov@jetbrains.com</value>
+        <value>oparin.vsevolod@gmail.com</value>
+        <value>pavel.a.nikitin@gmail.com</value>
+      </list>
+    </property>
+    <property name="debugMode">
+      <value>false</value>
+    </property>
+    <property name="templateMessage">
+      <ref bean="templateMessage"/>
+    </property>
+    <property name="mailSender">
+      <ref bean="mailSender"/>
+    </property>
+  </bean>
+  <bean id="jabberService" class="jetbrains.mps.webr.notifications.runtime.spring.JabberServiceImpl">
+    <property name="port">
+      <value>5222</value>
+    </property>
+    <property name="user">
+      <value>name</value>
+    </property>
+    <property name="password">
+      <value>password</value>
+    </property>
+    <property name="host">
+      <value>talk.google.com</value>
+    </property>
+    <property name="debugModeJabber">
+      <list>
+        <value>maxim.mazin@gmail.com</value>
+        <value>vadim.gurov@gmail.com</value>
+        <value>pavel.a.nikitin@gmail.com</value>
+        <value>oparin.vsevolod@gmail.com</value>
+      </list>
+    </property>
+    <property name="taskExecutor">
+      <ref bean="taskExecutor"/>
+    </property>
+    <property name="debugMode">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

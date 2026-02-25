@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="file:///C:/Documents and Settings/evgenii.schepotiev/IdeaProjects/webr-dnq/platform/webr/solutions/jquery/source/jquery-1.3.1.js"></script>
+
+</head>
+<body>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    div {
+        margin: 0;
+        padding: 0;
+        width: 24.99%;
+        float: left;
+    }
+
+    .one {
+        background-color: red;
+    }
+
+    .two {
+        background-color: blue;
+    }
+
+    .three {
+        background-color: yellow;
+    }
+
+    .four {
+        background-color: green;
+    }
+
+    span.checked {
+        background: url( "img/starActiv.gif" ) no-repeat scroll 0px 0.2em;
+        padding: 4px;
+    }
+
+    span {
+        background: url( "img/star.gif" ) no-repeat scroll 0px 0.2em;
+        padding: 4px;
+    }
+</style>
+<div id="" align="center">
+    <ul id="span_id">
+        <li><span class="checked">.</span>Option 1</li>
+        <li><span>.</span>Option 2</li>
+        <li><span>.</span>Option 3</li>
+
+    </ul>
+</div>
+<input name="djfdkjfhsdjf">
+<textarea rows="20" cols="30" name="name" valueId="value">
+</textarea>
+<a valueId="myValue"/>
+<script type="text/javascript">
+    $(document.getElementById("span_id")).focus(function f(){
+        window.alert("Span is in focus!")
+    })
+    $("[valueId][name]").each(function f(){
+        window.alert("Found " + this)
+    })
+    </script>
+
+
+</body>
+</html>

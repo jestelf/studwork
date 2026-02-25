@@ -1,0 +1,10 @@
+<beans>
+  <bean id="integerFieldType" class="jetbrains.charisma.customfields.simple.integer.IntegerFieldType">
+    <property name="editor">
+      <value>IntegerEditorContainer</value>
+    </property>
+    <property name="name">
+      <value>integer</value>
+    </property>
+  </bean>
+</beans>

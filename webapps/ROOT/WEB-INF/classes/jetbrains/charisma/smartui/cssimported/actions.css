@@ -1,0 +1,255 @@
+.issueActions {
+  display: none;
+  margin: 10px;
+  padding: 0;
+  position: fixed;
+  bottom: 60%;
+  left: 30%;
+  width: 400px;
+  background-color: white;
+  border: solid 1px #a9a9a9;
+  text-align: left;
+}
+
+.issueActions input {
+  margin: 6px 0 0 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: monospace;
+  width: 390px;
+}
+
+.issueActions .commandsList {
+  background-color: #e3eef3;
+  float: left;
+}
+
+.issueActions .command {
+  border: solid 1px #a9a9a9;
+}
+
+.issueActions .selectedCommand {
+  background: white;
+  border: none;
+}
+
+.issueActions .commandsList ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.issueActions .commandsList ul li {
+  padding: 5px 10px 5px 10px;
+}
+
+.issueActions .commandsList ul li .matched {
+  font-weight: bold;
+}
+
+.issueActions .commandDescr {
+  float: right;
+  padding: 5px 10px 5px 10px;
+  background: white;
+}
+
+.issueActions .commandDescr ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.commandsDialog {
+  margin: 0;
+  padding: 0;
+  display: none;
+  z-index: 101;
+  text-align: left;
+  font-family: arial, tahoma, verdana, sans-serif;
+  background-color: white;
+}
+
+.commandsDialog .dialogTitle {
+  margin: 0 0 1em 0;
+  padding: 0 0 0.4em 0.5em;
+  color: #ffffff;
+  font-size: 120%;
+}
+
+a.closeDlg {
+  margin-bottom: 1em;
+  padding: 0 0.5em;
+  float: right;
+  text-decoration: none;
+  color: #676e75;
+  background: url("${getClasspathUri("smartui/img/closeCommandLine.gif")}") no-repeat right 0;
+}
+
+a.closeDlg:hover {
+  background: url("${getClasspathUri("smartui/img/closeCommandLineHover.gif")}") no-repeat right 0;
+}
+
+.commandsDialog .commandList {
+  margin: 0;
+  padding: 0 1em;
+  float: right;
+  width: 16em;
+}
+
+.commandsDialog .commandList p {
+  margin: 0;
+  padding: 0.2em 0 0.2em 0.5em;
+  font-size: 110%;
+  background-color: #f0f1f2;
+}
+
+.commandsDialog .commandList ol {
+  margin: 0.5em 0 0 0;
+  padding: 0;
+  overflow: auto;
+  height: 11em;
+  position: relative;
+  list-style-type: decimal;
+}
+
+.commandsDialog .commandList ol li {
+  margin: 0 0 0.1em 2em;
+  padding: 0;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.commandsDialog .commandList ol li span {
+  font-weight: normal;
+  font-size: 80%;
+}
+
+.commandsDialog .commandFields {
+  margin: 0 18em 0 0;
+  padding: 0 0.5em 0 1em;
+  position: relative;
+}
+
+.commandsDialog .commandFields label {
+  margin: 0.1em 0 0.2em 0;
+  padding: 0;
+  font-size: 110%;
+  display: block;
+}
+
+.commandsDialog .commandFields input, .commandsDialog .commandFields textarea {
+  margin: 0 0 0.4em 0;
+  padding: 0.2em;
+  width: 96%;
+  border: 1px solid #979ca2;
+}
+
+.commandsDialog .commandFields textarea {
+  height: 8em;
+}
+
+.commandsDialog ul.buttons {
+  margin: 0.2em 1em 1em 0.7em;
+}
+
+.commandsDialog .hidden {
+  display: none;
+}
+
+.commandsDialog .help {
+  float: right;
+  margin: 0 12px;
+  padding: 0;
+  width: 11px;
+  color: #ffffff;
+  background: url("${getClasspathUri("smartui/img/iconHelp.gif")}") no-repeat right 0.2em!important;
+}
+
+div.addCommentCommandDiv p {
+  margin: 0px;
+}
+
+div.newCommandRightBlock {
+  float: right;
+  background: lightgray;
+  margin: 5px;
+  width: 36%;
+  height: 100%;
+  overflow: auto;
+}
+
+div.newCommandLeftBlock {
+  float: left;
+  margin: 5px;
+  width: 60%;
+}
+
+div.newCommandLeftBlock ul.form {
+  padding: 0;
+  margin: 0;
+}
+
+div.newCommandLeftBlock ul.form li {
+  list-style: none;
+}
+
+div.newCommandButtons {
+  clear: both;
+  padding: 0px 5px 25px 5px;
+}
+
+div.newCommandTop {
+  text-align: left;
+}
+
+ol.commandsDescriptionOl {
+  padding: 0 25px;
+  margin: 0;
+}
+
+ol li.error {
+  color: red;
+}
+
+.mask {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -moz-opacity:0.5;
+  opacity:0.5;
+  filter:alpha( opacity = 50 );
+  background-color: #ccc;
+}
+
+.closed {
+  background: url("${getClasspathUri("smartui/img/icoPlus.gif")}") no-repeat 0 51%;
+  padding-left: 12px;
+  display: block;
+  border: 0;
+}
+
+.opened {
+  background: url("${getClasspathUri("smartui/img/icoMinus.gif")}") no-repeat 0 51%;
+  padding-left: 12px;
+  display: block;
+  border: 0;
+}
+
+.killFocus a:focus {
+  outline-width: 0;
+}
+
+.close-white {
+  background: url("${getClasspathUri("smartui/img/closeTool-white.gif")}") no-repeat 0 0;
+  width: 15px;
+  height: 15px;
+  padding-right: 15px;
+}
+
+.close-white:hover {
+  background-position: 0 -30px;
+}
+

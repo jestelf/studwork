@@ -1,0 +1,7 @@
+<beans>
+  <bean id="jetbrains.charisma.teamcity.ui.TeamcityIntegrationSettings_RootHtmlTemplateController" class="jetbrains.charisma.teamcity.ui.TeamcityIntegrationSettings_RootHtmlTemplateController">
+    <property name="allowAnonymous">
+      <value>false</value>
+    </property>
+  </bean>
+</beans>

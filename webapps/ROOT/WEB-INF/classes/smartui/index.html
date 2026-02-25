@@ -1,0 +1,1123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>yesterday</title>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/__main.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/newIssue.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/editIssue.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/suggest.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/__actions.css"/>
+      <!--<link type="text/css" media="screen" rel="stylesheet" href="css/singleUI.css"/>-->
+      <!--<link type="text/css" media="screen" rel="stylesheet" href="css/issueProperties.css"/>-->
+      <link type="text/css" media="screen" rel="stylesheet" href="css/combobox.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/__issueContainer.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/__subcontent.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/message.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/__header.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/__search.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/hints.css"/>
+      <link type="text/css" media="screen" rel="stylesheet" href="css/__footer.css"/>
+
+      
+        <meta name="_meta_template_name" content="Issues"/>
+        <meta name="_meta_layout_name" content="SmartUI"/>
+
+      </head>
+      <body>
+        <div id="SmartUI_Layout_id0" class="container">
+
+        <div id="Issues_RootHtmlTemplate_id0" class="header">
+            <ul class="account">
+                <li class="info activ">
+                    <a href="">Hints</a>
+                    <div id="help_div_wrapper">
+                    <div class="hints" id="help_div">
+                    <div class="shortcuts">
+                    <dl>
+                    <dt><span>Esc</span></dt>
+                    <dd>toggle focus between search field and issue list</dd>
+                    <dt><span>Alt-Insert</span></dt>
+                    <dd>create new issue</dd>
+                    <dt class="line">.</dt>
+                    <dt><span>Ctrl-Alt-Insert</span></dt>
+                    <dd>create new issue (for Opera)</dd>
+                    <dt><span>Ctrl-Right</span></dt>
+                    <dd>next page</dd>
+                    <dt><span>Ctrl-Left</span></dt>
+                    <dd>previous page</dd>
+                    <dt><span>Space</span></dt>
+                    <dd>select issue</dd>
+                    <dt><span>Right</span></dt>
+                    <dd>expand issue</dd>
+                    <dt><span>Left</span></dt>
+                    <dd>collapse issue</dd>
+                    <dt><span>F2/Double click</span></dt>
+                    <dd>edit issue</dd>
+                    <dt class="line">.</dt>
+                    <dt><span>Any Letter</span></dt>
+                    <dd class="lastDd">start typing a command to apply it to the selected issue (issues)</dd>
+                    </dl>
+                    </div>
+                    <div class="moreHelp">
+                        <a target="_blank" href="http://www.jetbrains.net/confluence/display/TSYSD/Home">view full reference</a>
+                    </div>
+                    </div>
+                    </div>
+                </li>
+                <li class=""><a href="">Tools</a>
+                    <ul class="dropMenu">
+                        <li><a href="">Take screenshot</a></li>
+                        <li><a href="">Get a bookmarklet</a></li>
+                    </ul>
+                </li>
+                <li class="login"><a href="">konstantin Solomatov</a>
+                    <ul class="dropMenu">
+                        <li><a href="">Settings</a></li>
+                        <li><a href="">Log out</a></li>
+                    </ul>
+                </li>
+                <li class="user">Welcome,</li>
+            </ul>
+            <a href="/charisma/issues" id="Header_HtmlTemplate_id0"><img src="img/logoSmall.gif" alt="Charisma" title="Charisma"/></a>
+        </div>
+
+        <div id="Header_HtmlTemplate_id5" class="search">
+                <div class="searchProjectSelector">
+                    <div class="mainSearch">
+                    <span id="id_l.I.h.filterProject" class="combobox" _valueid="5-0" serv="n" cn="l.I.h.filterProject" cname="l.I.h.filterProject">
+                    <span class="compoboxInputWrapper">
+                    <input class="" valueid="5-0" value="Charisma" name="l.I.h.filterProject"/>
+                    </span>
+                    <ul class="comboboxList" style="visibility: hidden; display: none;">
+                    <li class="empty">All Projects</li>
+                    <li class="Charisma active">Charisma</li>
+                    <li class="Project For UI Tests">Project For UI Tests</li>
+                    <li class="webr+dnq">webr+dnq</li>
+                    </ul>
+                    <a class="arrow">.</a>
+                    </span>
+                    </div>
+                </div>
+                <div class="searchContent">
+                    <div class="mainSearch">
+                        <a class="help" href="">.</a>
+                        <input class="button" type="submit" value="Search"/>
+                        <a class="arrowNavigation" href="">.</a>
+                        <div class="widthInput">
+                            <input id="searchFieldText" class="input-text" type="text" maxlength="255" value="tag Watched Issues" name="SmartUI.Issues.Header.searchField"/>
+                            <div class="navigationSearch">
+                                <ul class="suggest">
+                                    <li><a href="">tag Watched Issues</a></li>
+                                    <li><a href="">tag Watched Issues tag</a></li>
+                                    <li><a href="">tag Watched Issues</a></li>
+                                    <li><a href="">tag Watched Issues</a></li>
+                                    <li><a href="">tag Watched Issues</a></li>
+                                    <li><a href="">tag Watched Issues</a></li>
+                                    <li><a href="">tag Watched Issues</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="Header_HtmlTemplate_searchSuggestDiv0" class="suggest" style="display: none; left: 64px;">
+                            <ul id="SuggestPopup_HtmlTemplate_id0">
+                                <li id="optionLi_pronam" class="current">
+                                    <span class="option optionType2" title="nam"><span class="match">pro</span>nam</span>
+                                    <span class="description">user</span>
+                                </li>
+                                <li id="optionLi_proyal" class="">
+                                    <span class="option optionType2" title="yal"><span class="match">pro</span>yal</span>
+                                    <span class="description">user</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul id="underlinerDiv" class="underline" style="display: none;">
+                            <li class="type1" style="left: 15px; width: 24px;"><span>.</span></li>
+                            <li class="type2" style="left: 111px; width: 48px;">.</li>
+                            <li class="type3" style="left: 47px; width: 56px;">.</li>
+                        </ul>
+
+                        <div id="Header_HtmlTemplate_id2" class="parserErrors"></div>
+                    </div>
+                </div>
+                <div id="Header_HtmlTemplate_id1" class="searchStatus">
+                    Found 110 issues. Refine your search by selecting more categories. <a class="saveSearch" href="#">Save search</a><a class="help" href="">.</a>
+                </div>
+            </div>
+
+        <div id="Issues_RootHtmlTemplate_filters0" class="subcontent">
+
+        <div class="sidebarList active">
+            <div class="title"><a class="normal" href="">Tags<span class="light">(8)</span></a> <a class="help">.</a></div>
+            <ul>
+                <li id="tagSettings_68_1606" class="favorites">
+                    <a id="id_l.I.f.s.tsb.t.tagLink_68_1606" href="/tracker/issues?q=tag+Favorites" title="Tag created by you" p0="68-1606" cn="l.I.f.s.tsb.t.tagLink">Favorites<span id="ic_68_1606" class="light" title="Number of tagged issues">(0)</span></a>
+                </li>
+                <li id="tagSettings_68_1322" class="watched">
+                    <a id="id_l.I.f.s.tsb.t.tagLink_68_1322" href="/tracker/issues?q=tag+Watched+Issues" title="Tag created by you" p0="68-1322" cn="l.I.f.s.tsb.t.tagLink">Watched Issues<span id="ic_68_1322" class="light" title="Number of tagged issues">(0)</span></a>
+                </li>
+                <li id="tagSettings_68_1322" class="watched">
+                    <a id="id_l.I.f.s.tsb.t.tagLink_68_1322" href="/tracker/issues?q=tag+Watched+Issues" title="Tag created by you" p0="68-1322" cn="l.I.f.s.tsb.t.tagLink">Watched Issues<span id="ic_68_1322" class="light" title="Number of tagged issues">(0)</span></a>
+                </li>
+                <li class=""><a href="">Pain points <span class="light">(10)</span></a><a class="ico arrow" href=""></a></li>
+                <li class="share"><a href="">Design <span class="light">(218)</span></a><a class="ico arrow" href=""></a></li>
+                <li><a href="">Serious usability problems <span class="light">(54)</span></a><a class="ico arrow" href=""></a></li>
+                <li><a href="">Design <span class="light">(218)</span></a><a class="ico arrow" href=""></a></li>
+            </ul>
+        </div>
+
+        <div class="sidebarList">
+            <div class="title"><a class="normal" href="">Saved Searches<span class="light">(3)</span></a> <a class="help">.</a></div>
+            <ul>
+                <li class=""><a href="">Pain points <span class="light">(10)</span></a><a class="ico arrow" href=""></a></li>
+                <li class="share"><a href="">Design <span class="light">(218)</span></a><a class="ico arrow" href=""></a></li>
+                <li><a href="">Serious usability problems <span class="light">(54)</span></a><a class="ico arrow" href=""></a></li>
+                <li><a href="">Design <span class="light">(218)</span></a><a class="ico arrow" href=""></a></li>
+            </ul>
+        </div>
+
+        <div class="sidebarList filtr active">
+            <div class="title"><a class="normal" href="">Filters</a> <a class="help">.</a></div>
+            <ul>
+                <li><a class="normal" href="javascript:void(0)">Subsystem <span class="light">(3)</span></a></li>
+                <li class="open">
+                    <a class="normal" href="">Updated <span class="light">(7)</span></a>
+                    <ul>
+                        <li>
+                            <input id="UpdatedallCheckbox1" type="checkbox"/>
+                            <label for="UpdatedallCheckbox1">All</label>
+                        </li>
+                        <li>
+                            <input id="Today" type="checkbox"/>
+                            <label for="Today">Today sssssssssssssssssss<span class="light">(0)</span></label>
+                        </li>
+                        <li>
+                            <input id="Yesterday" type="checkbox"/>
+                            <label for="Yesterday">Yesterday <span class="light">(9)</span></label>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="normal" href="#">Updated By <span class="light">(2)</span></a></li>
+                <li><a class="normal" href="#">Assignee <span class="light">(1)</span></a></li>
+            </ul>
+        </div>
+
+        <div class="sidebarList filtr active">
+            <div class="title"><a class="normal" href="">Filters</a> <a href="" class="help">.</a></div>
+        </div>
+            <div class="message small calculating">
+              <ul>
+                  <li>Calculating... 68%</li>
+              </ul>
+            </div>
+
+
+
+        </div>
+
+        <div class="content">
+
+        <div class="result">
+            <ul class="actions">
+                <li class="help"><a href="">.</a></li>
+                <li class="settings"><a href="#"><span>.</span></a>
+                    <ul class="dromMenu">
+                        <li id="visibilityItem_Entity_46_0" class="activ"><a href="#">Priority</a></li>
+                        <li id="visibilityItem_Entity_46_1" class="activ"><a href="#">Type</a></li>
+                        <li id="visibilityItem_Entity_46_2" class="activ"><a href="#">State</a></li>
+                        <li id="visibilityItem_Entity_46_3" class="activ"><a href="#">Assignee</a></li>
+                        <li id="visibilityItem_Entity_46_4" class="activ"><a href="#">Reporter</a></li>
+                        <li id="openInNewWindow" class=""><a href="#">Open issue in new window</a></li>
+                        <li>Issues per page
+                            <select id="issuesPerPageSelect">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100" selected="selected">100</option>
+                            </select>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sort"><a href="">Sort by</a>
+                    <ul class="dromMenu">
+                        <li class="active"><a href="#">Updated</a></li>
+                        <li class="active"><a href="#">Priority</a></li>
+                        <li class="active"><a href="#">Type</a></li>
+                        <li class=""><a href="#">State</a></li>
+                        <li class=""><a href="#">Assignee</a></li>
+                        <li class=""><a href="#">Reporter</a></li>
+                        <li class=""><a href="#">Subsystem</a></li>
+                        <li class=""><a href="#">Affected Versions</a></li>
+                        <li class=""><a href="#">Fixed in Versions</a></li>
+                        <li class=""><a href="#">Issue id</a></li>
+                        <li class=""><a href="#">Updated by</a></li>
+                        <li class=""><a href="#">Project</a></li>
+                        <li class=""><a href="#">Created</a></li>
+                        <li class=""><a href="#">Resolved</a></li>
+                        <li class="button"><a href="#">apply</a></li>
+                    </ul>
+                </li>
+                <li class="actions"><a href="">Actions</a>
+                    <ul class="dropMenu">
+                        <li class=""><a href="#">Assign to me</a></li>
+                        <li class=""><a href="#">Assign to</a></li>
+                        <li class=""><a href="#">Mark as duplicate</a></li>
+                        <li class=""><a href="#">Resolve</a></li>
+                        <li class=""><a href="#">Reopen</a></li>
+                        <li class=""><a href="#">In progress</a></li>
+                    </ul>
+                </li>
+                <li class="resolve"><a class="just" href="">Resolve</a><a class="other" href="#">.</a></li>
+                <li class="view">
+                    <ul>
+                        <li class="title"><a href=""><span>.</span></a></li>
+                        <li class="regular activ"><a href=""><span>.</span></a></li>
+                        <li class="full"><a href=""><span>.</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="newIssue">
+                <div class="checkAll"><input id="selectAllActionCheckbox" type="checkbox" name="-l.I.c.tb."/></div>
+                <a href="">New Issue</a>
+            </div>
+        </div>
+
+
+
+        <div id="issuesContent">
+            <div class="issueContainer create">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox"/></td>
+                    <td class="num"><h2><a href="">CH-1404</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Filters, tags and saved searches blocks should look similar. Recent searches should be moved to somewhere near the search field.</a></h2>
+                            <div class="description">
+                                What I get in result is that the comment is actually added to TW-4258.
+                                <p>What I get in result is that the comment is actually added to TW-4258 and the page reloads with the browser's title corresponding to TW-4258</p>
+                            </div>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: konstantin solomatov</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active" title="voters">35</div></td>
+                    <td class="ico watchers"><div class="disabled" title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal disabled">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark disabled">Bug<span></span></div></td>
+                    <td class="attributes">
+                        <div class="attribute dark">Submitted<span></span></div>
+                        <span class="combobox bind">
+                            <input size="20" value="Submitted"/>
+                            <a href="">.</a>
+                            <ul class="comboboxList">
+                                <li class="Submitted active">Submitted</li>
+                                <li class="New">New</li>
+                                <li class="Open">Open</li>
+                                <li class="In Progress">In Progress</li>
+                                <li class="Can't Reproduce">Can't Reproduce</li>
+                                <li class="Duplicate">Duplicate</li>
+                             </ul>
+                        </span>
+                    </td>
+                    <td class="attributes"><div class="attribute dark">Duplicates : <a class="inline" href="">TW-505</a><span></span></div></td>
+                    <td class="attributes"><div class="attribute dark disabled">konstantin solomatov<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Add comment<span></span></div></td>
+                    <td class="date light"><span class="attachment">.</span>Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+
+            <div class="issueContainer expand">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox"/></td>
+                    <td class="num"><h2><a href="">CH-1404</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="/teamsys/issue2/CH-1761?query=">NPE at jetbrains.charisma.smartui.fullScreenIssue.Issue2_RootHtmlTemplateComponent$2<h2><a href="/teamsys/issue2/CH-1761?query=">NPE at jetbrains.charisma.smartui.fullScreenIssue.Issue2_RootHtmlTemplateComponent$2.invoke(Issue2_RootHtmlTemplateComponent.java:59).Issue2_RootHtmlTemplateComponent$2.invoke(Issue2_RootHtmlTemplateComponent.java:59)</a></h2></a></h2>
+                            <ul class="tags">
+                                <li class="light">tags:</li>
+                                <li><a href="">Pain points</a></li>
+                                <li><a href="">Design</a></li>
+                                <li><a href="">Serious usability problems</a></li>
+                                <li class="edit"><a href="">edit</a></li>
+                            </ul>
+
+                            <ul id="linkList_6_143516" class="attributeList links">
+                            <li>Is duplicated by:</li>
+                            <li id="link_6_143516_6_143812_80_6815" class="resolved active">
+                            <a id="id_l.I.c.il.i_6_143516.vi.lp.l.il_80_6815.delete" class="delete" href="javascript:void(0)" tp8="80-6815" tp4="6-143516" cn="l.I.c.il.i.vi.lp.l.il.delete">.</a>
+                            <a id="id_l.I.c.il.i_6_143516.vi.lp.l.il_80_6815.link" href="javascript:void(0)" tp8="80-6815" tp4="6-143516" cn="l.I.c.il.i.vi.lp.l.il.link">
+                            CH-2048
+                            <span>,</span>
+                            </a>
+                            <div class="issueContainer">
+                            <h2>
+                            <a id="id_l.I.c.il.i_6_143516.vi.lp.l.il_80_6815.p.issue" href="/teamsys/issue2/CH-2048" tp8="80-6815" tp4="6-143516" cn="l.I.c.il.i.vi.lp.l.il.p.issue">Issue is marked fixed in the link while it is open</a>
+                            </h2>
+                            <table class="properties" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                            <td class="attributes">
+                            <div id="id_l.I.c.il.i_6_143516.vi.lp.l.il_80_6815.p.issuePriorityLink_6_143812" class="attribute priority Critical" title="Priority: Critical" tp8="80-6815" tp4="6-143516" p0="6-143812" cn="l.I.c.il.i.vi.lp.l.il.p.issuePriorityLink">
+                            Critical
+                            <span/>
+                            </div>
+                            </td>
+                            <td class="attributes">
+                            <div id="id_l.I.c.il.i_6_143516.vi.lp.l.il_80_6815.p.issueTypeLink_6_143812" class="attribute dark" title="Type: Bug" tp8="80-6815" tp4="6-143516" p0="6-143812" cn="l.I.c.il.i.vi.lp.l.il.p.issueTypeLink">
+                            Bug
+                            <span/>
+                            </div>
+                            </td>
+                            <td class="attributes">
+                            <div id="id_l.I.c.il.i_6_143516.vi.lp.l.il_80_6815.p.issueStateLink_6_143812" class="attribute dark" title="State: Duplicate" tp8="80-6815" tp4="6-143516" p0="6-143812" cn="l.I.c.il.i.vi.lp.l.il.p.issueStateLink">
+                            Duplicate
+                            <a id="id_l.I.c.il.i_6_143516.vi.lp.l.il_80_6815.p.duplicate_6_143812" class="inline" href="/teamsys/issue2/CH-1886" title="Submitted: All links for resolved issue are being shown as resolved" tp8="80-6815" tp4="6-143516" p0="6-143812" cn="l.I.c.il.i.vi.lp.l.il.p.duplicate">CH-1886</a>
+                            <span/>
+                            </div>
+                            </td>
+                            <td class="attributes">
+                            <div id="id_l.I.c.il.i_6_143516.vi.lp.l.il_80_6815.p.issueAssigneeLink_6_143812" class="attribute dark" title="Assigned to: yamaxim" tp8="80-6815" tp4="6-143516" p0="6-143812" cn="l.I.c.il.i.vi.lp.l.il.p.issueAssigneeLink">
+                            yamaxim
+                            <span/>
+                            </div>
+                            </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            </div>
+                            </li>
+                            <li id="addLinkLi_6_143516" class="add">
+                            [
+                            <a id="id_l.I.c.il.i_6_143516.vi.lp.l.addLink" href="javascript:void(0)" tp4="6-143516" cn="l.I.c.il.i.vi.lp.l.addLink">add link</a>
+                            ]
+                            </li>
+                            </ul>
+                            <br/><br/><br/><br/>
+                            <ul id="attachList_33_7" class="attributeList files">
+                            <li id="addFileLi_33_7" class="add active">
+                            [
+                            <a id="id_l.I.c.il.i_33_7.vi.atchs.l.addLink" href="javascript:void(0)" tp4="33-7" cn="l.I.c.il.i.vi.atchs.l.addLink" cname="l.I.c.il.i_33_7.vi.atchs.l.addLink">add file</a>
+                            ]
+                            </li>
+                            </ul>
+                            <div id="addAttachment_33_7" class="addAttributeForm files active">
+                                <ul class="fileProperties">
+                                <li>
+                                    <label>Select file:</label>
+                                    <input id="id_l.I.c.il.i_33_7.vi.atchs.a.fileUpload" type="file" tp4="33-7" cn="l.I.c.il.i.vi.atchs.a.fileUpload" name="l.I.c.il.i_33_7.vi.atchs.a.fileUpload"/>
+                                </li>
+                                <li>
+                                    <label>Visible for:</label>
+                                    <span id="id_l.I.c.il.i_33_7.vi.atchs.a.permittedGroup_33_7" class="combobox" _valueid="16-0" serv="n" tp4="33-7" p0="33-7" cn="l.I.c.il.i.vi.atchs.a.permittedGroup">
+                                    <span class="compoboxInputWrapper">
+                                    <input class="" valueid="16-0" value="All Users" name="l.I.c.il.i_33_7.vi.atchs.a.permittedGroup_33_7"/>
+                                    </span>
+                                <a class="arrow">.</a>
+                                </span>
+                                </li>
+                                </ul>
+                                <ul class="buttons">
+                                    <li><button>Add file</button></li>
+                                    <li><button>Cansel</button></li>
+                                </ul>
+                            </div>
+
+                            
+                            <ul class="attributeList links">
+                            <li class="add active">[<a href="javascript:void(0)">add link</a>]</li>
+                            </ul>
+                            <div class="addAttributeForm links active">
+                                <ul class="fileProperties">
+                                <li>
+                                    <label>Dependency type:</label>
+                                    <span class="combobox" _valueid="16-0" serv="n" tp4="33-7" p0="33-7" cn="l.I.c.il.i.vi.atchs.a.permittedGroup">
+                                    <span class="compoboxInputWrapper">
+                                    <input class="" valueid="16-0" value="All Users" name="l.I.c.il.i_33_7.vi.atchs.a.permittedGroup_33_7"/>
+                                    </span>
+                                <a class="arrow">.</a>
+                                </span>
+                                </li>
+                                <li>
+                                    <label>Issue:</label>
+                                    <input id="id_l.I.c.il.i_32_0.vi.lp.a.targetIssueId" type="text" value="" size="20" tp4="32-0" cn="l.I.c.il.i.vi.lp.a.targetIssueId" name="l.I.c.il.i_32_0.vi.lp.a.targetIssueId"/>
+                                </li>
+
+                                </ul>
+                                <ul class="buttons">
+                                    <li><button>Add link</button></li>
+                                    <li><button>Cansel</button></li>
+                                </ul>
+                            </div>
+
+                            
+
+
+
+                            <div class="description">
+                                What I get in result is that the comment is actually added to TW-4258 and the page reloads with the browser's title corresponding to TW-4258 and comments of TW-4258, while all the other data is from TW-3614.
+                                <p>What I get in result is that the comment is actually added to TW-4258 and the page reloads with the browser's title corresponding to TW-4258 and comments of TW-4258, while all the other data is from TW-3614.</p>
+                                What I get in result is that the comment is actually added to TW-4258 and the page reloads with the browser's title corresponding to TW-4258 and comments of TW-4258, while all the other data is from TW-3614.
+                            </div>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: sahska</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <div class="name dark">by: sahska</div>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active" title="voters">2</div></td>
+                    <td class="ico watchers"><div title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark">Bug<span></span></div></td>
+                    <td class="attributes">
+                        <div class="attribute dark">Submitted<span></span></div>
+                        <span class="combobox bind">
+                            <input size="20" value="Submitted"/>
+                            <a href="">.</a>
+                            <ul class="comboboxList">
+                                <li class="Submitted active">Submitted</li>
+                                <li class="New">New</li>
+                                <li class="Open">Open</li>
+                                <li class="In Progress">In Progress</li>
+                                <li class="Can't Reproduce">Can't Reproduce</li>
+                                <li class="Duplicate">Duplicate</li>
+                             </ul>
+                        </span>
+                    </td>
+                    <td class="attributes"><div class="attribute dark">Duplicates : <a class="inline" href="">CH-1404</a><span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">yamaxim<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Add comment<span></span></div></td>
+                    <td class="date light">Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+
+            <div class="issueContainer">
+                <table cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox"/></td>
+                    <td class="num"><h2><a href="">CH-1761</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="/teamsys/issue2/CH-1761?query=">NPE at jetbrains.charisma.smartui.fullScreenIssue.Issue2_RootHtmlTemplateComponent$2.invoke(Issue2_RootHtmlTemplateComponent.java:59)</a></h2>
+                            <div class="description">Every time when pressed Edit Issue on this page: http://teamsys.labs.intellij.net/teamsys/issue2/CH-534?query=login# java.lang.NullPointerException at jetbrains.charisma.smartui.fullScreenIssue.Is ... </div>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                <td class="nameOrDate">by: Timur Zambalayev</td>
+                <td class="expand_collapse">
+                <a id="id_l.I.c.il.i_6_142901.vi.collapse_6_142901" href="javascript:void(0)" title="Expand" tp4="6-142901" p0="6-142901" cn="l.I.c.il.i.vi.collapse">.</a>
+                </td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active" title="voters">2</div></td>
+                    <td class="ico watchers"><div title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark">Bug<span></span></div></td>
+                    <td class="attributes">
+                        <div class="attribute dark">Submitted<span></span></div>
+                        <span class="combobox bind">
+                            <input size="20" value="Submitted"/>
+                            <a href="">.</a>
+                            <ul class="comboboxList">
+                                <li class="Submitted active">Submitted</li>
+                                <li class="New">New</li>
+                                <li class="Open">Open</li>
+                                <li class="In Progress">In Progress</li>
+                                <li class="Can't Reproduce">Can't Reproduce</li>
+                                <li class="Duplicate">Duplicate</li>
+                             </ul>
+                        </span>
+                    </td>
+                    <td class="attributes"><div class="attribute dark">Duplicates : <a class="inline" href="">CH-1404</a><span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">yamaxim<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Add comment<span></span></div></td>
+                    <td class="date light">Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox"/></td>
+                    <td class="num"><h2><a href="">CH-1404</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Filters, tags and saved searches blocks should look similar wwww www www www.</a></h2>
+                            <div class="description">
+                                What I get in result is that the comment is actually added to TW-4258 and the page reloads with the browser's title corresponding to TW-4258 and comments of TW-4258, while all the other data is from TW-3614.
+                            </div>
+                            <span class="shader"></span>
+                        </div>
+                        <ul class="tags">
+                            <li class="light">tags:</li>
+                            <li><a href="">Pain points</a></li>
+                            <li><a href="">Design</a></li>
+                            <li><a href="">Serious usability problems</a></li>
+                            <li class="edit"><a href="">edit</a></li>
+                        </ul>
+                    </td>
+                    <td class="nameOrDate dark">by: sahska</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active" title="voters">2</div></td>
+                    <td class="ico watchers"><div title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark">Bug<span></span></div></td>
+                    <td class="attributes">
+                        <div class="attribute dark">Submitted<span></span></div>
+                        <span class="combobox bind">
+                            <input size="20" value="Submitted"/>
+                            <a href="">.</a>
+                            <ul class="comboboxList">
+                                <li class="Submitted active">Submitted</li>
+                                <li class="New">New</li>
+                                <li class="Open">Open</li>
+                                <li class="In Progress">In Progress</li>
+                                <li class="Can't Reproduce">Can't Reproduce</li>
+                                <li class="Duplicate">Duplicate</li>
+                             </ul>
+                        </span>
+                    </td>
+                    <td class="attributes"><div class="attribute dark">Duplicates : <a class="inline" href="">CH-1404</a><span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">yamaxim<span></span></div></td>
+                    <td class="attributes active"><div class="attribute dark">Add comment<span></span></div></td>
+                    <td class="date light">Dec 23 2008</td>
+                </tr>
+                </table>
+
+
+                <div id="issue_comments_div_6_45045" class="commentsIssue">
+                    <div class="commentsScroll" style="overflow-y1: auto; height: 400px; overflow-y: scroll; visibility:visible;">
+                        <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <div>
+                            <td class="first">
+                                <img class="avatar" alt="yavadim" src="http://teamsys.labs.intellij.net/teamsys/_persistent/soccer_ball_903.jpg?window_id=67&file=13-6105&v=0&w=56&h=56&c=false"/>
+                            </td>
+                            <td>
+                                <a class="autor" href="/teamsys/user?user=4-1">yavadim</a>
+                                <span class="light">11 Nov 2008 10:26 3 months ago</span>
+                            </td>
+                            </div>
+                            <td class="comment">
+                                <div> actually it doesn't. it does use timeout. </div>
+                            </td>
+                        </tr>
+                        <tr class="selected">
+                            <td class="first">
+                                <img class="avatar" alt="" src="http://teamsys.labs.intellij.net/teamsys/_classpath/smartui/img/youPicture-h-18417e26.gif"/>
+                            </td>
+                            <td>
+                                <a class="autor" href="/teamsys/user?user=4-1753">kot</a>
+                                <span>20 Jan 2009 17:11</span>
+                                <span class="light">(8 weeks ago)</span>
+                            </td>
+                            <td class="comment">
+                                <div class="formAddComment">
+                                <textarea class="editCommentText" rows="10" cols="10" style="overflow-y: hidden;">����� ��� ���� ������ ���������� ������ �������� � ��������� � ���������� ������� � visible</textarea>
+                                <ul class="buttons">
+                                    <li>
+                                        <a id="id_l.I.c.il.i_6_46122.vi.cs.c_11_61589.ct.EditCommentContent.submitButton_11_61589" class="submitButton" href="javascript:void(0)" tp7="11-61589" tp4="6-46122" p0="11-61589" cn="l.I.c.il.i.vi.cs.c.ct.EditCommentContent.submitButton">Save</a>
+                                        <a id="id_l.I.c.il.i_6_46122.vi.cs.c_11_61589.ct.EditCommentContent.cancelButton_11_61589" class="cancelButton" href="javascript:void(0)" tp7="11-61589" tp4="6-46122" p0="11-61589" cn="l.I.c.il.i.vi.cs.c.ct.EditCommentContent.cancelButton">Cancel</a>
+                                    </li>
+                                </ul>
+                                <span class="combobox">
+                                <input class="" value="All Users"/>
+                                <ul class="comboboxList" style="visibility: visible; overflow-y: visible;">
+                                    <li class="All Users active">All Users</li>
+                                    <li class="jira-administrators">jira-administrators</li>
+                                    <li class="teamware-administrators">teamware-administrators</li>
+                                    <li class="jetbrains-team">jetbrains-team</li>
+                                    <li class="jira-users">jira-users</li>
+                                    <li class="teamware-developers">teamware-developers</li>
+                                    <li class="omea-developers">omea-developers</li>
+                                    <li class="omea-testers">omea-testers</li>
+                                    <li class="omea-administrators">omea-administrators</li>
+                                    <li class="Charisma-Users">Charisma-Users</li>
+                                    <li class="New Users">New Users</li>
+                                    <li class="dottrace-administrators">dottrace-administrators</li>
+                                    <li class="dottrace-developers">dottrace-developers</li>
+                                    <li class="dottrace-users">dottrace-users</li>
+                                    <li class="mps-developers">mps-developers</li>
+                                    <li class="idea-admins">idea-admins</li>
+                                    <li class="idea-developers">idea-developers</li>
+                                    <li class="idea-qa">idea-qa</li>
+                                    <li class="charisma-developers">charisma-developers</li>
+                                    <li class="resharper-administrators">resharper-administrators</li>
+                                    <li class="resharper-developers">resharper-developers</li>
+                                    <li class="beelaxy-administrators">beelaxy-administrators</li>
+                                    <li class="beelaxy-developers">beelaxy-developers</li>
+                                    <li class="omea-writers">omea-writers</li>
+                                    <li class="scala-developers">scala-developers</li>
+                                    <li class="ruby-developers">ruby-developers</li>
+                                    <li class="builddesk-developers">builddesk-developers</li>
+                                </ul>
+                                <a class="arrow">.</a>
+                                </span>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <div>
+                            <td class="first">
+                                <img class="avatar" alt="yamaxim" src="http://teamsys.labs.intellij.net/teamsys/_persistent/avatar?window_id=67&file=13-40&v=0&w=56&h=56&c=false"/>
+                            </td>
+                            <td>
+                                <a class="autor" href="/teamsys/user?user=4-6">yamaxim</a>
+                                <span class="light">11 Nov 2008 16:44 3 months ago</span>
+                            </td>
+                            </div>
+                            <td class="comment">
+                                <div> it doesn't process each key-stroke as a server event </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <div>
+                            <td class="first">
+                                <img class="avatar" alt="yamaxim" src="http://teamsys.labs.intellij.net/teamsys/_persistent/avatar?window_id=67&file=13-40&v=0&w=56&h=56&c=false"/>
+                            </td>
+                            <td>
+                                <a class="autor" href="/teamsys/user?user=4-6">yamaxim</a>
+                                <span>11 Nov 2008 16:44 3 months ago</span>
+                            </td>
+                            </div>
+                            <td class="comment">
+                                <div> and never did </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <div>
+                            <td class="first">
+                                <img class="avatar" alt="sashka" src="http://teamsys.labs.intellij.net/teamsys/_persistent/userpicTotoro.jpg?window_id=67&file=13-6587&v=0&w=56&h=56&c=false"/>
+                            </td>
+                            <td>
+                                <a class="autor" href="/teamsys/user?user=4-19">sashka</a>
+                                <span>11 Nov 2008 18:29 3 months ago</span>
+                            </td>
+                            </div>
+                            <td class="comment">
+                                <div>But why does it show each character one-by-one (almost always)? The preview could be updated only if typing is finished? Or there's a pause in typing?
+                                <br/>
+                                Or may be there are some ways to show preview simultaneously, but send data to server only when I save the issue?
+                                <br/>
+                                ����, �� �� ����� �������! �������� ���-������!
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <div>
+                            <td class="first">
+                                <img class="avatar" alt="yamaxim" src="http://teamsys.labs.intellij.net/teamsys/_persistent/avatar?window_id=67&file=13-40&v=0&w=56&h=56&c=false"/>
+                            </td>
+                            <td>
+                                <a class="autor" href="/teamsys/user?user=4-6">yamaxim</a>
+                                <span>11 Nov 2008 18:42 3 months ago</span>
+                            </td>
+                            </div>
+                        <td class="comment">
+                            <div>
+                            We do the following:
+                            <br/>
+                            <ol>
+                            <li>
+                            While you type we send nothing to the server.
+                            <br/>
+                            </li>
+                            <li> When you finish typing or paused typing and anything actually chaged we send result to the server.</li>
+                            </ol>
+                            </div>
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                    <div class="formAddComment">
+                        <label>Add Comment</label>
+                        <textarea style="overflow-y: hidden;"></textarea>
+                        <ul class="buttons">
+                            <li><a class="submitButton" href="javascript:void(0)" title="Ctrl+Enter">Submit</a></li>
+                        </ul>
+                        <label>Visible for Group:</label>
+                        <span class="combobox">
+                            <input class="" value="All Users"/>
+                            <a class="arrow">.</a>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <br/><br/><br/><br/><br/>
+        <div id="issuesContent">
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox"/></td>
+                    <td class="num"><h2><a href="">CH-105</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Saving searches UI suggestion</a></h2>
+                            <ul class="tags">
+                                <li class="light">tags:</li>
+                                <li><a href="">Pain points</a></li>
+                                <li><a href="">Design</a></li>
+                                <li><a href="">Serious usability problems</a></li>
+                                <li class="edit active">
+                                    <a href="">edit</a>
+                                    <span class="combobox bind">
+                                        <input class="textNo" type="text" value="add tag" onblur="if(this.value == '') this.value = 'add tag', this.className = 'textNo'" onfocus="if(this.value == 'add tag') this.value = '', this.className = 'text'" name="taf"/>
+                                        <a href="">.</a>
+                                        <ul class="comboboxList">
+                                            <li>Pain points</li>
+                                            <li>Design</li>
+                                            <li>Serious usability problems</li>
+                                         </ul>
+                                    </span>
+                                </li>
+                            </ul>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: sahska</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div class="active" title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active" title="Vote for this issue">12</div></td>
+                    <td class="ico watchers"><div class="active" title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Critical">Critical</div></td>
+                    <td class="attributes"><div class="attribute dark">Submited<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Usability Problem<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">yamaxim<span></span></div></td>
+                    <td class="date light">Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer checked selected">
+                <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox" checked="checked"/></td>
+                    <td class="num"><h2><a href="">CH-3457</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Filters, tags and saved searches blocks should look similar. Recent searches should be moved to somewhere near the search field.</a></h2>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: sahska</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div class="active" title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active you" title="Unvote">12</div></td>
+                    <td class="ico watchers"><div class="active" title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark">Bug<span></span></div></td>
+                    <td class="attributes">
+                        <div class="attribute dark">Submitted<span></span></div>
+                        <span class="combobox bind" style="visibility:visible;">
+                            <input size="20" value="Submitted"/>
+                            <a href="">.</a>
+                            <ul class="comboboxList">
+                                <li class="Submitted active">Submitted</li>
+                                <li class="New">New</li>
+                                <li class="Open">Open</li>
+                                <li class="In Progress">In Progress</li>
+                                <li class="Can't Reproduce">Can't Reproduce</li>
+                                <li class="Duplicate">Duplicate</li>
+                             </ul>
+                        </span>
+                    </td>
+                    <td class="attributes"><div class="attribute dark">konstantin solomatov<span></span></div></td>
+                    <td class="date light"><span class="attachment">.</span>Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer checked">
+                <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox" checked="checked"/></td>
+                    <td class="num"><h2><a href="">CH-3457</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Filters, tags and saved searches blocks should look similar. Recent searches should be moved to somewhere near the search field.</a></h2>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: sahska</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div class="active" title="favorites">.</div></td>
+                    <td class="ico voters"><div title="voters">.</div></td>
+                    <td class="ico watchers"><div title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark">Bug<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Submitted<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">konstantin solomatov<span></span></div></td>
+                    <td class="date light">Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox"/></td>
+                    <td class="num"><h2><a href="">CH-3457</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Filters, tags and saved searches blocks should look similar. Recent searches should be moved to somewhere near the search field.</a></h2>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: sahska</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div title="voters">.</div></td>
+                    <td class="ico watchers"><div class="active" title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark">Bug<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Submitted<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">konstantin solomatov<span></span></div></td>
+                    <td class="date light">Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox"/></td>
+                    <td class="num"><h2><a href="">CH-3457</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">TW-6719  Exception: Could not get XML settings from the component �JetBrains.UI.Shell.ExceptionReport.ExceptionReportComponent, JetBrains.Platform.TeamCity.UI, Version=4.</a></h2>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: sahska</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div title="voters">.</div></td>
+                    <td class="ico watchers"><div title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark">Bug<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Submitted<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">konstantin solomatov<span></span></div></td>
+                    <td class="date light"><span class="attachment">.</span>Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox"/></td>
+                    <td class="num"><h2><a href="">CH-3457</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Filters, tags and saved searches blocks should look similar. Recent searches should be moved to somewhere near the search field.</a></h2>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">by: sahska</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+                <table class="properties" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="ico favorites"><div title="favorites">.</div></td>
+                    <td class="ico voters"><div class="active" title="voters">7</div></td>
+                    <td class="ico watchers"><div title="watchers">.</div></td>
+                    <td class="attributes"><div class="attribute priority Normal">Normal</div></td>
+                    <td class="attributes"><div class="attribute dark">Bug<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">Submitted<span></span></div></td>
+                    <td class="attributes"><div class="attribute dark">konstantin solomatov<span></span></div></td>
+                    <td class="date light">Dec 23 2008</td>
+                </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <br/><br/><br/><br/><br/>
+        <div id="issuesContent" class="oneLine">
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox"/></td>
+                    <td class="num"><h2><a href="">CH-1404</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="/teamsys/issue2/CH-1761?query=">NPE at jetbrains.charisma.smartui.fullScreenIssue.Issue2_RootHtmlTemplateComponent$2.invoke(Issue2_RootHtmlTemplateComponent.java:59)</a></h2>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">Dec 23 2008</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer checked resolved">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox" checked="checked"/></td>
+                    <td class="num"><h2><a href="">TW-1404</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Saving searches UI suggestion</a></h2>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark"><span class="attachment">.</span>Dec 23 2008</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer checked">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox" checked="checked"/></td>
+                    <td class="num"><h2><a href="">TW-140</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Tried using suggest window in the New Issue dialog, got exception</a></h2>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark"><span class="attachment">.</span>Dec 23 2008</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer checked">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox" checked="checked"/></td>
+                    <td class="num"><h2><a href="">CH-1807</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Filters, tags and saved searches blocks should look similar. Recent searches should be moved to somewhere near the search field.</a></h2>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">Dec 23 2008</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><input type="checkbox"/></td>
+                    <td class="num"><h2><a href="">CH-1104</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Saving searches UI suggestion</a></h2>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark">Dec 23 2008</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+            </div>
+            <div class="issueContainer">
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="checkbox"><a class="checkbox empty" href="">.</a></td>
+                    <td class="num"><h2><a href="">CH-140</a></h2></td>
+                    <td>
+                        <div class="issueText">
+                            <h2><a href="">Tried using suggest window in the New Issue dialog, got exception</a></h2>
+                            <span class="shader"></span>
+                        </div>
+                    </td>
+                    <td class="nameOrDate dark"><span class="attachment">.</span>Dec 23 2008</td>
+                    <td class="expand_collapse"><a href="">.</a></td>
+                </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    <!--------- new block Start -------->
+        <div class="result">
+            <ul class="actions">
+                <li class="plane">Created in [9549] ms</li>
+            </ul>
+            <ul class="player">
+                <li class="navigation backSearch"><a href="">.</a></li>
+                <li class="navigation"><a href="">.</a></li>
+                <li>26 - 32 of 32</li>
+                <li class="navigation next"><a href="">.</a></li>
+            </ul>
+        <!--<div id="pager_div" class="page">
+        <div style="float: right;">Created in [9549] ms</div>
+        26 - 32 of 32
+        <a id="prevPageHref" href="/teamsys/issues?q=for+kot+unresolved+sort+by+priority&p=15">�-</a>
+        </div>-->
+        </div>
+        <!--------- new block Start -------->
+        </div>
+
+
+    </div>
+
+
+    <div class="footer">
+        <ul class="rss">
+            <li class="first"><a href="/teamsys/charismaRss/listIssuesByQuery/xml?query=for+kot+unresolved+sort+by+priority">Issues</a></li>
+            <li><a href="/teamsys/charismaRss/listCommentsByQuery/xml?query=for+kot+unresolved+sort+by+priority">Comments</a></li>
+        </ul>
+        <ul>
+            <li class="first">
+                <a href="/teamsys/welcome">JetBrains Tracker</a>
+                revision # 3664 [26-Mar-2009 11:09] (version # 72 )
+            </li>
+            <li><a href="http://www.jetbrains.net/confluence/display/TSYSD/Home">Help</a></li>
+            <li><a href="javascript:(function () { var e = document.createElement('script'); e.setAttribute('type', 'text/javascript'); e.setAttribute('src', 'http://teamsys.labs.intellij.net/teamsys/_resources/js/charisma-bookmarklet-min.js'); document.body.appendChild(e); }()); ">Send your Feedback</a></li>
+        </ul>
+    </div>
+      
+      </body>
+
+    </html>

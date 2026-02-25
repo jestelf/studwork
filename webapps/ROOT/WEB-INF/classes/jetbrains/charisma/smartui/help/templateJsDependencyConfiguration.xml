@@ -1,0 +1,18 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartui.help.ShortcutsDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ShortcutsDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartui.help.ShortcutsDialog</value>
+      </list>
+    </property>
+  </bean>
+</beans>

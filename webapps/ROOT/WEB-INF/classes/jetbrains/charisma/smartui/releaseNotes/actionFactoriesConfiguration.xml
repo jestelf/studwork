@@ -1,0 +1,3 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.releaseNotes._ReleaseNotes_DispatchAction" class="jetbrains.charisma.smartui.releaseNotes._ReleaseNotes_DispatchAction"></bean>
+</beans>

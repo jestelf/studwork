@@ -1,0 +1,15 @@
+.stat {
+  
+  
+}
+
+.stat img {
+  float: left;
+  margin-right: 20px;
+}
+
+.stat .table {
+  table-layout: auto;
+  width: auto;
+}
+

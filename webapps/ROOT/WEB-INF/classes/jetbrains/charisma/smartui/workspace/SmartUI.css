@@ -1,0 +1,225 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueToolbar.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueToolbar.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueToolbar.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/attachment.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/attachment.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/attachment.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/main.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/main.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/main.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/message.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/message.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/runtime/css/message.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/wiki/processor/css/wiki.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/wiki/processor/css/wiki.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/wiki/processor/css/wiki.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/table.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/table.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/table.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/header.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/header.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/header.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/footer.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/footer.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/footer.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/actions.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/actions.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/actions.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueAttributeList.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueAttributeList.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueAttributeList.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueAttributes.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueAttributes.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueAttributes.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/subcontent.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/subcontent.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/subcontent.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/buttons.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/buttons.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/buttons.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/player.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/player.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/player.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/hints.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/hints.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/hints.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/tags.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/tags.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/tags.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/diff.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/diff.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/diff.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/comments.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/comments.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/comments.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/dialog.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/dialog.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/dialog.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/error.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/error.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/error.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/notes.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/notes.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/notes.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/popup.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/popup.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/popup.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/login.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/login.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/login.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/Layout.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/Layout.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/Layout.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/search-panel.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/search-panel.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/search-panel.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueList.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueList.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueList.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueComments.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueComments.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueComments.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueEdit.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueEdit.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueEdit.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/fsi.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/fsi.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/fsi.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/history.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/history.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/history.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueNew.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueNew.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/charisma/smartui/css/issueNew.css").url}");
+</#if>
+.changed {
+  font-weight: bold;
+}
+
+.accelerator {
+  text-decoration: underline;
+}
+

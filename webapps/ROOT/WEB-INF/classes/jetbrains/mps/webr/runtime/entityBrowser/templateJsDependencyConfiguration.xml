@@ -1,0 +1,34 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.mps.webr.runtime.entityBrowser.EntityBrowser_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EntityBrowser</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.BorderLayout</value>
+        <value>Webr.Component</value>
+        <value>Webr.Event</value>
+        <value>Webr.TreeNodeSupport</value>
+        <value>Webr.grid.GridSupport</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.core.EventManager</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.core.Ext</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.data.Tree</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.util.Observable</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.layout.BorderLayout</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.layout.ContentPanels</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.layout.LayoutManager</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.tree.AsyncTreeNode</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.tree.TreeLoader</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.tree.TreeNode</value>
+        <value>jetbrains.mps.webr.extjsComponent.js.widgets.tree.TreePanel</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ResponseServerEventListener</value>
+      </list>
+    </property>
+  </bean>
+</beans>

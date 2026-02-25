@@ -1,0 +1,17 @@
+   .jt-panel-title {
+  margin: 0 0 .5em 0;
+  padding: 0;
+  font-size: 160%;
+  font-weight: bold;
+  font-family: arial, tahoma, sans-serif;
+}
+
+.jt-panel-content {
+  padding: 10px;
+}
+
+.jt-btn-panel {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+

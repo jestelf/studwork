@@ -1,0 +1,44 @@
+.settingsSort {
+  margin-left: 1.4em;
+  margin-right: 0.5em;
+}
+
+.settingsSort li {
+  padding-right: 1em;
+  position: relative;
+  list-style: none;
+  color: #084b96;
+}
+
+.settingsSort li:hover {
+  background-color: #f0f2f3;
+}
+
+.settingsSort li.active {
+  list-style: decimal;
+}
+
+.settingsSort li a, .settingsSort li a:hover {
+  text-decoration: none;
+  display: block;
+}
+
+.settingsSort li a.hoverAction {
+  padding-left: .5em;
+  padding-right: .5em;
+  position: absolute;
+  top: 0;
+  right: -1em;
+  display: none;
+  background: #f0f2f3 url("${getClasspathUri("smartui/img/icoPlus.gif")}") no-repeat center center;
+  border-left: solid 1px #fff;
+}
+
+.settingsSort li:hover a.hoverAction {
+  display: block;
+}
+
+.settingsSort li.active a.hoverAction {
+  background: #f0f2f3 url("${getClasspathUri("smartui/img/icoDeleteSearch.gif")}") no-repeat center center;
+}
+

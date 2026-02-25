@@ -1,0 +1,3 @@
+<beans>
+  <bean id="jetbrains.mps.webr.runtime.error._InternalErrorThrow_DispatchAction" class="jetbrains.mps.webr.runtime.error._InternalErrorThrow_DispatchAction"></bean>
+</beans>

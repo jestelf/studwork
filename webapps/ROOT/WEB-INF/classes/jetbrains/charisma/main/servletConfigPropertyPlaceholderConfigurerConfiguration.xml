@@ -1,0 +1,3 @@
+<beans>
+  <bean id="servletConfigPropertyPlaceholderConfigurer" class="jetbrains.mps.webr.runtime.servlet.MyServletConfigPropertyPlaceholderConfigurer"></bean>
+</beans>

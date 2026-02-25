@@ -1,0 +1,22 @@
+/*background*/
+.x-layout-container {
+  background-color: #ece9e4;
+}
+
+.x-layout-panel-north, .x-layout-panel-south {
+  background-color: #ece9e4;
+}
+
+.x-layout-container {
+  background-color: #ece9e4;
+}
+
+.x-layout-container .x-layout-panel-center {
+  border-color: #ece9e4;
+}
+
+/*panel background*/
+.x-toolbar {
+  background-color: #e0eef5;
+}
+

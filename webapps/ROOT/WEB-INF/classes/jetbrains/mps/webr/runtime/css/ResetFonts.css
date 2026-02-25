@@ -1,0 +1,14 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredClasspathUri("/yui_2.7.0/reset/reset.css").resourcePath>
+<#include getDeferredClasspathUri("/yui_2.7.0/reset/reset.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredClasspathUri("/yui_2.7.0/reset/reset.css").url}");
+</#if>
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredClasspathUri("/yui_2.7.0/fonts/fonts.css").resourcePath>
+<#include getDeferredClasspathUri("/yui_2.7.0/fonts/fonts.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredClasspathUri("/yui_2.7.0/fonts/fonts.css").url}");
+</#if>

@@ -1,0 +1,3 @@
+<beans>
+  <bean id="jetbrains.charisma.openid.web.OpenIdInternal_DispatchAction" class="jetbrains.charisma.openid.web.OpenIdInternal_DispatchAction"></bean>
+</beans>

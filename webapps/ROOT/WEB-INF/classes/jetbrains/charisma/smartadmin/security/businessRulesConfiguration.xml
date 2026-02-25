@@ -1,0 +1,50 @@
+<beans>
+  <bean id="AdminAudit" class="jetbrains.charisma.smartadmin.security.AdminAudit_RulePackage">
+    <property name="rules">
+      <list>
+        <ref bean="AdminAudit_userPassword"/>
+        <ref bean="AdminAudit_userGroupRename"/>
+        <ref bean="AdminAudit_userGroup"/>
+        <ref bean="AdminAudit_roleRename"/>
+        <ref bean="AdminAudit_projectRename"/>
+        <ref bean="AdminAudit_projectShortName"/>
+        <ref bean="AdminAudit_projectLeader"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="AdminAudit_userPassword" class="jetbrains.charisma.smartadmin.security.AdminAudit_userPassword_Rule">
+    <property name="rulePackage">
+      <ref bean="AdminAudit"/>
+    </property>
+  </bean>
+  <bean id="AdminAudit_userGroupRename" class="jetbrains.charisma.smartadmin.security.AdminAudit_userGroupRename_Rule">
+    <property name="rulePackage">
+      <ref bean="AdminAudit"/>
+    </property>
+  </bean>
+  <bean id="AdminAudit_projectRename" class="jetbrains.charisma.smartadmin.security.AdminAudit_projectRename_Rule">
+    <property name="rulePackage">
+      <ref bean="AdminAudit"/>
+    </property>
+  </bean>
+  <bean id="AdminAudit_roleRename" class="jetbrains.charisma.smartadmin.security.AdminAudit_roleRename_Rule">
+    <property name="rulePackage">
+      <ref bean="AdminAudit"/>
+    </property>
+  </bean>
+  <bean id="AdminAudit_projectShortName" class="jetbrains.charisma.smartadmin.security.AdminAudit_projectShortName_Rule">
+    <property name="rulePackage">
+      <ref bean="AdminAudit"/>
+    </property>
+  </bean>
+  <bean id="AdminAudit_projectLeader" class="jetbrains.charisma.smartadmin.security.AdminAudit_projectLeader_Rule">
+    <property name="rulePackage">
+      <ref bean="AdminAudit"/>
+    </property>
+  </bean>
+  <bean id="AdminAudit_userGroup" class="jetbrains.charisma.smartadmin.security.AdminAudit_userGroup_Rule">
+    <property name="rulePackage">
+      <ref bean="AdminAudit"/>
+    </property>
+  </bean>
+</beans>

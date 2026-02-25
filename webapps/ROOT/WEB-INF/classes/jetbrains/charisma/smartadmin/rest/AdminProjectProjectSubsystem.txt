@@ -1,0 +1,74 @@
+h1./admin/project/{project}/subsystem
+h2. GET /admin/project/\{project\}/subsystem
+Get all project subsystems
+{panel}{{GET /rest/admin/project/*\{project\}*/subsystem}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project/TODO/subsystem{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /admin/project/\{project\}/subsystem/\{subsystemName\}
+Get project subsystem by name
+{panel}{{GET /rest/admin/project/*\{project\}*/subsystem/*\{subsystemName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| subsystemName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/admin/project/TODO/subsystem/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /admin/project/\{project\}/subsystem/\{subsystemName\}
+Add new subsystem to the project
+{panel}{{PUT /rest/admin/project/*\{project\}*/subsystem/*\{subsystemName\}*?*\{isDefault\}*&*\{defaultAssignee\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| subsystemName | string | TODO: Description |
+| isDefault | boolean | TODO: Description |
+| defaultAssignee | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/admin/project/TODO/subsystem/TODO?isDefault=TODO&defaultAssignee=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. DELETE /admin/project/\{project\}/subsystem/\{subsystemName\}
+Remove subsystem from the project
+{panel}{{DELETE /rest/admin/project/*\{project\}*/subsystem/*\{subsystemName\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | projectByIdNotStrict | TODO: Description |
+| subsystemName | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}DELETE /rest/admin/project/TODO/subsystem/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

@@ -1,0 +1,367 @@
+h1./issue
+h2. GET /issue/\{issue\}
+Get issue by id
+{panel}{{GET /rest/issue/*\{issue\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/issue/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /issue/count
+Get issues count, supports jsonp
+{panel}{{GET /rest/issue/count?*\{filter\}*&*\{callback\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| filter | string | TODO: Description |
+| callback | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/issue/count?filter=TODO&callback=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /issue/byid/\{issue\}
+Deprecated.
+{panel}{{GET /rest/issue/byid/*\{issue\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/issue/byid/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /issue/has/\{issue\}
+Deprecated.
+{panel}{{GET /rest/issue/has/*\{issue\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/issue/has/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /issue/\{issue\}/exists
+Check that issue exists
+{panel}{{GET /rest/issue/*\{issue\}*/exists}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/issue/TODO/exists{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /issue/attachments/\{issue\}
+Deprecated
+{panel}{{GET /rest/issue/attachments/*\{issue\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/issue/attachments/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /issue/\{issue\}/attachment
+Get all issue attachments
+{panel}{{GET /rest/issue/*\{issue\}*/attachment}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/issue/TODO/attachment{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /issue/comments/\{issue\}
+Deprecated
+{panel}{{GET /rest/issue/comments/*\{issue\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/issue/comments/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /issue/\{issue\}/comment
+Get all issue comments
+{panel}{{GET /rest/issue/*\{issue\}*/comment}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/issue/TODO/comment{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /issue/links/\{issue\}
+Deprecated
+{panel}{{GET /rest/issue/links/*\{issue\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/issue/links/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. GET /issue/\{issue\}/link
+Get all issue links
+{panel}{{GET /rest/issue/*\{issue\}*/link}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}GET /rest/issue/TODO/link{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /issue
+Deprecated
+{panel}{{POST /rest/issue?*\{project\}*&*\{assignee\}*&*\{summary\}*&*\{description\}*&*\{priority\}*&*\{type\}*&*\{subsystem\}*&*\{state\}*&*\{affectsVersion\}*&*\{fixedVersions\}*&*\{attachments\}*&*\{fixedInBuild\}*&*\{permittedGroup\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | string | TODO: Description |
+| assignee | string | TODO: Description |
+| summary | string | TODO: Description |
+| description | string | TODO: Description |
+| priority | string | TODO: Description |
+| type | string | TODO: Description |
+| subsystem | string | TODO: Description |
+| state | string | TODO: Description |
+| affectsVersion | string | TODO: Description |
+| fixedVersions | string | TODO: Description |
+| attachments | files | TODO: Description |
+| fixedInBuild | string | TODO: Description |
+| permittedGroup | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/issue?project=TODO&assignee=TODO&summary=TODO&description=TODO&priority=TODO&type=TODO&subsystem=TODO&state=TODO&affectsVersion=TODO&fixedVersions=TODO&attachments=TODO&fixedInBuild=TODO&permittedGroup=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. PUT /issue
+Report new issue
+{panel}{{PUT /rest/issue?*\{project\}*&*\{assignee\}*&*\{summary\}*&*\{description\}*&*\{priority\}*&*\{type\}*&*\{subsystem\}*&*\{state\}*&*\{affectsVersion\}*&*\{fixedVersions\}*&*\{attachments\}*&*\{fixedInBuild\}*&*\{permittedGroup\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| project | string | TODO: Description |
+| assignee | string | TODO: Description |
+| summary | string | TODO: Description |
+| description | string | TODO: Description |
+| priority | string | TODO: Description |
+| type | string | TODO: Description |
+| subsystem | string | TODO: Description |
+| state | string | TODO: Description |
+| affectsVersion | string | TODO: Description |
+| fixedVersions | string | TODO: Description |
+| attachments | files | TODO: Description |
+| fixedInBuild | string | TODO: Description |
+| permittedGroup | string | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}PUT /rest/issue?project=TODO&assignee=TODO&summary=TODO&description=TODO&priority=TODO&type=TODO&subsystem=TODO&state=TODO&affectsVersion=TODO&fixedVersions=TODO&attachments=TODO&fixedInBuild=TODO&permittedGroup=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /issue/attachment/\{issue\}
+Deprecated
+{panel}{{POST /rest/issue/attachment/*\{issue\}*?*\{group\}*&*\{name\}*&*\{files\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+| group | string | TODO: Description |
+| name | string | TODO: Description |
+| files | files | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/issue/attachment/TODO?group=TODO&name=TODO&files=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /issue/\{issue\}/attachment
+Attach file to issue
+{panel}{{POST /rest/issue/*\{issue\}*/attachment?*\{group\}*&*\{name\}*&*\{authorLogin\}*&*\{created\}*&*\{files\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+| group | string | TODO: Description |
+| name | string | TODO: Description |
+| authorLogin | string | TODO: Description |
+| created | instant | TODO: Description |
+| files | files | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/issue/TODO/attachment?group=TODO&name=TODO&authorLogin=TODO&created=TODO&files=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /issue/execute/\{issue\}
+Deprecated
+{panel}{{POST /rest/issue/execute/*\{issue\}*?*\{command\}*&*\{comment\}*&*\{group\}*&*\{disableNotifications\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+| command | string | TODO: Description |
+| comment | string | TODO: Description |
+| group | string | TODO: Description |
+| disableNotifications | boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/issue/execute/TODO?command=TODO&comment=TODO&group=TODO&disableNotifications=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /issue/\{issue\}/execute
+Apply command to issue
+{panel}{{POST /rest/issue/*\{issue\}*/execute?*\{command\}*&*\{comment\}*&*\{group\}*&*\{disableNotifications\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+| command | string | TODO: Description |
+| comment | string | TODO: Description |
+| group | string | TODO: Description |
+| disableNotifications | boolean | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/issue/TODO/execute?command=TODO&comment=TODO&group=TODO&disableNotifications=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. POST /issue/customField/\{issue\}/\{fieldName\}
+Deprecated
+{panel}{{POST /rest/issue/customField/*\{issue\}*/*\{fieldName\}*?*\{value\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+| fieldName | string | TODO: Description |
+| value | list<string> | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}POST /rest/issue/customField/TODO/TODO?value=TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+
+h2. DELETE /issue/\{issue\}
+Delete issue
+{panel}{{DELETE /rest/issue/*\{issue\}*}}{panel}
+
+* *Parameters:*
+|| Name || Type || Description ||
+| issue | issueById | TODO: Description |
+
+
+h3. Sample
+*Request:*
+{code}DELETE /rest/issue/TODO{code}
+
+*Response:*
+{code}TODO: Sample Response{code}
+
+

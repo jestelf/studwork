@@ -1,0 +1,7 @@
+<beans>
+  <bean id="ClasspathRequestProcessor" class="jetbrains.mps.webr.runtime.requestProcessor.ClasspathRequestProcessor">
+    <property name="dependentRequestProcessors">
+      <map></map>
+    </property>
+  </bean>
+</beans>

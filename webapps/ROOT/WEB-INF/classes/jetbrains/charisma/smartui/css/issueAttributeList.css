@@ -1,0 +1,74 @@
+ul.attributeList {
+  margin: .3em 0;
+}
+
+.listCaption {
+  float: left;
+}
+
+ul.attributeList > li {
+  margin-right: .3em;
+  color: #9ea1a5;
+  display: inline;
+  font-size: 90%;
+}
+
+.loading {
+  background: url("${getClasspathUri("images/loading.gif")}") no-repeat center center;
+  padding: 0 8px;
+}
+
+ul.links {
+  overflow-y: hidden;
+  
+  
+  
+  
+  
+  
+}
+
+ul.links .loading {
+  display: none;
+}
+
+ul.links .delete:hover {
+  text-decoration: none;
+}
+
+ul.links li {
+  display: block;
+  margin: 0;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: .2em;
+  white-space: nowrap;
+}
+
+ul.links .hover {
+  background-color: #676e75;
+}
+
+ul.links .moreLinks a {
+  font-weight: bold;
+  font-size: 90%;
+  font-family: arial, tahoma, sans-serif;
+}
+
+ul.links .listCaption {
+  clear: left;
+}
+
+ul.links .link {
+  text-decoration: none;
+  color: #084b96;
+}
+
+ul.links .resolved .link {
+  color: #676E75;
+}
+
+ul.links .link.hover {
+  color: white;
+}
+

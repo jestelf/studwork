@@ -1,0 +1,38 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.refactoring.SecretRefactoringPage_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>SecretRefactoringPage</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.refactoring.RefactoringsList_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>RefactoringsList</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.refactoring.SecretRefactoringPage</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.refactoring.RefactoringsList_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>RefactoringsList</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+  </bean>
+</beans>

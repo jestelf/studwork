@@ -1,0 +1,93 @@
+.suggest {
+  margin: .1em 0 0 .3em;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: solid 1px #a9a9a9;
+  text-align: right;
+  z-index: 200;
+  min-width: 160px;
+  
+  
+}
+
+.suggest div.comment {
+  font-size: 70%;
+  color: #AAA;
+  padding-left: 0.6em;
+  background-color: #FEFFD9;
+  text-align: left;
+}
+
+.suggest ul {
+  margin: 0;
+  padding: 0;
+  
+  
+  
+}
+
+.suggest ul li {
+  cursor: pointer;
+  margin: 0;
+  padding: 0.2em 0.6em;
+  list-style: none;
+  
+  
+  
+}
+
+.suggest ul li span.optionType1 {
+  font-style: italic;
+}
+
+.suggest ul li span.option {
+  float: left;
+  padding-right: 33px;
+  
+  
+  
+}
+
+.suggest ul li span.option span.prefix {
+  color: #AAA;
+}
+
+.suggest ul li span.option span.suffix {
+  color: #AAA;
+}
+
+.suggest ul li span.option span.match {
+  font-weight: bold;
+}
+
+.suggest ul li span.description {
+  color: gray;
+  
+}
+
+.suggest ul li span.description span.match {
+  font-weight: bold;
+}
+
+.suggest ul li.current {
+  background-color: #e1e2e2;
+  
+}
+
+.suggest ul li.current .description {
+  color: #56756f;
+}
+
+.suggest ul .separator {
+  background: url("${getClasspathUri("images/line-through.gif")}") repeat-x 0 55%;
+  text-align: left;
+  
+}
+
+.suggest ul .separator .description {
+  padding: 0 1px;
+  color: #898989;
+  background-color: white;
+}
+

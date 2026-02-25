@@ -1,0 +1,134 @@
+<#if useResourceBundle()>
+<@preprocessCssUrls path=getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/error.css").resourcePath>
+<#include getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/error.css").resourcePath>
+</@preprocessCssUrls>
+<#else>
+@import url("${getDeferredStylesheetUri("/jetbrains/mps/webr/htmlComponent/css/error.css").url}");
+</#if>
+.bsod {
+  background-color: blue;
+  color: #fff;
+}
+
+.bsod .container a {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.errorPage .container {
+  margin-top: 5em;
+  margin-left: 10em;
+  padding-left: 7em;
+}
+
+.errorPage iframe {
+  position: static;
+  margin: 0;
+  padding: 0;
+  border: 1px solid gray;
+}
+
+.error404 .container {
+  background: url("${getClasspathUri("smartui/img/bgError404.png")}") no-repeat 0 0;
+}
+
+.common .container {
+  background: url("${getClasspathUri("smartui/img/bgError404.png")}") no-repeat 0 0;
+}
+
+.error403 .container {
+  background: url("${getClasspathUri("smartui/img/bgError403.png")}") no-repeat 0 0;
+}
+
+.exception {
+  background-color: white;
+  color: black;
+  height: 100%;
+  min-height: 60%;
+  
+  
+}
+
+.exception h1 {
+  font-size: 220%;
+}
+
+.exception .container {
+  margin-top: 5em;
+  margin-left: 10em;
+  padding-left: 7em;
+  background: url("${getClasspathUri("smartui/img/bgError404.png")}") no-repeat 0 0;
+  
+}
+
+.exception .container a {
+  color: #084b96;
+}
+
+.error403 p {
+  font-size: 120%;
+  line-height: 150%;
+  margin-top: 0.5em;
+}
+
+.error403 p a {
+  text-decoration: underline;
+}
+
+.error403 p a:hover {
+  text-decoration: none;
+}
+
+body.errorPage .container, body.bsod .container {
+  height: 100%;
+  min-height: 60%;
+}
+
+body.errorPage h1, body.bsod h1 {
+  font-size: 220%;
+}
+
+.errorMenu {
+  margin-top: 1em;
+  padding-bottom: 1em;
+  font-size: 150%;
+}
+
+.errorLogin {
+  margin-right: .4em;
+  padding-right: .5em;
+  border-right: solid 1px #898989;
+}
+
+.nothing {
+  padding: 2em 0;
+  text-align: center;
+  background: none;
+  
+  
+}
+
+.nothing h1 {
+  padding: 0.5em 0 2em 3.5em;
+  font-size: 200%;
+  display: inline;
+  background: url("${getClasspathUri("smartui/img/bgSearchNothing2.png")}") no-repeat 0 0;
+}
+
+.nothing p, .nothing ul {
+  margin-top: 3em;
+}
+
+.error h1 {
+  background: url("${getClasspathUri("smartui/img/bgSearchError.png")}") no-repeat 0 0;
+}
+
+.nothing .searchWrapper ul li {
+  list-style: none;
+}
+
+.info-text {
+  color: red;
+  font-size: 85%;
+}
+

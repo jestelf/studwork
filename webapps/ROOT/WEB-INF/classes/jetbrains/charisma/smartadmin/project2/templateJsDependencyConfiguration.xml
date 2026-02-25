@@ -1,0 +1,360 @@
+<beans>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.EditProject_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditProject</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.admin2.AdminBreadcrumb_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>AdminBreadcrumb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.EditProjectMain_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>EditProjectMain</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.EditProjectAssignees_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>EditProjectAssignees</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.ProjectSubsystems_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ProjectSubsystems</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.ProjectVersions_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ProjectVersions</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.ProjectBuilds_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>ProjectBuilds</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.EditProjectSaveDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>EditProjectSaveDialog</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.smartadmin.project2.EditProject</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.EditProjectMain_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditProjectMain</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.project2.EditProjectMain</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.EditProjectAssignees_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditProjectAssignees</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.SelectGroupsDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>SelectGroupsDialog</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.SelectUserDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>SelectUserDialog</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.project2.EditProjectAssignees</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.SelectUserDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>SelectUserDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.smartadmin.project2.SelectUserDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.SelectGroupsDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>SelectGroupsDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.project2.SelectGroupsDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.MultiBox</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.ProjectSubsystems_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ProjectSubsystems</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.EditSubsystemDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>EditSubsystemDialog</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.smartadmin.project2.ProjectSubsystems</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.EditSubsystemDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditSubsystemDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.project2.EditSubsystemDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.combo.ComboComponentBase</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.ProjectVersions_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ProjectVersions</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.EditVersionDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>EditVersionDialog</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.project2.ProjectVersions</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.EditVersionDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditVersionDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.project2.EditVersionDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.CalendarWidget</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.Projects_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>Projects</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.project2.Projects</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.CreateProject_RootHtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>CreateProject</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.admin2.AdminBreadcrumb_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>AdminBreadcrumb</value>
+          </property>
+        </bean>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.EditProjectMain_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>EditProjectMain</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.project2.CreateProject</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.ProjectBuilds_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>ProjectBuilds</value>
+    </property>
+    <property name="innerTemplates">
+      <list>
+        <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.InnerTemplate">
+          <property name="className">
+            <value>jetbrains.charisma.smartadmin.project2.EditBuildDialog_HtmlTemplateComponent</value>
+          </property>
+          <property name="refName">
+            <value>EditBuildDialog</value>
+          </property>
+        </bean>
+      </list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.project2.ProjectBuilds</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.EditBuildDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditBuildDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.project2.EditBuildDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.CalendarWidget</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+  <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.TemplateJsDependency">
+    <property name="className">
+      <value>jetbrains.charisma.smartadmin.project2.EditProjectSaveDialog_HtmlTemplateComponent</value>
+    </property>
+    <property name="name">
+      <value>EditProjectSaveDialog</value>
+    </property>
+    <property name="innerTemplates">
+      <list></list>
+    </property>
+    <property name="jsDependencies">
+      <list>
+        <value>jetbrains.charisma.smartadmin.project2.EditProjectSaveDialog</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.ComponentRegistry2</value>
+      </list>
+    </property>
+  </bean>
+</beans>

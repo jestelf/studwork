@@ -1,0 +1,306 @@
+<beans>
+  <bean id="jetbrains.charisma.smartui.js.App" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.App</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/App.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.IssueList</value>
+        <value>jetbrains.charisma.smartui.js.NewIssueSwitcher</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.HTMLInputElement_extension</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.charisma.main.SmartUIShortCuts</value>
+        <value>jetbrains.charisma.smartui.js.SelectionActions</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.StringExtension</value>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.smartui.commands.new.ui.NewCommandBase</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Debug</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Component</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.js.Filters" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.Filters</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/Filters.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.js.FullScreenIssue" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.FullScreenIssue</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/FullScreenIssue.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.charisma.main.SmartUIShortCuts</value>
+        <value>jetbrains.charisma.smartui.comments.js.CommentsList</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.panel.TabPanel</value>
+        <value>Webr.Event</value>
+        <value>jetbrains.charisma.smartui.js.TextSelector</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.js.Idea" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.Idea</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/Idea.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.PopupMessage</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.js.InputWatcher" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.InputWatcher</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/InputWatcher.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.js.IssueList" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.IssueList</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/IssueList.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.charisma.main.SmartUIShortCuts</value>
+        <value>jetbrains.charisma.smartui.js.TextSelector</value>
+        <value>jetbrains.charisma.smartui.comments.js.CommentsList</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Debug</value>
+        <value>jetbrains.mps.webr.javascript.stateMachine.runtime.stateMachineRuntime</value>
+        <value>jetbrains.charisma.smartui.js.SelectionActions</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.PageStateStore</value>
+        <value>Webr.Event</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Component</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.jQuery_extension</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.js.NewIssueSwitcher" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.NewIssueSwitcher</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/NewIssueSwitcher.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.PageStateStore</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Suggest</value>
+        <value>jetbrains.mps.webr.javascript.stateMachine.runtime.stateMachineRuntime</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.HistoryDispatcher</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.js.Pager" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.Pager</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/Pager.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+        <value>jetbrains.charisma.main.SmartUIShortCuts</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.js.PropertySelector" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.PropertySelector</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/PropertySelector.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Debug</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Key</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.js.SelectionActions" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.SelectionActions</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/SelectionActions.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.js.Debug</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.charisma.smartui.js.IssueList</value>
+        <value>jetbrains.charisma.smartui.js.App</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.js.TextSelector" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.TextSelector</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/TextSelector.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.htmlComponent.util.Util</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.charisma.smartui.js.charisma.smartui" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.charisma.smartui.js.charisma.smartui</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/charisma/smartui/js/charisma.smartui.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list></list>
+    </property>
+  </bean>
+</beans>

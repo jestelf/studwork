@@ -1,0 +1,50 @@
+<beans>
+  <bean id="IssueWatchRules" class="jetbrains.charisma.smartui.watchFolder.IssueWatchRules_RulePackage">
+    <property name="rules">
+      <list>
+        <ref bean="IssueWatchRules_issueUpdatedOrResolved"/>
+        <ref bean="IssueWatchRules_commentPosted"/>
+        <ref bean="IssueWatchRules_voteIssue"/>
+        <ref bean="IssueWatchRules_newIssue"/>
+        <ref bean="IssueWatchRules_untagIssue"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="DefaultSavedQueries" class="jetbrains.charisma.smartui.watchFolder.DefaultSavedQueries_RulePackage">
+    <property name="rules">
+      <list>
+        <ref bean="DefaultSavedQueries_createDefaultUserViews"/>
+      </list>
+    </property>
+  </bean>
+  <bean id="IssueWatchRules_issueUpdatedOrResolved" class="jetbrains.charisma.smartui.watchFolder.IssueWatchRules_issueUpdatedOrResolved_Rule">
+    <property name="rulePackage">
+      <ref bean="IssueWatchRules"/>
+    </property>
+  </bean>
+  <bean id="IssueWatchRules_commentPosted" class="jetbrains.charisma.smartui.watchFolder.IssueWatchRules_commentPosted_Rule">
+    <property name="rulePackage">
+      <ref bean="IssueWatchRules"/>
+    </property>
+  </bean>
+  <bean id="IssueWatchRules_voteIssue" class="jetbrains.charisma.smartui.watchFolder.IssueWatchRules_voteIssue_Rule">
+    <property name="rulePackage">
+      <ref bean="IssueWatchRules"/>
+    </property>
+  </bean>
+  <bean id="IssueWatchRules_untagIssue" class="jetbrains.charisma.smartui.watchFolder.IssueWatchRules_untagIssue_Rule">
+    <property name="rulePackage">
+      <ref bean="IssueWatchRules"/>
+    </property>
+  </bean>
+  <bean id="DefaultSavedQueries_createDefaultUserViews" class="jetbrains.charisma.smartui.watchFolder.DefaultSavedQueries_createDefaultUserViews_Rule">
+    <property name="rulePackage">
+      <ref bean="DefaultSavedQueries"/>
+    </property>
+  </bean>
+  <bean id="IssueWatchRules_newIssue" class="jetbrains.charisma.smartui.watchFolder.IssueWatchRules_newIssue_Rule">
+    <property name="rulePackage">
+      <ref bean="IssueWatchRules"/>
+    </property>
+  </bean>
+</beans>

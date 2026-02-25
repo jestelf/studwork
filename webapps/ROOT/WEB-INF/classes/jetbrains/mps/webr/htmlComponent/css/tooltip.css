@@ -1,0 +1,19 @@
+.tooltip {
+  color: #665e46;
+  background: #feffce;
+  padding: 1px 5px 2px;
+  border: 1px solid #f7e08b;
+  z-index: 400;
+  position: absolute;
+}
+
+.tooltip-overlap {
+  padding-right: 0px!important;
+  background: #fff none;
+  z-index: 400;
+}
+
+.hidden {
+  display: none!important;
+}
+

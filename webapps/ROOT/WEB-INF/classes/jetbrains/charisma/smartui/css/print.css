@@ -1,0 +1,210 @@
+.printable {
+  padding: 20px;
+  background-image: none;
+  font-size: 90%;
+  color: black;
+  text-align: left;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.printable .wiki.text, .printable .wiki.code, .printable .wiki.pre {
+  white-space: pre-wrap;
+}
+
+.printable .properties {
+  border-collapse: separate;
+}
+
+.printable .issueId {
+  float: left;
+  margin-right: 20px;
+}
+
+.printable .active {
+  display: block!important;
+}
+
+.printable td {
+  vertical-align: top;
+}
+
+.printable .attribute-label {
+  vertical-align: middle;
+}
+
+.printable h3 {
+  margin-top: 0.8em;
+  font-weight: bold;
+  
+}
+
+.printable h3 span {
+  border: 0;
+  color: #898989;
+  font-weight: normal;
+}
+
+.printable .actions, .printable .actions:hover {
+  background: #9dbfe7 url("${getClasspathUri("smartui/img/default/newissue-button-bg.png")}") repeat-x 0 bottom;
+  padding: 2px 10px 4px;
+  margin-right: 10px;
+  color: white;
+  border: 0;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.printable .button {
+  float: right;
+}
+
+.printable .attach-info, .printable .attach {
+  width: auto;
+  display: block;
+  float: none;
+  height: auto;
+}
+
+.printable .attribute, .printable .attribute:hover {
+  white-space: normal;
+  word-wrap:break-word;
+  height: auto;
+  cursor: text;
+  max-width: 110px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.printable .attributes .attribute {
+  background-color: transparent!important;
+}
+
+.printable .attribute-name, .printable .attribute-name:hover {
+  border: 0!important;
+  cursor: text;
+  color: black;
+  line-height: 1em;
+}
+
+.printable .attributeList {
+  margin-top: 0;
+  
+  
+}
+
+.printable .attributeList li {
+  border: 0!important;
+  cursor: text;
+  color: #666;
+  line-height: 1.5em;
+  
+}
+
+.printable .attributeList li .hover {
+  color: #084b96!important;
+  background-color: transparent!important;
+}
+
+.printable .attributeList .resolved .link {
+  color: #333;
+  text-decoration: line-through;
+}
+
+.printable .tagColor {
+  border-color: black!important;
+  
+}
+
+.printable .tagColor .tagText, .printable .tagColor a {
+  background: white!important;
+  color: black!important;
+  border-color: black!important;
+}
+
+.printable .comment .tableCommentText {
+  table-layout: auto;
+  
+}
+
+.printable .comment .tableCommentText .actions {
+  display: none;
+}
+
+.printable .jt-panel-content {
+  margin-top: 1em;
+  border: 1px solid #d4d5d6;
+}
+
+.printable .tableComments {
+  margin-bottom: -1px;
+  
+  
+  
+}
+
+.printable .tableComments .comment {
+  width: 100%;
+}
+
+.printable .tableComments .first {
+  width: 15%;
+  font-weight: bold;
+  
+}
+
+.printable .tableComments .first div {
+  font-size: 85%;
+}
+
+.printable .tableComments .first, .printable .tableComments .comment {
+  padding: .5em 0;
+  border-bottom: 1px solid #d4d5d6;
+}
+
+.issueList {
+  
+  
+  
+  
+}
+
+.issueList .issueContainer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom-color: black;
+}
+
+.issueList .description {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.issueList .attribute {
+  border: 0;
+}
+
+.issueList .attributes {
+  border-left: solid 1px #fff;
+  border-right: solid 1px #d4d5d6;
+  vertical-align: middle;
+}
+
+<!TextGen not found for 'jetbrains.mps.webr.css.structure.Statement'!>

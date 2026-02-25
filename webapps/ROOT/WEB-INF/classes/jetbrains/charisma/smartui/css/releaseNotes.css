@@ -1,0 +1,64 @@
+.release-notes {
+  font-family: arial, tahoma, verdana, sans-serif;
+  font-size: 90%;
+  background: none white;
+}
+
+.release-notes {
+  
+  
+  
+  
+  
+  
+  
+}
+
+.release-notes h1 {
+  font-size: 170%;
+}
+
+.release-notes h2 {
+  font-size: 130%;
+  border-bottom: 1px solid #d4d5d6;
+}
+
+.release-notes ul {
+  padding-left: 15px;
+}
+
+.release-notes a {
+  text-decoration: none;
+}
+
+.release-notes a:hover {
+  text-decoration: underline;
+}
+
+.release-notes p {
+  background-color: #f0f2f3;
+  font-size: 90%;
+  margin: 0;
+  padding: 0 3px;
+  
+}
+
+.release-notes p .rn-query {
+  font-family: monospace;
+  font-size: 140%;
+  font-weight: bold;
+  padding: 0 4px;
+}
+
+.release-notes .rn-list-item {
+  color: #d4d5d6;
+  list-style-position: outside;
+  padding-left: 0;
+  padding-bottom: 0.3em;
+  
+}
+
+.release-notes .rn-list-item span {
+  color: #000;
+}
+

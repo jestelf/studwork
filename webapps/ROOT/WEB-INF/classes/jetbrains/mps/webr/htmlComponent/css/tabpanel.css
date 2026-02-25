@@ -1,0 +1,65 @@
+.jt-tabpanel-navigation {
+  width: auto;
+  max-width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #d4d5d6;
+}
+
+.jt-tabpanel-separator {
+  width: 3px;
+  background: transparent;
+  border-color: transparent;
+}
+
+.jt-tabpanel-navigation > table {
+  margin: -1px 0;
+  width: 100%;
+  border-collapse: separate;
+}
+
+.jt-tabpanel-navigation > table td table {
+  margin: 0;
+  width: auto;
+  border-collapse: separate;
+}
+
+.jt-tabpanel-item {
+  padding-left: 1px;
+  text-align: center;
+  border: solid 1px #d4d5d6;
+  background-color: #f0f1f2;
+}
+
+.jt-tabpanel-item:hover {
+  border-color: #898989;
+}
+
+.jt-tabpanel-item.jt-panel-active {
+  background: none #fff;
+  border-top: 1px solid #d4d5d6;
+  border-bottom-color: #fff;
+}
+
+.jt-tabpanel-item.jt-panel-active:hover {
+  border-color: #d4d5d6;
+  border-bottom-color: transparent;
+}
+
+.jt-tabpanel-item .jt-panel-title {
+  margin: 0;
+  padding: 3px 8px 5px;
+  font-size: 100%;
+  font-weight: normal;
+  color: #084b96;
+  cursor: pointer;
+  background: none;
+}
+
+.jt-tabpanel-content .jt-panel-inactive {
+  display: none;
+}
+
+.jt-tabpanel-content .jt-panel-active {
+  display: block;
+}
+

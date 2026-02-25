@@ -1,0 +1,299 @@
+<beans>
+  <bean id="jetbrains.mps.webr.runtime.js.event.CommandProcessors" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.CommandProcessors</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/CommandProcessors.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>Webr.Error</value>
+        <value>jetbrains.mps.webr.runtime.js.event.RefreshListener</value>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>Webr.Event</value>
+        <value>jetbrains.mps.webr.htmlComponent.util.Set</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Debug</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.FormBuilder" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.FormBuilder</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/FormBuilder.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ParamBuilder</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.InProgressEventListener" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.InProgressEventListener</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/InProgressEventListener.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ServerEvent</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.InputCollector" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.InputCollector</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/InputCollector.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ParamBuilder</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.LoadingServerEventListener" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.LoadingServerEventListener</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/LoadingServerEventListener.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.UploadEvent</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ServerEvent</value>
+        <value>jetbrains.mps.webr.runtime.js.event.PopupMessage</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.ParamBuilder" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.ParamBuilder</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/ParamBuilder.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.PopupMessage" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.PopupMessage</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/PopupMessage.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.jquery.jquery</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.RefreshListener" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.RefreshListener</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/RefreshListener.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.ResponseObject" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.ResponseObject</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/ResponseObject.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.ResponseServerEventListener" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.ResponseServerEventListener</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/ResponseServerEventListener.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.ResponseObject</value>
+        <value>Webr.Event</value>
+        <value>jetbrains.mps.webr.htmlComponent.js.Debug</value>
+        <value>jetbrains.mps.webr.runtime.js.event.CommandProcessors</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ServerEvent</value>
+        <value>jetbrains.mps.webr.runtime.js.event.PopupMessage</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.ServerEvent" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.ServerEvent</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/ServerEvent.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.ParamBuilder</value>
+        <value>Webr.Event</value>
+        <value>jetbrains.mps.webr.runtime.js.event.InputCollector</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ResponseObject</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.UploadEvent" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.UploadEvent</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/UploadEvent.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.ResponseObject</value>
+        <value>jetbrains.mps.webr.runtime.js.event.FormBuilder</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ParamBuilder</value>
+        <value>jetbrains.mps.webr.runtime.js.event.InputCollector</value>
+        <value>jetbrains.mps.webr.runtime.js.event.PopupMessage</value>
+      </list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+        <value>jetbrains.mps.webr.runtime.js.event.ServerEvent</value>
+      </list>
+    </property>
+  </bean>
+  <bean id="jetbrains.mps.webr.runtime.js.event.Webr_event" class="jetbrains.mps.webr.javascript.runtime.jsDependencies.JsDependency">
+    <property name="name">
+      <value>jetbrains.mps.webr.runtime.js.event.Webr_event</value>
+    </property>
+    <property name="urlGetter">
+      <bean class="jetbrains.mps.webr.javascript.runtime.jsDependencies.ResourceUrlGetter" autowire="byType">
+        <property name="resourcePath">
+          <value>jetbrains/mps/webr/runtime/js/event/Webr_event.js</value>
+        </property>
+      </bean>
+    </property>
+    <property name="runTimeDeps">
+      <list></list>
+    </property>
+    <property name="compileTimeDeps">
+      <list>
+        <value>Webr.Webr</value>
+      </list>
+    </property>
+  </bean>
+</beans>

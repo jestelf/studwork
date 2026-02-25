@@ -1,0 +1,13 @@
+<beans>
+  <bean id="modelMetaData" class="com.jetbrains.teamsys.dnq.database.ModelMetaDataImpl"></bean>
+  <bean id="initModelMetaData" class="jetbrains.charisma.persistent.InitModelMetaDataServiceLocatorListener">
+    <property name="dependees">
+      <list></list>
+    </property>
+  </bean>
+  <bean id="extensionPoint_modelMetaData_entityMetaDatas" class="jetbrains.springframework.configuration.runtime.ExtensionPoint">
+    <property name="beanName" value="modelMetaData"/>
+    <property name="extensionPropertyName" value="entityMetaDatas"/>
+    <property name="extensionType" value="com.jetbrains.teamsys.database.EntityMetaData"/>
+  </bean>
+</beans>
